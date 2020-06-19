@@ -1,0 +1,201 @@
+body * {
+    font-family: 'Inter', sans-serif;
+}
+
+.bd-navbar {
+    background-color: rgba(68, 76, 101, 1);
+    position: sticky;
+    top: 0;
+    z-index: 1071;
+}
+
+#logo-hubmap-ccf-portal {
+    width: 100%;
+    max-height: 38px;
+    min-height: 38px;
+}
+
+main {
+    border: 1px solid #e0e0e0;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+svg.logo-body-color {
+    display: inline-block;
+    width: 100%;
+    max-width: 100px;
+    max-height: 140px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.card {
+    min-height: 82px;
+}
+
+.card p.card-title {
+    margin-bottom: 0;
+}
+
+a:hover .card {
+    box-shadow: 0 2px 2px 5px rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 5px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 2px 2px 5px rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 5px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.card * {
+    text-decoration: none !important;
+}
+
+.footer {
+    padding: 1rem;
+    background-color: rgba(238, 238, 238, 1);
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer a .ico-email {
+    width: 100%;
+    max-width: 1.5rem;
+    height: auto;
+    max-height: 1.5rem;
+}
+
+.footer a:hover .ico-email .fill-blue {
+    fill: #0a6ebd;
+}
+
+.card-dark-orange {
+    color: rgba(147, 58, 37, 1);
+    border: 1px solid rgba(147, 58, 37, 1) !important;
+}
+
+.card-dark-pink {
+    color: rgba(147, 58, 37, 1);
+    border: 1px solid rgba(152, 36, 96, 1) !important;
+}
+
+.card-dark-green {
+    color: rgba(75, 95, 39, 1) !important;
+    border: 1px solid rgba(75, 95, 39, 1) !important;
+}
+
+.card-dark-teal {
+    color: rgba(39, 95, 84, 1);
+    border: 1px solid rgba(39, 95, 84, 1);
+}
+
+.card-dark-blue {
+    color: rgba(38, 90, 146, 1) !important;
+    border: 1px solid rgba(38, 90, 146, 1) !important;
+}
+
+.card-dark-gray-blue {
+    color: rgba(68, 76, 101, 1) !important;
+    border: 1px solid rgba(68, 76, 101, 1) !important;
+}
+
+.bg-dark-orange {
+    background-color: rgba(147, 58, 37, 1) !important;
+}
+
+.bg-dark-pink {
+    background-color: rgba(152, 36, 96, 1) !important;
+}
+
+.bg-dark-blue {
+    background-color: rgba(38, 90, 146, 1) !important;
+}
+
+.bg-dark-gray-blue {
+    background-color: rgba(68, 76, 101, 1) !important;
+}
+
+.bg-dark-green {
+    background-color: rgba(75, 95, 39, 1) !important;
+}
+
+.bg-light-gray {
+    background-color: rgba(224, 224, 224, 1);
+}
+
+.bg-mid-gray-blue {
+    background-color: rgba(105, 110, 131, 1);
+}
+
+.bg-dark-teal {
+    background-color: rgba(39, 95, 84, 1);
+}
+
+.fill-white {
+    fill: rgba(255, 255, 255, 1);
+}
+
+.nav-tabs.bg-mid-gray-blue .nav-link {
+    color: rgba(255, 255, 255, 1);
+}
+
+.fill-blue {
+    fill: #2196f3;
+}
+
+.fill-none {
+    fill: none;
+}
+
+.h-card-icon {
+    width: 100%;
+    height: 100%;
+    padding: 0 1rem;
+    max-width: 72px;
+}
+
+.h-box {
+    max-width: 140px;
+    width: 100%;
+    max-height: 140px;
+    height: auto;
+    padding: 2rem;
+}
+
+.tile {
+    bottom: 0;
+    right: 0;
+}
+
+.ico-1 {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.nav-tabs.nav-tabs.bg-mid-gray-blue .nav-link.active {
+    border-color: rgba(147, 58, 37, 1);
+}
+
+.card-header-icon {
+    right: 1.5rem;
+}
+
+.card-header-icon a .ico-1 {
+    fill: #2196f3;
+}
+
+.card-header-icon a:hover .ico-1 {
+    fill: #0a6ebd;
+}
+
+.card .card-header.bg-light {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.ico-1.disabled {
+    fill: rgba(0,0,0,0.26) !important;
+    cursor: not-allowed;
+}

@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>HuBMAP: CCF Portal</title>
+    <meta name="keywords" content="common coordinate framework, ccf, ontology, hubmap, " />
+    <meta name="robots" content="index, follow" />
+    <meta name="title" content="CCF Portal">
+    <meta name="description"
+        content="Detailed information on the common coordinate framework and ontolgoy work performed by MC-IU at Indiana University, Bloomington, on the Human Biomolecular Atlas Project (HuBMAP).">
+    <meta name="author" content="MC-IU Team">
+    <meta name="Copyright" content="Copyright MC-IU 2020. All Rights Reserved.">
+
+    <meta name="google-site-verification" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png" />
+
+    <link href="../css/bootstrap-material-design.css" media="screen" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700&display=swap" rel="stylesheet">
+    <link href="../css/cns.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="navbar flex-column flex-md-row bd-navbar">
+        <div class="container">
+            <a class="navbar-brand mr-0 mr-md-2" aria-label="CCF Portal"><svg id="logo-hubmap-ccf-portal"
+                    data-name="logo-hubmap-ccf-portal" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 381 36">
+                    <path class="fill-white" d="M22.09,1.19v34H13.25V20.91H10.6V35.19H1.76v-34H10.6V13.35h2.65V1.19Z" />
+                    <path class="fill-white"
+                        d="M44.81,7.32V35.19H36.18l.14-2.32A5.83,5.83,0,0,1,34.15,35a6.1,6.1,0,0,1-3,.71A6.67,6.67,0,0,1,28,35a4.41,4.41,0,0,1-1.86-1.79,6.3,6.3,0,0,1-.74-2.32q-.15-1.2-.15-4.8V7.32h8.48v19a20.13,20.13,0,0,0,.2,3.87c.13.4.49.61,1.08.61s1-.22,1.13-.64a25.76,25.76,0,0,0,.17-4.05V7.32Z" />
+                    <path class="fill-white"
+                        d="M48.1,1.19h8.82a23.36,23.36,0,0,1,6.33.65,6.3,6.3,0,0,1,3.48,2.64q1.32,2,1.32,6.39c0,2-.31,3.37-.94,4.15a6.52,6.52,0,0,1-3.68,1.8c2,.47,3.43,1.23,4.16,2.31a8.92,8.92,0,0,1,1.09,4.92V27.2a12.45,12.45,0,0,1-.79,5.11,4.26,4.26,0,0,1-2.51,2.27,26,26,0,0,1-7,.61H48.1ZM56.94,7v7.56c.38,0,.67,0,.88,0,.87,0,1.42-.22,1.66-.64a10.44,10.44,0,0,0,.36-3.67A5.77,5.77,0,0,0,59.54,8a1.39,1.39,0,0,0-.76-.81A6.77,6.77,0,0,0,56.94,7Zm0,12.85v9.51a3.73,3.73,0,0,0,2.38-.59,4.06,4.06,0,0,0,.52-2.58V23c0-1.46-.16-2.34-.46-2.65A4.21,4.21,0,0,0,56.94,19.86Z" />
+                    <path class="fill-white"
+                        d="M99.12,1.19v34H91.4V12.24L88.31,35.19H82.83L79.59,12.76V35.19H71.85v-34H83.29q.51,3.08,1,7.23l1.26,8.65,2-15.88Z" />
+                    <path class="fill-white"
+                        d="M118,1.19l5.06,34h-9l-.47-6.11h-3.16l-.54,6.11h-9.13l4.5-34Zm-4.68,21.86q-.67-5.78-1.35-14.28-1.35,9.77-1.7,14.28Z" />
+                    <path class="fill-white"
+                        d="M124.51,1.19h8.9a20.73,20.73,0,0,1,5.55.57,6.15,6.15,0,0,1,2.92,1.64A5.61,5.61,0,0,1,143.2,6a23.28,23.28,0,0,1,.35,4.71v3a12.31,12.31,0,0,1-.67,4.75,4.61,4.61,0,0,1-2.47,2.29,11.7,11.7,0,0,1-4.69.8h-2.37V35.19h-8.84ZM133.35,7v8.65l.65,0a2,2,0,0,0,1.69-.6,4.46,4.46,0,0,0,.47-2.49V9.8a3.25,3.25,0,0,0-.55-2.27A3.41,3.41,0,0,0,133.35,7Z" />
+                    <path class="fill-white"
+                        d="M185.31,11.68h-3.14a9.93,9.93,0,0,0-1.91-4.2,10.17,10.17,0,0,0-3.62-2.93,11.31,11.31,0,0,0-10.77.61,11.74,11.74,0,0,0-4.26,4.94,18.09,18.09,0,0,0-1.58,8,18.14,18.14,0,0,0,1.58,8A11.62,11.62,0,0,0,165.87,31a11.38,11.38,0,0,0,10.77.61,10.31,10.31,0,0,0,3.62-2.94,9.93,9.93,0,0,0,1.91-4.2h3.14a13.61,13.61,0,0,1-2.38,5.67,13.12,13.12,0,0,1-4.67,4,14.76,14.76,0,0,1-14.13-.68,14.62,14.62,0,0,1-5.23-6.11,21.31,21.31,0,0,1-1.9-9.29,21.32,21.32,0,0,1,1.9-9.3,14.65,14.65,0,0,1,5.23-6.1A14.76,14.76,0,0,1,178.26,2a13.12,13.12,0,0,1,4.67,4A13.5,13.5,0,0,1,185.31,11.68Z" />
+                    <path class="fill-white"
+                        d="M218.25,11.68h-3.14a9.93,9.93,0,0,0-1.91-4.2,10.17,10.17,0,0,0-3.62-2.93,11.31,11.31,0,0,0-10.77.61,11.74,11.74,0,0,0-4.26,4.94,18.09,18.09,0,0,0-1.59,8,18.14,18.14,0,0,0,1.59,8A11.62,11.62,0,0,0,198.81,31a11.38,11.38,0,0,0,10.77.61,10.31,10.31,0,0,0,3.62-2.94,9.93,9.93,0,0,0,1.91-4.2h3.14a13.61,13.61,0,0,1-2.38,5.67,13.12,13.12,0,0,1-4.67,4,14.76,14.76,0,0,1-14.13-.68,14.55,14.55,0,0,1-5.23-6.11,21.31,21.31,0,0,1-1.9-9.29,21.32,21.32,0,0,1,1.9-9.3,14.58,14.58,0,0,1,5.23-6.1A14.76,14.76,0,0,1,211.2,2a13.12,13.12,0,0,1,4.67,4A13.5,13.5,0,0,1,218.25,11.68Z" />
+                    <path class="fill-white" d="M224.42,35.18V1H244.2V3.8H227.54V16.67h15.1v2.81h-15.1v15.7Z" />
+                    <path class="fill-white"
+                        d="M262.84,35.18V1h11A12.19,12.19,0,0,1,280,2.39a9.19,9.19,0,0,1,3.69,3.78,11.61,11.61,0,0,1,1.23,5.38,11.61,11.61,0,0,1-1.23,5.38A9.13,9.13,0,0,1,280,20.72a12,12,0,0,1-6.06,1.39h-8V35.18ZM266,19.31h7.88c2.68,0,4.68-.74,6-2.2a8,8,0,0,0,2-5.56,7.93,7.93,0,0,0-2-5.56q-2-2.19-6-2.19H266Z" />
+                    <path class="fill-white"
+                        d="M300.14,35.72A10.42,10.42,0,0,1,294.27,34a11.44,11.44,0,0,1-4-4.66,15.69,15.69,0,0,1-1.43-6.89,15.8,15.8,0,0,1,1.43-6.93,11.41,11.41,0,0,1,4-4.67,11,11,0,0,1,11.74,0,11.41,11.41,0,0,1,4,4.67,16,16,0,0,1,1.43,6.93A15.83,15.83,0,0,1,310,29.37,11.44,11.44,0,0,1,306,34,10.44,10.44,0,0,1,300.14,35.72Zm0-2.73a7.09,7.09,0,0,0,4.51-1.43,9.09,9.09,0,0,0,2.82-3.82,14,14,0,0,0,1-5.26,14.08,14.08,0,0,0-1-5.27,9.16,9.16,0,0,0-2.82-3.86,7.74,7.74,0,0,0-9,0,9.16,9.16,0,0,0-2.82,3.86,14.08,14.08,0,0,0-1,5.27,14,14,0,0,0,1,5.26,9.09,9.09,0,0,0,2.82,3.82A7.13,7.13,0,0,0,300.14,33Z" />
+                    <path class="fill-white"
+                        d="M316.77,35.18V9.55h2.89v3.93h.22a6.59,6.59,0,0,1,2.68-3.13,8,8,0,0,1,4.33-1.19l.82,0,.75,0v3l-.71-.1a9,9,0,0,0-1.08-.06,6.9,6.9,0,0,0-5,1.85,6.18,6.18,0,0,0-2,4.71V35.18Z" />
+                    <path class="fill-white"
+                        d="M344.05,9.55v2.58h-5.42V28.49c0,1.61.39,2.71,1.18,3.3a4.4,4.4,0,0,0,2.69.87,5.79,5.79,0,0,0,1-.07c.28-.05.53-.11.74-.16l.63,2.69a6.68,6.68,0,0,1-1.06.3,7.12,7.12,0,0,1-1.58.14,7.24,7.24,0,0,1-3.15-.71,5.93,5.93,0,0,1-3.44-5.66V12.13h-3.82V9.55h3.82V3.4h3V9.55Z" />
+                    <path class="fill-white"
+                        d="M356.78,35.77a9.89,9.89,0,0,1-4.24-.91,7.32,7.32,0,0,1-3.05-2.64,7.45,7.45,0,0,1-1.14-4.2,6.11,6.11,0,0,1,1.25-4,7.68,7.68,0,0,1,3.48-2.26,25.06,25.06,0,0,1,5.12-1.12c2.16-.27,3.82-.51,5-.73s1.74-.8,1.74-1.77v-.6a5.47,5.47,0,0,0-1.56-4.14,6.22,6.22,0,0,0-4.48-1.5,7.76,7.76,0,0,0-4.52,1.21A6.81,6.81,0,0,0,351.91,16l-2.82-1a8.4,8.4,0,0,1,2.4-3.37,9.74,9.74,0,0,1,3.44-1.82,13.69,13.69,0,0,1,3.85-.56,12.84,12.84,0,0,1,3.06.39,8.76,8.76,0,0,1,3,1.33A6.83,6.83,0,0,1,367,13.52a9.29,9.29,0,0,1,.85,4.25V35.18h-3V31.13h-.18A8.79,8.79,0,0,1,362,34.3,8.46,8.46,0,0,1,356.78,35.77Zm.4-2.72a7.8,7.8,0,0,0,4.11-1A7.11,7.11,0,0,0,364,29.21a8,8,0,0,0,.94-3.86v-3.7a3.83,3.83,0,0,1-1.64.72,22.37,22.37,0,0,1-2.61.51l-2.46.34a12.7,12.7,0,0,0-5.07,1.5,3.74,3.74,0,0,0-1.81,3.43A4.31,4.31,0,0,0,353,31.76,6.66,6.66,0,0,0,357.18,33.05Z" />
+                    <path class="fill-white" d="M377.57,1V35.18h-3V1Z" />
+                </svg></a>
+        </div>
+    </header>
+    <div class="container">
+        <main class="col-12 px-sm-3 py-sm-3 px-md-4 py-md-4 px-xl-5 py-xl-5 bd-content mt-4" role="main">
+            <div class="px-md-5 py-md-5">
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="back mb-4">
+                            <a href="../index.html" title="Back link to CCF Portal Home Page"><span class="btn"><svg
+                                        xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24">
+                                        <path d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M21 11H6.83l3.58-3.59L9 6l-6 6 6 6 1.41-1.41L6.83 13H21z" /></svg>
+                                    Back</span></a>
+                        </div>
+                        <h1 class="row"><span class="col-xs-12 col-sm-2 text-center">
+                                <div class="h-box bg-dark-pink">
+                                    <svg id="ico-topic" data-name="ico-topic" xmlns="http://www.w3.org/2000/svg"
+                                        viewbox="0 0 72 72">
+                                        <rect class="fill-none" width="72" height="72" />
+                                        <rect class="fill-white" x="12" y="14" width="40" height="4" />
+                                        <circle class="fill-white" cx="6" cy="16" r="2" />
+                                        <rect class="fill-white" x="21" y="22" width="40" height="4" />
+                                        <circle class="fill-white" cx="15" cy="24" r="2" />
+                                        <rect class="fill-white" x="21" y="30" width="40" height="4" />
+                                        <circle class="fill-white" cx="15" cy="32" r="2" />
+                                        <rect class="fill-white" x="21" y="38" width="40" height="4" />
+                                        <circle class="fill-white" cx="15" cy="40" r="2" />
+                                        <rect class="fill-white" x="27.89" y="46" width="40" height="4" />
+                                        <circle class="fill-white" cx="23" cy="48" r="2" />
+                                        <rect class="fill-white" x="12" y="54" width="40" height="4" />
+                                        <circle class="fill-white" cx="6" cy="56" r="2" /></svg>
+                                </div>
+                            </span><span class="col-sm-10">CCF Ontology</span></h1>
+                        <h2 class="mt-5">Overview</h2>
+                        <p>The CCF Ontology comprises a Provenance Ontology, Semantic Ontology, and Spatial Ontology,
+                            see Figure 1. Collectively, the three ontologies make up the CCF Ontology (also called union
+                            ontology) that supports spatially and semantically explicit search, filter, and browsing in
+                            the HuBMAP Portal.</p>
+
+                        <div class="text-center mt-5 mb-5">
+                            <div class="position-relative d-inline-block">
+                                <img src="../img/img-ccf-ontology-flowchart.png" alt="CCF Ontology flowchart"
+                                data-toggle="modal" data-target=".bd-ccf-ongology-modal-lg" class="hover-shadow" />
+                                <span class="px-2 py-2 bg-dark-gray-blue position-absolute tile"><svg class="ico-1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path class="fill-white" d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path class="fill-white" d="M12 10h-2v2H9v-2H7V9h2V7h1v2h2v1z"/></svg></span>
+                            </div>
+                        </div>
+                        <!-- START: Modal -->
+                        <div class="modal fade bd-ccf-ongology-modal-lg my-3" tabindex="-1" role="dialog"
+                            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="../img/img-ccf-ontology-flowchart-lg.png" alt="CCF Ontology flowchart"
+                                            class="img-fluid my-2 mx-2" />
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    
+                    <!-- END: Modal -->
+
+                    <p><span class="font-weight-bold">Provenance Ontology</span>. Captures CCF relevant clinical and
+                        other metadata such as donor sex, age, tissue sample author, and technology used. It does not
+                        capture all metadata associated with HuBMAP data.</p>
+
+                    <p><span class="font-weight-bold">Semantic Ontology</span>. Mirrors the ASCT+B tables and includes
+                        the CCF Anatomical Structures Partonomy of anatomical structures and the CCF Cell Types
+                        Ontology. Sources of ontology terms are UBERON and Cell Ontology (CL). Table 1 and 2 feature
+                        these two nested hierarchies for kidney and spleen.</p>
+
+                    <p><span class="font-weight-bold">Spatial Ontology</span>. Defines the position, rotation, and size
+                        of anatomical structures—at the macro, micro, and single-cell level—in correspondence to the
+                        HuBMAP Atlas reference system, shown on left in Figure 2. Note that all anatomical structures
+                        are semantically annotated using terms from the Semantic Ontology.</p>
+                    <img class="mt-3 mb-3" src="../img/img-spatial-steps-registration-01.png"
+                        alt="Graphic showing steps from body to cell in spatial registration process" />
+
+                    <p><small><span class="font-weight-bold">Figure 2</span>. Spatial placement of anatomical structures
+                            in relation to the HuBMAP Atlas reference system. Note that spatial entities can use
+                            different coordinate systems that are “mapped” into the common reference system.</small></p>
+
+
+                    <h2 class="mt-5">References</h2>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">MC-IU. <a
+                            href=" https://docs.google.com/document/d/1aS0Xe5uhajnNY0VsuXtHvAUVH5mnd1otheCvEzIv28s/edit?pli=1">CCF Ontology v1.0.0</a>.
+                            Accessed on June 20, 2020.</li>
+                        <li><a href="" title="CCF Paper">CCF Paper</a></li>
+                    </ul>
+                    <div class="my-5">
+                        <p><small class="small mt-5">June 20, 2020</small></p>
+                    </div>
+                </div>
+                </div>
+            </div>
+    
+
+    </main>
+
+    <footer class="footer text-center"><a href="mailto:infoccf@indiana.edu" title="Email the MC-IU Team"><svg
+                xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" class="ico-email">
+                <path class="fill-none" d="M0 0h24v24H0z" />
+                <path class="fill-blue"
+                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                </svg> MC-IU (infoccf@indiana.edu)</a></footer>
+
+    <small class="mt-5 mb-5 d-block">© 2020 All Rights Reserved.</small>
+    </div>
+
+    <script src="../js/jquery-3.2.1.slim.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap-material-design.min.js"></script>
+
+</body>
+
+</html>
