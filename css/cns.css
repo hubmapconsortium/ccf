@@ -199,3 +199,20 @@ a:hover .card {
     fill: rgba(0,0,0,0.26) !important;
     cursor: not-allowed;
 }
+
+.modal {
+    left: -9999 !important;
+    z-index: -1;
+    display: block;
+}
+.show.modal {
+    left: 0;
+    z-index: 1050;
+}
+
+.modal-container {
+    width: 100%;
+    max-width: 750px;
+    max-height: 425px;
+    height: 100%;
+}
