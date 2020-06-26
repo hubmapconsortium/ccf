@@ -43,7 +43,7 @@ a:hover .card {
 }
 
 .hover-shadow:hover {
-    box-shadow: 0 2px 2px 5px rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 5px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.20);
     transition: box-shadow 0.3s ease-in-out;
     cursor: pointer;
 }
@@ -106,20 +106,41 @@ a:hover .card {
     background-color: rgba(147, 58, 37, 1) !important;
 }
 
+.fill-dark-orange {
+    fill: rgba(147, 58, 37, 1) !important;
+}
+
 .bg-dark-pink {
     background-color: rgba(152, 36, 96, 1) !important;
+}
+
+.fill-dark-pink {
+    fill: rgba(152, 36, 96, 1) !important;
 }
 
 .bg-dark-blue {
     background-color: rgba(38, 90, 146, 1) !important;
 }
 
+.fill-dark-blue {
+    fill: rgba(38, 90, 146, 1) !important;
+}
+
 .bg-dark-gray-blue {
     background-color: rgba(68, 76, 101, 1) !important;
 }
 
+.fill-dark-gray-blue {
+    fill: rgba(68, 76, 101, 1) !important;
+}
+
+
 .bg-dark-green {
     background-color: rgba(75, 95, 39, 1) !important;
+}
+
+.fill-dark-green {
+    fill: rgba(75, 95, 39, 1) !important;
 }
 
 .bg-light-gray {
@@ -130,8 +151,16 @@ a:hover .card {
     background-color: rgba(105, 110, 131, 1);
 }
 
+.navbar.bg-light .navbar-collapse .nav-tabs .active {
+    border-color: rgba(147, 58, 37, 1) !important;
+}
+
 .bg-dark-teal {
     background-color: rgba(39, 95, 84, 1);
+}
+
+.fill-dark-teal {
+    fill: rgba(39, 95, 84, 1);
 }
 
 .fill-white {
@@ -140,6 +169,8 @@ a:hover .card {
 
 .nav-tabs.bg-mid-gray-blue .nav-link {
     color: rgba(255, 255, 255, 1);
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
 }
 
 .fill-blue {
@@ -150,24 +181,26 @@ a:hover .card {
     fill: none;
 }
 
-.h-card-icon {
+.h-box {
+    max-width: 70px;
     width: 100%;
-    height: 100%;
-    padding: 0 1rem;
-    max-width: 72px;
+    max-height: 70px;
+    height: auto;
 }
 
-.h-box {
-    max-width: 140px;
-    width: 100%;
-    max-height: 140px;
-    height: auto;
-    padding: 2rem;
+@media  (min-width: 768px) {
+    .h-box {
+        max-width: 140px;
+        width: 100%;
+        max-height: 140px;
+    }
 }
 
 .tile {
     bottom: 0;
     right: 0;
+    border: 1px solid #eeeeee;
+    transition: border 0.3s ease-in-out;
 }
 
 .ico-1 {
@@ -183,12 +216,27 @@ a:hover .card {
     right: 1.5rem;
 }
 
-.card-header-icon a .ico-1 {
+.card-header-icon a .ico-1,
+.tile .fill-link-blue {
     fill: #2196f3;
+    transition: fill 0.3s ease-in-out;
 }
 
-.card-header-icon a:hover .ico-1 {
+.tile:hover {
+    cursor: pointer;
+    border: 1px solid #0a6ebd;
+    transition: border 0.3s ease-in-out;
+}
+
+.card-header-icon a:hover .ico-1,
+.tile:hover .fill-link-blue {
     fill: #0a6ebd;
+    transition: fill 0.3s ease-in-out;
+}
+
+.tile:hover .fill-link-blue {
+    border: 1px solid #0a6ebd;
+    transition: border 0.3s ease-in-out;
 }
 
 .card .card-header.bg-light {
@@ -210,9 +258,38 @@ a:hover .card {
     z-index: 1050;
 }
 
-.modal-container {
+.mod-model-viewer {
     width: 100%;
     max-width: 750px;
-    max-height: 425px;
-    height: 100%;
+    max-height: 750px;
+    height: auto;
+    min-height: 250px;
+}
+
+.modal-body-viewer-shim .transparent-shim {
+    background-position: 0 0;
+    background-size: contain;
+    z-index: 1050;
+}
+
+.navbar-tabs {
+    padding: 0;
+    box-shadow: none;
+}
+
+.navbar-tabs.bg-light,
+.navbar-tabs .nav-tabs.bg-light {
+    background-color: transparent !important;
+}
+
+@media (max-width: 576px) {
+    h1, .h1 {
+        font-size: 2rem;
+    }
+    h2, .h2 {
+        font-size: 1.5rem;
+    }
+    h3, .h3 {
+        font-size: 1.25rem;
+    }
 }
