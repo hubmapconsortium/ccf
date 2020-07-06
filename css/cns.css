@@ -48,8 +48,9 @@ a:hover .card {
     cursor: pointer;
 }
 
-.card * {
+.h-cards a:hover {
     text-decoration: none !important;
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 .footer {
@@ -258,19 +259,86 @@ a:hover .card {
     z-index: 1050;
 }
 
-.mod-model-viewer {
-    width: 100%;
-    max-width: 750px;
-    max-height: 750px;
-    height: auto;
-    min-height: 250px;
+.modal-viewer .modal-body {
+    padding-bottom: 91% !important;
+    cursor: pointer !important;
 }
 
-.modal-body-viewer-shim .transparent-shim {
-    background-position: 0 0;
-    background-size: contain;
-    z-index: 1050;
+.modal-viewer .model-viewer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    cursor: pointer !important;
 }
+
+.modal-viewer .modal-body:hover {
+    cursor: pointer !important;
+}
+
+.lazy-load-poster {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .mod-colon-m .lazy-load-poster {
+    background-image: url(../img/poster-colon-m.jpg);
+  }
+
+  .mod-colon-f .lazy-load-poster {
+    background-image: url(../img/poster-colon-f.jpg);
+  }
+
+  .mod-heart-m .lazy-load-poster {
+    background-image: url(../img/poster-heart-m.jpg);
+  }
+
+  .mod-heart-f .lazy-load-poster {
+    background-image: url(../img/poster-heart-f.jpg);
+  }
+
+  .mod-kidney-m-l .lazy-load-poster {
+    background-image: url(../img/poster-kidney-m-l.jpg);
+  }
+
+  .mod-kidney-m-r .lazy-load-poster {
+    background-image: url(../img/poster-kidney-m-r.jpg);
+  }
+
+  .mod-kidney-f-l .lazy-load-poster {
+    background-image: url(../img/poster-kidney-f-l.jpg);
+  }
+
+  .mod-kidney-f-r .lazy-load-poster {
+    background-image: url(../img/poster-kidney-f-r.jpg);
+  }
+
+  .mod-spleen-f .lazy-load-poster {
+    background-image: url(../img/poster-spleen-f.jpg);
+  }
+
+  .mod-spleen-m .lazy-load-poster {
+    background-image: url(../img/poster-spleen-m.jpg);
+  }
+
+  .button-load {
+      top: 42%;                                    
+  }
+  .button-load .button-load-icon {
+      width: 100px;
+      height: 100px;
+      opacity: 50%;
+  }
+
 
 .navbar-tabs {
     padding: 0;
@@ -280,6 +348,18 @@ a:hover .card {
 .navbar-tabs.bg-light,
 .navbar-tabs .nav-tabs.bg-light {
     background-color: transparent !important;
+}
+.main-menu .dropdown-menu {
+    padding-bottom: 0;
+}
+.main-menu .dropdown-item {
+    border-bottom: 1px solid #e0e0e0;
+}
+.main-menu .dropdown-item {
+    white-space: normal;
+    max-width: 23.5rem;
+    min-width: 17.5rem;
+    line-height: 1.5rem;
 }
 
 @media (max-width: 576px) {
@@ -291,5 +371,11 @@ a:hover .card {
     }
     h3, .h3 {
         font-size: 1.25rem;
+    }
+    .main-menu {
+        width: 100%;   
+    }
+    .main-menu .dropdown-menu {
+        left: 0;
     }
 }
