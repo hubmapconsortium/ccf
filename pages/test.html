@@ -1,0 +1,1518 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>HuBMAP: CCF Portal</title>
+    <meta name="keywords" content="common coordinate framework, ccf, ontology, hubmap, " />
+    <meta name="robots" content="index, follow" />
+    <meta name="title" content="CCF Portal">
+    <meta name="description"
+        content="Detailed information on the common coordinate framework and ontolgoy work performed by MC-IU at Indiana University, Bloomington, on the Human Biomolecular Atlas Project (HuBMAP).">
+    <meta name="author" content="MC-IU Team">
+    <meta name="Copyright" content="Copyright MC-IU 2020. All Rights Reserved.">
+
+    <meta name="google-site-verification" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png" />
+
+    <link href="../css/bootstrap-material-design.css" media="screen" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700&display=swap" rel="stylesheet">
+    <link href="../css/cns.css" rel="stylesheet">
+    <style>
+        .modal-body-viewer-shim.vhm-kidney-left {
+            background-image: url("../img/poster-vhm-kidney-left.jpg");
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar flex-column flex-md-row bd-navbar">
+        <div class="container">
+            <a class="navbar-brand mr-0 mr-md-2" aria-label="CCF Portal"><svg id="logo-hubmap-ccf-portal"
+                    data-name="logo-hubmap-ccf-portal" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 381 36">
+                    <path class="fill-white" d="M22.09,1.19v34H13.25V20.91H10.6V35.19H1.76v-34H10.6V13.35h2.65V1.19Z" />
+                    <path class="fill-white"
+                        d="M44.81,7.32V35.19H36.18l.14-2.32A5.83,5.83,0,0,1,34.15,35a6.1,6.1,0,0,1-3,.71A6.67,6.67,0,0,1,28,35a4.41,4.41,0,0,1-1.86-1.79,6.3,6.3,0,0,1-.74-2.32q-.15-1.2-.15-4.8V7.32h8.48v19a20.13,20.13,0,0,0,.2,3.87c.13.4.49.61,1.08.61s1-.22,1.13-.64a25.76,25.76,0,0,0,.17-4.05V7.32Z" />
+                    <path class="fill-white"
+                        d="M48.1,1.19h8.82a23.36,23.36,0,0,1,6.33.65,6.3,6.3,0,0,1,3.48,2.64q1.32,2,1.32,6.39c0,2-.31,3.37-.94,4.15a6.52,6.52,0,0,1-3.68,1.8c2,.47,3.43,1.23,4.16,2.31a8.92,8.92,0,0,1,1.09,4.92V27.2a12.45,12.45,0,0,1-.79,5.11,4.26,4.26,0,0,1-2.51,2.27,26,26,0,0,1-7,.61H48.1ZM56.94,7v7.56c.38,0,.67,0,.88,0,.87,0,1.42-.22,1.66-.64a10.44,10.44,0,0,0,.36-3.67A5.77,5.77,0,0,0,59.54,8a1.39,1.39,0,0,0-.76-.81A6.77,6.77,0,0,0,56.94,7Zm0,12.85v9.51a3.73,3.73,0,0,0,2.38-.59,4.06,4.06,0,0,0,.52-2.58V23c0-1.46-.16-2.34-.46-2.65A4.21,4.21,0,0,0,56.94,19.86Z" />
+                    <path class="fill-white"
+                        d="M99.12,1.19v34H91.4V12.24L88.31,35.19H82.83L79.59,12.76V35.19H71.85v-34H83.29q.51,3.08,1,7.23l1.26,8.65,2-15.88Z" />
+                    <path class="fill-white"
+                        d="M118,1.19l5.06,34h-9l-.47-6.11h-3.16l-.54,6.11h-9.13l4.5-34Zm-4.68,21.86q-.67-5.78-1.35-14.28-1.35,9.77-1.7,14.28Z" />
+                    <path class="fill-white"
+                        d="M124.51,1.19h8.9a20.73,20.73,0,0,1,5.55.57,6.15,6.15,0,0,1,2.92,1.64A5.61,5.61,0,0,1,143.2,6a23.28,23.28,0,0,1,.35,4.71v3a12.31,12.31,0,0,1-.67,4.75,4.61,4.61,0,0,1-2.47,2.29,11.7,11.7,0,0,1-4.69.8h-2.37V35.19h-8.84ZM133.35,7v8.65l.65,0a2,2,0,0,0,1.69-.6,4.46,4.46,0,0,0,.47-2.49V9.8a3.25,3.25,0,0,0-.55-2.27A3.41,3.41,0,0,0,133.35,7Z" />
+                    <path class="fill-white"
+                        d="M185.31,11.68h-3.14a9.93,9.93,0,0,0-1.91-4.2,10.17,10.17,0,0,0-3.62-2.93,11.31,11.31,0,0,0-10.77.61,11.74,11.74,0,0,0-4.26,4.94,18.09,18.09,0,0,0-1.58,8,18.14,18.14,0,0,0,1.58,8A11.62,11.62,0,0,0,165.87,31a11.38,11.38,0,0,0,10.77.61,10.31,10.31,0,0,0,3.62-2.94,9.93,9.93,0,0,0,1.91-4.2h3.14a13.61,13.61,0,0,1-2.38,5.67,13.12,13.12,0,0,1-4.67,4,14.76,14.76,0,0,1-14.13-.68,14.62,14.62,0,0,1-5.23-6.11,21.31,21.31,0,0,1-1.9-9.29,21.32,21.32,0,0,1,1.9-9.3,14.65,14.65,0,0,1,5.23-6.1A14.76,14.76,0,0,1,178.26,2a13.12,13.12,0,0,1,4.67,4A13.5,13.5,0,0,1,185.31,11.68Z" />
+                    <path class="fill-white"
+                        d="M218.25,11.68h-3.14a9.93,9.93,0,0,0-1.91-4.2,10.17,10.17,0,0,0-3.62-2.93,11.31,11.31,0,0,0-10.77.61,11.74,11.74,0,0,0-4.26,4.94,18.09,18.09,0,0,0-1.59,8,18.14,18.14,0,0,0,1.59,8A11.62,11.62,0,0,0,198.81,31a11.38,11.38,0,0,0,10.77.61,10.31,10.31,0,0,0,3.62-2.94,9.93,9.93,0,0,0,1.91-4.2h3.14a13.61,13.61,0,0,1-2.38,5.67,13.12,13.12,0,0,1-4.67,4,14.76,14.76,0,0,1-14.13-.68,14.55,14.55,0,0,1-5.23-6.11,21.31,21.31,0,0,1-1.9-9.29,21.32,21.32,0,0,1,1.9-9.3,14.58,14.58,0,0,1,5.23-6.1A14.76,14.76,0,0,1,211.2,2a13.12,13.12,0,0,1,4.67,4A13.5,13.5,0,0,1,218.25,11.68Z" />
+                    <path class="fill-white" d="M224.42,35.18V1H244.2V3.8H227.54V16.67h15.1v2.81h-15.1v15.7Z" />
+                    <path class="fill-white"
+                        d="M262.84,35.18V1h11A12.19,12.19,0,0,1,280,2.39a9.19,9.19,0,0,1,3.69,3.78,11.61,11.61,0,0,1,1.23,5.38,11.61,11.61,0,0,1-1.23,5.38A9.13,9.13,0,0,1,280,20.72a12,12,0,0,1-6.06,1.39h-8V35.18ZM266,19.31h7.88c2.68,0,4.68-.74,6-2.2a8,8,0,0,0,2-5.56,7.93,7.93,0,0,0-2-5.56q-2-2.19-6-2.19H266Z" />
+                    <path class="fill-white"
+                        d="M300.14,35.72A10.42,10.42,0,0,1,294.27,34a11.44,11.44,0,0,1-4-4.66,15.69,15.69,0,0,1-1.43-6.89,15.8,15.8,0,0,1,1.43-6.93,11.41,11.41,0,0,1,4-4.67,11,11,0,0,1,11.74,0,11.41,11.41,0,0,1,4,4.67,16,16,0,0,1,1.43,6.93A15.83,15.83,0,0,1,310,29.37,11.44,11.44,0,0,1,306,34,10.44,10.44,0,0,1,300.14,35.72Zm0-2.73a7.09,7.09,0,0,0,4.51-1.43,9.09,9.09,0,0,0,2.82-3.82,14,14,0,0,0,1-5.26,14.08,14.08,0,0,0-1-5.27,9.16,9.16,0,0,0-2.82-3.86,7.74,7.74,0,0,0-9,0,9.16,9.16,0,0,0-2.82,3.86,14.08,14.08,0,0,0-1,5.27,14,14,0,0,0,1,5.26,9.09,9.09,0,0,0,2.82,3.82A7.13,7.13,0,0,0,300.14,33Z" />
+                    <path class="fill-white"
+                        d="M316.77,35.18V9.55h2.89v3.93h.22a6.59,6.59,0,0,1,2.68-3.13,8,8,0,0,1,4.33-1.19l.82,0,.75,0v3l-.71-.1a9,9,0,0,0-1.08-.06,6.9,6.9,0,0,0-5,1.85,6.18,6.18,0,0,0-2,4.71V35.18Z" />
+                    <path class="fill-white"
+                        d="M344.05,9.55v2.58h-5.42V28.49c0,1.61.39,2.71,1.18,3.3a4.4,4.4,0,0,0,2.69.87,5.79,5.79,0,0,0,1-.07c.28-.05.53-.11.74-.16l.63,2.69a6.68,6.68,0,0,1-1.06.3,7.12,7.12,0,0,1-1.58.14,7.24,7.24,0,0,1-3.15-.71,5.93,5.93,0,0,1-3.44-5.66V12.13h-3.82V9.55h3.82V3.4h3V9.55Z" />
+                    <path class="fill-white"
+                        d="M356.78,35.77a9.89,9.89,0,0,1-4.24-.91,7.32,7.32,0,0,1-3.05-2.64,7.45,7.45,0,0,1-1.14-4.2,6.11,6.11,0,0,1,1.25-4,7.68,7.68,0,0,1,3.48-2.26,25.06,25.06,0,0,1,5.12-1.12c2.16-.27,3.82-.51,5-.73s1.74-.8,1.74-1.77v-.6a5.47,5.47,0,0,0-1.56-4.14,6.22,6.22,0,0,0-4.48-1.5,7.76,7.76,0,0,0-4.52,1.21A6.81,6.81,0,0,0,351.91,16l-2.82-1a8.4,8.4,0,0,1,2.4-3.37,9.74,9.74,0,0,1,3.44-1.82,13.69,13.69,0,0,1,3.85-.56,12.84,12.84,0,0,1,3.06.39,8.76,8.76,0,0,1,3,1.33A6.83,6.83,0,0,1,367,13.52a9.29,9.29,0,0,1,.85,4.25V35.18h-3V31.13h-.18A8.79,8.79,0,0,1,362,34.3,8.46,8.46,0,0,1,356.78,35.77Zm.4-2.72a7.8,7.8,0,0,0,4.11-1A7.11,7.11,0,0,0,364,29.21a8,8,0,0,0,.94-3.86v-3.7a3.83,3.83,0,0,1-1.64.72,22.37,22.37,0,0,1-2.61.51l-2.46.34a12.7,12.7,0,0,0-5.07,1.5,3.74,3.74,0,0,0-1.81,3.43A4.31,4.31,0,0,0,353,31.76,6.66,6.66,0,0,0,357.18,33.05Z" />
+                    <path class="fill-white" d="M377.57,1V35.18h-3V1Z" />
+                </svg></a>
+                <div class="nav-item dropdown show text-right main-menu">
+                    <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      Menu
+                    <div class="ripple-container"></div></a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="bd-versions" style="top: 48px;">
+                      <a class="dropdown-item active" href="../index.html">Home<div class="ripple-container"></div></a>
+                      <a class="dropdown-item" href="ccf-anatomical-structures.html">CCF Anatomical Structures, Cell Types and Biomarkers (ASCT+B) Tables</a>
+                      <a class="dropdown-item" href="ccf-ontology.html">CCF Ontology</a>
+                      <a class="dropdown-item" href="ccf-3d-reference-library.html">CCF 3D Object Library</a>
+                    </div>
+                </div>
+        </div>
+    </header>
+    <div class="container">
+        <main class="col-12 px-sm-3 py-sm-3 px-md-4 py-md-4 px-xl-5 py-xl-5 bd-content mt-4" role="main">
+            <div class="px-md-5 py-md-5">
+
+                <div class="row">
+                    <div class="col-12">
+                        <model-viewer reveal="interaction" id="view-kidney-f-l"  loading="eager" class="model-viewer position-absolute" src="https://hubmapconsortium.github.io/hubmap-ontology/objects/VHF_Kidney_L_Low.glb" alt="FEMALE: Kidney, Left (Visible Human Project)" autoplay="true" auto-rotate auto-rotate-delay="1000"  camera-controls interaction-prompt="when-focused" exposure="0.2">
+                            <div class="lazy-load-poster" slot="poster"></div>
+                            <div slot="poster" class="button-load position-absolute w-100 text-center"><svg class="button-load-icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path fill="#000000" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg></div>
+                        </model-viewer>
+                        <div class="back mb-4">
+                            <a href="../index.html" title="Back link to CCF Portal Home Page"><span class="btn"><svg
+                                        xmlns="http://www.w3.org/2000/svg" height="24" viewbox="0 0 24 24" width="24">
+                                        <path d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M21 11H6.83l3.58-3.59L9 6l-6 6 6 6 1.41-1.41L6.83 13H21z" /></svg>
+                                    Back</span></a>
+                        </div>
+                        <h1 class="row"><div class="col-xs-12 col-sm-2 text-center">
+                            <div class="h-box bg-dark-green px-lg-3 py-lg-3 mb-3 mb-sm-0">
+                                    <svg id="ico-3d-library" data-name="ico-3d-library"
+                                        xmlns="http://www.w3.org/2000/svg" viewbox="0 0 72 72">
+                                        <rect class="fill-dark-green" width="72" height="72"/><polygon class="fill-white" points="56.61 50.75 52.61 47.75 52.61 52.25 22.37 52.25 36.14 44.3 38.39 48.19 40.36 43.6 42.32 39 37.36 38.4 32.39 37.8 34.64 41.7 19.43 50.48 19.43 20.25 24 20.25 21 16.25 18 12.25 15 16.25 12 20.25 16.57 20.25 16.57 55.25 16.61 55.25 19.43 55.25 52.61 55.25 52.61 59.75 56.61 56.75 60.61 53.75 56.61 50.75"/></svg>
+                                </div>
+                            </div>
+                            <span class="col-sm-10">CCF 3D Reference Object Library</span></h1>
+                        <h2 class="mt-5">Overview</h2>
+                        <p>The CCF 3D Reference Object Library provides anatomically correct reference organs. The
+                            organs are developed by a specialist in 3D medical illustration and approved by organ
+                            experts.</p>
+                        <p>Initially, reference objects were created using data from the Visible Human male and female
+                            datasets provided by the National Library of Medicine [1]. The male dataset comprises 1,871
+                            cross-sections at 1mm intervals for both CT and anatomical images at a resolution of 4,096
+                            pixels by 2,700 pixels. The female data set has the same characteristics as the Visible
+                            Human Male but axial anatomical images were obtained at 0.33 mm intervals resulting in 5,189
+                            cross-section anatomical images. The male was white, 180.3 cm (71 inch) tall, 199-pound and
+                            was 38 years old. The female was white, 171.2 cm (67.4 inch) tall, obese, and 59 years old.
+                        </p>
+                        <p>For the 1st HuBMAP Portal Release, kidney and spleen reference organs are freely available in
+                            GLB format. They can be viewed and explored using free web browsers such as Babylon.js.
+                            Screenshots and major properties of the six nested organ objects are given in table below.</p>
+                        <h4 class="mt-5">Terms of Use</h4>
+                        <p>HuBMAP data are supplied with no warranties, express or implied, including without
+                            limitation, any warranty of merchantability or fitness for a particular purpose or
+                            non-infringement. No warranty with respect to the HuBMAP infrastructure is provided,
+                            including without limitation, any uptime warranty. The Parties make no representations that the use of the data will not infringe any patent or proprietary rights of third parties.</p>
+                        <h4 class="mt-5">Citation</h4>
+                        <p>If you use the data files, please cite this effort as follows:</p>
+                        <p>Browne K, Cross LE, Herr, II BW, Record EG, Quardokus EM, Bueckle A, Börner K. 2020. <a href="https://hubmapconsortium.github.io/ccf/pages/ccf-3d-reference-library.html" title="Link to information on data below">HuBMAP CCF 3D Reference Object Library</a>.</p>
+
+                        <h4 class="mt-5">Reference Organs</h4>
+                        <nav class="navbar navbar-expand-lg navbar-tabs navbar-light bg-light mt-3">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                          
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        
+                        <ul class="nav nav-tabs bg-light" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="colon-tab" data-toggle="tab" href="#colon" role="tab"
+                                    aria-controls="home" aria-selected="true">Colon</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="heart-tab" data-toggle="tab" href="#heart" role="tab"
+                                    aria-controls="home" aria-selected="true">Heart</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="kidney-tab" data-toggle="tab" href="#kidney" role="tab"
+                                    aria-controls="profile" aria-selected="false">Kidney</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="spleen-tab" data-toggle="tab" href="#spleen" role="tab"
+                                    aria-controls="contact" aria-selected="false">Spleen</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    </nav>
+
+
+                        <div class="tab-content mt-5" id="myTabContent">
+                            <div class="tab-pane fade show active" id="colon" role="tabpanel"
+                                aria-labelledby="colon-tab">
+                                <div class="row">
+                                    <!-- START: Card 1 -->
+                                    <div class="col-12 col-md-6 mb-4">
+                                        <div class="card h-100">
+                                            <h5 class="card-header position-relative bg-light">
+                                                <span class="text-uppercase">Male:</span> Colon<span
+                                                class="card-header-icon position-absolute">
+                                                <a href="https://hubmapconsortium.github.io/hubmap-ontology/objects/VHF_Colon_Low.glb"
+                                                    title="Download GLB file"><svg class="ico-1"
+                                                        xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                                                        <path d="M0 0h24v24H0z" fill="none" />
+                                                        <path
+                                                            d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z" />
+                                                    </svg></a>
+                                            </span>
+                                            </h5>
+                                            <div class="row no-gutters h-100 position-relative">
+                                                <div class="col-5">
+                                                    <img class="img-fluid" src="../img/thb-colon-m.jpg"
+                                                        alt="3D Model: Kidney, Male, Left" />
+                                                    <div data-toggle="modal" data-target=".mod-colon-m">
+                                                        <span
+                                                            class="px-2 py-2 mb-3 bg-light position-absolute tile"><svg
+                                                                class="ico-1" xmlns="http://www.w3.org/2000/svg"
+                                                                viewbox="0 0 24 24">
+                                                                <path d="M0 0h24v24H0z" class="fill-none" /><path class="fill-link-blue" d="M7.52 21.48C4.25 19.94 1.91 16.76 1.55 13H.05C.56 19.16 5.71 24 12 24l.66-.03-3.81-3.81-1.33 1.32zm.89-6.52c-.19 0-.37-.03-.52-.08-.16-.06-.29-.13-.4-.24-.11-.1-.2-.22-.26-.37-.06-.14-.09-.3-.09-.47h-1.3c0 .36.07.68.21.95.14.27.33.5.56.69.24.18.51.32.82.41.3.1.62.15.96.15.37 0 .72-.05 1.03-.15.32-.1.6-.25.83-.44s.42-.43.55-.72c.13-.29.2-.61.2-.97 0-.19-.02-.38-.07-.56-.05-.18-.12-.35-.23-.51-.1-.16-.24-.3-.4-.43-.17-.13-.37-.23-.61-.31.2-.09.37-.2.52-.33.15-.13.27-.27.37-.42.1-.15.17-.3.22-.46.05-.16.07-.32.07-.48 0-.36-.06-.68-.18-.96-.12-.28-.29-.51-.51-.69-.2-.19-.47-.33-.77-.43C9.1 8.05 8.76 8 8.39 8c-.36 0-.69.05-1 .16-.3.11-.57.26-.79.45-.21.19-.38.41-.51.67-.12.26-.18.54-.18.85h1.3c0-.17.03-.32.09-.45s.14-.25.25-.34c.11-.09.23-.17.38-.22.15-.05.3-.08.48-.08.4 0 .7.1.89.31.19.2.29.49.29.86 0 .18-.03.34-.08.49-.05.15-.14.27-.25.37-.11.1-.25.18-.41.24-.16.06-.36.09-.58.09H7.5v1.03h.77c.22 0 .42.02.6.07s.33.13.45.23c.12.11.22.24.29.4.07.16.1.35.1.57 0 .41-.12.72-.35.93-.23.23-.55.33-.95.33zm8.55-5.92c-.32-.33-.7-.59-1.14-.77-.43-.18-.92-.27-1.46-.27H12v8h2.3c.55 0 1.06-.09 1.51-.27.45-.18.84-.43 1.16-.76.32-.33.57-.73.74-1.19.17-.47.26-.99.26-1.57v-.4c0-.58-.09-1.1-.26-1.57-.18-.47-.43-.87-.75-1.2zm-.39 3.16c0 .42-.05.79-.14 1.13-.1.33-.24.62-.43.85-.19.23-.43.41-.71.53-.29.12-.62.18-.99.18h-.91V9.12h.97c.72 0 1.27.23 1.64.69.38.46.57 1.12.57 1.99v.4zM12 0l-.66.03 3.81 3.81 1.33-1.33c3.27 1.55 5.61 4.72 5.96 8.48h1.5C23.44 4.84 18.29 0 12 0z"/></svg></span></div>
+                                                </div>
+                                                <div class="col-7">
+                                                    <div class="card-body">
+                                                        <table class="table table-sm mb-0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td># Anatomical Structures</td>
+                                                                    <td class="text-right">10</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Appendix</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Ascending Colon</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Cecum</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Descending Colon</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Hepatic Flexure</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Ileocecal Valve</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Retum</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Sigmoid Colon</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Splenic Flexure</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Transverse Colon</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END: Card 1 -->
+                                    <!-- START: Card 2 -->
+                                    <div class="col-12 col-md-6 mb-4">
+                                        <div class="card h-100">
+                                            <h5 class="card-header position-relative bg-light">
+                                                <span class="text-uppercase">Female:</span> Colon<span
+                                                class="card-header-icon position-absolute">
+                                                <a href="https://hubmapconsortium.github.io/hubmap-ontology/objects/VHF_Colon_Low.glb"
+                                                    title="Download GLB file"><svg class="ico-1"
+                                                        xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                                                        <path d="M0 0h24v24H0z" fill="none" />
+                                                        <path
+                                                            d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z" />
+                                                    </svg></a>
+                                            </span>
+                                            </h5>
+                                            <div class="row no-gutters h-100 position-relative">
+                                                <div class="col-5">
+                                                    <img class="img-fluid" src="../img/thb-colon-f.jpg"
+                                                        alt="3D Model: Kidney, Male, Left" />
+                                                    <div data-toggle="modal" data-target=".mod-colon-f">
+                                                        <span
+                                                            class="px-2 py-2 mb-3 bg-light position-absolute tile"><svg
+                                                                class="ico-1" xmlns="http://www.w3.org/2000/svg"
+                                                                viewbox="0 0 24 24">
+                                                                <path d="M0 0h24v24H0z" class="fill-none" /><path class="fill-link-blue" d="M7.52 21.48C4.25 19.94 1.91 16.76 1.55 13H.05C.56 19.16 5.71 24 12 24l.66-.03-3.81-3.81-1.33 1.32zm.89-6.52c-.19 0-.37-.03-.52-.08-.16-.06-.29-.13-.4-.24-.11-.1-.2-.22-.26-.37-.06-.14-.09-.3-.09-.47h-1.3c0 .36.07.68.21.95.14.27.33.5.56.69.24.18.51.32.82.41.3.1.62.15.96.15.37 0 .72-.05 1.03-.15.32-.1.6-.25.83-.44s.42-.43.55-.72c.13-.29.2-.61.2-.97 0-.19-.02-.38-.07-.56-.05-.18-.12-.35-.23-.51-.1-.16-.24-.3-.4-.43-.17-.13-.37-.23-.61-.31.2-.09.37-.2.52-.33.15-.13.27-.27.37-.42.1-.15.17-.3.22-.46.05-.16.07-.32.07-.48 0-.36-.06-.68-.18-.96-.12-.28-.29-.51-.51-.69-.2-.19-.47-.33-.77-.43C9.1 8.05 8.76 8 8.39 8c-.36 0-.69.05-1 .16-.3.11-.57.26-.79.45-.21.19-.38.41-.51.67-.12.26-.18.54-.18.85h1.3c0-.17.03-.32.09-.45s.14-.25.25-.34c.11-.09.23-.17.38-.22.15-.05.3-.08.48-.08.4 0 .7.1.89.31.19.2.29.49.29.86 0 .18-.03.34-.08.49-.05.15-.14.27-.25.37-.11.1-.25.18-.41.24-.16.06-.36.09-.58.09H7.5v1.03h.77c.22 0 .42.02.6.07s.33.13.45.23c.12.11.22.24.29.4.07.16.1.35.1.57 0 .41-.12.72-.35.93-.23.23-.55.33-.95.33zm8.55-5.92c-.32-.33-.7-.59-1.14-.77-.43-.18-.92-.27-1.46-.27H12v8h2.3c.55 0 1.06-.09 1.51-.27.45-.18.84-.43 1.16-.76.32-.33.57-.73.74-1.19.17-.47.26-.99.26-1.57v-.4c0-.58-.09-1.1-.26-1.57-.18-.47-.43-.87-.75-1.2zm-.39 3.16c0 .42-.05.79-.14 1.13-.1.33-.24.62-.43.85-.19.23-.43.41-.71.53-.29.12-.62.18-.99.18h-.91V9.12h.97c.72 0 1.27.23 1.64.69.38.46.57 1.12.57 1.99v.4zM12 0l-.66.03 3.81 3.81 1.33-1.33c3.27 1.55 5.61 4.72 5.96 8.48h1.5C23.44 4.84 18.29 0 12 0z"/></svg></span></div>
+                                                </div>
+                                                <div class="col-7">
+                                                    <div class="card-body">
+                                                        <table class="table table-sm mb-0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td># Anatomical Structures</td>
+                                                                    <td class="text-right">10</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Appendix</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Ascending Colon</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Cecum</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Descending Colon</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Hepatic Flexure</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Ileocecal Valve</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Retum</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Sigmoid Colon</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Splenic Flexure</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Transverse Colon</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END: Card 2 -->
+                                </div>
+                            </div>
+                            <div class="tab-pane fade show" id="heart" role="tabpanel"
+                                aria-labelledby="heart-tab">
+                                <div class="row">
+                                    <!-- START: Card 1 -->
+                                    <div class="col-12 col-md-6 mb-4">
+                                        <div class="card h-100">
+                                            <h5 class="card-header position-relative bg-light">
+                                                <span class="text-uppercase">Male:</span> Heart<span
+                                                class="card-header-icon position-absolute">
+                                                <a href="https://hubmapconsortium.github.io/hubmap-ontology/objects/VHM_Heart_Low.glb"
+                                                    title="Download GLB file"><svg class="ico-1"
+                                                        xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                                                        <path d="M0 0h24v24H0z" fill="none" />
+                                                        <path
+                                                            d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z" />
+                                                    </svg></a>
+                                            </span>
+                                            </h5>
+                                            <div class="row no-gutters h-100 position-relative">
+                                                <div class="col-5">
+                                                    <img class="img-fluid" src="../img/thb-heart-m.jpg"
+                                                        alt="3D Model: Heart, Male" />
+                                                    <div data-toggle="modal" data-target=".mod-heart-m">
+                                                        <span
+                                                            class="px-2 py-2 mb-3 bg-light position-absolute tile"><svg
+                                                                class="ico-1" xmlns="http://www.w3.org/2000/svg"
+                                                                viewbox="0 0 24 24">
+                                                                <path d="M0 0h24v24H0z" class="fill-none" /><path class="fill-link-blue" d="M7.52 21.48C4.25 19.94 1.91 16.76 1.55 13H.05C.56 19.16 5.71 24 12 24l.66-.03-3.81-3.81-1.33 1.32zm.89-6.52c-.19 0-.37-.03-.52-.08-.16-.06-.29-.13-.4-.24-.11-.1-.2-.22-.26-.37-.06-.14-.09-.3-.09-.47h-1.3c0 .36.07.68.21.95.14.27.33.5.56.69.24.18.51.32.82.41.3.1.62.15.96.15.37 0 .72-.05 1.03-.15.32-.1.6-.25.83-.44s.42-.43.55-.72c.13-.29.2-.61.2-.97 0-.19-.02-.38-.07-.56-.05-.18-.12-.35-.23-.51-.1-.16-.24-.3-.4-.43-.17-.13-.37-.23-.61-.31.2-.09.37-.2.52-.33.15-.13.27-.27.37-.42.1-.15.17-.3.22-.46.05-.16.07-.32.07-.48 0-.36-.06-.68-.18-.96-.12-.28-.29-.51-.51-.69-.2-.19-.47-.33-.77-.43C9.1 8.05 8.76 8 8.39 8c-.36 0-.69.05-1 .16-.3.11-.57.26-.79.45-.21.19-.38.41-.51.67-.12.26-.18.54-.18.85h1.3c0-.17.03-.32.09-.45s.14-.25.25-.34c.11-.09.23-.17.38-.22.15-.05.3-.08.48-.08.4 0 .7.1.89.31.19.2.29.49.29.86 0 .18-.03.34-.08.49-.05.15-.14.27-.25.37-.11.1-.25.18-.41.24-.16.06-.36.09-.58.09H7.5v1.03h.77c.22 0 .42.02.6.07s.33.13.45.23c.12.11.22.24.29.4.07.16.1.35.1.57 0 .41-.12.72-.35.93-.23.23-.55.33-.95.33zm8.55-5.92c-.32-.33-.7-.59-1.14-.77-.43-.18-.92-.27-1.46-.27H12v8h2.3c.55 0 1.06-.09 1.51-.27.45-.18.84-.43 1.16-.76.32-.33.57-.73.74-1.19.17-.47.26-.99.26-1.57v-.4c0-.58-.09-1.1-.26-1.57-.18-.47-.43-.87-.75-1.2zm-.39 3.16c0 .42-.05.79-.14 1.13-.1.33-.24.62-.43.85-.19.23-.43.41-.71.53-.29.12-.62.18-.99.18h-.91V9.12h.97c.72 0 1.27.23 1.64.69.38.46.57 1.12.57 1.99v.4zM12 0l-.66.03 3.81 3.81 1.33-1.33c3.27 1.55 5.61 4.72 5.96 8.48h1.5C23.44 4.84 18.29 0 12 0z"/></svg></span></div>
+                                                </div>
+                                                <div class="col-7">
+                                                    <div class="card-body">
+                                                        <table class="table table-sm mb-0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td># Anatomical Structures</td>
+                                                                    <td class="text-right">39</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Anterior Cardiac Vein</td>
+                                                                    <td class="text-right">3</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Anterior Papillary Muscle</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Aortic Arch</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Aortic Valve</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Ascending Aorta</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Brachiocephalic Vein, Left</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Brachiocephalic Vein, Right</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Coronary Sinus</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Descending Aorta</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Great Cardiac Vein</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Inferior Vena Cava</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Interventricular Septum</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Left Atrium</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Left Common Carotid Artery</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Left Inferior Pulmonary Vein</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Left Pulmonary Artery</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Left Subclavian Artery</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Left Superior Pulmonary Vein</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Left Ventricle</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Medial Papillary Muscle</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Middle Cardiac Vein</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Mitral Valve</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Oblique Vein of Left Atrium</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Posterior Cardiac Vein</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Posterior Papillary Muscle</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Posteromedial Papillary Muscle</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Pulmonary Trunk</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Pulmonary Valve</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Right Atrium</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Right Common Carotid Artery</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Right Inferior Pulmonary Vein</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Right Pulmonary Artery</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Right Superior Pulmonoary Vein</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Right Ventricle</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Small Cardiac Vein</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Superior Vena Cava</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Tricuspid Valve</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END: Card 1 -->
+                                    <!-- START: Card 2 -->
+                                    <div class="col-12 col-md-6 mb-4">
+                                        <div class="card h-100">
+                                            <h5 class="card-header position-relative bg-light">
+                                                <span class="text-uppercase">Female:</span> Heart<span
+                                                class="card-header-icon position-absolute">
+                                                <a href="https://hubmapconsortium.github.io/hubmap-ontology/objects/VHF_Heart_Low.glb"
+                                                    title="Download GLB file"><svg class="ico-1"
+                                                        xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                                                        <path d="M0 0h24v24H0z" fill="none" />
+                                                        <path
+                                                            d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z" />
+                                                    </svg></a>
+                                            </span>
+                                            </h5>
+                                            <div class="row no-gutters h-100 position-relative">
+                                                <div class="col-5">
+                                                    <img class="img-fluid" src="../img/thb-heart-f.jpg"
+                                                        alt="3D Model: Heart, Male" />
+                                                    <div data-toggle="modal" data-target=".mod-heart-f">
+                                                        <span
+                                                            class="px-2 py-2 mb-3 bg-light position-absolute tile"><svg
+                                                                class="ico-1" xmlns="http://www.w3.org/2000/svg"
+                                                                viewbox="0 0 24 24">
+                                                                <path d="M0 0h24v24H0z" class="fill-none" /><path class="fill-link-blue" d="M7.52 21.48C4.25 19.94 1.91 16.76 1.55 13H.05C.56 19.16 5.71 24 12 24l.66-.03-3.81-3.81-1.33 1.32zm.89-6.52c-.19 0-.37-.03-.52-.08-.16-.06-.29-.13-.4-.24-.11-.1-.2-.22-.26-.37-.06-.14-.09-.3-.09-.47h-1.3c0 .36.07.68.21.95.14.27.33.5.56.69.24.18.51.32.82.41.3.1.62.15.96.15.37 0 .72-.05 1.03-.15.32-.1.6-.25.83-.44s.42-.43.55-.72c.13-.29.2-.61.2-.97 0-.19-.02-.38-.07-.56-.05-.18-.12-.35-.23-.51-.1-.16-.24-.3-.4-.43-.17-.13-.37-.23-.61-.31.2-.09.37-.2.52-.33.15-.13.27-.27.37-.42.1-.15.17-.3.22-.46.05-.16.07-.32.07-.48 0-.36-.06-.68-.18-.96-.12-.28-.29-.51-.51-.69-.2-.19-.47-.33-.77-.43C9.1 8.05 8.76 8 8.39 8c-.36 0-.69.05-1 .16-.3.11-.57.26-.79.45-.21.19-.38.41-.51.67-.12.26-.18.54-.18.85h1.3c0-.17.03-.32.09-.45s.14-.25.25-.34c.11-.09.23-.17.38-.22.15-.05.3-.08.48-.08.4 0 .7.1.89.31.19.2.29.49.29.86 0 .18-.03.34-.08.49-.05.15-.14.27-.25.37-.11.1-.25.18-.41.24-.16.06-.36.09-.58.09H7.5v1.03h.77c.22 0 .42.02.6.07s.33.13.45.23c.12.11.22.24.29.4.07.16.1.35.1.57 0 .41-.12.72-.35.93-.23.23-.55.33-.95.33zm8.55-5.92c-.32-.33-.7-.59-1.14-.77-.43-.18-.92-.27-1.46-.27H12v8h2.3c.55 0 1.06-.09 1.51-.27.45-.18.84-.43 1.16-.76.32-.33.57-.73.74-1.19.17-.47.26-.99.26-1.57v-.4c0-.58-.09-1.1-.26-1.57-.18-.47-.43-.87-.75-1.2zm-.39 3.16c0 .42-.05.79-.14 1.13-.1.33-.24.62-.43.85-.19.23-.43.41-.71.53-.29.12-.62.18-.99.18h-.91V9.12h.97c.72 0 1.27.23 1.64.69.38.46.57 1.12.57 1.99v.4zM12 0l-.66.03 3.81 3.81 1.33-1.33c3.27 1.55 5.61 4.72 5.96 8.48h1.5C23.44 4.84 18.29 0 12 0z"/></svg></span></div>
+                                                </div>
+                                                <div class="col-7">
+                                                    <div class="card-body">
+                                                        <table class="table table-sm mb-0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td># Anatomical Structures</td>
+                                                                    <td class="text-right">46</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Anterior Cardiac Veins</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Anterior Papillary Muscle</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Anterolateral Papillary Muscle</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Aortic Arch</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Aortic Valve</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Ascending Aorta</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Brachiocephalic Vein</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Coronary Sinus</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Descending Aorta</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Great Cardiac Vein</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Inferior Vena Cava</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Interventricular Septum</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Left Anterior Descending Artery</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Left Atrium</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Left Circumflex Artery</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Left Common Carotid Artery</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Left Diagonal Branch</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Left Inferior Pulmonary Vein</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Left Main Coronary Artery</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Left Marginal Branch</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Left Marginal Vein</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Left Pulmonary Artery</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Left Subclavian Artery</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Left Superior Pulmonary Vein</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Left Ventricle</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Medial Papillary Muscle</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Middle Cardiac Vein</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Mitral Valve</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Oblique Vein of Left Atrium</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Posterior Descending Artery</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Posterior Left Ventricular Branch</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Posterior Papillary Muscle</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Posterior Vein of Left Ventricle</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Posteromedial Papillary Muscle</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Pulmonary Trunk</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Pulmonary Valve</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Right Atrium</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Right Coronary Artery</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Right Inferior Pulmonary Vein</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Right Marginal Artery</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Right Pulmonary Artery</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Right Superior Pulmonoary Vein</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Right Ventricle</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Small Cardiac Vein</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Superior Vena Cava</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Tricuspid Valve</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END: Card 2 -->
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="kidney" role="tabpanel" aria-labelledby="kidney-tab">
+                                <div class="row">
+                                    <!-- START: Card 1 -->
+                                    <div class="col-12 col-md-6 mb-4">
+                                        <div class="card h-100">
+                                            <h5 class="card-header position-relative bg-light">
+                                                <span class="text-uppercase">Male:</span> Kidney, L <span
+                                                        class="card-header-icon position-absolute">
+                                                        <a href="https://hubmapconsortium.github.io/hubmap-ontology/objects/VHM_Kidney_L_Low.glb"
+                                                            title="Download GLB file"><svg class="ico-1"
+                                                                xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                                                                <path d="M0 0h24v24H0z" fill="none" />
+                                                                <path
+                                                                    d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z" />
+                                                            </svg></a>
+                                                    </span>
+                                            </h5>
+                                            <div class="row no-gutters h-100 position-relative">
+                                                <div class="col-5">
+                                                    <img class="img-fluid" src="../img/thb-kidney-m-l.jpg"
+                                                        alt="3D Model: Kidney, Male, Left" />
+                                                    <div data-toggle="modal" data-target=".mod-kidney-m-l">
+                                                        <span
+                                                            class="px-2 py-2 mb-3 bg-light position-absolute tile"><svg
+                                                                class="ico-1" xmlns="http://www.w3.org/2000/svg"
+                                                                viewbox="0 0 24 24">
+                                                                <path d="M0 0h24v24H0z" class="fill-none" /><path class="fill-link-blue" d="M7.52 21.48C4.25 19.94 1.91 16.76 1.55 13H.05C.56 19.16 5.71 24 12 24l.66-.03-3.81-3.81-1.33 1.32zm.89-6.52c-.19 0-.37-.03-.52-.08-.16-.06-.29-.13-.4-.24-.11-.1-.2-.22-.26-.37-.06-.14-.09-.3-.09-.47h-1.3c0 .36.07.68.21.95.14.27.33.5.56.69.24.18.51.32.82.41.3.1.62.15.96.15.37 0 .72-.05 1.03-.15.32-.1.6-.25.83-.44s.42-.43.55-.72c.13-.29.2-.61.2-.97 0-.19-.02-.38-.07-.56-.05-.18-.12-.35-.23-.51-.1-.16-.24-.3-.4-.43-.17-.13-.37-.23-.61-.31.2-.09.37-.2.52-.33.15-.13.27-.27.37-.42.1-.15.17-.3.22-.46.05-.16.07-.32.07-.48 0-.36-.06-.68-.18-.96-.12-.28-.29-.51-.51-.69-.2-.19-.47-.33-.77-.43C9.1 8.05 8.76 8 8.39 8c-.36 0-.69.05-1 .16-.3.11-.57.26-.79.45-.21.19-.38.41-.51.67-.12.26-.18.54-.18.85h1.3c0-.17.03-.32.09-.45s.14-.25.25-.34c.11-.09.23-.17.38-.22.15-.05.3-.08.48-.08.4 0 .7.1.89.31.19.2.29.49.29.86 0 .18-.03.34-.08.49-.05.15-.14.27-.25.37-.11.1-.25.18-.41.24-.16.06-.36.09-.58.09H7.5v1.03h.77c.22 0 .42.02.6.07s.33.13.45.23c.12.11.22.24.29.4.07.16.1.35.1.57 0 .41-.12.72-.35.93-.23.23-.55.33-.95.33zm8.55-5.92c-.32-.33-.7-.59-1.14-.77-.43-.18-.92-.27-1.46-.27H12v8h2.3c.55 0 1.06-.09 1.51-.27.45-.18.84-.43 1.16-.76.32-.33.57-.73.74-1.19.17-.47.26-.99.26-1.57v-.4c0-.58-.09-1.1-.26-1.57-.18-.47-.43-.87-.75-1.2zm-.39 3.16c0 .42-.05.79-.14 1.13-.1.33-.24.62-.43.85-.19.23-.43.41-.71.53-.29.12-.62.18-.99.18h-.91V9.12h.97c.72 0 1.27.23 1.64.69.38.46.57 1.12.57 1.99v.4zM12 0l-.66.03 3.81 3.81 1.33-1.33c3.27 1.55 5.61 4.72 5.96 8.48h1.5C23.44 4.84 18.29 0 12 0z"/></svg></span></div>
+                                                </div>
+                                                <div class="col-7">
+                                                    <div class="card-body">
+                                                        <table class="table table-sm mb-0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td># Anatomical Structures</td>
+                                                                    <td class="text-right">38</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Calyces (minor/major)</td>
+                                                                    <td class="text-right">9/3</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Capsule</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Hilum</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Medulla (renal columns)</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Outer Cortex</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Papilla</td>
+                                                                    <td class="text-right">9</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Pelvis</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Pyramids</td>
+                                                                    <td class="text-right">9</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Ureter</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Artery</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Veins</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END: Card 1 -->
+                                    <!-- START: Card 2 -->
+                                    <div class="col-12 col-md-6 mb-4">
+                                        <div class="card h-100">
+                                            <h5 class="card-header position-relative bg-light">
+                                                <span class="text-uppercase">Male:</span> Kidney, R <span
+                                                        class="card-header-icon position-absolute">
+                                                        <a href="https://hubmapconsortium.github.io/hubmap-ontology/objects/VHM_Kidney_R_Low.glb"
+                                                            title="Download GLB file"><svg class="ico-1"
+                                                                xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                                                                <path d="M0 0h24v24H0z" fill="none" />
+                                                                <path
+                                                                    d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z" />
+                                                            </svg></a>
+                                                    </span>
+                                            </h5>
+                                            <div class="row no-gutters h-100 position-relative">
+                                                <div class="col-5">
+                                                    <img class="img-fluid" src="../img/thb-kidney-m-r.jpg"
+                                                        alt="3D Model: Kidney, Male, Right" />
+                                                    <div data-toggle="modal" data-target=".mod-kidney-m-r">
+                                                        <span
+                                                            class="px-2 py-2 mb-3 bg-light position-absolute tile"><svg
+                                                                class="ico-1" xmlns="http://www.w3.org/2000/svg"
+                                                                viewbox="0 0 24 24">
+                                                                <path d="M0 0h24v24H0z" class="fill-none" /><path class="fill-link-blue" d="M7.52 21.48C4.25 19.94 1.91 16.76 1.55 13H.05C.56 19.16 5.71 24 12 24l.66-.03-3.81-3.81-1.33 1.32zm.89-6.52c-.19 0-.37-.03-.52-.08-.16-.06-.29-.13-.4-.24-.11-.1-.2-.22-.26-.37-.06-.14-.09-.3-.09-.47h-1.3c0 .36.07.68.21.95.14.27.33.5.56.69.24.18.51.32.82.41.3.1.62.15.96.15.37 0 .72-.05 1.03-.15.32-.1.6-.25.83-.44s.42-.43.55-.72c.13-.29.2-.61.2-.97 0-.19-.02-.38-.07-.56-.05-.18-.12-.35-.23-.51-.1-.16-.24-.3-.4-.43-.17-.13-.37-.23-.61-.31.2-.09.37-.2.52-.33.15-.13.27-.27.37-.42.1-.15.17-.3.22-.46.05-.16.07-.32.07-.48 0-.36-.06-.68-.18-.96-.12-.28-.29-.51-.51-.69-.2-.19-.47-.33-.77-.43C9.1 8.05 8.76 8 8.39 8c-.36 0-.69.05-1 .16-.3.11-.57.26-.79.45-.21.19-.38.41-.51.67-.12.26-.18.54-.18.85h1.3c0-.17.03-.32.09-.45s.14-.25.25-.34c.11-.09.23-.17.38-.22.15-.05.3-.08.48-.08.4 0 .7.1.89.31.19.2.29.49.29.86 0 .18-.03.34-.08.49-.05.15-.14.27-.25.37-.11.1-.25.18-.41.24-.16.06-.36.09-.58.09H7.5v1.03h.77c.22 0 .42.02.6.07s.33.13.45.23c.12.11.22.24.29.4.07.16.1.35.1.57 0 .41-.12.72-.35.93-.23.23-.55.33-.95.33zm8.55-5.92c-.32-.33-.7-.59-1.14-.77-.43-.18-.92-.27-1.46-.27H12v8h2.3c.55 0 1.06-.09 1.51-.27.45-.18.84-.43 1.16-.76.32-.33.57-.73.74-1.19.17-.47.26-.99.26-1.57v-.4c0-.58-.09-1.1-.26-1.57-.18-.47-.43-.87-.75-1.2zm-.39 3.16c0 .42-.05.79-.14 1.13-.1.33-.24.62-.43.85-.19.23-.43.41-.71.53-.29.12-.62.18-.99.18h-.91V9.12h.97c.72 0 1.27.23 1.64.69.38.46.57 1.12.57 1.99v.4zM12 0l-.66.03 3.81 3.81 1.33-1.33c3.27 1.55 5.61 4.72 5.96 8.48h1.5C23.44 4.84 18.29 0 12 0z"/></svg></span></div>
+                                                </div>
+                                                <div class="col-7">
+                                                    <div class="card-body">
+                                                        <table class="table table-sm mb-0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td># Anatomical Structures</td>
+                                                                    <td class="text-right">39</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Calyces (minor/major)</td>
+                                                                    <td class="text-right">9/2</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Capsule</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Hilum</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Medulla (renal columns)</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Outer Cortex</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Papilla</td>
+                                                                    <td class="text-right">10</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Pelvis</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Pyramids</td>
+                                                                    <td class="text-right">10</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Ureter</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Artery</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Veins</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END: Card 2 -->
+                                    <!-- START: Card 3 -->
+                                    <div class="col-12 col-md-6 mb-4">
+                                        <div class="card h-100">
+                                            <h5 class="card-header position-relative bg-light">
+                                                <span class="text-uppercase">Female:</span> Kidney, L <span
+                                                        class="card-header-icon position-absolute">
+                                                        <a href="hhttps://hubmapconsortium.github.io/hubmap-ontology/objects/VHF_Kidney_L_Low.glb"
+                                                            title="Download GLB file"><svg class="ico-1"
+                                                                xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                                                                <path d="M0 0h24v24H0z" fill="none" />
+                                                                <path
+                                                                    d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z" />
+                                                            </svg></a>
+                                                    </span>
+                                            </h5>
+                                            <div class="row no-gutters h-100 position-relative">
+                                                <div class="col-5">
+                                                    <img class="img-fluid" src="../img/thb-kidney-f-l.jpg"
+                                                        alt="3D Model: Kidney, Male, Right" />
+                                                    <div data-toggle="modal" data-target=".mod-kidney-f-l">
+                                                        <span
+                                                            class="px-2 py-2 mb-3 bg-light position-absolute tile"><svg
+                                                                class="ico-1" xmlns="http://www.w3.org/2000/svg"
+                                                                viewbox="0 0 24 24">
+                                                                <path d="M0 0h24v24H0z" class="fill-none" /><path class="fill-link-blue" d="M7.52 21.48C4.25 19.94 1.91 16.76 1.55 13H.05C.56 19.16 5.71 24 12 24l.66-.03-3.81-3.81-1.33 1.32zm.89-6.52c-.19 0-.37-.03-.52-.08-.16-.06-.29-.13-.4-.24-.11-.1-.2-.22-.26-.37-.06-.14-.09-.3-.09-.47h-1.3c0 .36.07.68.21.95.14.27.33.5.56.69.24.18.51.32.82.41.3.1.62.15.96.15.37 0 .72-.05 1.03-.15.32-.1.6-.25.83-.44s.42-.43.55-.72c.13-.29.2-.61.2-.97 0-.19-.02-.38-.07-.56-.05-.18-.12-.35-.23-.51-.1-.16-.24-.3-.4-.43-.17-.13-.37-.23-.61-.31.2-.09.37-.2.52-.33.15-.13.27-.27.37-.42.1-.15.17-.3.22-.46.05-.16.07-.32.07-.48 0-.36-.06-.68-.18-.96-.12-.28-.29-.51-.51-.69-.2-.19-.47-.33-.77-.43C9.1 8.05 8.76 8 8.39 8c-.36 0-.69.05-1 .16-.3.11-.57.26-.79.45-.21.19-.38.41-.51.67-.12.26-.18.54-.18.85h1.3c0-.17.03-.32.09-.45s.14-.25.25-.34c.11-.09.23-.17.38-.22.15-.05.3-.08.48-.08.4 0 .7.1.89.31.19.2.29.49.29.86 0 .18-.03.34-.08.49-.05.15-.14.27-.25.37-.11.1-.25.18-.41.24-.16.06-.36.09-.58.09H7.5v1.03h.77c.22 0 .42.02.6.07s.33.13.45.23c.12.11.22.24.29.4.07.16.1.35.1.57 0 .41-.12.72-.35.93-.23.23-.55.33-.95.33zm8.55-5.92c-.32-.33-.7-.59-1.14-.77-.43-.18-.92-.27-1.46-.27H12v8h2.3c.55 0 1.06-.09 1.51-.27.45-.18.84-.43 1.16-.76.32-.33.57-.73.74-1.19.17-.47.26-.99.26-1.57v-.4c0-.58-.09-1.1-.26-1.57-.18-.47-.43-.87-.75-1.2zm-.39 3.16c0 .42-.05.79-.14 1.13-.1.33-.24.62-.43.85-.19.23-.43.41-.71.53-.29.12-.62.18-.99.18h-.91V9.12h.97c.72 0 1.27.23 1.64.69.38.46.57 1.12.57 1.99v.4zM12 0l-.66.03 3.81 3.81 1.33-1.33c3.27 1.55 5.61 4.72 5.96 8.48h1.5C23.44 4.84 18.29 0 12 0z"/></svg></span></div>
+                                                </div>
+                                                <div class="col-7">
+                                                    <div class="card-body">
+                                                        <table class="table table-sm mb-0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td># Anatomical Structures</td>
+                                                                    <td class="text-right">44</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Calyces (minor/major)</td>
+                                                                    <td class="text-right">10/4</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Capsule</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Hilum</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Medulla (renal columns)</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Outer Cortex</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Papilla</td>
+                                                                    <td class="text-right">11</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Pelvis</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Pyramids</td>
+                                                                    <td class="text-right">11</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Ureter</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Artery</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Veins</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END: Card 3 -->
+                                    <!-- START: Card 4 -->
+                                    <div class="col-12 col-md-6 mb-4">
+                                        <div class="card h-100">
+                                            <h5 class="card-header position-relative bg-light">
+                                                <span class="text-uppercase">Female:</span> Kidney, R <span
+                                                        class="card-header-icon position-absolute">
+                                                        <a href="https://hubmapconsortium.github.io/hubmap-ontology/objects/VHF_Kidney_R_Low.glb"
+                                                            title="Download GLB file"><svg class="ico-1"
+                                                                xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                                                                <path d="M0 0h24v24H0z" fill="none" />
+                                                                <path
+                                                                    d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z" />
+                                                            </svg></a>
+                                                    </span>
+                                            </h5>
+                                            <div class="row no-gutters h-100 position-relative">
+                                                <div class="col-5">
+                                                    <img class="img-fluid" src="../img/thb-kidney-f-r.jpg"
+                                                        alt="3D Model: Kidney, Male, Right" />
+                                                    <div data-toggle="modal" data-target=".mod-kidney-f-r">
+                                                        <span
+                                                            class="px-2 py-2 mb-3 bg-light position-absolute tile"><svg
+                                                                class="ico-1" xmlns="http://www.w3.org/2000/svg"
+                                                                viewbox="0 0 24 24">
+                                                                <path d="M0 0h24v24H0z" class="fill-none" /><path class="fill-link-blue" d="M7.52 21.48C4.25 19.94 1.91 16.76 1.55 13H.05C.56 19.16 5.71 24 12 24l.66-.03-3.81-3.81-1.33 1.32zm.89-6.52c-.19 0-.37-.03-.52-.08-.16-.06-.29-.13-.4-.24-.11-.1-.2-.22-.26-.37-.06-.14-.09-.3-.09-.47h-1.3c0 .36.07.68.21.95.14.27.33.5.56.69.24.18.51.32.82.41.3.1.62.15.96.15.37 0 .72-.05 1.03-.15.32-.1.6-.25.83-.44s.42-.43.55-.72c.13-.29.2-.61.2-.97 0-.19-.02-.38-.07-.56-.05-.18-.12-.35-.23-.51-.1-.16-.24-.3-.4-.43-.17-.13-.37-.23-.61-.31.2-.09.37-.2.52-.33.15-.13.27-.27.37-.42.1-.15.17-.3.22-.46.05-.16.07-.32.07-.48 0-.36-.06-.68-.18-.96-.12-.28-.29-.51-.51-.69-.2-.19-.47-.33-.77-.43C9.1 8.05 8.76 8 8.39 8c-.36 0-.69.05-1 .16-.3.11-.57.26-.79.45-.21.19-.38.41-.51.67-.12.26-.18.54-.18.85h1.3c0-.17.03-.32.09-.45s.14-.25.25-.34c.11-.09.23-.17.38-.22.15-.05.3-.08.48-.08.4 0 .7.1.89.31.19.2.29.49.29.86 0 .18-.03.34-.08.49-.05.15-.14.27-.25.37-.11.1-.25.18-.41.24-.16.06-.36.09-.58.09H7.5v1.03h.77c.22 0 .42.02.6.07s.33.13.45.23c.12.11.22.24.29.4.07.16.1.35.1.57 0 .41-.12.72-.35.93-.23.23-.55.33-.95.33zm8.55-5.92c-.32-.33-.7-.59-1.14-.77-.43-.18-.92-.27-1.46-.27H12v8h2.3c.55 0 1.06-.09 1.51-.27.45-.18.84-.43 1.16-.76.32-.33.57-.73.74-1.19.17-.47.26-.99.26-1.57v-.4c0-.58-.09-1.1-.26-1.57-.18-.47-.43-.87-.75-1.2zm-.39 3.16c0 .42-.05.79-.14 1.13-.1.33-.24.62-.43.85-.19.23-.43.41-.71.53-.29.12-.62.18-.99.18h-.91V9.12h.97c.72 0 1.27.23 1.64.69.38.46.57 1.12.57 1.99v.4zM12 0l-.66.03 3.81 3.81 1.33-1.33c3.27 1.55 5.61 4.72 5.96 8.48h1.5C23.44 4.84 18.29 0 12 0z"/></svg></span></div>
+                                                </div>
+                                                <div class="col-7">
+                                                    <div class="card-body">
+                                                        <table class="table table-sm mb-0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td># Anatomical Structures</td>
+                                                                    <td class="text-right">41</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Calyces (minor/major)</td>
+                                                                    <td class="text-right">10/3</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Capsule</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Hilum</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Medulla (renal columns)</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Outer Cortex</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Papilla</td>
+                                                                    <td class="text-right">10</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Pelvis</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Pyramids</td>
+                                                                    <td class="text-right">10</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Ureter</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Artery</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Veins</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END: Card 4 -->
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="spleen" role="tabpanel" aria-labelledby="spleen-tab">
+                                <div class="row">
+                                    <!-- START: Card 1 -->
+                                    <div class="col-12 col-md-6 mb-4">
+                                        <div class="card h-100">
+                                            <h5 class="card-header position-relative bg-light">
+                                                <span class="text-uppercase">Male:</span> Spleen<span
+                                                        class="card-header-icon position-absolute">
+                                                        <a href="https://hubmapconsortium.github.io/hubmap-ontology/objects/VHM_Spleen_Extraction_Sites_Low.glb"
+                                                            title="Download GLB file"><svg class="ico-1"
+                                                                xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                                                                <path d="M0 0h24v24H0z" fill="none" />
+                                                                <path
+                                                                    d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z" />
+                                                            </svg></a>
+                                                    </span>
+                                            </h5>
+                                            <div class="row no-gutters h-100 position-relative">
+                                                <div class="col-5">
+                                                    <img class="img-fluid" src="../img/thb-spleen-m.jpg"
+                                                        alt="3D Model: Kidney, Male, Left" />
+                                                    <div data-toggle="modal" data-target=".mod-spleen-m">
+                                                        <span
+                                                            class="px-2 py-2 mb-3 bg-light position-absolute tile"><svg
+                                                                class="ico-1" xmlns="http://www.w3.org/2000/svg"
+                                                                viewbox="0 0 24 24">
+                                                                <path d="M0 0h24v24H0z" class="fill-none" /><path class="fill-link-blue" d="M7.52 21.48C4.25 19.94 1.91 16.76 1.55 13H.05C.56 19.16 5.71 24 12 24l.66-.03-3.81-3.81-1.33 1.32zm.89-6.52c-.19 0-.37-.03-.52-.08-.16-.06-.29-.13-.4-.24-.11-.1-.2-.22-.26-.37-.06-.14-.09-.3-.09-.47h-1.3c0 .36.07.68.21.95.14.27.33.5.56.69.24.18.51.32.82.41.3.1.62.15.96.15.37 0 .72-.05 1.03-.15.32-.1.6-.25.83-.44s.42-.43.55-.72c.13-.29.2-.61.2-.97 0-.19-.02-.38-.07-.56-.05-.18-.12-.35-.23-.51-.1-.16-.24-.3-.4-.43-.17-.13-.37-.23-.61-.31.2-.09.37-.2.52-.33.15-.13.27-.27.37-.42.1-.15.17-.3.22-.46.05-.16.07-.32.07-.48 0-.36-.06-.68-.18-.96-.12-.28-.29-.51-.51-.69-.2-.19-.47-.33-.77-.43C9.1 8.05 8.76 8 8.39 8c-.36 0-.69.05-1 .16-.3.11-.57.26-.79.45-.21.19-.38.41-.51.67-.12.26-.18.54-.18.85h1.3c0-.17.03-.32.09-.45s.14-.25.25-.34c.11-.09.23-.17.38-.22.15-.05.3-.08.48-.08.4 0 .7.1.89.31.19.2.29.49.29.86 0 .18-.03.34-.08.49-.05.15-.14.27-.25.37-.11.1-.25.18-.41.24-.16.06-.36.09-.58.09H7.5v1.03h.77c.22 0 .42.02.6.07s.33.13.45.23c.12.11.22.24.29.4.07.16.1.35.1.57 0 .41-.12.72-.35.93-.23.23-.55.33-.95.33zm8.55-5.92c-.32-.33-.7-.59-1.14-.77-.43-.18-.92-.27-1.46-.27H12v8h2.3c.55 0 1.06-.09 1.51-.27.45-.18.84-.43 1.16-.76.32-.33.57-.73.74-1.19.17-.47.26-.99.26-1.57v-.4c0-.58-.09-1.1-.26-1.57-.18-.47-.43-.87-.75-1.2zm-.39 3.16c0 .42-.05.79-.14 1.13-.1.33-.24.62-.43.85-.19.23-.43.41-.71.53-.29.12-.62.18-.99.18h-.91V9.12h.97c.72 0 1.27.23 1.64.69.38.46.57 1.12.57 1.99v.4zM12 0l-.66.03 3.81 3.81 1.33-1.33c3.27 1.55 5.61 4.72 5.96 8.48h1.5C23.44 4.84 18.29 0 12 0z"/></svg></span></div>
+                                                </div>
+                                                <div class="col-7">
+                                                    <div class="card-body">
+                                                        <table class="table table-sm mb-0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td># Anatomical Structures</td>
+                                                                    <td class="text-right">8</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Hilum</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Spleen</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Spleen Gastric Surface</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Spleen Colic Surface</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Spleen Renal Surface</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Spleen Diaphramatic Surface</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Artery</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Artery</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END: Card 1 -->
+                                    <!-- START: Card 2 -->
+                                    <div class="col-12 col-md-6 mb-4">
+                                        <div class="card h-100">
+                                            <h5 class="card-header position-relative bg-light">
+                                                <span class="text-uppercase">Female:</span> Spleen<span
+                                                        class="card-header-icon position-absolute">
+                                                        <a href="https://hubmapconsortium.github.io/hubmap-ontology/objects/VHF_Spleen_Extraction_Sites_Low.glb"
+                                                            title="Download GLB file"><svg class="ico-1"
+                                                                xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                                                                <path d="M0 0h24v24H0z" fill="none" />
+                                                                <path
+                                                                    d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z" />
+                                                            </svg></a>
+                                                    </span>
+                                            </h5>
+                                            <div class="row no-gutters h-100 position-relative">
+                                                <div class="col-5">
+                                                    <img class="img-fluid" src="../img/thb-spleen-f.jpg"
+                                                        alt="3D Model: Kidney, Male, Left" />
+                                                    <div data-toggle="modal" data-target=".mod-spleen-f">
+                                                        <span
+                                                            class="px-2 py-2 mb-3 bg-light position-absolute tile"><svg
+                                                                class="ico-1" xmlns="http://www.w3.org/2000/svg"
+                                                                viewbox="0 0 24 24">
+                                                                <path d="M0 0h24v24H0z" class="fill-none" /><path class="fill-link-blue" d="M7.52 21.48C4.25 19.94 1.91 16.76 1.55 13H.05C.56 19.16 5.71 24 12 24l.66-.03-3.81-3.81-1.33 1.32zm.89-6.52c-.19 0-.37-.03-.52-.08-.16-.06-.29-.13-.4-.24-.11-.1-.2-.22-.26-.37-.06-.14-.09-.3-.09-.47h-1.3c0 .36.07.68.21.95.14.27.33.5.56.69.24.18.51.32.82.41.3.1.62.15.96.15.37 0 .72-.05 1.03-.15.32-.1.6-.25.83-.44s.42-.43.55-.72c.13-.29.2-.61.2-.97 0-.19-.02-.38-.07-.56-.05-.18-.12-.35-.23-.51-.1-.16-.24-.3-.4-.43-.17-.13-.37-.23-.61-.31.2-.09.37-.2.52-.33.15-.13.27-.27.37-.42.1-.15.17-.3.22-.46.05-.16.07-.32.07-.48 0-.36-.06-.68-.18-.96-.12-.28-.29-.51-.51-.69-.2-.19-.47-.33-.77-.43C9.1 8.05 8.76 8 8.39 8c-.36 0-.69.05-1 .16-.3.11-.57.26-.79.45-.21.19-.38.41-.51.67-.12.26-.18.54-.18.85h1.3c0-.17.03-.32.09-.45s.14-.25.25-.34c.11-.09.23-.17.38-.22.15-.05.3-.08.48-.08.4 0 .7.1.89.31.19.2.29.49.29.86 0 .18-.03.34-.08.49-.05.15-.14.27-.25.37-.11.1-.25.18-.41.24-.16.06-.36.09-.58.09H7.5v1.03h.77c.22 0 .42.02.6.07s.33.13.45.23c.12.11.22.24.29.4.07.16.1.35.1.57 0 .41-.12.72-.35.93-.23.23-.55.33-.95.33zm8.55-5.92c-.32-.33-.7-.59-1.14-.77-.43-.18-.92-.27-1.46-.27H12v8h2.3c.55 0 1.06-.09 1.51-.27.45-.18.84-.43 1.16-.76.32-.33.57-.73.74-1.19.17-.47.26-.99.26-1.57v-.4c0-.58-.09-1.1-.26-1.57-.18-.47-.43-.87-.75-1.2zm-.39 3.16c0 .42-.05.79-.14 1.13-.1.33-.24.62-.43.85-.19.23-.43.41-.71.53-.29.12-.62.18-.99.18h-.91V9.12h.97c.72 0 1.27.23 1.64.69.38.46.57 1.12.57 1.99v.4zM12 0l-.66.03 3.81 3.81 1.33-1.33c3.27 1.55 5.61 4.72 5.96 8.48h1.5C23.44 4.84 18.29 0 12 0z"/></svg></span></div>
+                                                </div>
+                                                <div class="col-7">
+                                                    <div class="card-body">
+                                                        <table class="table table-sm mb-0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td># Anatomical Structures</td>
+                                                                    <td class="text-right">8</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Hilum</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Spleen</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Spleen Gastric Surface</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Spleen Colic Surface</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Spleen Renal Surface</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Spleen Diaphramatic Surface</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Artery</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Artery</td>
+                                                                    <td class="text-right">1</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END: Card 2 -->
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="mt-5">Acknowledgements</h2>
+                        <p>The 3D Models were created by Kristen Browne for the 3D Printing and Biovisualization program operated by OCICB, NIAID. This research has been funded in part by the NIH Common Fund through the Office of Strategic Coordination/Office of the NIH Director under award OT2OD026671, by the NIDDK Kidney Precision Medicine Project grant U2CDK114886, and NIAID under BCBB Support Services Contract HHSN316201300006W/HHSN27200002to MSC, Inc; U.S.</p>
+                        <h2 class="mt-5">References</h2>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><a href="https://www.nlm.nih.gov/databases/download/vhp.html"
+                                    title="">Visible Human Project Data</a>. U.S. National Library of Medicine. Accessed
+                                on June 20, 2020.</li>
+                            <li>Börner K, Quardokus EM, Herr, II BW, Cross LE, Record EG, Ju Y, Bueckle A, Sluka JP, Silverstein J, Browne K, Jain S, Wasserfall CH, Jorgensen ML, Spraggins JM, Patterson NH, Weber GM. 2020. Conceptualization, Construction, and Usage of a Human Body Common Coordinate Framework. In preparation.</li>
+                        </ul>
+                        <div class="my-5">
+                            <p><small class="small mt-5">June 20, 2020</small></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- START: Modal Colon-M -->
+                <div class="modal fade mod-colon-m my-3 modal-viewer" tabindex="-1" role="dialog"
+                    aria-labelledby="modMaleColon" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header px-3 py-3">
+                                MALE: Colon
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <model-viewer reveal="interaction" id="view-colon-m"  loading="eager" class="model-viewer position-absolute" src="https://hubmapconsortium.github.io/hubmap-ontology/objects/VHM_Colon_Low.glb" alt="MALE: Colon (Visible Human Project)" autoplay="true" auto-rotate auto-rotate-delay="1000" camera-controls interaction-prompt="when-focused" exposure="0.2">
+                                <div class="lazy-load-poster" slot="poster"></div>
+                                    <div slot="poster" class="button-load position-absolute w-100 text-center"><svg class="button-load-icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path fill="#000000" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg></div>
+                                </model-viewer>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- END: Modal -->
+
+                <!-- START: Modal Colon-F -->
+                <div class="modal fade mod-colon-f my-3 modal-viewer" tabindex="-1" role="dialog"
+                    aria-labelledby="modFemaleColon" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header px-3 py-3">
+                                FEMALE: Colon
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <model-viewer reveal="interaction" id="view-colon-f"  loading="eager" class="model-viewer position-absolute" src="https://hubmapconsortium.github.io/hubmap-ontology/objects/VHF_Colon_Low.glb" alt="FEMALE: Colon (Visible Human Project)" autoplay="true" auto-rotate auto-rotate-delay="1000"  camera-controls interaction-prompt="when-focused" exposure="0.2">
+                                    <div class="lazy-load-poster" slot="poster"></div>
+                                    <div slot="poster" class="button-load position-absolute w-100 text-center"><svg class="button-load-icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path fill="#000000" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg></div>
+                                </model-viewer>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- END: Modal -->
+
+                <!-- START: Modal Heart-M -->
+                <div class="modal fade mod-heart-m my-3 modal-viewer" tabindex="-1" role="dialog"
+                    aria-labelledby="modMaleHeart" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header px-3 py-3">
+                                MALE: Heart
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <model-viewer reveal="interaction" id="view-heart-m"  loading="eager" class="model-viewer position-absolute" src="https://hubmapconsortium.github.io/hubmap-ontology/objects/VHM_Heart_Low.glb" alt="MALE: Heart (Visible Human Project)" autoplay="true" auto-rotate auto-rotate-delay="1000"  camera-controls interaction-prompt="when-focused" exposure="0.2">
+                                    <div class="lazy-load-poster" slot="poster"></div>
+                                    <div slot="poster" class="button-load position-absolute w-100 text-center"><svg class="button-load-icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path fill="#000000" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg></div>
+                                </model-viewer>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- END: Modal -->
+
+                <!-- START: Modal Heart-F -->
+                <div class="modal fade mod-heart-f my-3 modal-viewer" tabindex="-1" role="dialog"
+                    aria-labelledby="modFemaleHeart" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header px-3 py-3">
+                                FEMALE: Heart
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <model-viewer reveal="interaction" id="view-heart-f"  loading="eager" class="model-viewer position-absolute" src="https://hubmapconsortium.github.io/hubmap-ontology/objects/VHF_Heart_Low.glb" alt="FEMALE: Heart (Visible Human Project)" autoplay="true" auto-rotate auto-rotate-delay="1000"  camera-controls interaction-prompt="when-focused" exposure="0.2">
+                                    <div class="lazy-load-poster" slot="poster"></div>
+                                    <div slot="poster" class="button-load position-absolute w-100 text-center"><svg class="button-load-icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path fill="#000000" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg></div>
+                                </model-viewer>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- END: Modal -->
+
+                <!-- START: Modal Kidney-M-L -->
+                <div class="modal fade mod-kidney-m-l my-3 modal-viewer" tabindex="-1" role="dialog"
+                    aria-labelledby="modKidneyMaleLeft" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header px-3 py-3">
+                                MALE: Kidney, Left
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <model-viewer reveal="interaction" id="view-kidney-m-l"  loading="eager" class="model-viewer position-absolute" src="https://hubmapconsortium.github.io/hubmap-ontology/objects/VHM_Kidney_L_Low.glb" alt="MALE: Kidney, Left (Visible Human Project)" autoplay="true" auto-rotate auto-rotate-delay="1000"  camera-controls interaction-prompt="when-focused" exposure="0.2"><div class="lazy-load-poster" slot="poster"></div>
+                                    <div slot="poster" class="button-load position-absolute w-100 text-center"><svg class="button-load-icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path fill="#000000" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg></div>
+                                </model-viewer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Modal -->
+
+                <!-- START: Modal Kidney-M-R -->
+                <div class="modal fade mod-kidney-m-r my-3 modal-viewer" tabindex="-1" role="dialog"
+                    aria-labelledby="modKidneyMaleRight" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header px-3 py-3">
+                                MALE: Kidney, Left
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <model-viewer reveal="interaction" id="view-kidney-m-r"  loading="eager" class="model-viewer position-absolute" src="https://hubmapconsortium.github.io/hubmap-ontology/objects/VHM_Kidney_R_Low.glb" alt="MALE: Kidney, Left (Visible Human Project)" autoplay="false" auto-rotate auto-rotate-delay="1000"  camera-controls interaction-prompt="when-focused" exposure="0.2">
+                                    <div class="lazy-load-poster" slot="poster"></div>
+                                    <div slot="poster" class="button-load position-absolute w-100 text-center"><svg class="button-load-icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path fill="#000000" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg></div>
+                                </model-viewer>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- END: Modal -->
+
+                <!-- START: Modal Kidney-F-L -->
+                <div class="modal fade mod-kidney-f-l my-3 modal-viewer" tabindex="-1" role="dialog"
+                    aria-labelledby="modKidneyFemaleLeft" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header px-3 py-3">
+                                FEMALE: Kidney, Left
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <model-viewer reveal="interaction" id="view-kidney-f-l"  loading="eager" class="model-viewer position-absolute" src="https://hubmapconsortium.github.io/hubmap-ontology/objects/VHF_Kidney_L_Low.glb" alt="FEMALE: Kidney, Left (Visible Human Project)" autoplay="true" auto-rotate auto-rotate-delay="1000"  camera-controls interaction-prompt="when-focused" exposure="0.2">
+                                    <div class="lazy-load-poster" slot="poster"></div>
+                                    <div slot="poster" class="button-load position-absolute w-100 text-center"><svg class="button-load-icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path fill="#000000" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg></div>
+                                </model-viewer>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- END: Modal -->
+
+                <!-- START: Modal Kidney-F-R -->
+                <div class="modal fade mod-kidney-f-r my-3 modal-viewer" tabindex="-1" role="dialog"
+                    aria-labelledby="modKidneyFemaleRight" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header px-3 py-3">
+                                FEMALE: Kidney, Right
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <model-viewer reveal="interaction" id="view-kidney-f-r"  loading="eager" class="model-viewer position-absolute" src="https://hubmapconsortium.github.io/hubmap-ontology/objects/VHF_Kidney_R_Low.glb" alt="FEMALE: Kidney, Right (Visible Human Project)" autoplay="true" auto-rotate auto-rotate-delay="1000"  camera-controls interaction-prompt="when-focused" exposure="0.2">
+                                    <div class="lazy-load-poster" slot="poster"></div>
+                                    <div slot="poster" class="button-load position-absolute w-100 text-center"><svg class="button-load-icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path fill="#000000" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg></div>
+                                </model-viewer>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- END: Modal -->
+
+                <!-- START: Modal Spleen-M -->
+                <div class="modal fade mod-spleen-m my-3 modal-viewer" tabindex="-1" role="dialog"
+                    aria-labelledby="modMaleSpleen" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header px-3 py-3">
+                                MALE: Spleen
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <model-viewer reveal="interaction" id="view-spleen-m"  loading="eager" class="model-viewer position-absolute" src="https://hubmapconsortium.github.io/hubmap-ontology/objects/VHM_Spleen_Extraction_Sites_Low.glb" alt="MALE: Spleen (Visible Human Project)" autoplay="true" auto-rotate auto-rotate-delay="1000"  camera-controls interaction-prompt="when-focused" exposure="0.2">
+                                    <div class="lazy-load-poster" slot="poster"></div>
+                                    <div slot="poster" class="button-load position-absolute w-100 text-center"><svg class="button-load-icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path fill="#000000" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg></div>
+                                </model-viewer>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- END: Modal -->
+
+                <!-- START: Modal Spleen-F -->
+                <div class="modal fade mod-spleen-f my-3 modal-viewer" tabindex="-1" role="dialog"
+                    aria-labelledby="modFemaleSpleen" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header px-3 py-3">
+                                FEMALE: Spleen
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <model-viewer reveal="interaction" id="view-spleen-f"  loading="eager" class="model-viewer position-absolute" src="https://hubmapconsortium.github.io/hubmap-ontology/objects/VHF_Spleen_Extraction_Sites_Low.glb" alt="FEMALE: Spleen (Visible Human Project)" autoplay="true" auto-rotate auto-rotate-delay="1000"  camera-controls interaction-prompt="when-focused" exposure="0.2">
+                                    <div class="lazy-load-poster" slot="poster"></div>
+                                    <div slot="poster" class="button-load position-absolute w-100 text-center"><svg class="button-load-icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path fill="#000000" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg></div>
+                                </model-viewer>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- END: Modal -->
+
+            </div>
+            
+        </main>
+
+        <footer class="footer text-center"><a href="mailto:infoccf@indiana.edu" title="Email the MC-IU Team"><svg
+                    xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" class="ico-email align-top">
+                    <path class="fill-none" d="M0 0h24v24H0z" />
+                    <path class="fill-blue"
+                        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                </svg> MC-IU (infoccf@indiana.edu)</a></footer>
+
+        <small class="mt-3 mb-3 d-block">© <script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script> All Rights Reserved.</small>
+    </div>
+
+    <script src="../js/jquery-3.2.1.slim.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap-material-design.min.js"></script>
+
+</body>
+
+</html>
