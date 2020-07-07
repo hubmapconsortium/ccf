@@ -27,19 +27,90 @@
     <link href="../css/bootstrap-material-design.css" media="screen" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700&display=swap" rel="stylesheet">
     <link href="../css/cns.css" rel="stylesheet">
-    <style>
-        .modal-body-viewer-shim.vhm-kidney-left {
-            background-image: url("../img/poster-vhm-kidney-left.jpg");
-        }
-    </style>
+
 </head>
 
 <body>
-    <header class="navbar flex-column flex-md-row bd-navbar" style="align-items: flex-end;">
-        <!-- <div class="container"> -->
-            
+    <nav class="navbar navbar-expand-lg bg-dark bg-dark-gray-blue">
+        <a class="navbar-brand mr-0 mr-md-2" aria-label="CCF Portal"><svg id="logo-hubmap-ccf-portal"
+            data-name="logo-hubmap-ccf-portal" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 381 36">
+            <path class="fill-white" d="M22.09,1.19v34H13.25V20.91H10.6V35.19H1.76v-34H10.6V13.35h2.65V1.19Z" />
+            <path class="fill-white"
+                d="M44.81,7.32V35.19H36.18l.14-2.32A5.83,5.83,0,0,1,34.15,35a6.1,6.1,0,0,1-3,.71A6.67,6.67,0,0,1,28,35a4.41,4.41,0,0,1-1.86-1.79,6.3,6.3,0,0,1-.74-2.32q-.15-1.2-.15-4.8V7.32h8.48v19a20.13,20.13,0,0,0,.2,3.87c.13.4.49.61,1.08.61s1-.22,1.13-.64a25.76,25.76,0,0,0,.17-4.05V7.32Z" />
+            <path class="fill-white"
+                d="M48.1,1.19h8.82a23.36,23.36,0,0,1,6.33.65,6.3,6.3,0,0,1,3.48,2.64q1.32,2,1.32,6.39c0,2-.31,3.37-.94,4.15a6.52,6.52,0,0,1-3.68,1.8c2,.47,3.43,1.23,4.16,2.31a8.92,8.92,0,0,1,1.09,4.92V27.2a12.45,12.45,0,0,1-.79,5.11,4.26,4.26,0,0,1-2.51,2.27,26,26,0,0,1-7,.61H48.1ZM56.94,7v7.56c.38,0,.67,0,.88,0,.87,0,1.42-.22,1.66-.64a10.44,10.44,0,0,0,.36-3.67A5.77,5.77,0,0,0,59.54,8a1.39,1.39,0,0,0-.76-.81A6.77,6.77,0,0,0,56.94,7Zm0,12.85v9.51a3.73,3.73,0,0,0,2.38-.59,4.06,4.06,0,0,0,.52-2.58V23c0-1.46-.16-2.34-.46-2.65A4.21,4.21,0,0,0,56.94,19.86Z" />
+            <path class="fill-white"
+                d="M99.12,1.19v34H91.4V12.24L88.31,35.19H82.83L79.59,12.76V35.19H71.85v-34H83.29q.51,3.08,1,7.23l1.26,8.65,2-15.88Z" />
+            <path class="fill-white"
+                d="M118,1.19l5.06,34h-9l-.47-6.11h-3.16l-.54,6.11h-9.13l4.5-34Zm-4.68,21.86q-.67-5.78-1.35-14.28-1.35,9.77-1.7,14.28Z" />
+            <path class="fill-white"
+                d="M124.51,1.19h8.9a20.73,20.73,0,0,1,5.55.57,6.15,6.15,0,0,1,2.92,1.64A5.61,5.61,0,0,1,143.2,6a23.28,23.28,0,0,1,.35,4.71v3a12.31,12.31,0,0,1-.67,4.75,4.61,4.61,0,0,1-2.47,2.29,11.7,11.7,0,0,1-4.69.8h-2.37V35.19h-8.84ZM133.35,7v8.65l.65,0a2,2,0,0,0,1.69-.6,4.46,4.46,0,0,0,.47-2.49V9.8a3.25,3.25,0,0,0-.55-2.27A3.41,3.41,0,0,0,133.35,7Z" />
+            <path class="fill-white"
+                d="M185.31,11.68h-3.14a9.93,9.93,0,0,0-1.91-4.2,10.17,10.17,0,0,0-3.62-2.93,11.31,11.31,0,0,0-10.77.61,11.74,11.74,0,0,0-4.26,4.94,18.09,18.09,0,0,0-1.58,8,18.14,18.14,0,0,0,1.58,8A11.62,11.62,0,0,0,165.87,31a11.38,11.38,0,0,0,10.77.61,10.31,10.31,0,0,0,3.62-2.94,9.93,9.93,0,0,0,1.91-4.2h3.14a13.61,13.61,0,0,1-2.38,5.67,13.12,13.12,0,0,1-4.67,4,14.76,14.76,0,0,1-14.13-.68,14.62,14.62,0,0,1-5.23-6.11,21.31,21.31,0,0,1-1.9-9.29,21.32,21.32,0,0,1,1.9-9.3,14.65,14.65,0,0,1,5.23-6.1A14.76,14.76,0,0,1,178.26,2a13.12,13.12,0,0,1,4.67,4A13.5,13.5,0,0,1,185.31,11.68Z" />
+            <path class="fill-white"
+                d="M218.25,11.68h-3.14a9.93,9.93,0,0,0-1.91-4.2,10.17,10.17,0,0,0-3.62-2.93,11.31,11.31,0,0,0-10.77.61,11.74,11.74,0,0,0-4.26,4.94,18.09,18.09,0,0,0-1.59,8,18.14,18.14,0,0,0,1.59,8A11.62,11.62,0,0,0,198.81,31a11.38,11.38,0,0,0,10.77.61,10.31,10.31,0,0,0,3.62-2.94,9.93,9.93,0,0,0,1.91-4.2h3.14a13.61,13.61,0,0,1-2.38,5.67,13.12,13.12,0,0,1-4.67,4,14.76,14.76,0,0,1-14.13-.68,14.55,14.55,0,0,1-5.23-6.11,21.31,21.31,0,0,1-1.9-9.29,21.32,21.32,0,0,1,1.9-9.3,14.58,14.58,0,0,1,5.23-6.1A14.76,14.76,0,0,1,211.2,2a13.12,13.12,0,0,1,4.67,4A13.5,13.5,0,0,1,218.25,11.68Z" />
+            <path class="fill-white" d="M224.42,35.18V1H244.2V3.8H227.54V16.67h15.1v2.81h-15.1v15.7Z" />
+            <path class="fill-white"
+                d="M262.84,35.18V1h11A12.19,12.19,0,0,1,280,2.39a9.19,9.19,0,0,1,3.69,3.78,11.61,11.61,0,0,1,1.23,5.38,11.61,11.61,0,0,1-1.23,5.38A9.13,9.13,0,0,1,280,20.72a12,12,0,0,1-6.06,1.39h-8V35.18ZM266,19.31h7.88c2.68,0,4.68-.74,6-2.2a8,8,0,0,0,2-5.56,7.93,7.93,0,0,0-2-5.56q-2-2.19-6-2.19H266Z" />
+            <path class="fill-white"
+                d="M300.14,35.72A10.42,10.42,0,0,1,294.27,34a11.44,11.44,0,0,1-4-4.66,15.69,15.69,0,0,1-1.43-6.89,15.8,15.8,0,0,1,1.43-6.93,11.41,11.41,0,0,1,4-4.67,11,11,0,0,1,11.74,0,11.41,11.41,0,0,1,4,4.67,16,16,0,0,1,1.43,6.93A15.83,15.83,0,0,1,310,29.37,11.44,11.44,0,0,1,306,34,10.44,10.44,0,0,1,300.14,35.72Zm0-2.73a7.09,7.09,0,0,0,4.51-1.43,9.09,9.09,0,0,0,2.82-3.82,14,14,0,0,0,1-5.26,14.08,14.08,0,0,0-1-5.27,9.16,9.16,0,0,0-2.82-3.86,7.74,7.74,0,0,0-9,0,9.16,9.16,0,0,0-2.82,3.86,14.08,14.08,0,0,0-1,5.27,14,14,0,0,0,1,5.26,9.09,9.09,0,0,0,2.82,3.82A7.13,7.13,0,0,0,300.14,33Z" />
+            <path class="fill-white"
+                d="M316.77,35.18V9.55h2.89v3.93h.22a6.59,6.59,0,0,1,2.68-3.13,8,8,0,0,1,4.33-1.19l.82,0,.75,0v3l-.71-.1a9,9,0,0,0-1.08-.06,6.9,6.9,0,0,0-5,1.85,6.18,6.18,0,0,0-2,4.71V35.18Z" />
+            <path class="fill-white"
+                d="M344.05,9.55v2.58h-5.42V28.49c0,1.61.39,2.71,1.18,3.3a4.4,4.4,0,0,0,2.69.87,5.79,5.79,0,0,0,1-.07c.28-.05.53-.11.74-.16l.63,2.69a6.68,6.68,0,0,1-1.06.3,7.12,7.12,0,0,1-1.58.14,7.24,7.24,0,0,1-3.15-.71,5.93,5.93,0,0,1-3.44-5.66V12.13h-3.82V9.55h3.82V3.4h3V9.55Z" />
+            <path class="fill-white"
+                d="M356.78,35.77a9.89,9.89,0,0,1-4.24-.91,7.32,7.32,0,0,1-3.05-2.64,7.45,7.45,0,0,1-1.14-4.2,6.11,6.11,0,0,1,1.25-4,7.68,7.68,0,0,1,3.48-2.26,25.06,25.06,0,0,1,5.12-1.12c2.16-.27,3.82-.51,5-.73s1.74-.8,1.74-1.77v-.6a5.47,5.47,0,0,0-1.56-4.14,6.22,6.22,0,0,0-4.48-1.5,7.76,7.76,0,0,0-4.52,1.21A6.81,6.81,0,0,0,351.91,16l-2.82-1a8.4,8.4,0,0,1,2.4-3.37,9.74,9.74,0,0,1,3.44-1.82,13.69,13.69,0,0,1,3.85-.56,12.84,12.84,0,0,1,3.06.39,8.76,8.76,0,0,1,3,1.33A6.83,6.83,0,0,1,367,13.52a9.29,9.29,0,0,1,.85,4.25V35.18h-3V31.13h-.18A8.79,8.79,0,0,1,362,34.3,8.46,8.46,0,0,1,356.78,35.77Zm.4-2.72a7.8,7.8,0,0,0,4.11-1A7.11,7.11,0,0,0,364,29.21a8,8,0,0,0,.94-3.86v-3.7a3.83,3.83,0,0,1-1.64.72,22.37,22.37,0,0,1-2.61.51l-2.46.34a12.7,12.7,0,0,0-5.07,1.5,3.74,3.74,0,0,0-1.81,3.43A4.31,4.31,0,0,0,353,31.76,6.66,6.66,0,0,0,357.18,33.05Z" />
+            <path class="fill-white" d="M377.57,1V35.18h-3V1Z" />
+        </svg></a>
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarMain">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home<div class="ripple-container"></div></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ccf-anatomical-structures.html">CCF Anatomical Structures, Cell Types and Biomarkers (ASCT+B) Tables</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ccf-ontology.html">CCF Ontology</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ccf-3d-reference-library.html">CCF 3D Object Library</a>
+            </li>
+           
+          </ul>
+        </div> -->
+        <!-- <ul class="mr-auto list-unstyled mb-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Menu
+              </a>
+              <div class="dropdown-menu menu-left" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item active" href="../index.html">Home<div class="ripple-container"></div></a>
+                <a class="dropdown-item" href="ccf-anatomical-structures.html">CCF Anatomical Structures, Cell Types and Biomarkers (ASCT+B) Tables</a>
+                <a class="dropdown-item" href="ccf-ontology.html">CCF Ontology</a>
+                <a class="dropdown-item" href="ccf-3d-reference-library.html">CCF 3D Object Library</a>
+              </div>
+            </li>
+          </ul> -->
+          <div class="dropdown">
+            <a class="dropdown-toggle mr-2" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Menu
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <a class="dropdown-item" type="button">Action</a>
+              <a class="dropdown-item" type="button">Another action</a>
+              <a class="dropdown-item" type="button">Something else here</a>
+            </div>
+          </div>
+      </nav>
+    <!-- <header class="navbar flex-column flex-md-row bd-navbar" style="align-items: flex-end;">
+
                 <div class="nav-item dropdown show text-right main-menu">
-                    <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="main-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                       Menu
                     <div class="ripple-container"></div></a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="bd-versions" style="top: 48px;">
@@ -49,8 +120,8 @@
                       <a class="dropdown-item" href="ccf-3d-reference-library.html">CCF 3D Object Library</a>
                     </div>
                 </div>
-        <!-- </div> -->
-    </header>
+
+    </header> -->
     <div class="container">
         <main class="col-12 px-sm-3 py-sm-3 px-md-4 py-md-4 px-xl-5 py-xl-5 bd-content mt-4" role="main">
             <div class="px-md-5 py-md-5">
