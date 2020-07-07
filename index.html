@@ -60,17 +60,19 @@
                         d="M356.78,35.77a9.89,9.89,0,0,1-4.24-.91,7.32,7.32,0,0,1-3.05-2.64,7.45,7.45,0,0,1-1.14-4.2,6.11,6.11,0,0,1,1.25-4,7.68,7.68,0,0,1,3.48-2.26,25.06,25.06,0,0,1,5.12-1.12c2.16-.27,3.82-.51,5-.73s1.74-.8,1.74-1.77v-.6a5.47,5.47,0,0,0-1.56-4.14,6.22,6.22,0,0,0-4.48-1.5,7.76,7.76,0,0,0-4.52,1.21A6.81,6.81,0,0,0,351.91,16l-2.82-1a8.4,8.4,0,0,1,2.4-3.37,9.74,9.74,0,0,1,3.44-1.82,13.69,13.69,0,0,1,3.85-.56,12.84,12.84,0,0,1,3.06.39,8.76,8.76,0,0,1,3,1.33A6.83,6.83,0,0,1,367,13.52a9.29,9.29,0,0,1,.85,4.25V35.18h-3V31.13h-.18A8.79,8.79,0,0,1,362,34.3,8.46,8.46,0,0,1,356.78,35.77Zm.4-2.72a7.8,7.8,0,0,0,4.11-1A7.11,7.11,0,0,0,364,29.21a8,8,0,0,0,.94-3.86v-3.7a3.83,3.83,0,0,1-1.64.72,22.37,22.37,0,0,1-2.61.51l-2.46.34a12.7,12.7,0,0,0-5.07,1.5,3.74,3.74,0,0,0-1.81,3.43A4.31,4.31,0,0,0,353,31.76,6.66,6.66,0,0,0,357.18,33.05Z" />
                     <path class="fill-white" d="M377.57,1V35.18h-3V1Z" />
                 </svg></a>
-                <div class="nav-item dropdown show text-right main-menu">
-                    <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                      Menu
-                    <div class="ripple-container"></div></a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="bd-versions" style="top: 48px;">
-                      <a class="dropdown-item active" href="index.html">Home<div class="ripple-container"></div></a>
-                      <a class="dropdown-item" href="pages/ccf-anatomical-structures.html">CCF Anatomical Structures, Cell Types and Biomarkers (ASCT+B) Tables</a>
-                      <a class="dropdown-item" href="pages/ccf-ontology.html">CCF Ontology</a>
-                      <a class="dropdown-item" href="pages/ccf-3d-reference-library.html">CCF 3D Object Library</a>
-                    </div>
+            <div class="dropdown">
+                <a class="dropdown-toggle d-block py-2" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    Menu
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
+                    <a class="dropdown-item" href="/">Home</a>
+                    <a class="dropdown-item" href="pages/ccf-anatomical-structures.html">CCF Anatomical Structures, Cell
+                        Types and Biomarkers (ASCT+B) Tables</a>
+                    <a class="dropdown-item" href="pages/ccf-ontology.html">CCF Ontology</a>
+                    <a class="dropdown-item" href="pages/ccf-3d-reference-library.html">CCF 3D Object Library</a>
                 </div>
+            </div>
         </div>
     </header>
     <div class="container">
@@ -83,101 +85,253 @@
                         <h1 class="row"><span class="col-12 col-sm-2 text-center"><img
                                     style="max-width: 140px; width: 100%; max-height: 140px; height: auto; margin-bottom: 1rem;"
                                     src="img/logo-hubmap-body-color.svg" alt="HuBMAP Body" /></span><span
-                                class="col-sm-10">The Human Body Atlas: High-Resolution, Functional Mapping of Voxel,
+                                class="col-sm-10">The Human Body Atlas: High-Resolution, Functional Mapping of
+                                Voxel,
                                 Vector, and Meta Datasets <br><strong class="lead">MC-IU team within the HuBMAP
                                     HIVE</strong></span></h1>
 
-                        <p class="mt-5">The ultimate goal of the HIVE Mapping effort is to develop a common coordinate
-                            framework (CCF) for the healthy human body. This framework will support cataloging different
-                            types of individual cells, understanding the functions of and relationships between those
-                            cell types, and modeling their individual and collective function. During the initial two
-                            years of HuBMAP, the MC-IU team has built many elements of the CCF. We have led the design
-                            of ASCT+B Tables and implemented a CCF Ontology. We have collaborated with NIAID at NIH on
+                        <p class="mt-5">The ultimate goal of the HIVE Mapping effort is to develop a common
+                            coordinate
+                            framework (CCF) for the healthy human body. This framework will support cataloging
+                            different
+                            types of individual cells, understanding the functions of and relationships between
+                            those
+                            cell types, and modeling their individual and collective function. During the initial
+                            two
+                            years of HuBMAP, the MC-IU team has built many elements of the CCF. We have led the
+                            design
+                            of ASCT+B Tables and implemented a CCF Ontology. We have collaborated with NIAID at NIH
+                            on
                             the design of a 3D Object Library. Lastly, we have developed two interactive user
                             interfaces. One supports CCF data registration. The other supports exploration of
-                            semantically and spatially explicit data—from the whole body to the single cell level. For
-                            an introduction to HuBMAP goals, data, and code visit the Visible Human MOOC (VHMOOC).</p>
-                        <h2 class="mt-5 mb-3">Data and Code Published with 1st HuBMAP Portal Release in June 2020</h2>
+                            semantically and spatially explicit data—from the whole body to the single cell level.
+                            For
+                            an introduction to HuBMAP goals, data, and code visit the Visible Human MOOC (VHMOOC).
+                        </p>
+                        <h2 class="mt-5 mb-3">Data and Code Published with 1st HuBMAP Portal Release in June 2020
+                        </h2>
                         <div class="row h-cards">
                             <div class="col-12 col-md-6 mb-3">
                                 <a href="pages/ccf-anatomical-structures.html">
-                                <div class="card h-100 card-dark-orange h-card">
-                                    <div class="row no-gutters h-100">
-                                        <div class="col-3 col-lg-2 bg-dark-orange align-middle text-center px-1 py-1">
-                                            <svg id="ico-ccf" data-name="ico-ccf" class="w-100 h-100" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 72 72"><rect class="fill-dark-orange" width="72" height="72"/><rect class="fill-white" x="8" y="16.25" width="8" height="9"/><rect class="fill-white" x="8" y="28.5" width="8" height="3"/><rect class="fill-white" x="19.2" y="16.25" width="12.8" height="9"/><rect class="fill-white" x="35.2" y="16.25" width="12.8" height="9"/><rect class="fill-white" x="51.2" y="16.25" width="12.8" height="9"/><rect class="fill-white" x="19.2" y="28.5" width="12.8" height="3"/><rect class="fill-white" x="35.2" y="28.5" width="12.8" height="3"/><rect class="fill-white" x="51.2" y="28.5" width="12.8" height="3"/><rect class="fill-white" x="8" y="34.5" width="8" height="3"/><rect class="fill-white" x="19.2" y="34.5" width="12.8" height="3"/><rect class="fill-white" x="35.2" y="34.5" width="12.8" height="3"/><rect class="fill-white" x="51.2" y="34.5" width="12.8" height="3"/><rect class="fill-white" x="8" y="40.5" width="8" height="3"/><rect class="fill-white" x="19.2" y="40.5" width="12.8" height="3"/><rect class="fill-white" x="35.2" y="40.5" width="12.8" height="3"/><rect class="fill-white" x="51.2" y="40.5" width="12.8" height="3"/><rect class="fill-white" x="8" y="46.5" width="8" height="3"/><rect class="fill-white" x="19.2" y="46.5" width="12.8" height="3"/><rect class="fill-white" x="35.2" y="46.5" width="12.8" height="3"/><rect class="fill-white" x="51.2" y="46.5" width="12.8" height="3"/><rect class="fill-white" x="8" y="52.5" width="8" height="3"/><rect class="fill-white" x="19.2" y="52.5" width="12.8" height="3"/><rect class="fill-white" x="35.2" y="52.5" width="12.8" height="3"/><rect class="fill-white" x="51.2" y="52.5" width="12.8" height="3"/></svg>
-                                        </div>
-                                        <div class="col-9 col-lg-10">
-                                            <div class="card-body">
-                                                <p class="card-title">CCF Anatomical Structures, Cell Types and
-                                                    Biomarkers (ASCT+B) Tables</p>
+                                    <div class="card h-100 card-dark-orange h-card">
+                                        <div class="row no-gutters h-100">
+                                            <div
+                                                class="col-3 col-lg-2 bg-dark-orange align-middle text-center px-1 py-1">
+                                                <svg id="ico-ccf" data-name="ico-ccf" class="w-100 h-100"
+                                                    xmlns="http://www.w3.org/2000/svg" viewbox="0 0 72 72">
+                                                    <rect class="fill-dark-orange" width="72" height="72" />
+                                                    <rect class="fill-white" x="8" y="16.25" width="8" height="9" />
+                                                    <rect class="fill-white" x="8" y="28.5" width="8" height="3" />
+                                                    <rect class="fill-white" x="19.2" y="16.25" width="12.8"
+                                                        height="9" />
+                                                    <rect class="fill-white" x="35.2" y="16.25" width="12.8"
+                                                        height="9" />
+                                                    <rect class="fill-white" x="51.2" y="16.25" width="12.8"
+                                                        height="9" />
+                                                    <rect class="fill-white" x="19.2" y="28.5" width="12.8"
+                                                        height="3" />
+                                                    <rect class="fill-white" x="35.2" y="28.5" width="12.8"
+                                                        height="3" />
+                                                    <rect class="fill-white" x="51.2" y="28.5" width="12.8"
+                                                        height="3" />
+                                                    <rect class="fill-white" x="8" y="34.5" width="8" height="3" />
+                                                    <rect class="fill-white" x="19.2" y="34.5" width="12.8"
+                                                        height="3" />
+                                                    <rect class="fill-white" x="35.2" y="34.5" width="12.8"
+                                                        height="3" />
+                                                    <rect class="fill-white" x="51.2" y="34.5" width="12.8"
+                                                        height="3" />
+                                                    <rect class="fill-white" x="8" y="40.5" width="8" height="3" />
+                                                    <rect class="fill-white" x="19.2" y="40.5" width="12.8"
+                                                        height="3" />
+                                                    <rect class="fill-white" x="35.2" y="40.5" width="12.8"
+                                                        height="3" />
+                                                    <rect class="fill-white" x="51.2" y="40.5" width="12.8"
+                                                        height="3" />
+                                                    <rect class="fill-white" x="8" y="46.5" width="8" height="3" />
+                                                    <rect class="fill-white" x="19.2" y="46.5" width="12.8"
+                                                        height="3" />
+                                                    <rect class="fill-white" x="35.2" y="46.5" width="12.8"
+                                                        height="3" />
+                                                    <rect class="fill-white" x="51.2" y="46.5" width="12.8"
+                                                        height="3" />
+                                                    <rect class="fill-white" x="8" y="52.5" width="8" height="3" />
+                                                    <rect class="fill-white" x="19.2" y="52.5" width="12.8"
+                                                        height="3" />
+                                                    <rect class="fill-white" x="35.2" y="52.5" width="12.8"
+                                                        height="3" />
+                                                    <rect class="fill-white" x="51.2" y="52.5" width="12.8"
+                                                        height="3" /></svg>
+                                            </div>
+                                            <div class="col-9 col-lg-10">
+                                                <div class="card-body">
+                                                    <p class="card-title">CCF Anatomical Structures, Cell Types and
+                                                        Biomarkers (ASCT+B) Tables</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
                                 </a>
                             </div>
                             <div class="col-12 col-md-6 mb-3">
                                 <a href="pages/ccf-ontology.html" title="Link to CCF Ontology page">
-                                <div class="card h-100 card-dark-pink h-card">
-                                    <div class="row no-gutters h-100">
-                                        <div class="col-3 col-lg-2 bg-dark-pink align-middle text-center px-1 py-1">
-                                            <svg id="ico-ontology" class="w-100 h-100" data-name="ico-ontology" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 72 72"><rect class="fill-white" x="15" y="17" width="35" height="3"/><circle class="fill-white" cx="10.5" cy="18.5" r="1.5"/><rect class="fill-white" x="21.38" y="24" width="35" height="3"/><circle class="fill-white" cx="16.88" cy="25.5" r="1.5"/><rect class="fill-white" x="21.38" y="31" width="35" height="3"/><circle class="fill-white" cx="16.88" cy="32.5" r="1.5"/><rect class="fill-white" x="21.38" y="38" width="35" height="3"/><circle class="fill-white" cx="16.88" cy="39.5" r="1.5"/><rect class="fill-white" x="27.03" y="45" width="35" height="3"/><circle class="fill-white" cx="22.5" cy="46.5" r="1.5"/><rect class="fill-white" x="15" y="52" width="35" height="3"/><circle class="fill-white" cx="10.5" cy="53.5" r="1.5"/></svg>
-                                        </div>
-                                        <div class="col-9 col-lg-10">
-                                            <div class="card-body">
-                                                <p class="card-title">CCF Ontology</p>
+                                    <div class="card h-100 card-dark-pink h-card">
+                                        <div class="row no-gutters h-100">
+                                            <div class="col-3 col-lg-2 bg-dark-pink align-middle text-center px-1 py-1">
+                                                <svg id="ico-ontology" class="w-100 h-100" data-name="ico-ontology"
+                                                    xmlns="http://www.w3.org/2000/svg" viewbox="0 0 72 72">
+                                                    <rect class="fill-white" x="15" y="17" width="35" height="3" />
+                                                    <circle class="fill-white" cx="10.5" cy="18.5" r="1.5" />
+                                                    <rect class="fill-white" x="21.38" y="24" width="35" height="3" />
+                                                    <circle class="fill-white" cx="16.88" cy="25.5" r="1.5" />
+                                                    <rect class="fill-white" x="21.38" y="31" width="35" height="3" />
+                                                    <circle class="fill-white" cx="16.88" cy="32.5" r="1.5" />
+                                                    <rect class="fill-white" x="21.38" y="38" width="35" height="3" />
+                                                    <circle class="fill-white" cx="16.88" cy="39.5" r="1.5" />
+                                                    <rect class="fill-white" x="27.03" y="45" width="35" height="3" />
+                                                    <circle class="fill-white" cx="22.5" cy="46.5" r="1.5" />
+                                                    <rect class="fill-white" x="15" y="52" width="35" height="3" />
+                                                    <circle class="fill-white" cx="10.5" cy="53.5" r="1.5" /></svg>
+                                            </div>
+                                            <div class="col-9 col-lg-10">
+                                                <div class="card-body">
+                                                    <p class="card-title">CCF Ontology</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
                                 </a>
                             </div>
                             <div class="col-12 col-md-6 mb-3">
-                                <a href="pages/ccf-3d-reference-library.html" title="Link to CCF Reference Object Library page">
+                                <a href="pages/ccf-3d-reference-library.html"
+                                    title="Link to CCF Reference Object Library page">
                                     <div class="card h-100 card-dark-green h-card">
                                         <div class="row no-gutters h-100">
-                                            <div class="col-3 col-lg-2 bg-dark-green align-middle text-center px-1 py-1">
-                                            <svg id="ico-3d-library" data-name="ico-3d-library" class="w-100 h-100" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 72 72"><rect class="fill-dark-green" width="72" height="72"/><polygon class="fill-white" points="56.61 50.75 52.61 47.75 52.61 52.25 22.37 52.25 36.14 44.3 38.39 48.19 40.36 43.6 42.32 39 37.36 38.4 32.39 37.8 34.64 41.7 19.43 50.48 19.43 20.25 24 20.25 21 16.25 18 12.25 15 16.25 12 20.25 16.57 20.25 16.57 55.25 16.61 55.25 19.43 55.25 52.61 55.25 52.61 59.75 56.61 56.75 60.61 53.75 56.61 50.75"/></svg>
-                                        </div>
-                                        <div class="col-9 col-lg-10">
-                                            <div class="card-body">
-                                                <p class="card-title">CCF 3D Object Library</p>
+                                            <div
+                                                class="col-3 col-lg-2 bg-dark-green align-middle text-center px-1 py-1">
+                                                <svg id="ico-3d-library" data-name="ico-3d-library" class="w-100 h-100"
+                                                    xmlns="http://www.w3.org/2000/svg" viewbox="0 0 72 72">
+                                                    <rect class="fill-dark-green" width="72" height="72" />
+                                                    <polygon class="fill-white"
+                                                        points="56.61 50.75 52.61 47.75 52.61 52.25 22.37 52.25 36.14 44.3 38.39 48.19 40.36 43.6 42.32 39 37.36 38.4 32.39 37.8 34.64 41.7 19.43 50.48 19.43 20.25 24 20.25 21 16.25 18 12.25 15 16.25 12 20.25 16.57 20.25 16.57 55.25 16.61 55.25 19.43 55.25 52.61 55.25 52.61 59.75 56.61 56.75 60.61 53.75 56.61 50.75" />
+                                                </svg>
+                                            </div>
+                                            <div class="col-9 col-lg-10">
+                                                <div class="card-body">
+                                                    <p class="card-title">CCF 3D Object Library</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
                                 </a>
                             </div>
                             <div class="col-12 col-md-6 mb-3">
-                                <a href="https://expand.iu.edu/browse/sice/cns/courses/hubmap-visible-human-mooc" title="Link to the Visible Human MOOC (VHMOOC) for learing about the HuBMAP CCF">
+                                <a href="https://expand.iu.edu/browse/sice/cns/courses/hubmap-visible-human-mooc"
+                                    title="Link to the Visible Human MOOC (VHMOOC) for learing about the HuBMAP CCF">
                                     <div class="card h-100 card-dark-teal h-card">
                                         <div class="row no-gutters h-100">
                                             <div class="col-3 col-lg-2 bg-dark-teal align-middle text-center px-1 py-1">
-                                            <svg id="ico-vhmooc" data-name="ico-vhmooc" class="w-100 h-100" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 72 72"><defs><style>.fill-dark-teal{fill:#275f54;}.ico-vhmooc-2,.ico-vhmooc-3,.ico-vhmooc-4{fill:none;stroke:#fff;stroke-miterlimit:10;}.ico-vhmooc-2,.ico-vhmooc-3{stroke-width:2px;}.ico-vhmooc-3{stroke-linecap:round;}</style></defs><rect class="fill-dark-teal" width="72" height="72"/><path class="ico-vhmooc-2" d="M33.64,53.71V14.77a5.88,5.88,0,0,0-3.25-2.17c-2.16-.54-4.33.54-5.41,1.08s-1.08,2.17-1.08,2.17a6.88,6.88,0,0,0-4.33,1.62c-1.62,1.62,0,4.87,0,4.87s-2.16,0-4.32,2.7A5.86,5.86,0,0,0,14.7,31,6,6,0,0,0,12,35.86a4.69,4.69,0,0,0,2.16,4.33,8.67,8.67,0,0,0-1.08,5.41c.54,2.7,4.33,4.33,4.33,4.33s-.54,2.7,1.08,4.32A15,15,0,0,0,22.82,57s3.78,4.87,7.57,2.16S33.64,53.71,33.64,53.71Z"/><path class="ico-vhmooc-3" d="M27.42,28.56s-.54-3.25-2.17-4.87-5.94-1.33-5.94-1.33"/><path class="ico-vhmooc-3" d="M14.16,40.19a6.37,6.37,0,0,0,5.68.27"/><path class="ico-vhmooc-3" d="M29.31,40.73s-3.25-.54-4.87,1.62-1.08,5.95-1.08,5.95"/><path class="ico-vhmooc-3" d="M19.08,32.34s1.41,3,4.12,3.07,5.5-2.52,5.5-2.52"/><path class="ico-vhmooc-3" d="M25,15.85a4.25,4.25,0,0,1,2.71,1.08,3.34,3.34,0,0,1,1.08,2.16"/><polyline class="ico-vhmooc-2" points="41.33 33.97 38.34 33.97 38.34 21.03 38.34 14.77 42.67 12.06 44.88 13.84 45.58 14.38"/><line class="ico-vhmooc-2" x1="38.61" y1="21.92" x2="40.48" y2="21.94"/><circle class="ico-vhmooc-4" cx="47.59" cy="15.31" r="2.22"/><circle class="ico-vhmooc-4" cx="42.53" cy="21.64" r="2.22"/><circle class="ico-vhmooc-4" cx="42.8" cy="40.62" r="2.22"/><circle class="ico-vhmooc-4" cx="44.35" cy="51.82" r="2.22"/><circle class="ico-vhmooc-4" cx="51.92" cy="52.09" r="2.22"/><circle class="ico-vhmooc-4" cx="56.98" cy="42.35" r="2.22"/><circle class="ico-vhmooc-4" cx="48.44" cy="45.8" r="2.22"/><circle class="ico-vhmooc-4" cx="43.27" cy="34.24" r="2.22"/><circle class="ico-vhmooc-4" cx="45.97" cy="28.29" r="2.22"/><circle class="ico-vhmooc-4" cx="51.77" cy="20.22" r="2.22"/><circle class="ico-vhmooc-4" cx="55.36" cy="26.51" r="2.22"/><circle class="ico-vhmooc-4" cx="57.76" cy="34.7" r="2.22"/><circle class="ico-vhmooc-4" cx="50.21" cy="38.7" r="2.22"/><circle class="ico-vhmooc-4" cx="50.84" cy="32.08" r="2.22"/><line class="ico-vhmooc-2" x1="45.1" y1="57.77" x2="44.66" y2="53.94"/><polyline class="ico-vhmooc-2" points="47.24 26.51 50.2 22.43 51.69 22.93 53.76 25.38"/><line class="ico-vhmooc-2" x1="51.99" y1="37.81" x2="55.54" y2="35.77"/><polyline class="ico-vhmooc-2" points="40.45 40.47 38.34 40.47 38.34 54.79 42.4 59.39 48.08 57.5 50.5 53.93"/><polyline class="ico-vhmooc-2" points="56.43 44.02 55.65 47.22 50.73 46.4"/><line class="ico-vhmooc-2" x1="52.97" y1="33.05" x2="55.54" y2="34.26"/></svg>
-                                        </div>
-                                        <div class="col-9 col-lg-10">
-                                            <div class="card-body">
-                                                <p class="card-title">Visible Human MOOC (VHMOOC)</p>
+                                                <svg id="ico-vhmooc" data-name="ico-vhmooc" class="w-100 h-100"
+                                                    xmlns="http://www.w3.org/2000/svg" viewbox="0 0 72 72">
+                                                    <defs>
+                                                        <style>
+                                                            .fill-dark-teal {
+                                                                fill: #275f54;
+                                                            }
+
+                                                            .ico-vhmooc-2,
+                                                            .ico-vhmooc-3,
+                                                            .ico-vhmooc-4 {
+                                                                fill: none;
+                                                                stroke: #fff;
+                                                                stroke-miterlimit: 10;
+                                                            }
+
+                                                            .ico-vhmooc-2,
+                                                            .ico-vhmooc-3 {
+                                                                stroke-width: 2px;
+                                                            }
+
+                                                            .ico-vhmooc-3 {
+                                                                stroke-linecap: round;
+                                                            }
+                                                        </style>
+                                                    </defs>
+                                                    <rect class="fill-dark-teal" width="72" height="72" />
+                                                    <path class="ico-vhmooc-2"
+                                                        d="M33.64,53.71V14.77a5.88,5.88,0,0,0-3.25-2.17c-2.16-.54-4.33.54-5.41,1.08s-1.08,2.17-1.08,2.17a6.88,6.88,0,0,0-4.33,1.62c-1.62,1.62,0,4.87,0,4.87s-2.16,0-4.32,2.7A5.86,5.86,0,0,0,14.7,31,6,6,0,0,0,12,35.86a4.69,4.69,0,0,0,2.16,4.33,8.67,8.67,0,0,0-1.08,5.41c.54,2.7,4.33,4.33,4.33,4.33s-.54,2.7,1.08,4.32A15,15,0,0,0,22.82,57s3.78,4.87,7.57,2.16S33.64,53.71,33.64,53.71Z" />
+                                                    <path class="ico-vhmooc-3"
+                                                        d="M27.42,28.56s-.54-3.25-2.17-4.87-5.94-1.33-5.94-1.33" />
+                                                    <path class="ico-vhmooc-3"
+                                                        d="M14.16,40.19a6.37,6.37,0,0,0,5.68.27" />
+                                                    <path class="ico-vhmooc-3"
+                                                        d="M29.31,40.73s-3.25-.54-4.87,1.62-1.08,5.95-1.08,5.95" />
+                                                    <path class="ico-vhmooc-3"
+                                                        d="M19.08,32.34s1.41,3,4.12,3.07,5.5-2.52,5.5-2.52" />
+                                                    <path class="ico-vhmooc-3"
+                                                        d="M25,15.85a4.25,4.25,0,0,1,2.71,1.08,3.34,3.34,0,0,1,1.08,2.16" />
+                                                    <polyline class="ico-vhmooc-2"
+                                                        points="41.33 33.97 38.34 33.97 38.34 21.03 38.34 14.77 42.67 12.06 44.88 13.84 45.58 14.38" />
+                                                    <line class="ico-vhmooc-2" x1="38.61" y1="21.92" x2="40.48"
+                                                        y2="21.94" />
+                                                    <circle class="ico-vhmooc-4" cx="47.59" cy="15.31" r="2.22" />
+                                                    <circle class="ico-vhmooc-4" cx="42.53" cy="21.64" r="2.22" />
+                                                    <circle class="ico-vhmooc-4" cx="42.8" cy="40.62" r="2.22" />
+                                                    <circle class="ico-vhmooc-4" cx="44.35" cy="51.82" r="2.22" />
+                                                    <circle class="ico-vhmooc-4" cx="51.92" cy="52.09" r="2.22" />
+                                                    <circle class="ico-vhmooc-4" cx="56.98" cy="42.35" r="2.22" />
+                                                    <circle class="ico-vhmooc-4" cx="48.44" cy="45.8" r="2.22" />
+                                                    <circle class="ico-vhmooc-4" cx="43.27" cy="34.24" r="2.22" />
+                                                    <circle class="ico-vhmooc-4" cx="45.97" cy="28.29" r="2.22" />
+                                                    <circle class="ico-vhmooc-4" cx="51.77" cy="20.22" r="2.22" />
+                                                    <circle class="ico-vhmooc-4" cx="55.36" cy="26.51" r="2.22" />
+                                                    <circle class="ico-vhmooc-4" cx="57.76" cy="34.7" r="2.22" />
+                                                    <circle class="ico-vhmooc-4" cx="50.21" cy="38.7" r="2.22" />
+                                                    <circle class="ico-vhmooc-4" cx="50.84" cy="32.08" r="2.22" />
+                                                    <line class="ico-vhmooc-2" x1="45.1" y1="57.77" x2="44.66"
+                                                        y2="53.94" />
+                                                    <polyline class="ico-vhmooc-2"
+                                                        points="47.24 26.51 50.2 22.43 51.69 22.93 53.76 25.38" />
+                                                    <line class="ico-vhmooc-2" x1="51.99" y1="37.81" x2="55.54"
+                                                        y2="35.77" />
+                                                    <polyline class="ico-vhmooc-2"
+                                                        points="40.45 40.47 38.34 40.47 38.34 54.79 42.4 59.39 48.08 57.5 50.5 53.93" />
+                                                    <polyline class="ico-vhmooc-2"
+                                                        points="56.43 44.02 55.65 47.22 50.73 46.4" />
+                                                    <line class="ico-vhmooc-2" x1="52.97" y1="33.05" x2="55.54"
+                                                        y2="34.26" />
+                                                </svg>
+                                            </div>
+                                            <div class="col-9 col-lg-10">
+                                                <div class="card-body">
+                                                    <p class="card-title">Visible Human MOOC (VHMOOC)</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
                                 </a>
                             </div>
                             <div class="col-12 col-md-6 mb-3">
-                                <a href="https://hubmapconsortium.github.io/ccf-3d-registration/" title="Link CCF Registration User Interface (RUI) application">
+                                <a href="https://hubmapconsortium.github.io/ccf-3d-registration/"
+                                    title="Link CCF Registration User Interface (RUI) application">
                                     <div class="card h-100 card-dark-gray-blue h-card">
                                         <div class="row no-gutters h-100">
-                                            <div class="col-3 col-lg-2 bg-dark-gray-blue align-middle text-center px-1 py-1">
-                                            <svg id="ico-rui" data-name="ico-rui" class="w-100 h-100" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 72 72"><rect class="fill-dark-gray-blue" width="72" height="72"/><polygon class="fill-white" points="64 34 54.75 34 54.75 25 49.44 25 49.44 11.99 47.44 11.99 47.44 25 42.13 25 42.13 34 8 34 8 36 42.13 36 42.13 45 47.44 45 47.44 59.99 49.44 59.99 49.44 45 54.75 45 54.75 36 64 36 64 34"/></svg>
-                                        </div>
-                                        <div class="col-9 col-lg-10">
-                                            <div class="card-body">
-                                                <p class="card-title">CCF Registration  User Interface (RUI)</p>
+                                            <div
+                                                class="col-3 col-lg-2 bg-dark-gray-blue align-middle text-center px-1 py-1">
+                                                <svg id="ico-rui" data-name="ico-rui" class="w-100 h-100"
+                                                    xmlns="http://www.w3.org/2000/svg" viewbox="0 0 72 72">
+                                                    <rect class="fill-dark-gray-blue" width="72" height="72" />
+                                                    <polygon class="fill-white"
+                                                        points="64 34 54.75 34 54.75 25 49.44 25 49.44 11.99 47.44 11.99 47.44 25 42.13 25 42.13 34 8 34 8 36 42.13 36 42.13 45 47.44 45 47.44 59.99 49.44 59.99 49.44 45 54.75 45 54.75 36 64 36 64 34" />
+                                                </svg>
+                                            </div>
+                                            <div class="col-9 col-lg-10">
+                                                <div class="card-body">
+                                                    <p class="card-title">CCF Registration User Interface (RUI)</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
                                 </a>
                             </div>
                             <div class="col-12 col-md-6 mb-3">
@@ -186,42 +340,112 @@
                                     <div class="card h-100 card-dark-blue h-card">
                                         <div class="row no-gutters h-100">
                                             <div class="col-3 col-lg-2 bg-dark-blue align-middle text-center px-1 py-1">
-                                            <svg id="ico-eui" data-name="ico-eui" class="w-100 h-100" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 72 72"><defs><style>.ico-eui-stroke{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:1px;}</style></defs><rect class="fill-dark-blue" width="72" height="72"/><rect class="fill-white" x="54" y="16.5" width="10" height="9"/><rect class="fill-white" x="54" y="34.5" width="10" height="3"/><rect class="fill-white" x="54" y="28.5" width="10" height="3"/><rect class="fill-white" x="54" y="40.5" width="10" height="3"/><rect class="fill-white" x="54" y="46.5" width="10" height="3"/><rect class="fill-white" x="54" y="52.5" width="10" height="3"/><path class="fill-white" d="M29.8,24.81C21.89,24.81,14.12,30,15.48,36c1.91,8.46,6.41,11.14,14.32,11.14S43.9,42.1,44.13,36C44.44,27.64,37.72,24.81,29.8,24.81Zm0,20.69C23,45.5,19.35,44,17.53,36,16.36,30.81,23,26.4,29.8,26.4S43.09,29,42.08,36C41.33,41.17,36.59,45.5,29.8,45.5Z"/><ellipse class="ico-eui-stroke" cx="29.34" cy="40.28" rx="4.5" ry="2.5"/><circle class="fill-white" cx="27.25" cy="35.41" r="0.8"/><circle class="fill-white" cx="36.84" cy="36.91" r="0.8"/><circle class="fill-white" cx="37.36" cy="33.82" r="1.19"/><circle class="fill-white" cx="34.14" cy="34.89" r="0.8"/><circle class="fill-white" cx="28.54" cy="32.3" r="0.8"/><circle class="fill-white" cx="21.55" cy="39.48" r="1.19"/><circle class="fill-white" cx="20.36" cy="34.89" r="0.8"/><path class="fill-white" d="M31.47,29a.76.76,0,0,0-1,.38l0,.07a.75.75,0,0,0,.37,1,6,6,0,0,1,1,.49,9.36,9.36,0,0,1,1.33,1.22.76.76,0,0,0,1.07,0l.06-.06a.76.76,0,0,0-.05-1.07,8.82,8.82,0,0,0-1.41-1.26A5.22,5.22,0,0,0,31.47,29Z"/><path class="fill-white" d="M40.34,37a.76.76,0,0,0-.53-.93l-.07,0a.75.75,0,0,0-.93.52,6.81,6.81,0,0,1-.33,1,9.71,9.71,0,0,1-1,1.51.77.77,0,0,0,.22,1.05l.07,0a.75.75,0,0,0,1-.22,8.83,8.83,0,0,0,1-1.58A5.63,5.63,0,0,0,40.34,37Z"/><path class="fill-white" d="M23.35,30a.77.77,0,0,0,.07,1.07l.06.05a.75.75,0,0,0,1.07-.07,5.81,5.81,0,0,1,.75-.79,9.15,9.15,0,0,1,1.54-.93.75.75,0,0,0,.26-1l0-.07A.76.76,0,0,0,26,28a9,9,0,0,0-1.61,1A5.61,5.61,0,0,0,23.35,30Z"/><path class="fill-white" d="M8,16.5v39H51v-39ZM49.16,53.88H9.84V18.13H49.16Z"/></svg>
-                                        </div>
-                                        <div class="col-9 col-lg-10">
-                                            <div class="card-body">
-                                                <p class="card-title">CCF Exploration User Interface (EUI)</p>
+                                                <svg id="ico-eui" data-name="ico-eui" class="w-100 h-100"
+                                                    xmlns="http://www.w3.org/2000/svg" viewbox="0 0 72 72">
+                                                    <defs>
+                                                        <style>
+                                                            .ico-eui-stroke {
+                                                                fill: none;
+                                                                stroke: #fff;
+                                                                stroke-miterlimit: 10;
+                                                                stroke-width: 1px;
+                                                            }
+                                                        </style>
+                                                    </defs>
+                                                    <rect class="fill-dark-blue" width="72" height="72" />
+                                                    <rect class="fill-white" x="54" y="16.5" width="10" height="9" />
+                                                    <rect class="fill-white" x="54" y="34.5" width="10" height="3" />
+                                                    <rect class="fill-white" x="54" y="28.5" width="10" height="3" />
+                                                    <rect class="fill-white" x="54" y="40.5" width="10" height="3" />
+                                                    <rect class="fill-white" x="54" y="46.5" width="10" height="3" />
+                                                    <rect class="fill-white" x="54" y="52.5" width="10" height="3" />
+                                                    <path class="fill-white"
+                                                        d="M29.8,24.81C21.89,24.81,14.12,30,15.48,36c1.91,8.46,6.41,11.14,14.32,11.14S43.9,42.1,44.13,36C44.44,27.64,37.72,24.81,29.8,24.81Zm0,20.69C23,45.5,19.35,44,17.53,36,16.36,30.81,23,26.4,29.8,26.4S43.09,29,42.08,36C41.33,41.17,36.59,45.5,29.8,45.5Z" />
+                                                    <ellipse class="ico-eui-stroke" cx="29.34" cy="40.28" rx="4.5"
+                                                        ry="2.5" />
+                                                    <circle class="fill-white" cx="27.25" cy="35.41" r="0.8" />
+                                                    <circle class="fill-white" cx="36.84" cy="36.91" r="0.8" />
+                                                    <circle class="fill-white" cx="37.36" cy="33.82" r="1.19" />
+                                                    <circle class="fill-white" cx="34.14" cy="34.89" r="0.8" />
+                                                    <circle class="fill-white" cx="28.54" cy="32.3" r="0.8" />
+                                                    <circle class="fill-white" cx="21.55" cy="39.48" r="1.19" />
+                                                    <circle class="fill-white" cx="20.36" cy="34.89" r="0.8" />
+                                                    <path class="fill-white"
+                                                        d="M31.47,29a.76.76,0,0,0-1,.38l0,.07a.75.75,0,0,0,.37,1,6,6,0,0,1,1,.49,9.36,9.36,0,0,1,1.33,1.22.76.76,0,0,0,1.07,0l.06-.06a.76.76,0,0,0-.05-1.07,8.82,8.82,0,0,0-1.41-1.26A5.22,5.22,0,0,0,31.47,29Z" />
+                                                    <path class="fill-white"
+                                                        d="M40.34,37a.76.76,0,0,0-.53-.93l-.07,0a.75.75,0,0,0-.93.52,6.81,6.81,0,0,1-.33,1,9.71,9.71,0,0,1-1,1.51.77.77,0,0,0,.22,1.05l.07,0a.75.75,0,0,0,1-.22,8.83,8.83,0,0,0,1-1.58A5.63,5.63,0,0,0,40.34,37Z" />
+                                                    <path class="fill-white"
+                                                        d="M23.35,30a.77.77,0,0,0,.07,1.07l.06.05a.75.75,0,0,0,1.07-.07,5.81,5.81,0,0,1,.75-.79,9.15,9.15,0,0,1,1.54-.93.75.75,0,0,0,.26-1l0-.07A.76.76,0,0,0,26,28a9,9,0,0,0-1.61,1A5.61,5.61,0,0,0,23.35,30Z" />
+                                                    <path class="fill-white"
+                                                        d="M8,16.5v39H51v-39ZM49.16,53.88H9.84V18.13H49.16Z" />
+                                                </svg>
+                                            </div>
+                                            <div class="col-9 col-lg-10">
+                                                <div class="card-body">
+                                                    <p class="card-title">CCF Exploration User Interface (EUI)</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
                                 </a>
                             </div>
                         </div>
                         <h3 class="mt-5">References</h3>
                         <ul class="list-unstyled">
-                            <li class="mb-3">Weber, Griffin M, Yingnan Ju, and Katy Börner. 2020. "<a href="https://cns.iu.edu/docs/publications/2020-Weber-Considerations.pdf" title="Download paper (PDF)">Considerations for Using the Vasculature as a Coordinate System to Map All the Cells in the Human Body</a>". <span class="font-italic">Frontiers in Cardiovascular Medicine 7</span> (29): doi: 10.3389/fcvm.2020.00029.</li>
-                            <li class="mb-3">Ginda, Michael, Michael C. Richey, Mark Cousino, and Katy Börner. 2019. "<a href="https://cns.iu.edu/docs/publications/2019-journal.pone.0215964.pdf" title="Download paper (PDF)">Visualizing learner engagement, performance, and trajectories to evaluate and optimize online course design</a>". <span class="font-italic">PLOS One</span> e0215964. doi: 10.1371/journal.pone.0215964.</li>
-                            <li class="mb-3">Snyder, Michael P., Shin Lin, Amanda Posgai, Mark Atkinson, Aviv Regev, Jennifer Rood, Orit Rozenblatt-Rosen, Leslie Gaffney, Anna Hupalowska, Rahul Satija, Nils Gehlenborg, Jay Shendure, Julia Laskin, Pehr Harbury, Nicholas A. Nystrom, Jonathan C. Silverstein, Ziv Bar-Joseph, Kun Zhang, Katy Börner, Yiing Lin, Richard Conroy, Dena Procaccini, Ananda L. Roy, Ajay Pillai, Marishka Brown, and Zorina S. Galis. 2019. "<a href="https://cns.iu.edu/docs/publications/2019-Snyder-HuBMAP.pdf" title="Download paper (PDF)">The human body at cellular resolution: the NIH Human Biomolecular Atlas Program</a>". <span class="font-italic">Nature</span> 574: 187-192. doi: 10.1038/s41586-019-1629-x.</li>
-                            <li class="mb-3">Börner, Katy, Andreas Bueckle, and Michael Ginda. 2019. "<a href="https://cns.iu.edu/docs/publications/2019-borner-pnas.pdf" title="Download paper (PDF)">Data visualization literacy: Definitions, conceptual frameworks, exercises, and assessments</a>". <span class="font-italic">PNAS</span> 116 (6): 1857-1864. doi: 10.1073/pnas.1807180116.</li>
-                            <li class="mb-3">Börner, Katy, William Rouse, Paul Trunfio, and H. Eugene Stanley. 2018. "<a href="https://cns.iu.edu/docs/publications/2018-borner-forecasting-innovations.pdf" title="Download paper (PDF)">Forecasting Innovations in Science, Technology, and Education</a>". <span class="font-italic">PNAS</span> 115 (50): 12573-12581. doi: 10.1073/pnas.1818750115.</li>
+                            <li class="mb-3">Weber, Griffin M, Yingnan Ju, and Katy Börner. 2020. "<a
+                                    href="https://cns.iu.edu/docs/publications/2020-Weber-Considerations.pdf"
+                                    title="Download paper (PDF)">Considerations for Using the Vasculature as a
+                                    Coordinate System to Map All the Cells in the Human Body</a>". <span
+                                    class="font-italic">Frontiers in Cardiovascular Medicine 7</span> (29): doi:
+                                10.3389/fcvm.2020.00029.</li>
+                            <li class="mb-3">Ginda, Michael, Michael C. Richey, Mark Cousino, and Katy Börner. 2019.
+                                "<a href="https://cns.iu.edu/docs/publications/2019-journal.pone.0215964.pdf"
+                                    title="Download paper (PDF)">Visualizing learner engagement, performance, and
+                                    trajectories to evaluate and optimize online course design</a>". <span
+                                    class="font-italic">PLOS One</span> e0215964. doi: 10.1371/journal.pone.0215964.
+                            </li>
+                            <li class="mb-3">Snyder, Michael P., Shin Lin, Amanda Posgai, Mark Atkinson, Aviv Regev,
+                                Jennifer Rood, Orit Rozenblatt-Rosen, Leslie Gaffney, Anna Hupalowska, Rahul Satija,
+                                Nils Gehlenborg, Jay Shendure, Julia Laskin, Pehr Harbury, Nicholas A. Nystrom,
+                                Jonathan C. Silverstein, Ziv Bar-Joseph, Kun Zhang, Katy Börner, Yiing Lin, Richard
+                                Conroy, Dena Procaccini, Ananda L. Roy, Ajay Pillai, Marishka Brown, and Zorina S.
+                                Galis. 2019. "<a href="https://cns.iu.edu/docs/publications/2019-Snyder-HuBMAP.pdf"
+                                    title="Download paper (PDF)">The human body at cellular resolution: the NIH
+                                    Human Biomolecular Atlas Program</a>". <span class="font-italic">Nature</span>
+                                574: 187-192. doi: 10.1038/s41586-019-1629-x.</li>
+                            <li class="mb-3">Börner, Katy, Andreas Bueckle, and Michael Ginda. 2019. "<a
+                                    href="https://cns.iu.edu/docs/publications/2019-borner-pnas.pdf"
+                                    title="Download paper (PDF)">Data visualization literacy: Definitions,
+                                    conceptual frameworks, exercises, and assessments</a>". <span
+                                    class="font-italic">PNAS</span> 116 (6): 1857-1864. doi:
+                                10.1073/pnas.1807180116.</li>
+                            <li class="mb-3">Börner, Katy, William Rouse, Paul Trunfio, and H. Eugene Stanley. 2018.
+                                "<a href="https://cns.iu.edu/docs/publications/2018-borner-forecasting-innovations.pdf"
+                                    title="Download paper (PDF)">Forecasting Innovations in Science, Technology, and
+                                    Education</a>". <span class="font-italic">PNAS</span> 115 (50): 12573-12581.
+                                doi: 10.1073/pnas.1818750115.</li>
                         </ul>
                         <h3 class="mt-5">Presentations</h3>
                         <ul class="list-unstyled">
                             <li class="mb-3">May 19, 2020: <a href="dld/2020.05.19-Borner-HuBMAPposter.pdf"
                                     title="Download poster (PDF)"><span class="font-italic">The Human Body Atlas:
-                                        High-Resolution, Functional Mapping of Voxel, Vector, and Meta Datasets</span></a> at HuBMAP Virtual Annual Meeting, Washington, DC.</li>
+                                        High-Resolution, Functional Mapping of Voxel, Vector, and Meta
+                                        Datasets</span></a> at HuBMAP Virtual Annual Meeting, Washington, DC.</li>
                             <li>March 17, 2020: <a href="dld/2020.03.17-MC-IU.KPMP-Talk.pdf"
-                                    title="Download talk (PDF)"><span class="font-italic">Harmonizing KPMP/HuBMAP Data:
-                                        Developing Novel Common Coordinate Framework User Interfaces</span></a> at KPMP Virtual Meeting, Washington, DC.</li>
+                                    title="Download talk (PDF)"><span class="font-italic">Harmonizing KPMP/HuBMAP
+                                        Data:
+                                        Developing Novel Common Coordinate Framework User Interfaces</span></a> at
+                                KPMP Virtual Meeting, Washington, DC.</li>
                         </ul>
                         <h3 class="mt-5">Acknowledgements</h3>
                         <p>We deeply value close collaborations with the HuBMAP TMCs and other HIVE teams.
-                            This research has been funded in part by the NIH Common Fund through the Office of Strategic
+                            This research has been funded in part by the NIH Common Fund through the Office of
+                            Strategic
                             Coordination/Office of the NIH Director under award OT2OD026671, by the NIDDK Kidney
-                            Precision Medicine Project grant U2CDK114886, and the NIH NIAID, Department of Health and
+                            Precision Medicine Project grant U2CDK114886, and the NIH NIAID, Department of Health
+                            and
                             Human Services under BCBB Support Services Contract HHSN316201300006W/HHSN27200002.</p>
-                        
+
                     </div>
                 </div>
 
