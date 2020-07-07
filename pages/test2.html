@@ -60,19 +60,27 @@
                     <path class="fill-white" d="M377.57,1V35.18h-3V1Z" />
                 </svg></a>
                 <style>
-                    .navbar .dropdown .dropdown-toggle {
+                    .bd-navbar .dropdown .dropdown-toggle {
                         color: #bdbdbd;
                     }
-                    .navbar .dropdown .dropdown-toggle:hover {
+                    .bd-navbar .dropdown .dropdown-toggle:hover {
                         color: white;
+                    }
+                    .bd-navbar .dropdown-menu {
+                        min-width: 17.5rem;
+                        margin-top: 12px;
+                    }
+                    .bd-navbar .dropdown-item {
+                        white-space: normal;
+                        line-height: 1.5rem;
                     }
 
                     @media (max-width: 575px) {
-                        .dropdown {
+                        .bd-navbar .dropdown {
                             width: 100%;
                             text-align: right;
                         }
-                        .navbar .container {
+                        .bd-navbar .container {
                             margin-right: 0;
                             margin-left: 0;
                         }
