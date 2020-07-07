@@ -249,7 +249,7 @@ a:hover .card {
     cursor: not-allowed;
 }
 
-.modal {
+/* .modal {
     left: -9999 !important;
     z-index: -1;
     display: block;
@@ -257,7 +257,7 @@ a:hover .card {
 .show.modal {
     left: 0;
     z-index: 1050;
-}
+} */
 
 .modal-viewer .modal-body {
     padding-bottom: 91% !important;
@@ -331,7 +331,7 @@ a:hover .card {
   }
 
   .button-load {
-      top: 42%;                                    
+      top: 36%;                                    
   }
   .button-load .button-load-icon {
       width: 100px;
