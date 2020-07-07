@@ -349,7 +349,7 @@ a:hover .card {
 .navbar-tabs .nav-tabs.bg-light {
     background-color: transparent !important;
 }
-.main-menu .dropdown-menu {
+/* .main-menu .dropdown-menu {
     padding-bottom: 0;
 }
 .main-menu .dropdown-item {
@@ -360,7 +360,7 @@ a:hover .card {
     max-width: 23.5rem;
     min-width: 17.5rem;
     line-height: 1.5rem;
-}
+} */
 
 @media (max-width: 576px) {
     h1, .h1 {
@@ -372,10 +372,10 @@ a:hover .card {
     h3, .h3 {
         font-size: 1.25rem;
     }
-    .main-menu {
+    /* .main-menu {
         width: 100%;   
     }
     .main-menu .dropdown-menu {
         left: 0;
-    }
+    } */
 }
