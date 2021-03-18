@@ -131,7 +131,7 @@ a:hover .card {
 
 
 
-/* icons */ 
+/* icons */
 .tile {
     bottom: 0;
     right: 0;
@@ -382,7 +382,7 @@ a:hover .card {
   }
 
   .button-load {
-      top: 36%;                                    
+      top: 36%;
   }
   .button-load .button-load-icon {
       width: 100px;
@@ -444,4 +444,8 @@ td {
     max-height: 446px;
     overflow: auto;
     margin-bottom: 1rem;
+}
+
+.text-color-gray {
+    color: #6c757d;
 }
