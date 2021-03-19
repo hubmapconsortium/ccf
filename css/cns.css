@@ -125,6 +125,10 @@ a:hover .card {
     height: auto;
 }
 
+.card .details {
+    font-size: 14px;
+}
+
 
 
 /* icons */ 
@@ -258,6 +262,10 @@ a:hover .card {
 
 .fill-white {
     fill: rgba(255, 255, 255, 1);
+}
+
+.fill-secondary {
+    fill: #8289a3;
 }
 
 .nav-tabs.bg-mid-gray-blue .nav-link {
@@ -422,4 +430,18 @@ a:hover .card {
         width: 100%;
         max-height: 140px;
     }
+}
+
+td {
+    text-transform: capitalize;
+}
+
+.navbar.bg-light .navbar-collapse .nav-tabs .active {
+    background: #fafafa;
+}
+
+.col-scroll {
+    max-height: 446px;
+    overflow: auto;
+    margin-bottom: 1rem;
 }
