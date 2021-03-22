@@ -114,6 +114,11 @@ a:hover .card {
     border: 1px solid rgba(68, 76, 101, 1) !important;
 }
 
+.card-dark-gray-blue2 {
+    color: rgba(48,110,153,1) !important; 
+    border: 1px solid rgba(48,110,153,1) !important;
+}
+
 .h-card .card-title {
     font-size: 1rem;
 }
@@ -258,6 +263,14 @@ a:hover .card {
 
 .fill-dark-teal {
     fill: rgba(39, 95, 84, 1);
+}
+
+.bg-dark-gray-blue2 {
+    background-color: rgba(48,110,153,1)
+}
+
+.fill-dark-gray-blue2 {
+    fill: rgba(48,110,153,1)
 }
 
 .fill-white {
