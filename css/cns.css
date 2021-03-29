@@ -34,8 +34,8 @@ body * {
 
 #logo-hubmap-ccf-portal {
     width: 100%;
-    max-height: 30px;
-    min-height: 30px;
+    max-height: 24px;
+    min-height: 24px;
 }
 
 svg.logo-body-color {
