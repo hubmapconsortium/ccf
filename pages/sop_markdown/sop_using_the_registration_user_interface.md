@@ -96,11 +96,11 @@ There are three cases where you would access the RUI from within the HuBMAP Inge
 
 1. Choose your organization from the drop-down menu.
 
-![Drop-down menu](https://github.com/hubmapconsortium/ccf/blob/gh-pages/pages/sop_markdown/sop_images/drop-down.jpg)
+![Drop-down menu](https://github.com/hubmapconsortium/ccf/blob/gh-pages/pages/sop_markdown/sop_images/07_drop-down.jpg)
 
 1. For Type, choose Organ:
 
-![Type organ](https://github.com/hubmapconsortium/ccf/blob/gh-pages/pages/sop_markdown/sop_images/type_organ.jpg)
+![Type organ](https://github.com/hubmapconsortium/ccf/blob/gh-pages/pages/sop_markdown/sop_images/08_type_organ.jpg)
 
 1. Click Search.
 2. A list of organs ingested via your organization shows up. Pick one by clicking its row.
