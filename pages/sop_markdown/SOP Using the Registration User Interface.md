@@ -66,7 +66,7 @@ The registration process is as follows:
 
 [https://hubmapconsortium.github.io/ccf-ui/rui/](https://hubmapconsortium.github.io/ccf-ui/rui/)
 
-![Overview of the RUI with highlight on organ carousel](ccf/pages/sop_markdown/sop_images/01_rui_organs.jpg )
+![Overview of the RUI with highlight on organ carousel](sop_markdown/sop_images/01_rui_organs.jpg)
 
 There are three cases where you would access the RUI from within the HuBMAP Ingest Portal:
 
