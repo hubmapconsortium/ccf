@@ -35,11 +35,11 @@ The registration process is as follows:
 2. Open the relevant version of the RUI (see [above](#Versions-of-the-Registration-User-Interface)).
 3. When the RUI first loads, the screen is mostly blank. A video demo with a play button is embedded in the center of the screen. Click the play button to start the demo if desired.
 4. Name
-  1. In the public version, in the top-left corner, enter your first and last name.
-  2. In the ingest portal version, your name is already entered based on data from your user profile.
+- In the public version, in the top-left corner, enter your first and last name.
+- In the ingest portal version, your name is already entered based on data from your user profile.
 5. Organ selection:
-  1. In the public version, select an organ from the organ carousel at the top center of the screen. Make sure to select the right or left version as appropriate. The organ might take a few seconds to load.
-  2. In the ingest portal version, the organ is pre-selected.
+- In the public version, select an organ from the organ carousel at the top center of the screen. Make sure to select the right or left version as appropriate. The organ might take a few seconds to load.
+- In the ingest portal version, the organ is pre-selected.
 
 ## Tissue Placement
 
