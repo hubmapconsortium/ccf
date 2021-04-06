@@ -32,7 +32,7 @@ Two versions of the RUI exist, and which one you access depends on whether you a
 The registration process is as follows:
 
 1. Gather any materials needed to document where the tissue block was extracted from.
-2. Open the relevant version of the RUI (see [above](##Versions-of-the-Registration-User-Interface)).
+2. Open the relevant version of the RUI (see [above](#Versions-of-the-Registration-User-Interface)).
 3. When the RUI first loads, the screen is mostly blank. A video demo with a play button is embedded in the center of the screen. Click the play button to start the demo if desired.
 4. Name
   1. In the public version, in the top-left corner, enter your first and last name.
