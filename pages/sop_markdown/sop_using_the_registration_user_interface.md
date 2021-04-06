@@ -86,65 +86,65 @@ There are three cases where you would access the RUI from within the HuBMAP Inge
 
 1. Click the &quot;New Registration&quot; button and choose &quot;Sample&quot;:
 
-![](RackMultipart20210405-4-u81qdm_html_ab5201949e3437f5.png)
+![New registration, new sample](https://github.com/hubmapconsortium/ccf/blob/gh-pages/pages/sop_markdown/sop_images/04_donor_sample.jpg)
 
 1. Click into the HuBMAP ID field, which prompts an overlay with a search interface.
 
-![](RackMultipart20210405-4-u81qdm_html_8a2c856ddae44934.png)
+![HuBMAP ID](https://github.com/hubmapconsortium/ccf/blob/gh-pages/pages/sop_markdown/sop_images/05_hubmap_id.jpg)
 
-![](RackMultipart20210405-4-u81qdm_html_5df06983353eb4ca.png)
+![HuBMAP ID lookup](https://github.com/hubmapconsortium/ccf/blob/gh-pages/pages/sop_markdown/sop_images/06_id_lookup.jpg)
 
 1. Choose your organization from the drop-down menu.
 
-![](RackMultipart20210405-4-u81qdm_html_b01aae00f2105a2.png)
+![Drop-down menu](https://github.com/hubmapconsortium/ccf/blob/gh-pages/pages/sop_markdown/sop_images/drop-down.jpg)
 
 1. For Type, choose Organ:
 
-![](RackMultipart20210405-4-u81qdm_html_a3c52ecf78b6e8d0.png)
+![Type organ](https://github.com/hubmapconsortium/ccf/blob/gh-pages/pages/sop_markdown/sop_images/type_organ.jpg)
 
 1. Click Search.
 2. A list of organs ingested via your organization shows up. Pick one by clicking its row.
 3. This opens a screen prepopulated with relevant information about the organ. Additionally, a blue button shows up, labeled &quot;Register Location&quot;.
 
-![](RackMultipart20210405-4-u81qdm_html_a9a6df1cd1ed803.png)
+![Register location button](https://github.com/hubmapconsortium/ccf/blob/gh-pages/pages/sop_markdown/sop_images/09_register_location.jpg)
 
 1. Click the button
 2. The RUI is displayed, embedded into the page.
-3. Follow the steps outlined [above](#_ezmdrr41kbmq) for placing tissue.
+3. Follow the steps outlined [above](###-Tissue-Placement) for placing tissue.
 
 ## Case 2: Register the location for an existing sample.
 
-1. Follow steps 1-3 of the [Case 1 instructions](#_f4oho2w4s9d).
+1. Follow steps 1-3 of the [Case 1 instructions](###-Case-1:-Register-a-new-sample-and-then-register-its-location).
 2. Choose the Organization and Type of sample you would like to add a registration for, e.g., FFPE.
 
-![](RackMultipart20210405-4-u81qdm_html_fbe2f0a2bb553b0b.png)
+![FFPE](https://github.com/hubmapconsortium/ccf/blob/gh-pages/pages/sop_markdown/sop_images/ffpe.jpg)
 
 1. Click the Filter button.
 
-![](RackMultipart20210405-4-u81qdm_html_572dcd41c86e0b4c.png)
+![Filter button](https://github.com/hubmapconsortium/ccf/blob/gh-pages/pages/sop_markdown/sop_images/filter.jpg)
 
 1. When the search is done, click on the HuBMAP ID of the desired sample.
 
-![](RackMultipart20210405-4-u81qdm_html_b0b2c78199bd0aed.png)
+![Click ID](https://github.com/hubmapconsortium/ccf/blob/gh-pages/pages/sop_markdown/sop_images/click-id.jpg)
 
 1. Perform steps 10-13 of the Case 1 instructions above.
 
 ## Case 3: Edit an existing registration
 
-1. Perform steps 1-4 of the [Case 2 instructions](#_m9ym86xtrr4i).
+1. Perform steps 1-4 of the [Case 2 instructions](###-Case-2:-Register-the-location-for-an-existing-sample.).
 
-![](RackMultipart20210405-4-u81qdm_html_d4d9f541a6265b64.png)
+![View location](https://github.com/hubmapconsortium/ccf/blob/gh-pages/pages/sop_markdown/sop_images/click-id/view_location.jpg)
 
 1. You can then access the RUI location via the View Location button.
-2. Follow the steps outlined [above](#_ezmdrr41kbmq).
+2. Follow the steps outlined [above](###-Tissue-Placement).
 
 ## Description of the user interface (UI)
 
-![](RackMultipart20210405-4-u81qdm_html_7d81a71de9a9ea0d.png)
+![RUI overview 1](https://github.com/hubmapconsortium/ccf/blob/gh-pages/pages/sop_markdown/sop_images/click-id/description_01.jpg)
 
 **Figure 1:** The stand-alone CCF Registration User Interface (RUI) currently accepts tissue registration for four organs (large intestine, heart, kidney, and spleen). The yellow cuboid denotes the tissue block, the green slide indicates the CC1 extraction site inside the spleen. Tissue block size and rotation can be adjusted in the top right. Anatomical structure tags are automatically assigned based on 3D collision with semantically annotated 3D reference objects. Users can automatically add additional tags.
 
-![](RackMultipart20210405-4-u81qdm_html_f0c01a052eea597d.jpg)
+![RUI overview 2](https://github.com/hubmapconsortium/ccf/blob/gh-pages/pages/sop_markdown/sop_images/click-id/description_02.jpg)
 
 Fig. 2. RUI with three panes: metadata (pink), 3D (yellow), manipulation (blue)
 
