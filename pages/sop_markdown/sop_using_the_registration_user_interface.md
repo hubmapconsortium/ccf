@@ -23,7 +23,7 @@ The latest video demo (03/10/2021) can be found [here](https://www.youtube.com/w
 
 Two versions of the RUI exist, and which one you access depends on whether you are registering tissue blocks from the HuBMAP ingest portal or not.
 
-1. If the tissue block you are registering is affiliated with the HuBMAP project, go to the [HuBMAP ingest portal](https://ingest.hubmapconsortium.org/) and follow the instructions [below](##accessing-the-rui-from-within-the-hubmap-ingest-portal). Metadata such as author name, date, etc. is captured as part of the tissue ingest process and RUI data is automatically associated with the tissue on Globus.
+1. If the tissue block you are registering is affiliated with the HuBMAP project, go to the [HuBMAP ingest portal](https://ingest.hubmapconsortium.org/) and follow the instructions [below](#accessing-the-rui-from-within-the-hubmap-ingest-portal). Metadata such as author name, date, etc. is captured as part of the tissue ingest process and RUI data is automatically associated with the tissue on Globus.
 2. If the tissue block you are registering is not affiliated with HuBMAP, go to the [public CCF Registration User Interface](https://hubmapconsortium.github.io/ccf-ui/rui/.). You will need to enter your first and last name (top left in Figure 1). You will download the RUI data in JSON format and share it with the MC-IU team. The RUI data will then be placed [into this folder](https://drive.google.com/drive/folders/1iKi1EUGKArerirtY8jc7xHSJo_K8JrEI) and be made available via the [Exploration User Interface](https://portal.hubmapconsortium.org/ccf-eui).
 3. The difference between the public version and the HuBMAP version is that the HuBMAP version facilitates submission of the registration data directly to the HuBMAP ingest portal. Additionally, when opening the RUI from within the ingest portal, it appears embedded in the sample registration page.
 
@@ -47,10 +47,10 @@ The registration process is as follows:
 2. Resize the tissue block using the Tissue Block Dimensions text input fields in the top right corner. The default is a 10x10x10 mm block.
 3. Move the tissue block into position by clicking and holding the left mouse button over the tissue block . Note that in order for the tissue block to be movable, the radio buttons in the top left corner of the 3D window have to be set to either &quot;Left&quot;, &quot;Right&quot;, &quot;Anterior&quot;, or &quot;Posterior&quot;. When set to &quot;3D&#39;, the tissue block cannot be moved.
 4. The tissue block can only be moved in two dimensions at a time.
-  1. To make &quot;looking inside&quot; the reference organ easier, all anatomical structures of the organ are set to only 20% opacity by default. You can further adjust the opacity using the Anatomical Structures accordion menu in the metadata pane (see [below](##Description-of-the-user-interface-(UI))).
+  1. To make &quot;looking inside&quot; the reference organ easier, all anatomical structures of the organ are set to only 20% opacity by default. You can further adjust the opacity using the Anatomical Structures accordion menu in the metadata pane (see [below](#Description-of-the-user-interface-(UI))).
   2. To inspect tissue blocks you placed before (for reference), click the &quot;Previously Registered Blocks&quot; toggle button in the metadata pane. Note that clicking this toggle button will show all previously registered tissue blocks.
-  3. To change the perspective, use the radio buttons in the 3D pane (see [below](##Description-of-the-user-interface-(UI))).
-  4. To verify the placement, switch to 3D Preview mode using the corresponding toggle switch at the top of the 3D pane (see [below](##Description-of-the-user-interface-(UI))).
+  3. To change the perspective, use the radio buttons in the 3D pane (see [below](#Description-of-the-user-interface-(UI))).
+  4. To verify the placement, switch to 3D Preview mode using the corresponding toggle switch at the top of the 3D pane (see [below](#Description-of-the-user-interface-(UI))).
 5. Adjust the rotation of the tissue block by using the rotation sliders in the manipulation pane.
 
 ## To finalize the registration
@@ -110,11 +110,11 @@ There are three cases where you would access the RUI from within the HuBMAP Inge
 
 1. Click the button
 2. The RUI is displayed, embedded into the page.
-3. Follow the steps outlined [above](###-Tissue-Placement) for placing tissue.
+3. Follow the steps outlined [above](#Tissue-Placement) for placing tissue.
 
 ## Case 2: Register the location for an existing sample.
 
-1. Follow steps 1-3 of the [Case 1 instructions](###-Case-1:-Register-a-new-sample-and-then-register-its-location).
+1. Follow steps 1-3 of the [Case 1 instructions](#Case-1:-Register-a-new-sample-and-then-register-its-location).
 2. Choose the Organization and Type of sample you would like to add a registration for, e.g., FFPE.
 
 ![FFPE](https://github.com/hubmapconsortium/ccf/blob/gh-pages/pages/sop_markdown/sop_images/ffpe.jpg)
@@ -131,12 +131,12 @@ There are three cases where you would access the RUI from within the HuBMAP Inge
 
 ## Case 3: Edit an existing registration
 
-1. Perform steps 1-4 of the [Case 2 instructions](###-Case-2:-Register-the-location-for-an-existing-sample.).
+1. Perform steps 1-4 of the [Case 2 instructions](#Case-2:-Register-the-location-for-an-existing-sample.).
 
 ![View location](https://github.com/hubmapconsortium/ccf/blob/gh-pages/pages/sop_markdown/sop_images/view_location.jpg)
 
 1. You can then access the RUI location via the View Location button.
-2. Follow the steps outlined [above](###-Tissue-Placement).
+2. Follow the steps outlined [above](#Tissue-Placement).
 
 ## Description of the user interface (UI)
 
