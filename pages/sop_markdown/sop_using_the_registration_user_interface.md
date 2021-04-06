@@ -47,10 +47,10 @@ The registration process is as follows:
 2. Resize the tissue block using the Tissue Block Dimensions text input fields in the top right corner. The default is a 10x10x10 mm block.
 3. Move the tissue block into position by clicking and holding the left mouse button over the tissue block . Note that in order for the tissue block to be movable, the radio buttons in the top left corner of the 3D window have to be set to either &quot;Left&quot;, &quot;Right&quot;, &quot;Anterior&quot;, or &quot;Posterior&quot;. When set to &quot;3D&#39;, the tissue block cannot be moved.
 4. The tissue block can only be moved in two dimensions at a time.
-  1. To make &quot;looking inside&quot; the reference organ easier, all anatomical structures of the organ are set to only 20% opacity by default. You can further adjust the opacity using the Anatomical Structures accordion menu in the metadata pane (see [below](#Description-of-the-User-Interface-(UI))).
+  1. To make &quot;looking inside&quot; the reference organ easier, all anatomical structures of the organ are set to only 20% opacity by default. You can further adjust the opacity using the Anatomical Structures accordion menu in the metadata pane (see [below](#Description-of-the-user-interface-(UI))).
   2. To inspect tissue blocks you placed before (for reference), click the &quot;Previously Registered Blocks&quot; toggle button in the metadata pane. Note that clicking this toggle button will show all previously registered tissue blocks.
-  3. To change the perspective, use the radio buttons in the 3D pane (see [below](#Description-of-the-User-Interface-(UI))).
-  4. To verify the placement, switch to 3D Preview mode using the corresponding toggle switch at the top of the 3D pane (see [below](#Description-of-the-User-Interface-(UI))).
+  3. To change the perspective, use the radio buttons in the 3D pane (see [below](#Description-of-the-user-interface-(UI))).
+  4. To verify the placement, switch to 3D Preview mode using the corresponding toggle switch at the top of the 3D pane (see [below](#Description-of-the-user-interface-(UI))).
 5. Adjust the rotation of the tissue block by using the rotation sliders in the manipulation pane.
 
 ## To finalize the registration
