@@ -63,7 +63,6 @@ The registration process is as follows:
 **DISCLAIMER** : The steps outlined here can change depending on updates to the Ingest Portal. Screenshots may not always reflect what you see on your machine.
 
 **IMPORTANT:** In order to be able to use the RUI, the organ you are registering your sample for must be supported by the RUI. You can check this by opening the standalone version of the RUI and checking the organ carousel at the top of the page:
-
 [https://hubmapconsortium.github.io/ccf-ui/rui/](https://hubmapconsortium.github.io/ccf-ui/rui/)
 
 ![Overview of the RUI with highlight on organ carousel](https://github.com/hubmapconsortium/ccf/blob/gh-pages/pages/sop_markdown/sop_images/01_rui_organs.jpg)
@@ -79,11 +78,11 @@ There are three cases where you would access the RUI from within the HuBMAP Inge
 1. Visit [https://ingest.hubmapconsortium.org](https://ingest.hubmapconsortium.org/)
 2. If needed, log in using your institutional credentials.
 
-![](RackMultipart20210405-4-u81qdm_html_c1f43d87028c2a26.png)
+![Institutional login](https://github.com/hubmapconsortium/ccf/blob/gh-pages/pages/sop_markdown/sop_images/02_login.jpg)
 
 1. Click &quot;Go&quot; to register a new sample.
 
-![](RackMultipart20210405-4-u81qdm_html_21324e6bd8ba6cf9.png)
+![Register donors and samples](https://github.com/hubmapconsortium/ccf/blob/gh-pages/pages/sop_markdown/sop_images/03_register.jpg)
 
 1. Click the &quot;New Registration&quot; button and choose &quot;Sample&quot;:
 
