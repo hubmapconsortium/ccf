@@ -125,7 +125,7 @@ There are three cases where you would access the RUI from within the HuBMAP Inge
 
 1. When the search is done, click on the HuBMAP ID of the desired sample.
 
-![Click ID](https://github.com/hubmapconsortium/ccf/blob/gh-pages/pages/sop_markdown/sop_images/click-id.jpg)
+![Click ID](https://github.com/hubmapconsortium/ccf/blob/gh-pages/pages/sop_markdown/sop_images/click_id.jpg)
 
 1. Perform steps 10-13 of the Case 1 instructions above.
 
@@ -133,18 +133,18 @@ There are three cases where you would access the RUI from within the HuBMAP Inge
 
 1. Perform steps 1-4 of the [Case 2 instructions](###-Case-2:-Register-the-location-for-an-existing-sample.).
 
-![View location](https://github.com/hubmapconsortium/ccf/blob/gh-pages/pages/sop_markdown/sop_images/click-id/view_location.jpg)
+![View location](https://github.com/hubmapconsortium/ccf/blob/gh-pages/pages/sop_markdown/sop_images/view_location.jpg)
 
 1. You can then access the RUI location via the View Location button.
 2. Follow the steps outlined [above](###-Tissue-Placement).
 
 ## Description of the user interface (UI)
 
-![RUI overview 1](https://github.com/hubmapconsortium/ccf/blob/gh-pages/pages/sop_markdown/sop_images/click-id/description_01.jpg)
+![RUI overview 1](https://github.com/hubmapconsortium/ccf/blob/gh-pages/pages/sop_markdown/sop_images/description_01.jpg)
 
 **Figure 1:** The stand-alone CCF Registration User Interface (RUI) currently accepts tissue registration for four organs (large intestine, heart, kidney, and spleen). The yellow cuboid denotes the tissue block, the green slide indicates the CC1 extraction site inside the spleen. Tissue block size and rotation can be adjusted in the top right. Anatomical structure tags are automatically assigned based on 3D collision with semantically annotated 3D reference objects. Users can automatically add additional tags.
 
-![RUI overview 2](https://github.com/hubmapconsortium/ccf/blob/gh-pages/pages/sop_markdown/sop_images/click-id/description_02.jpg)
+![RUI overview 2](https://github.com/hubmapconsortium/ccf/blob/gh-pages/pages/sop_markdown/sop_images/description_02.jpg)
 
 Fig. 2. RUI with three panes: metadata (pink), 3D (yellow), manipulation (blue)
 
