@@ -115,12 +115,12 @@ a:hover .card {
 }
 
 .card-dark-gray-blue2 {
-    color: rgba(48,110,153,1) !important; 
+    color: rgba(48,110,153,1) !important;
     border: 1px solid rgba(48,110,153,1) !important;
 }
 
 .card-kaggle-blue {
-    color: rgba(32,190,255,1) !important; 
+    color: rgba(32,190,255,1) !important;
     border: 1px solid rgba(32,190,255,1) !important;
 }
 
@@ -143,7 +143,7 @@ a:hover .card {
 
 
 
-/* icons */ 
+/* icons */
 .tile {
     bottom: 0;
     right: 0;
@@ -406,7 +406,7 @@ a:hover .card {
   }
 
   .button-load {
-      top: 36%;                                    
+      top: 36%;
   }
   .button-load .button-load-icon {
       width: 100px;
@@ -480,4 +480,8 @@ td {
     width: 11.25rem;
     padding: .5rem 0;
     list-style-type: none;
+}
+
+.card img.m-1 {
+    margin: 4px 2px !important;
 }
