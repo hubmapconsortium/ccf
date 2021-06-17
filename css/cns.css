@@ -70,6 +70,12 @@ main {
     min-height: 82px;
 }
 
+.card.card-border {
+    box-shadow: none;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
 .card p.card-title {
     margin-bottom: 0;
 }
@@ -484,4 +490,15 @@ td {
 
 .card img.m-1 {
     margin: 4px 0px !important;
+}
+
+.card-border .btn {
+    border: 1px solid #2196f3;
+    border-radius: 24px;
+    padding: 6px 16px;
+    text-transform: initial;
+}
+
+.logo-kaggle-sponsor {
+    max-width: 6.5rem;
 }
