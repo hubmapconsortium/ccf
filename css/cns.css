@@ -282,6 +282,10 @@ a:hover .card {
     background-color: rgba(99, 37, 88, 1);
 }
 
+.fill-azimuth-purple {
+    fill: rgba(99, 37, 88, 1);
+}
+
 .fill-dark-teal {
     fill: rgba(39, 95, 84, 1);
 }
