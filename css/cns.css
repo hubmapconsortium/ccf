@@ -279,7 +279,7 @@ a:hover .card {
 }
 
 .bg-azimuth-purple {
-    background-color: rgba(99, 37, 88, 1);
+    background-color: rgba(99, 37, 88, 1) !important;
 }
 
 .fill-azimuth-purple {
