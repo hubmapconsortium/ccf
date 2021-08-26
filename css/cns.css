@@ -290,13 +290,13 @@ a:hover .card {
     fill: rgba(48,110,153,1)
 }
 
-.fill-white {
+.fill-white, .fill-secondary {
     fill: rgba(255, 255, 255, 1);
 }
 
-.fill-secondary {
+/* .fill-secondary {
     fill: #8289a3;
-}
+} */
 
 .nav-tabs.bg-mid-gray-blue .nav-link {
     color: rgba(255, 255, 255, 1);
