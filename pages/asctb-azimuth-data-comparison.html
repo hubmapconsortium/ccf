@@ -75,7 +75,11 @@
                                 </div>
                             </div><span class="col-sm-10">ASCT+B cell types data from Azimuth reference data</span>
                         </h1>
-                      <h2 class="mt-5">Download Data</h2>
+                        <h2 class="mt-5">Overview</h2>
+                        <p>Azimuth reference maps (<a href="https://azimuth.hubmapconsortium.org" title="Azimuth reference maps">https://azimuth.hubmapconsortium.org</a>) compiled by MC-NYGC provide organ-specific cell by gene matrix data. The single-cell references make it possible to automatically assign cell labels to the results of a new single-cell RNA-seq experiment. Specifically, Azimuth reads a counts matrix of gene expression in single cells. It then performs normalization, cell type annotation, and gene biomarker discovery. The output are diverse statistics and visualizations. Data can also be downloaded and parsed. Provided here are Azimuth cell type (CT) typologies and counts.</p>
+                        <h3 class="mt-5">Azimuth CT Typologies</h3>
+                        <p>Data from <a href="https://github.com/satijalab/azimuth_website" title="Satija Labs Azimuth website">https://github.com/satijalab/azimuth_website</a> has been parsed to derive cell type typologies:</p>
+                      <!-- <h2 class="mt-5">Download Data</h2> -->
                       <!--<ul>
                         <li><a href="https://darshalshetty.github.io/asctb-azimuth-data-comparison/pbmc.csv" title="Download data">Bone Marrow & Blood/Pelvis</a></li>
                         <li><a href="https://darshalshetty.github.io/asctb-azimuth-data-comparison/motor_cortex.csv" title="Download data">Brain</a></li>
@@ -83,7 +87,129 @@
                         <li><a href="https://darshalshetty.github.io/asctb-azimuth-data-comparison/lung.csv" title="Download data">Lung</a></li>
                         <li><a href="hhttps://darshalshetty.github.io/asctb-azimuth-data-comparison/pancreas.csv" title="Download data">Pancreas</a></li>
                       </ul>-->
-                        <wc-markdown src="https://hubmapconsortium.github.io/asctb-azimuth-data-comparison/csv_download_list.md" class="main"></wc-markdown>
+                        <!-- <wc-markdown src="https://hubmapconsortium.github.io/asctb-azimuth-data-comparison/csv_download_list.md" class="main"></wc-markdown> -->
+                        <div>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th colspan="3" class="align-top">Dataset</th>
+                                        <th class="align-top"><a href="https://hubmapconsortium.github.io/asctb-azimuth-data-comparison/pbmc.csv" title="PBMC csv file">Bone Marrow &amp; Blood/Pelvis = PBMC</a></th>
+                                        <th class="align-top"><a href="https://hubmapconsortium.github.io/asctb-azimuth-data-comparison/motor_cortex.csv" title="Motor Cortex csv file">Brain = Motor Cortex</a></th>
+                                        <th class="align-top"><a href="https://hubmapconsortium.github.io/asctb-azimuth-data-comparison/kidney.csv" title="Kidney csv file">Kidney</a></th>
+                                        <th class="align-top"><a href="https://hubmapconsortium.github.io/asctb-azimuth-data-comparison/lung.csv" title="Lung csv file">Lung</a></th>
+                                        <th class="align-top"><a href="https://hubmapconsortium.github.io/asctb-azimuth-data-comparison/pancreas.csv" title="Pancreas csv file">Pancreas</a></th>
+                                        <th class="align-top"><a href="https://hubmapconsortium.github.io/asctb-azimuth-data-comparison/spleen.csv" title="Spleen csv file">Spleen</a></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="5" class="align-middle bg-dark-gray"><strong>Cell Types</strong></td>
+                                        <td rowspan="2" class="align-middle bg-lighter-gray"><strong>Azimuth</strong></td>
+                                        <td><strong>Unique Names</strong></td>
+                                        <td>72</td>
+                                        <td>187</td>
+                                        <td>53</td>
+                                        <td>67</td>
+                                        <td>13</td>
+                                        <td>49</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Unique IDs</strong></td>
+                                        <td>32</td>
+                                        <td>10</td>
+                                        <td>39</td>
+                                        <td>43</td>
+                                        <td>12</td>
+                                        <td>N/A</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2" class="align-middle bg-lighter-gray"><strong>ASCT+B v1.0</strong></td>
+                                        <td><strong>Unique Names</strong></td>
+                                        <td>46</td>
+                                        <td>127</td>
+                                        <td>61</td>
+                                        <td>93</td>
+                                        <td>0</td>
+                                        <td>66</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Unique IDs</strong></td>
+                                        <td>16</td>
+                                        <td>N/A</td>
+                                        <td>46</td>
+                                        <td>74</td>
+                                        <td>0</td>
+                                        <td>N/A</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bg-lighter-gray"><strong>Matches</strong></td>
+                                        <td><strong>Using IDs</strong></td>
+                                        <td>5</td>
+                                        <td>123</td>
+                                        <td>23</td>
+                                        <td>14</td>
+                                        <td>0</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" class="bg-dark-gray"><strong>Annotation Levels in Azimuth Reference</strong></td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>9</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" class="bg-dark-gray"><strong>Total Cell Count in Azimuth Reference</strong></td>
+                                        <td>35,355</td>
+                                        <td>24,402</td>
+                                        <td>58,461</td>
+                                        <td>65,662</td>
+                                        <td>35,289</td>
+                                        <td>5,104</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="3" class="align-middle bg-dark-gray"><strong>Biomarkers</strong></td>
+                                        <td class="bg-lighter-gray"><strong>Azimuth</strong></td>
+                                        <td></td>
+                                        <td>352</td>
+                                        <td>864</td>
+                                        <td>432</td>
+                                        <td>556</td>
+                                        <td>128</td>
+                                        <td>N/A</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bg-lighter-gray"><strong>ASCT+B</strong></td>
+                                        <td></td>
+                                        <td>199</td>
+                                        <td>254</td>
+                                        <td>150</td>
+                                        <td>172</td>
+                                        <td>0</td>
+                                        <td>N/A</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bg-lighter-gray"><strong>Matches</strong></td>
+                                        <td></td>
+                                        <td>87</td>
+                                        <td>152</td>
+                                        <td>70</td>
+                                        <td>73</td>
+                                        <td>0</td>
+                                        <td>N/A</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>Code is available on <a href="https://github.com/hubmapconsortium/asctb-azimuth-data-comparison" title="ASCT+B Azimuth comparison on GitHub">GitHub</a>.</p>
+                        </div>
+                        <h2 class="mt-5">Azimuth CT Counts</h2>
+                        <p>Data from <a href="https://github.com/satijalab/azimuth_website" title="Satija Labs Azimuth website">https://github.com/satijalab/azimuth_website</a> has been parsed to derive cell type counts:</p>
+                        <h2 class="mt-5">References</h2>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">Hao Y, Hao S, Andersen-Nissen E, Mauck WM 3rd, Zheng S, Butler A, Lee MJ, Wilk AJ, Darby C, Zager M, Hoffman P, Stoeckius M, Papalexi E, Mimitou EP, Jain J, Srivastava A, Stuart T, Fleming LM, Yeung B, Rogers AJ, McElrath JM, Blish CA, Gottardo R, Smibert P, Satija R. 2021. Integrated analysis of multimodal single-cell data. <em>Cell</em>. 184(13):3573-3587.e29. doi: 10.1016/j.cell.2021.04.048.</li>
+                        </ul>
                 </div>
               </div>
               
