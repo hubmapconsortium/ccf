@@ -27,6 +27,7 @@
     <link href="../css/bootstrap-material-design.css" media="screen" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700&display=swap" rel="stylesheet">
     <link href="../css/cns.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 
 <body>
@@ -84,29 +85,6 @@
                             </div>
                             <span class="col-sm-10">CCF 3D Reference Object Library</span>
                         </h1>
-                        <h2 class="mt-5">Overview</h2>
-                        <p>TestThe CCF 3D Reference Object Library provides anatomically correct reference organs. The organs are developed by a specialist in 3D medical illustration and approved by organ experts.</p>
-                        <p>Initially, reference objects are created using data from the Visible Human male and female datasets provided by the National Library of Medicine. The male dataset comprises 1,871 cross-sections at 1mm intervals for both CT and anatomical images at a resolution of 4,096 pixels by 2,700 pixels. The female data set has the same characteristics as the Visible Human Male but axial anatomical images were obtained at 0.33 mm intervals resulting in 5,189 cross-section anatomical images. The male was white, 180.3 cm (71 inch) tall, 199-pound and was 38 years old. The female was white, 171.2 cm (67.4 inch) tall, obese, and 59 years old.</p>
-                        <p>On March 12, 2021, a total of 11 reference organs became available in GLB format. Each organ can be viewed and explored using free web browsers such as Babylon.js. Screenshots and major properties of the nested reference organ objects are given in the table below.</p>
-                        <p>For selected organs, 3D extraction site objects are provided. Some extraction sites resemble geometric objects (e.g., cuboids for heart) while others take the shape of one or more whole or partial anatomical structures (e.g., in spleen). The 3D extraction sites do not restrict registration to specific regions, instead they provide “expert defined landmarks” to help guide tissue registration. The extraction site objects are also used for automatic semantic annotation of tissue samples via collision detection during registration.</p>
-                        <h4>Standard Operating Procedures (SOP)</h4>
-                        <ul>
-                            <li><a href="../dld/2021.06.16.sop-3d-reference-object-approval.pdf" title="Download 3D Reference Object Approval SOP" target="_blank">SOP: 3D Reference Object Approval</a></li>
-                            <li><a href="../dld/2021.04.09.sop-using-3d-reference-objects.pdf" title="Download 3D Reference Object Approval SOP" target="_blank">SOP: Using 3D Reference Objects</a></li>
-                            <li><a href="../dld/2021.06.15.sop-using-the-registration-user-interface.pdf" title="Download Using the Registration User Interface SOP" target="_blank">SOP: Using the Registration User Interface</a></li>
-                        </ul>
-                        <h4 class="mt-5">Terms of Use</h4>
-                        <p>HuBMAP data are supplied with no warranties, expressed or implied, including without limitation, any warranty of merchantability or fitness for a particular purpose or non-infringement. No warranty with respect to the HuBMAP infrastructure is provided, including without limitation, any uptime warranty. The Parties make no representations that the use of the data will not infringe any patent or proprietary rights of third parties.</p>
-                        <h4 class="mt-5">License</h4>
-                        <p>All CCF 3D reference objects are released under <a href="https://creativecommons.org/licenses/by/4.0/" title="Link to external site containing attribution information" target="_blank">Attribution 4.0 International (CC BY 4.0)</a>.</p>
-                        <h4 class="mt-5">Citation</h4>
-                        <p>If you use the data files, please cite this effort as follows:</p>
-                        <p>Browne, K., Cross, L. E., Herr II, B. W., Record, L, Quardokus, E, Bueckle, A., Börner, K. (2021). <em>HuBMAP CCF 3D Reference Object Library</em>. https://hubmapconsortium.github.io/ccf/pages/ccf-3d-reference-library.html. Accessed on March 12, 2021.                        </p>
-
-                        <h4 class="mt-5">Reference Organs</h4>
-                        <p><a href="https://github.com/hubmapconsortium/ccf-releases/tree/main/v1.0/models" title="HuBMAP 3D Reference Organs download" target="_blank">Download organs</a> in GLB and FBX format.</p>
-                        <p><a href="https://github.com/hubmapconsortium/ccf-3d-reference-object-library/tree/master/VH_Female/V1.0/Extraction%20Sites" title="HuBMAP 3D Reference Organs female extraction sites download" target="_blank">Download extraction sites for female</a> in GLB and FBX format. <br><a href="https://github.com/hubmapconsortium/ccf-3d-reference-object-library/tree/master/VH_Male/V1/Extraction%20Sites" title="HuBMAP 3D Reference Organs male extraction sites download" target="_blank">Download extraction sites for male</a> in GLB and FBX format.</p>
-                        <p>Download crosswalk information<a href="https://doi.org/10.48539/HBM527.RCXM.366" title="Download file" download> ASCT-B 3D models mapping</a> in CSV format.</p>
                         <nav class="navbar navbar-expand-lg navbar-tabs navbar-light bg-light mt-3">
                             <button class="navbar-toggler" type="button" data-toggle="collapse"
                                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -119,47 +97,51 @@
                                 <ul class="nav nav-tabs bg-light" id="myTab" role="tablist">
                                     <li class="nav-item">
                                         <a class="nav-link active" id="bone-tab" data-toggle="tab" href="#bone"
-                                            role="tab" aria-controls="home" aria-selected="true">Bone Marrow & Blood/Pelvis</a>
+                                            role="tab" aria-controls="home" aria-selected="true"><img src= "/img/icons/ico-organs-pelvis f.svg" Width=45.7px height=45.7px ><br/>Bone Marrow &<br/> Blood/Pelvis</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" id="brain-tab" data-toggle="tab" href="#brain"
-                                            role="tab" aria-controls="home" aria-selected="true">Brain</a>
+                                            role="tab" aria-controls="home" aria-selected="true"><img src= "/img/icons/ico-organs_brain.svg" >Allen<br/> Brain</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" id="heart-tab" data-toggle="tab" href="#heart" role="tab"
-                                            aria-controls="home" aria-selected="true">Heart</a>
+                                            aria-controls="home" aria-selected="true"><img src= "/img/icons/ico-organs_heart.svg">Heart</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" id="colon-tab" data-toggle="tab" href="#colon"
-                                            role="tab" aria-controls="home" aria-selected="true">Intestine, Large</a>
+                                            role="tab" aria-controls="home" aria-selected="true"><img src= "/img/icons/ico-organs-large-intestine.svg" Width=45.7px height=45.7px><br/>Intestine, <br/>Large</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" id="kidney-tab" data-toggle="tab" href="#kidney" role="tab"
-                                            aria-controls="profile" aria-selected="false">Kidney</a>
+                                            aria-controls="profile" aria-selected="false"><img src= "/img/icons/ico-organs-kidney-left.svg" Width=45.7px height=45.7px><br/>Kidney</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" id="lung-tab" data-toggle="tab" href="#lung"
-                                            role="tab" aria-controls="home" aria-selected="true">Lung</a>
+                                            role="tab" aria-controls="home" aria-selected="true"><img src= "/img/icons/ico-organs_lung.svg" Width=45.7px height=45.7px><br/>Lung</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" id="lymphnodes-tab" data-toggle="tab" href="#lymphnodes"
-                                            role="tab" aria-controls="home" aria-selected="true">Lymph Node</a>
+                                            role="tab" aria-controls="home" aria-selected="true"><img src= "/img/icons/ico-organs-lymph-nodes.svg" Width=45.7px height=45.7px><br/>Lymph<br/>Node</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" id="skin-tab" data-toggle="tab" href="#skin"
-                                            role="tab" aria-controls="home" aria-selected="true">Skin</a>
+                                            role="tab" aria-controls="home" aria-selected="true"><img src= "/img/icons/ico-organs-skin.svg" Width=45.7px height=45.7px><br/>Skin</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" id="spleen-tab" data-toggle="tab" href="#spleen" role="tab"
-                                            aria-controls="contact" aria-selected="false">Spleen</a>
+                                            aria-controls="contact" aria-selected="false"><img src= "/img/icons/ico-organs_spleen.svg" Width=45.7px height=45.7px><br/>Spleen</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" id="thymus-tab" data-toggle="tab" href="#thymus"
-                                            role="tab" aria-controls="home" aria-selected="true">Thymus</a>
+                                            role="tab" aria-controls="home" aria-selected="true"><img src= "/img/icons/ico-organs-thymus.svg" Width=45.7px height=45.7px><br/>Thymus</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" id="vasculature-tab" data-toggle="tab" href="#vasculature"
-                                            role="tab" aria-controls="home" aria-selected="true">Vasculature</a>
+                                            role="tab" aria-controls="home" aria-selected="true"><img src= "/img/icons/ico-organs-vasculature-thick.svg" Width=45.7px height=45.7px><br/>Vasculature</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="pancreas-tab" data-toggle="tab" href="#pancreas"
+                                            role="tab" aria-controls="home" aria-selected="true"><img src= "/img/icons/ico-organs-pancreas.svg" Width=45.7px height=45.7px><br/>Pancreas</a>
                                     </li>
                                 </ul>
 
@@ -176,137 +158,42 @@
                                     <div class="mb-4">
                                         <div class="card">
                                             <h5 class="card-header position-relative bg-light">
-                                                <span class="text-uppercase">Male:</span> Pelvis<span
+                                                <span class="text-uppercase"></span> Pelvis<span
                                                     class="card-header-icon position-absolute">
-                                                    <a href="https://entity.api.hubmapconsortium.org/redirect/HBM672.KSST.448" title="Opens new page with DOI related details" target="_blank" class="details">Details</a>
-                                                    <!-- <a href="https://hubmapconsortium.github.io/hubmap-ontology/objects/VHF_Colon_Low.glb"
-                                                        title="Download GLB file"><svg class="ico-1"
-                                                            xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
-                                                            <path d="M0 0h24v24H0z" fill="none" />
-                                                            <path
-                                                                d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z" />
-                                                        </svg></a> -->
+                                                    
                                                 </span>
                                             </h5>
                                             <div class="row no-gutters h-100 position-relative">
-                                                <div class="col-xs-12 col-lg-5 text-center">
-                                                    <img class="img-fluid" src="../img/thb-pelvis-m.jpg"
-                                                        alt="3D Model: Pelvis, Male" />
-                                                    <div data-toggle="modal" data-target=".mod-pelvis-m">
-
-                                                        <!-- <span
-                                                            class="px-2 py-2 mb-3 bg-light position-absolute tile"><svg
-                                                                class="ico-1" xmlns="http://www.w3.org/2000/svg"
-                                                                viewbox="0 0 24 24">
-                                                                <path d="M0 0h24v24H0z" class="fill-none" />
-                                                                <path class="fill-link-blue"
-                                                                    d="M7.52 21.48C4.25 19.94 1.91 16.76 1.55 13H.05C.56 19.16 5.71 24 12 24l.66-.03-3.81-3.81-1.33 1.32zm.89-6.52c-.19 0-.37-.03-.52-.08-.16-.06-.29-.13-.4-.24-.11-.1-.2-.22-.26-.37-.06-.14-.09-.3-.09-.47h-1.3c0 .36.07.68.21.95.14.27.33.5.56.69.24.18.51.32.82.41.3.1.62.15.96.15.37 0 .72-.05 1.03-.15.32-.1.6-.25.83-.44s.42-.43.55-.72c.13-.29.2-.61.2-.97 0-.19-.02-.38-.07-.56-.05-.18-.12-.35-.23-.51-.1-.16-.24-.3-.4-.43-.17-.13-.37-.23-.61-.31.2-.09.37-.2.52-.33.15-.13.27-.27.37-.42.1-.15.17-.3.22-.46.05-.16.07-.32.07-.48 0-.36-.06-.68-.18-.96-.12-.28-.29-.51-.51-.69-.2-.19-.47-.33-.77-.43C9.1 8.05 8.76 8 8.39 8c-.36 0-.69.05-1 .16-.3.11-.57.26-.79.45-.21.19-.38.41-.51.67-.12.26-.18.54-.18.85h1.3c0-.17.03-.32.09-.45s.14-.25.25-.34c.11-.09.23-.17.38-.22.15-.05.3-.08.48-.08.4 0 .7.1.89.31.19.2.29.49.29.86 0 .18-.03.34-.08.49-.05.15-.14.27-.25.37-.11.1-.25.18-.41.24-.16.06-.36.09-.58.09H7.5v1.03h.77c.22 0 .42.02.6.07s.33.13.45.23c.12.11.22.24.29.4.07.16.1.35.1.57 0 .41-.12.72-.35.93-.23.23-.55.33-.95.33zm8.55-5.92c-.32-.33-.7-.59-1.14-.77-.43-.18-.92-.27-1.46-.27H12v8h2.3c.55 0 1.06-.09 1.51-.27.45-.18.84-.43 1.16-.76.32-.33.57-.73.74-1.19.17-.47.26-.99.26-1.57v-.4c0-.58-.09-1.1-.26-1.57-.18-.47-.43-.87-.75-1.2zm-.39 3.16c0 .42-.05.79-.14 1.13-.1.33-.24.62-.43.85-.19.23-.43.41-.71.53-.29.12-.62.18-.99.18h-.91V9.12h.97c.72 0 1.27.23 1.64.69.38.46.57 1.12.57 1.99v.4zM12 0l-.66.03 3.81 3.81 1.33-1.33c3.27 1.55 5.61 4.72 5.96 8.48h1.5C23.44 4.84 18.29 0 12 0z" />
-                                                                </svg></span> -->
-                                                    </div>
+                                                <div class="container">
+                                                    <h5 class="mt-5">ASCT+B Table for Pelvis</h4>
+                                                        <a href="https://hubmapconsortium.github.io/ccf-releases/v1.0/docs/asct-b/heart.html">Anatomical Structures, Cell Types, plus Biomarkers (ASCT+B) table for Brain </a>
+                                        
+                                             <div class="row">
+                                                <div class="col">
+                                                    <h5 class="mt-5">3D Reference Object for Female Pelvis</h5>
+                                                    <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.0/docs/ref-organs/heart-male.html">Female 3D model</a>
+                                                    <model-viewer class="model-viewer-div" alt="The pelvis, female"
+                                                        src="/content/models/VH_F_Pelvis_v1.1.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                        style="height: 400px;">
+                                                    </model-viewer>
                                                 </div>
-                                                <div class="col-xs-12 col-lg-7 col-scroll">
-                                                    <div class="card-body">
-                                                        <table class="table table-sm mb-0">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>Anatomical Structure</th>
-                                                                    <th>ID</th>
-                                                                    <th class="text-right">Count</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td># Anatomical Structures</td>
-                                                                    <td></td>
-                                                                    <td class="text-right">18</td>
-                                                                </tr>
-                                                                <tr><td>bony pelvis</td><td><a href="http://purl.obolibrary.org/obo/UBERON_0001270" title="External link to ontology" target="_blank">UBERON:0001270</a></td><td class="text-right">1</td></tr>
-                                                                <tr><td>coccyx</td><td><a href="http://purl.obolibrary.org/obo/UBERON_UBERON:0001350" title="External link to ontology" target="_blank">UBERON:0001350</a></td><td class="text-right">1</td></tr>
-                                                                <tr><td>ilium</td><td><a href="http://purl.obolibrary.org/obo/UBERON_UBERON:0001273" title="External link to ontology" target="_blank">UBERON:0001273</a></td><td class="text-right">1</td></tr>
-                                                                <tr><td>ilium compact bone</td><td></td><td class="text-right">2</td></tr>
-                                                                <tr><td>ilium spongy bone</td><td></td><td class="text-right">2</td></tr>
-                                                                <tr><td>ischium</td><td><a href="http://purl.obolibrary.org/obo/UBERON_UBERON:0001274" title="External link to ontology" target="_blank">UBERON:0001274</a></td><td class="text-right">1</td></tr>
-                                                                <tr><td>ischium compact bone</td><td></td><td class="text-right">2</td></tr>
-                                                                <tr><td>ischium spongy bone</td><td></td><td class="text-right">2</td></tr>
-                                                                <tr><td>pubis</td><td><a href="http://purl.obolibrary.org/obo/UBERON_UBERON:0001275" title="External link to ontology" target="_blank">UBERON:0001275</a></td><td class="text-right">1</td></tr>
-                                                                <tr><td>pubis compact bone</td><td></td><td class="text-right">2</td></tr>
-                                                                <tr><td>pubis spongy bone</td><td></td><td class="text-right">2</td></tr>
-                                                                <tr><td>sacrum</td><td><a href="http://purl.obolibrary.org/obo/UBERON_UBERON:0003690" title="External link to ontology" target="_blank">UBERON:0003690</a></td><td class="text-right">1</td></tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
+                                                <div class="col">
+                                                    <h5 class="mt-5">3D Reference Object for Male Pelvis</h5>
+                                                    <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.0/docs/ref-organs/heart-male.html">Male 3D model</a>
+                                                    <model-viewer class="model-viewer-div" alt="The pelvis, male"
+                                                        src="/content/models/VH_M_Pelvis_v1.0.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                        style="height: 400px;">
+                                                    </model-viewer>
                                                 </div>
+                                            </div>
+                                            
+                                                </div>
+                                               
                                             </div>
                                         </div>
                                     </div>
                                     <!-- END: Card 1 -->
-                                    <!-- START: Card 2 -->
-                                    <div class="mb-4">
-                                        <div class="card">
-                                            <h5 class="card-header position-relative bg-light">
-                                                <span class="text-uppercase">Female:</span> Pelvis<span
-                                                    class="card-header-icon position-absolute">
-                                                    <a href="https://entity.api.hubmapconsortium.org/redirect/HBM539.RRDB.894" title="Opens new page with DOI related details" target="_blank" class="details">Details</a>
-                                                    <!-- <a href="https://hubmapconsortium.github.io/hubmap-ontology/objects/VHF_Colon_Low.glb"
-                                                        title="Download GLB file"><svg class="ico-1"
-                                                            xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
-                                                            <path d="M0 0h24v24H0z" fill="none" />
-                                                            <path
-                                                                d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z" />
-                                                        </svg></a> -->
-                                                </span>
-                                            </h5>
-                                            <div class="row no-gutters h-100 position-relative">
-                                                <div class="col-xs-12 col-lg-5 text-center">
-                                                    <img class="img-fluid" src="../img/thb-pelvis-f.jpg"
-                                                        alt="3D Model: Pelvis, Female" />
-                                                    <div data-toggle="modal" data-target=".mod-pelvis-f">
-                                                        <!-- <span
-                                                            class="px-2 py-2 mb-3 bg-light position-absolute tile"><svg
-                                                                class="ico-1" xmlns="http://www.w3.org/2000/svg"
-                                                                viewbox="0 0 24 24">
-                                                                <path d="M0 0h24v24H0z" class="fill-none" />
-                                                                <path class="fill-link-blue"
-                                                                    d="M7.52 21.48C4.25 19.94 1.91 16.76 1.55 13H.05C.56 19.16 5.71 24 12 24l.66-.03-3.81-3.81-1.33 1.32zm.89-6.52c-.19 0-.37-.03-.52-.08-.16-.06-.29-.13-.4-.24-.11-.1-.2-.22-.26-.37-.06-.14-.09-.3-.09-.47h-1.3c0 .36.07.68.21.95.14.27.33.5.56.69.24.18.51.32.82.41.3.1.62.15.96.15.37 0 .72-.05 1.03-.15.32-.1.6-.25.83-.44s.42-.43.55-.72c.13-.29.2-.61.2-.97 0-.19-.02-.38-.07-.56-.05-.18-.12-.35-.23-.51-.1-.16-.24-.3-.4-.43-.17-.13-.37-.23-.61-.31.2-.09.37-.2.52-.33.15-.13.27-.27.37-.42.1-.15.17-.3.22-.46.05-.16.07-.32.07-.48 0-.36-.06-.68-.18-.96-.12-.28-.29-.51-.51-.69-.2-.19-.47-.33-.77-.43C9.1 8.05 8.76 8 8.39 8c-.36 0-.69.05-1 .16-.3.11-.57.26-.79.45-.21.19-.38.41-.51.67-.12.26-.18.54-.18.85h1.3c0-.17.03-.32.09-.45s.14-.25.25-.34c.11-.09.23-.17.38-.22.15-.05.3-.08.48-.08.4 0 .7.1.89.31.19.2.29.49.29.86 0 .18-.03.34-.08.49-.05.15-.14.27-.25.37-.11.1-.25.18-.41.24-.16.06-.36.09-.58.09H7.5v1.03h.77c.22 0 .42.02.6.07s.33.13.45.23c.12.11.22.24.29.4.07.16.1.35.1.57 0 .41-.12.72-.35.93-.23.23-.55.33-.95.33zm8.55-5.92c-.32-.33-.7-.59-1.14-.77-.43-.18-.92-.27-1.46-.27H12v8h2.3c.55 0 1.06-.09 1.51-.27.45-.18.84-.43 1.16-.76.32-.33.57-.73.74-1.19.17-.47.26-.99.26-1.57v-.4c0-.58-.09-1.1-.26-1.57-.18-.47-.43-.87-.75-1.2zm-.39 3.16c0 .42-.05.79-.14 1.13-.1.33-.24.62-.43.85-.19.23-.43.41-.71.53-.29.12-.62.18-.99.18h-.91V9.12h.97c.72 0 1.27.23 1.64.69.38.46.57 1.12.57 1.99v.4zM12 0l-.66.03 3.81 3.81 1.33-1.33c3.27 1.55 5.61 4.72 5.96 8.48h1.5C23.44 4.84 18.29 0 12 0z" />
-                                                                </svg></span> -->
-                                                            </div>
-                                                </div>
-                                                <div class="col-xs-12 col-lg-7 col-scroll">
-                                                    <div class="card-body">
-                                                        <table class="table table-sm mb-0">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>Anatomical Structure</th>
-                                                                    <th>ID</th>
-                                                                    <th class="text-right">Count</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td># Anatomical Structures</td>
-                                                                    <td></td>
-                                                                    <td class="text-right">18</td>
-                                                                </tr>
-                                                                <tr><td>bony pelvis</td><td><a href="http://purl.obolibrary.org/obo/UBERON_0001270" title="External link to ontology" target="_blank">UBERON:0001270</a></td><td class="text-right">1</td></tr>
-                                                                <tr><td>coccyx</td><td><a href="http://purl.obolibrary.org/obo/UBERON_UBERON:0001350" title="External link to ontology" target="_blank">UBERON:0001350</a></td><td class="text-right">1</td></tr>
-                                                                <tr><td>ilium</td><td><a href="http://purl.obolibrary.org/obo/UBERON_UBERON:0001273" title="External link to ontology" target="_blank">UBERON:0001273</a></td><td class="text-right">1</td></tr>
-                                                                <tr><td>ilium compact bone</td><td></td><td class="text-right">2</td></tr>
-                                                                <tr><td>ilium spongy bone</td><td></td><td class="text-right">2</td></tr>
-                                                                <tr><td>ischium</td><td><a href="http://purl.obolibrary.org/obo/UBERON_UBERON:0001274" title="External link to ontology" target="_blank">UBERON:0001274</a></td><td class="text-right">1</td></tr>
-                                                                <tr><td>ischium compact bone</td><td></td><td class="text-right">2</td></tr>
-                                                                <tr><td>ischium spongy bone</td><td></td><td class="text-right">2</td></tr>
-                                                                <tr><td>pubis</td><td><a href="http://purl.obolibrary.org/obo/UBERON_UBERON:0001275" title="External link to ontology" target="_blank">UBERON:0001275</a></td><td class="text-right">1</td></tr>
-                                                                <tr><td>pubis compact bone</td><td></td><td class="text-right">2</td></tr>
-                                                                <tr><td>pubis spongy bone</td><td></td><td class="text-right">2</td></tr>
-                                                                <tr><td>sacrum</td><td><a href="http://purl.obolibrary.org/obo/UBERON_UBERON:0003690" title="External link to ontology" target="_blank">UBERON:0003690</a></td><td class="text-right">1</td></tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- END: Card 2 -->
+                                    
                                 </div>
                             </div>
                             <div class="tab-pane fade show" id="brain" role="tabpanel"
@@ -316,682 +203,42 @@
                                     <div class="mb-4">
                                         <div class="card">
                                             <h5 class="card-header position-relative bg-light">
-                                                <span class="text-uppercase">Male:</span> Brain<span
+                                                <span class="text-uppercase">Allen</span> Brain<span
                                                     class="card-header-icon position-absolute">
-                                                    <!-- <a href="https://entity.api.hubmapconsortium.org/redirect/HBM927.XKJR.426" title="Opens new page with DOI related details" target="_blank" class="details">Details</a> -->
-                                                    <!-- <a href="https://hubmapconsortium.github.io/hubmap-ontology/objects/VHF_Colon_Low.glb"
-                                                        title="Download GLB file"><svg class="ico-1"
-                                                            xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
-                                                            <path d="M0 0h24v24H0z" fill="none" />
-                                                            <path
-                                                                d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z" />
-                                                        </svg></a> -->
+                                                    
                                                 </span>
                                             </h5>
                                             <div class="row no-gutters h-100 position-relative">
-                                                <div class="col-xs-12 col-lg-5 text-center">
-                                                    <img class="img-fluid" src="../img/thb-brain-m.jpg"
-                                                        alt="3D Model: Brain, Male" />
-                                                    <div data-toggle="modal" data-target=".mod-brain-m">
-                                                        <!-- <span
-                                                            class="px-2 py-2 mb-3 bg-light position-absolute tile"><svg
-                                                                class="ico-1" xmlns="http://www.w3.org/2000/svg"
-                                                                viewbox="0 0 24 24">
-                                                                <path d="M0 0h24v24H0z" class="fill-none" />
-                                                                <path class="fill-link-blue"
-                                                                    d="M7.52 21.48C4.25 19.94 1.91 16.76 1.55 13H.05C.56 19.16 5.71 24 12 24l.66-.03-3.81-3.81-1.33 1.32zm.89-6.52c-.19 0-.37-.03-.52-.08-.16-.06-.29-.13-.4-.24-.11-.1-.2-.22-.26-.37-.06-.14-.09-.3-.09-.47h-1.3c0 .36.07.68.21.95.14.27.33.5.56.69.24.18.51.32.82.41.3.1.62.15.96.15.37 0 .72-.05 1.03-.15.32-.1.6-.25.83-.44s.42-.43.55-.72c.13-.29.2-.61.2-.97 0-.19-.02-.38-.07-.56-.05-.18-.12-.35-.23-.51-.1-.16-.24-.3-.4-.43-.17-.13-.37-.23-.61-.31.2-.09.37-.2.52-.33.15-.13.27-.27.37-.42.1-.15.17-.3.22-.46.05-.16.07-.32.07-.48 0-.36-.06-.68-.18-.96-.12-.28-.29-.51-.51-.69-.2-.19-.47-.33-.77-.43C9.1 8.05 8.76 8 8.39 8c-.36 0-.69.05-1 .16-.3.11-.57.26-.79.45-.21.19-.38.41-.51.67-.12.26-.18.54-.18.85h1.3c0-.17.03-.32.09-.45s.14-.25.25-.34c.11-.09.23-.17.38-.22.15-.05.3-.08.48-.08.4 0 .7.1.89.31.19.2.29.49.29.86 0 .18-.03.34-.08.49-.05.15-.14.27-.25.37-.11.1-.25.18-.41.24-.16.06-.36.09-.58.09H7.5v1.03h.77c.22 0 .42.02.6.07s.33.13.45.23c.12.11.22.24.29.4.07.16.1.35.1.57 0 .41-.12.72-.35.93-.23.23-.55.33-.95.33zm8.55-5.92c-.32-.33-.7-.59-1.14-.77-.43-.18-.92-.27-1.46-.27H12v8h2.3c.55 0 1.06-.09 1.51-.27.45-.18.84-.43 1.16-.76.32-.33.57-.73.74-1.19.17-.47.26-.99.26-1.57v-.4c0-.58-.09-1.1-.26-1.57-.18-.47-.43-.87-.75-1.2zm-.39 3.16c0 .42-.05.79-.14 1.13-.1.33-.24.62-.43.85-.19.23-.43.41-.71.53-.29.12-.62.18-.99.18h-.91V9.12h.97c.72 0 1.27.23 1.64.69.38.46.57 1.12.57 1.99v.4zM12 0l-.66.03 3.81 3.81 1.33-1.33c3.27 1.55 5.61 4.72 5.96 8.48h1.5C23.44 4.84 18.29 0 12 0z" />
-                                                                </svg></span> -->
-                                                            </div>
+                                                <div class="container">
+                                                    <h5 class="mt-5">ASCT+B Table for Brain</h4>
+                                                        <a href="https://hubmapconsortium.github.io/ccf-releases/v1.0/docs/asct-b/heart.html">Anatomical Structures, Cell Types, plus Biomarkers (ASCT+B) table for Brain </a>
+                                        
+                                             <div class="row">
+                                                <div class="col">
+                                                    <h5 class="mt-5">3D Reference Object for Female Brain</h5>
+                                                    <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.0/docs/ref-organs/heart-male.html">Female 3D model</a>
+                                                    <model-viewer class="model-viewer-div" alt="The Visible Human brain, female, left"
+                                                        src="/content/models/Allen_F_Brain_v1.1.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                        style="height: 400px;">
+                                                    </model-viewer>
                                                 </div>
-                                                <div class="col-xs-12 col-lg-7 col-scroll">
-                                                    <div class="card-body">
-                                                        <table class="table table-sm mb-0">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>Anatomical Structure</th>
-                                                                    <th>ID</th>
-                                                                    <th class="text-right">Count</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td># Anatomical Structures</td>
-                                                                    <td></td>
-                                                                    <td class="text-right">284</td>
-                                                                </tr>
-                                                                <tr><td>brain</td><td><a href="http://purl.obolibrary.org/obo/UBERON_0000955" title="External link to ontology" target="_blank">UBERON:0000955</a></td><td class="text-right">1</td></tr>
-                                                                <tr><td>amygdalohippocampal area L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>amygdalohippocampal area R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>amygdaloid complex L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>amygdaloid complex R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>angular gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>angular gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>anterior amygdaloid area L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>anterior amygdaloid area R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>anterior commissure L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>anterior commissure R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>anterior cortical nucleus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>anterior cortical nucleus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>anterior horn of lateral ventricle L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>anterior horn of lateral ventricle R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>anterior intermediate orbital gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>anterior intermediate orbital gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>anterior nuclear complex of thalamus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>anterior nuclear complex of thalamus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>anterior olfactory nucleus L</td><td><a href="http://purl.obolibrary.org/obo/UBERON_0002266" title="External link to ontology" target="_blank">UBERON:0002266</a></td><td class="text-right">1</td></tr>
-                                                                <tr><td>anterior olfactory nucleus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>anterior parahippocampal gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>anterior parahippocampal gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>atrium of lateral ventricle L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>atrium of lateral ventricle R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>basal forebrain L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>basal forebrain R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>basilar part of pons L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>basilar part of pons R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>basolateral nucleus basal nucleus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>basolateral nucleus basal nucleus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>basomedial nucleus accessory basal nucleus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>basomedial nucleus accessory basal nucleus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>bed nucleus of stria terminalis L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>bed nucleus of stria terminalis R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>body of caudate L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>body of caudate R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>body of hippocampus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>body of hippocampus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>body of lateral ventricle L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>body of lateral ventricle R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>central canal of medulla oblongata L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>central canal of medulla oblongata R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>central nuclear group L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>central nuclear group R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>centromedian nucleus of thalamus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>centromedian nucleus of thalamus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>cerebellar deep nuclei L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>cerebellar deep nuclei R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>cerebellar vermis L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>cerebellar vermis R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>cerebral aqueduct L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>cerebral aqueduct R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>cerebral peduncle crus cerebri L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>cerebral peduncle crus cerebri R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>cingulate gyrus caudal posterior part L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>cingulate gyrus caudal posterior part R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>cingulate gyrus rostral anterior part L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>cingulate gyrus rostral anterior part R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>claustrum L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>claustrum R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>corpus callosum L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>corpus callosum R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>cuneus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>cuneus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>dorsal lateral geniculate nucleus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>dorsal lateral geniculate nucleus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>external segment of globus pallidus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>external segment of globus pallidus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>fornix L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>fornix R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>fourth ventricle L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>fourth ventricle R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>frontal agranular insular cortex area Fl L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>frontal agranular insular cortex area Fl R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>frontal operculum L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>frontal operculum R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>frontal pole L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>frontal pole R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>frontomarginal gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>frontomarginal gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>gyrus ambiens L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>gyrus ambiens R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>gyrus rectus straight gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>gyrus rectus straight gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>habenular nuclei L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>habenular nuclei R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>head of caudate L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>head of caudate R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>head of hippocampus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>head of hippocampus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>hemisphere L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>hemisphere R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>hypothalamus L</td><td><a href="http://purl.obolibrary.org/obo/UBERON_0001898" title="External link to ontology" target="_blank">UBERON:0001898</a></td><td class="text-right">1</td></tr>
-                                                                <tr><td>hypothalamus R</td><td><a href="http://purl.obolibrary.org/obo/UBERON_0001898" title="External link to ontology" target="_blank">UBERON:0001898</a></td><td class="text-right">1</td></tr>
-                                                                <tr><td>inferior cerebellar peduncle L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>inferior cerebellar peduncle R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>inferior colliculus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>inferior colliculus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>inferior frontal gyrus opercular part L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>inferior frontal gyrus opercular part R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>inferior frontal gyrus triangular part L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>inferior frontal gyrus triangular part R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>inferior horn of lateral ventricle L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>inferior horn of lateral ventricle R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>inferior occipital gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>inferior occipital gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>inferior olive L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>inferior olive R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>inferior temporal gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>inferior temporal gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>ingulo parahippocampal isthmus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>ingulo parahippocampal isthmus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>internal segment of globus pallidus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>internal segment of globus pallidus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>lateral dorsal nucleus of thalamus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>lateral dorsal nucleus of thalamus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>lateral hemisphere of cerebellum L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>lateral hemisphere of cerebellum R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>lateral nucleus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>lateral nucleus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>lateral occipitotemporal fusiform gyrus occipital part L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>lateral occipitotemporal fusiform gyrus occipital part R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>lateral olfactory gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>lateral olfactory gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>lateral orbital gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>lateral orbital gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>lateral posterior nucleus of thalamus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>lateral posterior nucleus of thalamus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>limen insula L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>limen insula R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>lingual gyrus medial occipitotemporal gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>lingual gyrus medial occipitotemporal gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>long insular gyri L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>long insular gyri R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>mammillary region of HTH L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>mammillary region of HTH R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>mammillothalamic tract L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>mammillothalamic tract R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>medial geniculate nuclei L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>medial geniculate nuclei R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>medial nucleus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>medial nucleus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>medial orbital gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>medial orbital gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>mediodorsal nucleus of thalamus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>mediodorsal nucleus of thalamus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>midbrain tegmentum L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>midbrain tegmentum R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>middle cerebellar peduncle L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>middle cerebellar peduncle R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>middle frontal gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>middle frontal gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>middle temporal gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>middle temporal gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>midline nuclear complex L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>midline nuclear complex R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>nucleus accumbens L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>nucleus accumbens R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>occipital pole L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>occipital pole R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>occipitotemporal fusiform gyrus temporal part L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>occipitotemporal fusiform gyrus temporal part R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>olfactory bulb L</td><td><a href="http://purl.obolibrary.org/obo/UBERON_0002264" title="External link to ontology" target="_blank">UBERON:0002264</a></td><td class="text-right">1</td></tr>
-                                                                <tr><td>olfactory bulb R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>olfactory tract L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>olfactory tract R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>optic ratiation L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>optic ratiation R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>optic tract L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>optic tract R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>paracentral lobule caudal part L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>paracentral lobule caudal part R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>paracentral lobule rostral part L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>paracentral lobule rostral part R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>paracingulate gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>paracingulate gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>parafascicular nucleus of thalamus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>parafascicular nucleus of thalamus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>paravermis of cerebellum L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>paravermis of cerebellum R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>parietal operculum L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>parietal operculum R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>perirhinal gyrus rostral part of FuGt L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>perirhinal gyrus rostral part of FuGt R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>pineal body L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>pineal body R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>piriform region L</td><td><a href="http://purl.obolibrary.org/obo/UBERON_0004725" title="External link to ontology" target="_blank">UBERON:0004725</a></td><td class="text-right">1</td></tr>
-                                                                <tr><td>piriform region R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>planum polare L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>planum polare R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>planum temporale L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>planum temporale R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>pontine tegmentum L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>pontine tegmentum R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>postcentral gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>postcentral gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>posterior cortical nucleus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>posterior cortical nucleus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>posterior horn of lateral ventricle L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>posterior horn of lateral ventricle R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>posterior intermediate orbital gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>posterior intermediate orbital gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>posterior parahippocampal gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>posterior parahippocampal gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>posteroventral putamen L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>posteroventral putamen R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>precentral gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>precentral gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>precuneus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>precuneus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>preoptic region of HTH L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>preoptic region of HTH R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>pretectal region L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>pretectal region R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>pulvinar of thalamus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>pulvinar of thalamus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>putamen L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>putamen R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>pyramidal part of medulla oblongata L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>pyramidal part of medulla oblongata R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>red nucleus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>red nucleus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>reuniens nucleus medioventral nucleus of thalamus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>reuniens nucleus medioventral nucleus of thalamus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>rostral gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>rostral gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>septal nuclei L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>septal nuclei R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>short insular gyri L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>short insular gyri R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>subcallosal gyrus parolfactory gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>subcallosal gyrus parolfactory gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>substantia nigra L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>substantia nigra R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>subthalamic nucleus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>subthalamic nucleus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>superior cerebellar peduncle brachium conjunctivum L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>superior cerebellar peduncle brachium conjunctivum R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>superior colliculus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>superior colliculus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>superior frontal gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>superior frontal gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>superior occipital gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>superior occipital gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>superior temporal gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>superior temporal gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>supramarginal gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>supramarginal gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>supraoptic region of HTH L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>supraoptic region of HTH R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>supraparietal lobule L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>supraparietal lobule R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>tail of caudate L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>tail of caudate R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>tail of hippocampus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>tail of hippocampus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>tegmentum of medulla oblongata L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>tegmentum of medulla oblongata R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>temporal agranular insular cortex area Tl L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>temporal agranular insular cortex area Tl R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>temporal pole L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>temporal pole R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>thalamus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>thalamus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>third ventricle L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>third ventricle R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>transverse temporal gyrus Heschls gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>transverse temporal gyrus Heschls gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>tuberal region of HTH L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>tuberal region of HTH R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>ventral anterior nucleus of thalamus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>ventral anterior nucleus of thalamus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>ventral lateral nucleus of thalamus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>ventral lateral nucleus of thalamus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>ventral posterior lateral nucleus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>ventral posterior lateral nucleus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>ventral posterior medial nucleus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>ventral posterior medial nucleus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>white matter of forebrain L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>white matter of forebrain R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>white matter of hindbrain L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>white matter of hindbrain R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>zona incerta L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>zona incerta R</td><td></td><td class="text-right">1</td></tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
+                                                <div class="col">
+                                                    <h5 class="mt-5">3D Reference Object for Male Brain</h5>
+                                                    <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.0/docs/ref-organs/heart-male.html">Male 3D model</a>
+                                                    <model-viewer class="model-viewer-div" alt="The Visible Human brain, male"
+                                                        src="/content/models/Allen_M_Brain_v1.0.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                        style="height: 400px;">
+                                                    </model-viewer>
                                                 </div>
+                                            </div>
+                                            
+                                                </div>
+                                               
                                             </div>
                                         </div>
                                     </div>
                                     <!-- END: Card 1 -->
-                                    <!-- START: Card 2 -->
-                                    <div class="mb-4">
-                                        <div class="card">
-                                            <h5 class="card-header position-relative bg-light">
-                                                <span class="text-uppercase">Female:</span> Brain<span
-                                                    class="card-header-icon position-absolute">
-                                                    <!-- <a href="https://entity.api.hubmapconsortium.org/redirect/HBM438.XKJT.666" title="Opens new page with DOI related details" target="_blank" class="details">Details</a> -->
-                                                    <!-- <a href="https://hubmapconsortium.github.io/hubmap-ontology/objects/VHF_Colon_Low.glb"
-                                                        title="Download GLB file"><svg class="ico-1"
-                                                            xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
-                                                            <path d="M0 0h24v24H0z" fill="none" />
-                                                            <path
-                                                                d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z" />
-                                                        </svg></a> -->
-                                                </span>
-                                            </h5>
-                                            <div class="row no-gutters h-100 position-relative">
-                                                <div class="col-xs-12 col-lg-5 text-center">
-                                                    <img class="img-fluid" src="../img/thb-brain-f.jpg"
-                                                        alt="3D Model: Brain, Female" />
-                                                    <div data-toggle="modal" data-target=".mod-brain-f">
-                                                        <!-- <span
-                                                            class="px-2 py-2 mb-3 bg-light position-absolute tile"><svg
-                                                                class="ico-1" xmlns="http://www.w3.org/2000/svg"
-                                                                viewbox="0 0 24 24">
-                                                                <path d="M0 0h24v24H0z" class="fill-none" />
-                                                                <path class="fill-link-blue"
-                                                                    d="M7.52 21.48C4.25 19.94 1.91 16.76 1.55 13H.05C.56 19.16 5.71 24 12 24l.66-.03-3.81-3.81-1.33 1.32zm.89-6.52c-.19 0-.37-.03-.52-.08-.16-.06-.29-.13-.4-.24-.11-.1-.2-.22-.26-.37-.06-.14-.09-.3-.09-.47h-1.3c0 .36.07.68.21.95.14.27.33.5.56.69.24.18.51.32.82.41.3.1.62.15.96.15.37 0 .72-.05 1.03-.15.32-.1.6-.25.83-.44s.42-.43.55-.72c.13-.29.2-.61.2-.97 0-.19-.02-.38-.07-.56-.05-.18-.12-.35-.23-.51-.1-.16-.24-.3-.4-.43-.17-.13-.37-.23-.61-.31.2-.09.37-.2.52-.33.15-.13.27-.27.37-.42.1-.15.17-.3.22-.46.05-.16.07-.32.07-.48 0-.36-.06-.68-.18-.96-.12-.28-.29-.51-.51-.69-.2-.19-.47-.33-.77-.43C9.1 8.05 8.76 8 8.39 8c-.36 0-.69.05-1 .16-.3.11-.57.26-.79.45-.21.19-.38.41-.51.67-.12.26-.18.54-.18.85h1.3c0-.17.03-.32.09-.45s.14-.25.25-.34c.11-.09.23-.17.38-.22.15-.05.3-.08.48-.08.4 0 .7.1.89.31.19.2.29.49.29.86 0 .18-.03.34-.08.49-.05.15-.14.27-.25.37-.11.1-.25.18-.41.24-.16.06-.36.09-.58.09H7.5v1.03h.77c.22 0 .42.02.6.07s.33.13.45.23c.12.11.22.24.29.4.07.16.1.35.1.57 0 .41-.12.72-.35.93-.23.23-.55.33-.95.33zm8.55-5.92c-.32-.33-.7-.59-1.14-.77-.43-.18-.92-.27-1.46-.27H12v8h2.3c.55 0 1.06-.09 1.51-.27.45-.18.84-.43 1.16-.76.32-.33.57-.73.74-1.19.17-.47.26-.99.26-1.57v-.4c0-.58-.09-1.1-.26-1.57-.18-.47-.43-.87-.75-1.2zm-.39 3.16c0 .42-.05.79-.14 1.13-.1.33-.24.62-.43.85-.19.23-.43.41-.71.53-.29.12-.62.18-.99.18h-.91V9.12h.97c.72 0 1.27.23 1.64.69.38.46.57 1.12.57 1.99v.4zM12 0l-.66.03 3.81 3.81 1.33-1.33c3.27 1.55 5.61 4.72 5.96 8.48h1.5C23.44 4.84 18.29 0 12 0z" />
-                                                                </svg></span> -->
-                                                            </div>
-                                                </div>
-                                                <div class="col-xs-12 col-lg-7 col-scroll">
-                                                    <div class="card-body">
-                                                        <table class="table table-sm mb-0">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>Anatomical Structure</th>
-                                                                    <th>ID</th>
-                                                                    <th class="text-right">Count</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td># Anatomical Structures</td>
-                                                                    <td></td>
-                                                                    <td class="text-right">284</td>
-                                                                </tr>
-                                                                <tr><td>brain</td><td><a href="http://purl.obolibrary.org/obo/UBERON_0000955" title="External link to ontology" target="_blank">UBERON:0000955</a></td><td class="text-right">1</td></tr>
-                                                                <tr><td>amygdalohippocampal area L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>amygdalohippocampal area R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>amygdaloid complex L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>amygdaloid complex R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>angular gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>angular gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>anterior amygdaloid area L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>anterior amygdaloid area R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>anterior commissure L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>anterior commissure R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>anterior cortical nucleus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>anterior cortical nucleus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>anterior horn of lateral ventricle L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>anterior horn of lateral ventricle R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>anterior intermediate orbital gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>anterior intermediate orbital gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>anterior nuclear complex of thalamus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>anterior nuclear complex of thalamus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>anterior olfactory nucleus L</td><td><a href="http://purl.obolibrary.org/obo/UBERON_0002266" title="External link to ontology" target="_blank">UBERON:0002266</a></td><td class="text-right">1</td></tr>
-                                                                <tr><td>anterior olfactory nucleus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>anterior parahippocampal gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>anterior parahippocampal gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>atrium of lateral ventricle L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>atrium of lateral ventricle R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>basal forebrain L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>basal forebrain R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>basilar part of pons L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>basilar part of pons R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>basolateral nucleus basal nucleus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>basolateral nucleus basal nucleus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>basomedial nucleus accessory basal nucleus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>basomedial nucleus accessory basal nucleus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>bed nucleus of stria terminalis L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>bed nucleus of stria terminalis R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>body of caudate L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>body of caudate R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>body of hippocampus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>body of hippocampus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>body of lateral ventricle L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>body of lateral ventricle R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>central canal of medulla oblongata L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>central canal of medulla oblongata R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>central nuclear group L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>central nuclear group R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>centromedian nucleus of thalamus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>centromedian nucleus of thalamus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>cerebellar deep nuclei L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>cerebellar deep nuclei R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>cerebellar vermis L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>cerebellar vermis R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>cerebral aqueduct L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>cerebral aqueduct R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>cerebral peduncle crus cerebri L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>cerebral peduncle crus cerebri R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>cingulate gyrus caudal posterior part L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>cingulate gyrus caudal posterior part R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>cingulate gyrus rostral anterior part L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>cingulate gyrus rostral anterior part R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>claustrum L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>claustrum R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>corpus callosum L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>corpus callosum R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>cuneus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>cuneus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>dorsal lateral geniculate nucleus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>dorsal lateral geniculate nucleus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>external segment of globus pallidus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>external segment of globus pallidus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>fornix L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>fornix R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>fourth ventricle L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>fourth ventricle R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>frontal agranular insular cortex area Fl L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>frontal agranular insular cortex area Fl R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>frontal operculum L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>frontal operculum R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>frontal pole L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>frontal pole R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>frontomarginal gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>frontomarginal gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>gyrus ambiens L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>gyrus ambiens R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>gyrus rectus straight gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>gyrus rectus straight gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>habenular nuclei L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>habenular nuclei R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>head of caudate L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>head of caudate R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>head of hippocampus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>head of hippocampus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>hemisphere L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>hemisphere R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>hypothalamus L</td><td><a href="http://purl.obolibrary.org/obo/UBERON_0001898" title="External link to ontology" target="_blank">UBERON:0001898</a></td><td class="text-right">1</td></tr>
-                                                                <tr><td>hypothalamus R</td><td><a href="http://purl.obolibrary.org/obo/UBERON_0001898" title="External link to ontology" target="_blank">UBERON:0001898</a></td><td class="text-right">1</td></tr>
-                                                                <tr><td>inferior cerebellar peduncle L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>inferior cerebellar peduncle R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>inferior colliculus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>inferior colliculus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>inferior frontal gyrus opercular part L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>inferior frontal gyrus opercular part R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>inferior frontal gyrus triangular part L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>inferior frontal gyrus triangular part R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>inferior horn of lateral ventricle L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>inferior horn of lateral ventricle R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>inferior occipital gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>inferior occipital gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>inferior olive L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>inferior olive R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>inferior temporal gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>inferior temporal gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>ingulo parahippocampal isthmus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>ingulo parahippocampal isthmus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>internal segment of globus pallidus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>internal segment of globus pallidus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>lateral dorsal nucleus of thalamus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>lateral dorsal nucleus of thalamus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>lateral hemisphere of cerebellum L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>lateral hemisphere of cerebellum R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>lateral nucleus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>lateral nucleus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>lateral occipitotemporal fusiform gyrus occipital part L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>lateral occipitotemporal fusiform gyrus occipital part R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>lateral olfactory gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>lateral olfactory gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>lateral orbital gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>lateral orbital gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>lateral posterior nucleus of thalamus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>lateral posterior nucleus of thalamus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>limen insula L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>limen insula R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>lingual gyrus medial occipitotemporal gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>lingual gyrus medial occipitotemporal gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>long insular gyri L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>long insular gyri R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>mammillary region of HTH L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>mammillary region of HTH R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>mammillothalamic tract L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>mammillothalamic tract R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>medial geniculate nuclei L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>medial geniculate nuclei R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>medial nucleus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>medial nucleus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>medial orbital gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>medial orbital gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>mediodorsal nucleus of thalamus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>mediodorsal nucleus of thalamus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>midbrain tegmentum L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>midbrain tegmentum R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>middle cerebellar peduncle L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>middle cerebellar peduncle R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>middle frontal gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>middle frontal gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>middle temporal gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>middle temporal gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>midline nuclear complex L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>midline nuclear complex R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>nucleus accumbens L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>nucleus accumbens R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>occipital pole L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>occipital pole R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>occipitotemporal fusiform gyrus temporal part L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>occipitotemporal fusiform gyrus temporal part R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>olfactory bulb L</td><td><a href="http://purl.obolibrary.org/obo/UBERON_0002264" title="External link to ontology" target="_blank">UBERON:0002264</a></td><td class="text-right">1</td></tr>
-                                                                <tr><td>olfactory bulb R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>olfactory tract L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>olfactory tract R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>optic ratiation L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>optic ratiation R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>optic tract L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>optic tract R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>paracentral lobule caudal part L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>paracentral lobule caudal part R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>paracentral lobule rostral part L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>paracentral lobule rostral part R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>paracingulate gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>paracingulate gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>parafascicular nucleus of thalamus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>parafascicular nucleus of thalamus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>paravermis of cerebellum L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>paravermis of cerebellum R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>parietal operculum L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>parietal operculum R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>perirhinal gyrus rostral part of FuGt L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>perirhinal gyrus rostral part of FuGt R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>pineal body L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>pineal body R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>piriform region L</td><td><a href="http://purl.obolibrary.org/obo/UBERON_0004725" title="External link to ontology" target="_blank">UBERON:0004725</a></td><td class="text-right">1</td></tr>
-                                                                <tr><td>piriform region R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>planum polare L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>planum polare R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>planum temporale L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>planum temporale R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>pontine tegmentum L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>pontine tegmentum R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>postcentral gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>postcentral gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>posterior cortical nucleus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>posterior cortical nucleus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>posterior horn of lateral ventricle L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>posterior horn of lateral ventricle R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>posterior intermediate orbital gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>posterior intermediate orbital gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>posterior parahippocampal gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>posterior parahippocampal gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>posteroventral putamen L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>posteroventral putamen R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>precentral gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>precentral gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>precuneus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>precuneus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>preoptic region of HTH L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>preoptic region of HTH R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>pretectal region L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>pretectal region R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>pulvinar of thalamus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>pulvinar of thalamus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>putamen L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>putamen R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>pyramidal part of medulla oblongata L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>pyramidal part of medulla oblongata R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>red nucleus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>red nucleus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>reuniens nucleus medioventral nucleus of thalamus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>reuniens nucleus medioventral nucleus of thalamus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>rostral gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>rostral gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>septal nuclei L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>septal nuclei R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>short insular gyri L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>short insular gyri R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>subcallosal gyrus parolfactory gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>subcallosal gyrus parolfactory gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>substantia nigra L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>substantia nigra R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>subthalamic nucleus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>subthalamic nucleus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>superior cerebellar peduncle brachium conjunctivum L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>superior cerebellar peduncle brachium conjunctivum R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>superior colliculus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>superior colliculus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>superior frontal gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>superior frontal gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>superior occipital gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>superior occipital gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>superior temporal gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>superior temporal gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>supramarginal gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>supramarginal gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>supraoptic region of HTH L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>supraoptic region of HTH R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>supraparietal lobule L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>supraparietal lobule R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>tail of caudate L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>tail of caudate R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>tail of hippocampus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>tail of hippocampus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>tegmentum of medulla oblongata L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>tegmentum of medulla oblongata R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>temporal agranular insular cortex area Tl L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>temporal agranular insular cortex area Tl R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>temporal pole L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>temporal pole R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>thalamus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>thalamus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>third ventricle L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>third ventricle R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>transverse temporal gyrus Heschls gyrus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>transverse temporal gyrus Heschls gyrus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>tuberal region of HTH L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>tuberal region of HTH R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>ventral anterior nucleus of thalamus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>ventral anterior nucleus of thalamus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>ventral lateral nucleus of thalamus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>ventral lateral nucleus of thalamus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>ventral posterior lateral nucleus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>ventral posterior lateral nucleus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>ventral posterior medial nucleus L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>ventral posterior medial nucleus R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>white matter of forebrain L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>white matter of forebrain R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>white matter of hindbrain L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>white matter of hindbrain R</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>zona incerta L</td><td></td><td class="text-right">1</td></tr>
-                                                                <tr><td>zona incerta R</td><td></td><td class="text-right">1</td></tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- END: Card 2 -->
+                                    
                                 </div>
                             </div>
                             <div class="tab-pane fade show" id="heart" role="tabpanel" aria-labelledby="heart-tab">
@@ -3152,6 +2399,29 @@
                                 </div>
                             </div>
                         </div>
+                        <h2 class="mt-5">Overview</h2>
+                        <p>The CCF 3D Reference Object Library provides anatomically correct reference organs. The organs are developed by a specialist in 3D medical illustration and approved by organ experts.</p>
+                        <p>Initially, reference objects are created using data from the Visible Human male and female datasets provided by the National Library of Medicine. The male dataset comprises 1,871 cross-sections at 1mm intervals for both CT and anatomical images at a resolution of 4,096 pixels by 2,700 pixels. The female data set has the same characteristics as the Visible Human Male but axial anatomical images were obtained at 0.33 mm intervals resulting in 5,189 cross-section anatomical images. The male was white, 180.3 cm (71 inch) tall, 199-pound and was 38 years old. The female was white, 171.2 cm (67.4 inch) tall, obese, and 59 years old.</p>
+                        <p>On March 12, 2021, a total of 11 reference organs became available in GLB format. Each organ can be viewed and explored using free web browsers such as Babylon.js. Screenshots and major properties of the nested reference organ objects are given in the table below.</p>
+                        <p>For selected organs, 3D extraction site objects are provided. Some extraction sites resemble geometric objects (e.g., cuboids for heart) while others take the shape of one or more whole or partial anatomical structures (e.g., in spleen). The 3D extraction sites do not restrict registration to specific regions, instead they provide “expert defined landmarks” to help guide tissue registration. The extraction site objects are also used for automatic semantic annotation of tissue samples via collision detection during registration.</p>
+                        <h4>Standard Operating Procedures (SOP)</h4>
+                        <ul>
+                            <li><a href="../dld/2021.06.16.sop-3d-reference-object-approval.pdf" title="Download 3D Reference Object Approval SOP" target="_blank">SOP: 3D Reference Object Approval</a></li>
+                            <li><a href="../dld/2021.04.09.sop-using-3d-reference-objects.pdf" title="Download 3D Reference Object Approval SOP" target="_blank">SOP: Using 3D Reference Objects</a></li>
+                            <li><a href="../dld/2021.06.15.sop-using-the-registration-user-interface.pdf" title="Download Using the Registration User Interface SOP" target="_blank">SOP: Using the Registration User Interface</a></li>
+                        </ul>
+                        <h4 class="mt-5">Terms of Use</h4>
+                        <p>HuBMAP data are supplied with no warranties, expressed or implied, including without limitation, any warranty of merchantability or fitness for a particular purpose or non-infringement. No warranty with respect to the HuBMAP infrastructure is provided, including without limitation, any uptime warranty. The Parties make no representations that the use of the data will not infringe any patent or proprietary rights of third parties.</p>
+                        <h4 class="mt-5">License</h4>
+                        <p>All CCF 3D reference objects are released under <a href="https://creativecommons.org/licenses/by/4.0/" title="Link to external site containing attribution information" target="_blank">Attribution 4.0 International (CC BY 4.0)</a>.</p>
+                        <h4 class="mt-5">Citation</h4>
+                        <p>If you use the data files, please cite this effort as follows:</p>
+                        <p>Browne, K., Cross, L. E., Herr II, B. W., Record, L, Quardokus, E, Bueckle, A., Börner, K. (2021). <em>HuBMAP CCF 3D Reference Object Library</em>. https://hubmapconsortium.github.io/ccf/pages/ccf-3d-reference-library.html. Accessed on March 12, 2021.                        </p>
+
+                        <h4 class="mt-5">Reference Organs</h4>
+                        <p><a href="https://github.com/hubmapconsortium/ccf-releases/tree/main/v1.0/models" title="HuBMAP 3D Reference Organs download" target="_blank">Download organs</a> in GLB and FBX format.</p>
+                        <p><a href="https://github.com/hubmapconsortium/ccf-3d-reference-object-library/tree/master/VH_Female/V1.0/Extraction%20Sites" title="HuBMAP 3D Reference Organs female extraction sites download" target="_blank">Download extraction sites for female</a> in GLB and FBX format. <br><a href="https://github.com/hubmapconsortium/ccf-3d-reference-object-library/tree/master/VH_Male/V1/Extraction%20Sites" title="HuBMAP 3D Reference Organs male extraction sites download" target="_blank">Download extraction sites for male</a> in GLB and FBX format.</p>
+                        <p>Download crosswalk information<a href="https://doi.org/10.48539/HBM527.RCXM.366" title="Download file" download> ASCT-B 3D models mapping</a> in CSV format.</p>
                         <h2 class="mt-5">Acknowledgements</h2>
                         <p>The 3D Models were created by Kristen Browne for the 3D Printing and Biovisualization program operated by OCICB, NIAID. This research has been funded in part by the NIH Common Fund through the Office of Strategic Coordination/Office of the NIH Director under award OT2OD026671, by the NIDDK Kidney Precision Medicine Project grant U2CDK114886, and NIAID under BCBB Support Services Contract HHSN316201300006W/HHSN27200002 to MSC, Inc; U.S.</p>
                         <p>The male colon is from a white 55-year-old and was provided by Arie Kaufman, Stony Brook University.</p>
