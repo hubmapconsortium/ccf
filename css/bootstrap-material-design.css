@@ -2947,7 +2947,8 @@ input[type="button"].btn-block {
 
 .nav-link {
   display: block;
-  padding: 0.5rem 1rem; }
+  padding: 0.5rem 1rem; 
+  text-align: center;}
   .nav-link:hover, .nav-link:focus {
     text-decoration: none; }
   .nav-link.disabled {
@@ -11453,8 +11454,7 @@ thead.thead-inverse th,
 .table-inverse thead th {
   border-color: rgba(255, 255, 255, 0.06); }
 
-.nav-link {
-  text-transform: uppercase; }
+
 
 .navbar-nav .nav-link {
   padding: 0.5321rem;
