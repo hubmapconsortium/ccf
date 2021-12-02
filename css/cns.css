@@ -11,22 +11,22 @@ body * {
     z-index: 1071;
 }
 
-.bd-navbar .dropdown .dropdown-toggle {
+.bd-navbar #choose_table_version #choose_table_version-toggle {
     color: #bdbdbd;
 }
 
-.bd-navbar .dropdown .dropdown-toggle:hover {
+.bd-navbar #choose_table_version #choose_table_version-toggle:hover {
     color: white;
     cursor: pointer;
 }
 
-.bd-navbar .dropdown-menu {
+.bd-navbar #choose_table_version-menu {
     min-width: 17.5rem;
     margin-top: 12px;
     padding-bottom: 0;
 }
 
-.bd-navbar .dropdown-item {
+.bd-navbar #choose_table_version-item {
     white-space: normal;
     line-height: 1.5rem;
     border-bottom: 1px solid #e0e0e0;
@@ -464,7 +464,7 @@ a:hover .card {
     h3, .h3 {
         font-size: 1.25rem;
     }
-    .bd-navbar .dropdown {
+    .bd-navbar #choose_table_version {
         width: 100%;
         text-align: right;
     }
@@ -523,3 +523,51 @@ td {
 .logo-kaggle-sponsor {
     max-width: 6.5rem;
 }
+
+
+
+
+
+
+
+
+
+
+/* Added for the static summary-tables in ccf-anatomical-structures.html */
+#choose_table_version {
+	background-color: #6471A7;
+	color: white;
+	padding: 3px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 14px;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 200ms;
+    transition-delay: 200ms;
+}
+
+#choose_table_version:hover, #choose_table_version:focus {
+	background-color: #525B80;
+	transition: 200ms;
+}
+
+#choose_table_version {
+position: relative;
+display: inline-block;
+}
+
+#choose_table_version-content {
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+#choose_table_version-content a:hover {
+	background-color: #ddd;
+	transition: 200ms;
+}
+
+
+#v1_0_table { display : none }
