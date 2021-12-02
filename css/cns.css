@@ -320,6 +320,10 @@ a:hover .card {
     padding-bottom: 0.75rem;
 }
 
+.organ-navbar .nav-link {
+    text-align: center;
+}
+
 .fill-blue {
     fill: #2196f3;
 }
