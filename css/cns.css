@@ -322,6 +322,7 @@ a:hover .card {
 
 .organ-navbar .nav-link {
     text-align: center;
+    text-transform: none;
 }
 
 .fill-blue {
