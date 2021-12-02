@@ -1,2 +1,3 @@
-# ccf
-HuBMAP CCF Homepage
+# CCF Portal
+
+HuBMAP CCF Portal
