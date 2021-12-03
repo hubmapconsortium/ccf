@@ -112,6 +112,11 @@ a:hover .card {
     transition: box-shadow 0.3s ease-in-out;
 }
 
+.card-dark-yellow {
+    color: rgba(241, 212, 47, 1);
+    border: 1px solid rgba(241, 212, 47, 1) !important;
+}
+
 .card-dark-orange {
     color: rgba(147, 58, 37, 1);
     border: 1px solid rgba(147, 58, 37, 1) !important;
