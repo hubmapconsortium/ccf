@@ -157,6 +157,11 @@ a:hover .card {
     border: 1px solid rgba(32,190,255,1) !important;
 }
 
+.card-indigo {
+    color: #4B0082 !important;
+    border: 1px solid #4B0082 !important;
+}
+
 
 
 .h-card .card-title {
@@ -335,6 +340,10 @@ a:hover .card {
 
 .bg-lighter-gray {
     background-color: rgba(0,0,0,0.04);
+}
+
+.bg-indigo {
+    background-color: #4B0082;
 }
 
 /* .fill-secondary {
