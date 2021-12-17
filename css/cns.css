@@ -3,6 +3,7 @@ body * {
 }
 
 /* page navbar */
+
 .bd-navbar {
     background-color: rgba(68, 76, 101, 1);
     position: sticky;
@@ -11,22 +12,22 @@ body * {
     z-index: 1071;
 }
 
-.bd-navbar #choose_table_version #choose_table_version-toggle {
+.bd-navbar .dropdown .dropdown-toggle {
     color: #bdbdbd;
 }
 
-.bd-navbar #choose_table_version #choose_table_version-toggle:hover {
+.bd-navbar .dropdown .dropdown-toggle:hover {
     color: white;
     cursor: pointer;
 }
 
-.bd-navbar #choose_table_version-menu {
+.bd-navbar .dropdown-menu {
     min-width: 17.5rem;
     margin-top: 12px;
     padding-bottom: 0;
 }
 
-.bd-navbar #choose_table_version-item {
+.bd-navbar .dropdown-item {
     white-space: normal;
     line-height: 1.5rem;
     border-bottom: 1px solid #e0e0e0;
@@ -47,7 +48,28 @@ svg.logo-body-color {
     margin-bottom: 1rem;
 }
 
+/* ASCT+B Table Chooser */
 
+#choose_table_version-toggle {
+    color: #bdbdbd;
+}
+
+#choose_table_version-toggle:hover {
+    color: white;
+    cursor: pointer;
+}
+
+#choose_table_version-menu {
+    min-width: 17.5rem;
+    margin-top: 12px;
+    padding-bottom: 0;
+}
+
+#choose_table_version-item {
+    white-space: normal;
+    line-height: 1.5rem;
+    border-bottom: 1px solid #e0e0e0;
+}
 
 /* general */
 
@@ -90,6 +112,11 @@ a:hover .card {
     transition: box-shadow 0.3s ease-in-out;
 }
 
+.card-dark-yellow {
+    color: rgba(241, 212, 47, 1);
+    border: 1px solid rgba(241, 212, 47, 1) !important;
+}
+
 .card-dark-orange {
     color: rgba(147, 58, 37, 1);
     border: 1px solid rgba(147, 58, 37, 1) !important;
@@ -128,6 +155,11 @@ a:hover .card {
 .card-kaggle-blue {
     color: rgba(32,190,255,1) !important;
     border: 1px solid rgba(32,190,255,1) !important;
+}
+
+.card-indigo {
+    color: #4B0082 !important;
+    border: 1px solid #4B0082 !important;
 }
 
 
@@ -310,6 +342,10 @@ a:hover .card {
     background-color: rgba(0,0,0,0.04);
 }
 
+.bg-indigo {
+    background-color: #4B0082;
+}
+
 /* .fill-secondary {
     fill: #8289a3;
 } */
@@ -318,6 +354,11 @@ a:hover .card {
     color: rgba(255, 255, 255, 1);
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
+}
+
+.organ-navbar .nav-link {
+    text-align: center;
+    text-transform: none;
 }
 
 .fill-blue {
