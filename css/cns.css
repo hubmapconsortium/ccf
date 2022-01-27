@@ -158,8 +158,13 @@ a:hover .card {
 }
 
 .card-indigo {
-    color: #4B0082 !important;
-    border: 1px solid #4B0082 !important;
+    color: #632558 !important;
+    border: 1px solid #632558 !important;
+}
+
+.card-teal {
+    color: rgba(68,158,164,1) !important;
+    border: 1px solid rgba(68,158,164,1) !important;
 }
 
 
@@ -343,7 +348,11 @@ a:hover .card {
 }
 
 .bg-indigo {
-    background-color: #4B0082;
+    background-color: #632558;
+}
+
+.bg-teal {
+    background-color: #449ea4;
 }
 
 /* .fill-secondary {

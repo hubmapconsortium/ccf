@@ -70,14 +70,34 @@
                         </div>
                         <h1 class="row">
                             <div class="col-xs-12 col-sm-2 text-center">
-                                <div class="h-box px-lg-3 py-lg-3 mb-3 mb-sm-0 bg-azimuth-purple">
-                                    <svg id="ico-azimuth-asctb" data-name="ico-azimuth-asctb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" class="w-100 h-100"><rect class="fill-azimuth-purple" width="72" height="72"/><rect class="fill-white" x="28.31" y="10.37" width="32.4" height="10.8"/><rect class="fill-white" x="-0.56" y="39.61" width="32.4" height="10.8" transform="translate(-29.33 60.74) rotate(-90)"/><path class="fill-white" d="M28.28,28.81v32.4h32.4V28.81ZM53.48,54h-18V36h18Z" transform="translate(0.03 0.09)"/></svg>
+                                <div class="h-box bg-teal px-lg-3 py-lg-3 mb-3 mb-sm-0">
+                                    <svg id="ico-azimuth-asctb" data-name="ico-azimuth-asctb" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 72 72" class="w-100 h-100">
+                                        <defs>
+                                            <style>
+                                                .cls-1{fill:#fff;}
+                                                .fill-teal{fill:#449ea4;}
+                                            </style>
+                                        </defs>
+                                        <rect class="fill-teal" width="72" height="72" />
+                                        <g id="Compass_icon" data-name="Compass icon">
+                                            <path class="cls-1" d="M36.59,21.18A14.82,14.82,0,1,1,21.77,36,14.84,14.84,0,0,1,36.59,21.18m0-1A15.82,15.82,0,1,0,52.42,36,15.82,15.82,0,0,0,36.59,20.18Z"/>
+                                            <polygon class="cls-1" points="41.09 38.15 68.41 35.84 41.09 33.52 46.78 25.65 38.91 31.34 36.59 4.02 34.28 31.34 26.41 25.65 32.21 33.68 4.78 36.01 31.98 38.31 26.42 46.01 34.25 40.35 36.59 67.98 38.94 40.35 46.78 46.02 41.09 38.15"/>
+                                            </g>
+                                    </svg>
                                 </div>
-                            </div><span class="col-sm-10">ASCT+B cell types data from Azimuth reference data</span>
+                            </div><span class="col-sm-10">ASCT+B Cell Types Data from Azimuth Reference Data With Summaries</span>
                         </h1>
                         <h2 class="mt-5">Overview</h2>
-                        <p>Azimuth reference maps (<a href="https://azimuth.hubmapconsortium.org" title="Azimuth reference maps">https://azimuth.hubmapconsortium.org</a>) compiled by MC-NYGC provide organ-specific cell by gene matrix data. The single-cell references make it possible to automatically assign cell labels to the results of a new single-cell RNA-seq experiment. Specifically, Azimuth reads a counts matrix of gene expression in single cells. It then performs normalization, cell type annotation, and gene biomarker discovery. The output are diverse statistics and visualizations. Data can also be downloaded and parsed. Provided here are Azimuth cell type (CT) typologies and counts.</p>
-                        <h3 class="mt-5">Azimuth CT Typologies</h3>
+                        <p><a href="https://hubmapconsortium.github.io/ccf/pages/ccf-anatomical-structures.html" title="CCF Anatomical Structures">ASCT+B tables</a> represent cell by gene (CxG) relationships that are also captured in the HuBMAP <a href="https://azimuth.hubmapconsortium.org/" title="Aziumuth">Azimuth references</a>. This site provides the cell type typology for all existing Azimuth annotated reference datasets; the Azimuth cell type typology trees can be visualized in the <a href="https://hubmapconsortium.github.io/ccf-asct-reporter/" title="ASCT Reporter">ASCT+B Reporter</a>. 
+<br/><br/>
+                            We also provide easy access to results for comparing CxG in ASCT+B vs. CxG in Azimuth. In Jan 2022, Azimuth supports single-cell RNA-seq data exclusively. As more experimental data becomes available and additional types of data are supported (e.g., proteins, lipids, metabolites), data differences will decrease. 
+                            </p>
+                        <h3 class="mt-5">Azimuth Cell Type Typologies and Counts</h3>
+                        <p>In Jan 2022, eight molecular reference maps for human are available via Azimuth. For each we provide the cell type typology as a file that can be visualized in the ASCT+B Reporter together with a table that lists the annotation level and the number of cell types for each unique cell in the organ-specific Azimuth reference, see Table 1.</p>
+
+                        <h3 class="mt-5">Comparison of CxG in ASCT+B vs. Azimuth</h3>
+                        <p>Table 3 shows the comparison of the CxG matrix in ASCT+B tables vs. CxG matrix in Azimuth for each organ in Jan 2022. An automatically generated, up-to-date comparison is available <a href="https://hubmapconsortium.github.io/asctb-azimuth-data-comparison/Azimuth_vs_ASCTB.summaries.xlsx">here</a>; this xls also contains separate sheets with cell types that are not (yet) covered in the ASCT+B tables. Details on how the comparison is calculated are on <a href="https://github.com/hubmapconsortium/asctb-azimuth-data-comparison">GitHub</a>. Note that not all Azimuth cell types have CL IDs; in these cases, matching is done based on cell type names.</p>
+
                         <p>Data from <a href="https://github.com/satijalab/azimuth_website" title="Satija Labs Azimuth website">https://github.com/satijalab/azimuth_website</a> has been parsed to derive cell type typologies:</p>
                       <!-- <h2 class="mt-5">Download Data</h2> -->
                       <!--<ul>
@@ -204,12 +224,31 @@
                             </table>
                             <p>Code is available on <a href="https://github.com/hubmapconsortium/asctb-azimuth-data-comparison" title="ASCT+B Azimuth comparison on GitHub">GitHub</a>.</p>
                         </div>
-                        <h2 class="mt-5">Azimuth CT Counts</h2>
+                        
+
+                        <h3 class="mt-5">Azimuth CT Counts</h3>
                         <p>Data from <a href="https://github.com/satijalab/azimuth_website" title="Satija Labs Azimuth website">https://github.com/satijalab/azimuth_website</a> has been parsed to derive cell type counts:</p>
-                        <p class="mt-5">Code is available on <a href="https://github.com/hubmapconsortium/asctb-azimuth-data-comparison" title="ASCT+B Azimuth comparison on GitHub">GitHub</a>.</p>
+                        <p>Code is available on <a href="https://github.com/hubmapconsortium/asctb-azimuth-data-comparison" title="ASCT+B Azimuth comparison on GitHub">GitHub</a>.</p>
+
+                        <h4 class="mt-5">Code on Github</h4>
+                        <p>All code is freely available on <a href="https://github.com/hubmapconsortium/asctb-azimuth-data-comparison">GitHub</a>.</p>
+
+                        <h4 class="mt-5">Terms of Use</h4>
+                        <p>HuBMAP data are supplied with no warranties, expressed or implied, including without limitation, any warranty of merchantability or fitness for a particular purpose or non-infringement. No warranty with respect to the HuBMAP infrastructure is provided, including without limitation, any uptime warranty. The Parties make no representations that the use of the data will not infringe any patent or proprietary rights of third parties.</p>
+                        
+                        <h4 class="mt-5">License</h4>
+                        <p>All CCF 3D reference objects are released under <a href="https://creativecommons.org/licenses/by/4.0/">Attribution 4.0 International (CC BY 4.0)</a>.</p>
+
+                        <h4 class="mt-5">Citation</h4>
+                        <p>If you use the data files v1.0 release, please cite this effort as follows:</p>
+
+                        <h2 class="mt-5">Acknowledgements</h2>
+                        <p>This code and data was compiled by the HuBMAP MC-IU team in close collaboration with the MC-NYGC team.</p>
+
                         <h2 class="mt-5">References</h2>
                         <ul class="list-unstyled">
-                            <li class="mb-3">Hao Y, Hao S, Andersen-Nissen E, Mauck WM 3rd, Zheng S, Butler A, Lee MJ, Wilk AJ, Darby C, Zager M, Hoffman P, Stoeckius M, Papalexi E, Mimitou EP, Jain J, Srivastava A, Stuart T, Fleming LM, Yeung B, Rogers AJ, McElrath JM, Blish CA, Gottardo R, Smibert P, Satija R. 2021. Integrated analysis of multimodal single-cell data. <em>Cell</em>. 184(13):3573-3587.e29. doi: 10.1016/j.cell.2021.04.048.</li>
+                            <li class="mb-3">Börner, Katy, Sarah A Teichmann, Ellen M Quardokus, et al. 2021. "<a href="https://cns.iu.edu/docs/publications/2021-Borner-ASCT+B_of_the_HRA.pdf" title="Download pdf">Anatomical structures, cell types and biomarkers of the Human Reference Atlas</a>". <em>Nature Cell Biology</em> 23: 1117-1128. doi: 10.1038/s41556-021-00788-6.</li> 	
+                            <li class="mb-3">Hao Y, Hao S, Andersen-Nissen E, Mauck WM 3rd, Zheng S, Butler A, Lee MJ, Wilk AJ, Darby C, Zager M, Hoffman P, Stoeckius M, Papalexi E, Mimitou EP, Jain J, Srivastava A, Stuart T, Fleming LM, Yeung B, Rogers AJ, McElrath JM, Blish CA, Gottardo R, Smibert P, Satija R. 2021. "<a href="https://doi.org/10.1016/j.cell.2021.04.048" title="Article link">Integrated analysis of multimodal single-cell data</a>." <em>Cell</em>. 184(13):3573-3587.e29. doi: 10.1016/j.cell.2021.04.048.</li>
                         </ul>
                 </div>
               </div>
