@@ -173,11 +173,381 @@
 						<div class="dropdown" align="center">
 							Choose <b>version</b> of ASCT+B datasets:&nbsp;&nbsp;&nbsp;&nbsp;<select
 								id="choose_table_version" name="choose_table_version"
-								onchange="switch_table_view('v1_1_table', 'v1_0_table', this)" aria-haspopup="true"
+								onchange="switch_table_view()" aria-haspopup="true"
 								aria-expanded="false" id="dropdownMenu2">
+								<option value="v1_2" align="center">3rd Release, June '22</option>
 								<option value="v1_1" align="center">2nd Release, December '21</option>
 								<option value="v1_0" align="center">1st Release, March '21</option>
 							</select>
+						</div>
+
+						<div id="v1_2_table">
+							<table class="table">
+								<thead class="thead-light">
+									<tr scope="row">
+										<th scope="col">Organ</th>
+										<th class="text-right" scope="col">#AS</th>
+										<th class="text-right" scope="col">#CT</th>
+										<th class="text-right" scope="col">#B Total</th>
+										<th class="text-right" scope="col">#BG</th>
+										<th class="text-right" scope="col">#BP</th>
+										<th class="text-right" scope="col">#AS-AS</th>
+										<th class="text-right" scope="col">#AS-CT</th>
+										<th class="text-right" scope="col">#CT-B</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr scope="row">
+										<td><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/asct-b/blood-pelvis.html"
+												title="Opens new page with DOI related details"
+												target="_blank">Blood</a></td>
+										<td class="text-right">1</td>
+										<td class="text-right">30</td>
+										<td class="text-right">159</td>
+										<td class="text-right">112</td>
+										<td class="text-right">47</td>
+										<td class="text-right">1</td>
+										<td class="text-right">30</td>
+										<td class="text-right">506</td>
+									</tr>
+									<tr scope="row">
+										<td><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/asct-b/blood-vasculature.html"
+												title="Opens new page with DOI related details" target="_blank">Blood
+												Vasculature</a></td>
+										<td class="text-right">918</td>
+										<td class="text-right">10</td>
+										<td class="text-right">10</td>
+										<td class="text-right">10</td>
+										<td class="text-right">0</td>
+										<td class="text-right">952</td>
+										<td class="text-right">2030</td>
+										<td class="text-right">11</td>
+									</tr>
+									<tr scope="row">
+										<td><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/asct-b/bone-marrow-pelvis.html"
+												title="Opens new page with DOI related details" target="_blank">Bone
+												Marrow</a></td>
+										<td class="text-right">1</td>
+										<td class="text-right">47</td>
+										<td class="text-right">262</td>
+										<td class="text-right">198</td>
+										<td class="text-right">64</td>
+										<td class="text-right">1</td>
+										<td class="text-right">47</td>
+										<td class="text-right">838</td>
+									</tr>
+									<tr scope="row">
+										<td><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/asct-b/brain.html"
+												title="Opens new page with DOI related details"
+												target="_blank">Brain</a></td>
+										<td class="text-right">183</td>
+										<td class="text-right">127</td>
+										<td class="text-right">257</td>
+										<td class="text-right">257</td>
+										<td class="text-right">0</td>
+										<td class="text-right">183</td>
+										<td class="text-right">127</td>
+										<td class="text-right">346</td>
+									</tr>
+									<tr scope="row">
+										<td><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/asct-b/eye.html"
+												title="Opens new page with DOI related details" target="_blank">Eye</a>
+										</td>
+										<td class="text-right">26</td>
+										<td class="text-right">53</td>
+										<td class="text-right">140</td>
+										<td class="text-right">61</td>
+										<td class="text-right">75</td>
+										<td class="text-right">27</td>
+										<td class="text-right">58</td>
+										<td class="text-right">404</td>
+									</tr>
+									<tr scope="row">
+										<td><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/asct-b/fallopian-tube.html"
+												title="Opens new page with DOI related details"
+												target="_blank">Fallopian Tube</a></td>
+											<td class="text-right">72</td>
+											<td class="text-right">18</td>
+											<td class="text-right">26</td>
+											<td class="text-right">13</td>
+											<td class="text-right">13</td>
+											<td class="text-right">84</td>
+											<td class="text-right">81</td>
+											<td class="text-right">27</td>
+									</tr>
+									<tr scope="row">
+										<td><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/asct-b/heart.html"
+												title="Opens new page with DOI related details"
+												target="_blank">Heart</a></td>
+										<td class="text-right">50</td>
+										<td class="text-right">23</td>
+										<td class="text-right">45</td>
+										<td class="text-right">45</td>
+										<td class="text-right">0</td>
+										<td class="text-right">60</td>
+										<td class="text-right">183</td>
+										<td class="text-right">74</td>
+									</tr>
+									<tr scope="row">
+										<td><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/asct-b/kidney.html"
+												title="Opens new page with DOI related details"
+												target="_blank">Kidney</a></td>
+										<td class="text-right">57</td>
+										<td class="text-right">67</td>
+										<td class="text-right">184</td>
+										<td class="text-right">184</td>
+										<td class="text-right">0</td>
+										<td class="text-right">72</td>
+										<td class="text-right">75</td>
+										<td class="text-right">300</td>
+									</tr>
+									<tr scope="row">
+										<td><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/asct-b/knee.html"
+												title="Opens new page with DOI related details" target="_blank">Knee</a>
+										</td>
+										<td class="text-right">33</td>
+										<td class="text-right">41</td>
+										<td class="text-right">12</td>
+										<td class="text-right">0</td>
+										<td class="text-right">12</td>
+										<td class="text-right">33</td>
+										<td class="text-right">21</td>
+										<td class="text-right">47</td>
+									</tr>
+									<tr scope="row">
+										<td><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/asct-b/large-intestine.html"
+												title="Opens new page with DOI related details" target="_blank">Large
+												Intestine</a></td>
+										<td class="text-right">54</td>
+										<td class="text-right">57</td>
+										<td class="text-right">166</td>
+										<td class="text-right">83</td>
+										<td class="text-right">83</td>
+										<td class="text-right">287</td>
+										<td class="text-right">1156</td>
+										<td class="text-right">360</td>
+									</tr>
+									<tr scope="row">
+										<td><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/asct-b/liver.html"
+												title="Opens new page with DOI related details"
+												target="_blank">Liver</a></td>
+											<td class="text-right">17</td>
+											<td class="text-right">31</td>
+											<td class="text-right">85</td>
+											<td class="text-right">29</td>
+											<td class="text-right">56</td>
+											<td class="text-right">17</td>
+											<td class="text-right">32</td>
+											<td class="text-right">116</td>
+									</tr>
+									<tr scope="row">
+										<td><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/asct-b/lung.html"
+												title="Opens new page with DOI related details" target="_blank">Lung</a>
+										</td>
+										<td class="text-right">76</td>
+										<td class="text-right">76</td>
+										<td class="text-right">280</td>
+										<td class="text-right">191</td>
+										<td class="text-right">89</td>
+										<td class="text-right">121</td>
+										<td class="text-right">168</td>
+										<td class="text-right">456</td>
+									</tr>
+									<tr scope="row">
+										<td><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/asct-b/lymph-node.html"
+												title="Opens new page with DOI related details" target="_blank">Lymph
+												Node</a></td>
+										<td class="text-right">34</td>
+										<td class="text-right">45</td>
+										<td class="text-right">223</td>
+										<td class="text-right">106</td>
+										<td class="text-right">117</td>
+										<td class="text-right">43</td>
+										<td class="text-right">86</td>
+										<td class="text-right">499</td>
+									</tr>
+									<tr scope="row">
+										<td><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/asct-b/lymph-vasculature.html"
+												title="Opens new page with DOI related details" target="_blank">Lymph
+												Vasculature</a></td>
+										<td class="text-right">31</td>
+										<td class="text-right">1</td>
+										<td class="text-right">1</td>
+										<td class="text-right">1</td>
+										<td class="text-right">0</td>
+										<td class="text-right">31</td>
+										<td class="text-right">19</td>
+										<td class="text-right">1</td>
+									</tr>
+									<tr scope="row">
+										<td><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/asct-b/ovary.html"
+												title="Opens new page with DOI related details"
+												target="_blank">Ovary</a></td>
+										<td class="text-right">77</td>
+										<td class="text-right">16</td>
+										<td class="text-right">12</td>
+										<td class="text-right">0</td>
+										<td class="text-right">12</td>
+										<td class="text-right">126</td>
+										<td class="text-right">30</td>
+										<td class="text-right">11</td>
+									</tr>
+									<tr scope="row">
+										<td><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/asct-b/pancreas.html"
+												title="Opens new page with DOI related details"
+												target="_blank">Pancreas</a></td>
+										<td class="text-right">32</td>
+										<td class="text-right">34</td>
+										<td class="text-right">51</td>
+										<td class="text-right">49</td>
+										<td class="text-right">2</td>
+										<td class="text-right">153</td>
+										<td class="text-right">228</td>
+										<td class="text-right">126</td>
+									</tr>
+									<tr scope="row">
+										<td><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/asct-b/peripheral-nervous-system.html"
+												title="Opens new page with DOI related details"
+												target="_blank">Peripheral Nervous System</a></td>
+										<td class="text-right">782</td>
+										<td class="text-right">1</td>
+										<td class="text-right">2</td>
+										<td class="text-right">1</td>
+										<td class="text-right">1</td>
+										<td class="text-right">803</td>
+										<td class="text-right">609</td>
+										<td class="text-right">2</td>
+									</tr>
+									<tr scope="row">
+										<td><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/asct-b/placenta.html"
+												title="Opens new page with DOI related details"
+												target="_blank">Placenta</a></td>
+										<td class="text-right">25</td>
+										<td class="text-right">22</td>
+										<td class="text-right">44</td>
+										<td class="text-right">43</td>
+										<td class="text-right">0</td>
+										<td class="text-right">32</td>
+										<td class="text-right">44</td>
+										<td class="text-right">74</td>
+									</tr>
+									<tr scope="row">
+										<td><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/asct-b/prostate.html"
+												title="Opens new page with DOI related details"
+												target="_blank">Prostate</a></td>
+										<td class="text-right">4</td>
+										<td class="text-right">12</td>
+										<td class="text-right">31</td>
+										<td class="text-right">31</td>
+										<td class="text-right">0</td>
+										<td class="text-right">4</td>
+										<td class="text-right">12</td>
+										<td class="text-right">36</td>
+									</tr>
+									<tr scope="row">
+										<td><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/asct-b/skin.html"
+												title="Opens new page with DOI related details" target="_blank">Skin</a>
+										</td>
+										<td class="text-right">15</td>
+										<td class="text-right">36</td>
+										<td class="text-right">70</td>
+										<td class="text-right">0</td>
+										<td class="text-right">70</td>
+										<td class="text-right">17</td>
+										<td class="text-right">19</td>
+										<td class="text-right">100</td>
+									</tr>
+									<tr scope="row">
+										<td><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/asct-b/small-intestine.html"
+												title="Opens new page with DOI related details" target="_blank">Small
+												Intestine</a></td>
+										<td class="text-right">39</td>
+										<td class="text-right">48</td>
+										<td class="text-right">89</td>
+										<td class="text-right">43</td>
+										<td class="text-right">46</td>
+										<td class="text-right">69</td>
+										<td class="text-right">178</td>
+										<td class="text-right">131</td>
+									</tr>
+									<tr scope="row">
+										<td><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/asct-b/spleen.html"
+												title="Opens new page with DOI related details"
+												target="_blank">Spleen</a></td>
+										<td class="text-right">37</td>
+										<td class="text-right">60</td>
+										<td class="text-right">194</td>
+										<td class="text-right">85</td>
+										<td class="text-right">109</td>
+										<td class="text-right">50</td>
+										<td class="text-right">129</td>
+										<td class="text-right">421</td>
+									</tr>
+									<tr scope="row">
+										<td><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/asct-b/thymus.html"
+												title="Opens new page with DOI related details"
+												target="_blank">Thymus</a></td>
+										<td class="text-right">17</td>
+										<td class="text-right">51</td>
+										<td class="text-right">394</td>
+										<td class="text-right">318</td>
+										<td class="text-right">76</td>
+										<td class="text-right">28</td>
+										<td class="text-right">39</td>
+										<td class="text-right">603</td>
+									</tr>
+									<tr scope="row">
+										<td><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/asct-b/ureter.html"
+												title="Opens new page with DOI related details"
+												target="_blank">Ureter</a></td>
+										<td class="text-right">7</td>
+										<td class="text-right">14</td>
+										<td class="text-right">30</td>
+										<td class="text-right">30</td>
+										<td class="text-right">0</td>
+										<td class="text-right">7</td>
+										<td class="text-right">14</td>
+										<td class="text-right">61</td>
+									</tr>
+									<tr scope="row">
+										<td><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/asct-b/urinary-bladder.html"
+												title="Opens new page with DOI related details" target="_blank">Urinary
+												Bladder</a></td>
+										<td class="text-right">16</td>
+										<td class="text-right">15</td>
+										<td class="text-right">30</td>
+										<td class="text-right">30</td>
+										<td class="text-right">0</td>
+										<td class="text-right">16</td>
+										<td class="text-right">16</td>
+										<td class="text-right">63</td>
+									</tr>
+									<tr scope="row">
+										<td><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/asct-b/uterus.html"
+												title="Opens new page with DOI related details"
+												target="_blank">Uterus</a></td>
+										<td class="text-right">61</td>
+										<td class="text-right">18</td>
+										<td class="text-right">45</td>
+										<td class="text-right">39</td>
+										<td class="text-right">6</td>
+										<td class="text-right">89</td>
+										<td class="text-right">34</td>
+										<td class="text-right">65</td>
+									</tr>
+									<tr scope="row" class="font-weight-bold text-color-gray">
+										<td class="text-right">Totals:</td>
+										<td class="text-right">2,665</td>
+										<td class="text-right">953</td>
+										<td class="text-right">2,842</td>
+										<td class="text-right">1,959</td>
+										<td class="text-right">878</td>
+										<td class="text-right">3,306</td>
+										<td class="text-right">5,465</td>
+										<td class="text-right">5,678</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
 
 						<div id="v1_1_table">
@@ -773,10 +1143,15 @@
 	<script src="../js/popper.js"></script>
 	<script src="../js/bootstrap-material-design.min.js"></script>
 	<script>
-		function switch_table_view(v1_1_table_id, v1_0_table_id, element) {
-			document.getElementById(v1_1_table_id).style.display = (element.value == "v1_1") ? 'block' : 'none';
-			document.getElementById(v1_0_table_id).style.display = (element.value == "v1_1") ? 'none' : 'block';
+		function switch_table_view() {
+			const versions = ['v1_0', 'v1_1', 'v1_2'];
+			const selectedVersion = document.getElementById('choose_table_version').value;
+			for (const version of versions) {
+				const div = document.getElementById(`${version}_table`);
+				div.style.display = selectedVersion === version ? 'block' : 'none';
+			}
 		}
+		switch_table_view();
 	</script>
 </body>
 
