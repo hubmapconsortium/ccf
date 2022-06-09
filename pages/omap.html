@@ -123,61 +123,89 @@
                         </ul>
                         <h2 class="mt-5">Existing OMAPS</h2>
                         
-						<div id="v1_1_table">
-						<table class="table">
-							<thead class="thead-light">
-								<tr scope="row">
-									<th scope="col">Organ</th>
-									<th class="text-left" scope="col">Tissue Preservation Method </th>
-									<th class="text-left" scope="col">Multiplexed antibody-based imaging method </th>
-									
-								</tr>
-							</thead>
-							<tbody>
-								<tr scope="row">
-									<td><a href="https://hubmapconsortium.github.io/ccf-releases/tree/v1.2/docs/omap/omap-ln-ibex.html">Lymph node</a></td>
-									<td class="text-left">Fixed Frozen</td>
-									<td class="text-left">IBEX</td>
-								</tr>
+                        <div class="dropdown" align="center">
+							Choose CCF-HRA Release <b>version</b>:&nbsp;&nbsp;&nbsp;&nbsp;<select
+								id="choose_table_version" name="choose_table_version"
+								onchange="switch_table_view()" aria-haspopup="true"
+								aria-expanded="false" id="dropdownMenu2">
+								<option value="v1_2" align="center">3rd Release, June '22</option>
+								<option value="v1_1" align="center">2nd Release, December '21</option>
+							</select>
+						</div>
 
-                                <tr scope="row">
-                                    <td><a href="https://hubmapconsortium.github.io/ccf-releases/tree/v1.2/docs/omap/omap-intestines-codex.html">Intestines</a></td>
-                                    <td class="text-left">TBD</td>
-                                    <td class="text-left">CODEX</td>
-                                </tr>
+                        <div id="v1_1_table">
+                            <table class="table">
+                                <thead class="thead-light">
+                                    <tr scope="row">
+                                        <th scope="col">Organ</th>
+                                        <th class="text-left" scope="col">Tissue Preservation Method </th>
+                                        <th class="text-left" scope="col">Multiplexed antibody-based imaging method </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr scope="row">
+                                        <td><a href="https://hubmapconsortium.github.io/ccf-releases/tree/v1.2/docs/omap/omap-ln-ibex.html">Lymph node</a></td>
+                                        <td class="text-left">Fixed Frozen</td>
+                                        <td class="text-left">IBEX</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
 
-                                <tr scope="row">
-                                    <td><a href="https://hubmapconsortium.github.io/ccf-releases/tree/v1.2/docs/omap/omap-kidney-codex.html">Kidney</a></td>
-                                    <td class="text-left">TBD</td>
-                                    <td class="text-left">CODEX</td>
-                                </tr>
+						<div id="v1_2_table">
+                            <table class="table">
+                                <thead class="thead-light">
+                                    <tr scope="row">
+                                        <th scope="col">Organ</th>
+                                        <th class="text-left" scope="col">Tissue Preservation Method </th>
+                                        <th class="text-left" scope="col">Multiplexed antibody-based imaging method </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr scope="row">
+                                        <td><a href="https://hubmapconsortium.github.io/ccf-releases/tree/v1.2/docs/omap/omap-intestines-codex.html">Intestines</a></td>
+                                        <td class="text-left">Fresh Frozen</td>
+                                        <td class="text-left">CODEX</td>
+                                    </tr>
 
-                                <tr scope="row">
-                                    <td><a href="https://hubmapconsortium.github.io/ccf-releases/tree/v1.2/docs/omap-liver-sim.html">Liver</a></td>
-                                    <td class="text-left">TBD</td>
-                                    <td class="text-left">SIMS</td>
-                                </tr>
+                                    <tr scope="row">
+                                        <td><a href="https://hubmapconsortium.github.io/ccf-releases/tree/v1.2/docs/omap/omap-kidney-codex.html">Kidney</a></td>
+                                        <td class="text-left">Fresh Frozen</td>
+                                        <td class="text-left">CODEX</td>
+                                    </tr>
 
-                                <tr scope="row">
-                                    <td><a href="https://hubmapconsortium.github.io/ccf-releases/tree/v1.2/docs/omap-lung-celldive.html">Lung</a></td>
-                                    <td class="text-left">TBD</td>
-                                    <td class="text-left">Cell Dive</td>
-                                </tr>
+                                    <tr scope="row">
+                                        <td><a href="https://hubmapconsortium.github.io/ccf-releases/tree/v1.2/docs/omap-liver-sim.html">Liver</a></td>
+                                        <td class="text-left">Fresh Frozen</td>
+                                        <td class="text-left">SIMS</td>
+                                    </tr>
 
-                                <tr scope="row">
-                                    <td><a href="https://hubmapconsortium.github.io/ccf-releases/tree/v1.2/docs/omap-pancreas-codex.html">Pancreas</a></td>
-                                    <td class="text-left">TBD</td>
-                                    <td class="text-left">CODEX</td>
-                                </tr>
+                                    <tr scope="row">
+                                        <td><a href="https://hubmapconsortium.github.io/ccf-releases/tree/v1.2/docs/omap/omap-ln-ibex.html">Lymph node</a></td>
+                                        <td class="text-left">Fixed Frozen</td>
+                                        <td class="text-left">IBEX</td>
+                                    </tr>
 
-                                <tr scope="row">
-                                    <td><a href="https://hubmapconsortium.github.io/ccf-releases/tree/v1.2/docs/omap-skin-celldive.html">Skin</a></td>
-                                    <td class="text-left">TBD</td>
-                                    <td class="text-left">Cell DIVE</td>
-                                </tr>
-								
-							</tbody>
-						</table>
+                                    <tr scope="row">
+                                        <td><a href="https://hubmapconsortium.github.io/ccf-releases/tree/v1.2/docs/omap-lung-celldive.html">Lung</a></td>
+                                        <td class="text-left">FFPE</td>
+                                        <td class="text-left">Cell DIVE</td>
+                                    </tr>
+
+                                    <tr scope="row">
+                                        <td><a href="https://hubmapconsortium.github.io/ccf-releases/tree/v1.2/docs/omap-pancreas-codex.html">Pancreas</a></td>
+                                        <td class="text-left">FFPE</td>
+                                        <td class="text-left">CODEX</td>
+                                    </tr>
+
+                                    <tr scope="row">
+                                        <td><a href="https://hubmapconsortium.github.io/ccf-releases/tree/v1.2/docs/omap-skin-celldive.html">Skin</a></td>
+                                        <td class="text-left">FFPE</td>
+                                        <td class="text-left">Cell DIVE</td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
 						</div>
                         
 							
@@ -245,10 +273,17 @@
     <script src="../js/popper.js"></script>
     <script src="../js/bootstrap-material-design.min.js"></script>
 	<script>
-		function switch_table_view(v1_1_table_id, v1_0_table_id, element){
-			document.getElementById(v1_1_table_id).style.display = (element.value=="v1_1") ? 'block' : 'none';
-			document.getElementById(v1_0_table_id).style.display = (element.value=="v1_1") ? 'none' : 'block';
+		function switch_table_view() {
+			const versions = ['v1_0', 'v1_1', 'v1_2'];
+			const selectedVersion = document.getElementById('choose_table_version').value;
+			for (const version of versions) {
+				const div = document.getElementById(`${version}_table`);
+                if (div) {
+                    div.style.display = selectedVersion === version ? 'block' : 'none';
+                }
+			}
 		}
+		switch_table_view();
 	</script>
 </body>
 
