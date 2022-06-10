@@ -88,216 +88,258 @@
                             <span class="col-sm-10">CCF 2D Reference FTU Library</span>
                         </h1>
                         <h2 class="mt-5">Overview</h2>
+                        <p>
+                            The 2D Functional Tissue Unit Library provides anatomically correct illustrations of functional tissue units (FTUs). The illustrations are developed by a specialist in 2D medical illustration and approved by organ experts.
+                        </p>
+                        <p>
+                            Illustrations are created using terms from the Anatomical Structures, Cell Types, and Biomarker (ASCT+B) table for each organ. Subject matter experts collaborate on a list of anatomical structures and/or cell types to be included in each FTU. Histology atlases and data sets are consulted for visual reference, and research is undertaken to determine if cell sizes and their relative number and distribution is known for a given FTU. Reasonable estimates are made when placing cells in the illustration and relating them to a scale bar.
+                        </p>
+                        <p>
+                            A crosswalk table is then created for each FTU illustration, linking the terms in the ASCT+B table to the individual cells in the illustration. This provides an opportunity to add interactive functionality and extends the potential uses for each FTU.
+                        </p>
+                        <p>
+                            On June, 2022, a total of 8 2D FTUs became available in SVG format. Each illustration can be downloaded and edited using Adobe Illustrator. We encourage users to create additional FTU illustrations using these templates, or to use and share them as desired. Organ Icon carousel (in future version could work on FTU icons, but out of scope for Y4 end).        
+                        </p>
 
+                        
+                        
                         <div class="dropdown" align="center">
                             Choose CCF-HRA Release <b>version</b>:&nbsp;&nbsp;&nbsp;&nbsp;
                             <select id="choose_table_version" name="choose_table_version" onchange="switch_table_view()" aria-haspopup="true" aria-expanded="false" id="dropdownMenu2">
                                 <option value="v1_2" align="center">3rd Release, June '22</option>
                             </select>
                         </div>
-
+                        
                         <div id="v1_2_table">
                             <nav class="organ-navbar navbar navbar-expand-lg navbar-tabs navbar-light bg-light mt-3">
                                 <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                    aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-    
-                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    
-                                    <ul class="nav nav-tabs bg-light" id="myTab" role="tablist" >
-                                        <li class="nav-item">
-                                            <a class="nav-link active" id="kidney-tab2" data-toggle="tab" href="#kidney2" role="tab"
-                                                aria-controls="profile" aria-selected="false"><img src= "https://cdn.jsdelivr.net/gh/cns-iu/md-icons@main/other-icons/organs/ico-organs-kidney.svg" width="45.7px" height="45.7px"><br/>Kidney</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" id="colon-tab2" data-toggle="tab" href="#colon2"
-                                                role="tab" aria-controls="home" aria-selected="true"><img src= "https://cdn.jsdelivr.net/gh/cns-iu/md-icons@main/other-icons/organs/ico-organs-large-intestine.svg" width="45.7px" height="45.7px" ><br/>Large<br/>Intestine</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" id="liver-tab2" data-toggle="tab" href="#liver2"
-                                                role="tab" aria-controls="home" aria-selected="true"><img src= "https://cdn.jsdelivr.net/gh/cns-iu/md-icons@main/other-icons/organs/ico-organs-liver.svg" width="45.7px" height="45.7px"><br/>Liver</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" id="lung-tab2" data-toggle="tab" href="#lung2"
-                                                role="tab" aria-controls="home" aria-selected="true"><img src= "https://cdn.jsdelivr.net/gh/cns-iu/md-icons@main/other-icons/organs/ico-organs-lung.svg" width="45.7px" height="45.7px"><br/>Lungs</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" id="pancreas-tab2" data-toggle="tab" href="#pancreas2"
-                                                role="tab" aria-controls="home" aria-selected="true"><img src= "https://cdn.jsdelivr.net/gh/cns-iu/md-icons@main/other-icons/organs/ico-organs-pancreas.svg" width="45.7px" height="45.7px"><br/>Pancreas</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" id="prostate-tab2" data-toggle="tab" href="#prostate2"
-                                                role="tab" aria-controls="home" aria-selected="true"><img src= "https://cdn.jsdelivr.net/gh/cns-iu/md-icons@main/other-icons/organs/ico-organs-prostate.svg" width="45.7px" height="45.7px"><br/>Prostate</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" id="thymus-tab2" data-toggle="tab" href="#thymus2"
-                                                role="tab" aria-controls="home" aria-selected="true"><img src= "https://cdn.jsdelivr.net/gh/cns-iu/md-icons@main/other-icons/organs/ico-organs-thymus.svg" width="45.7px" height="45.7px"><br/>Thymus</a>
-                                        </li>                                        
-                                    </ul>
-                                </div>
-                            </nav>
-
-                            <div class="tab-content mt-5" id="myTabContent">
-                                <div class="tab-pane fade show active" id="kidney2" role="tabpanel" aria-labelledby="kidney-tab2">
-                                    <div>
-                                        <!-- START: Card 1 -->
-                                        <div class="mb-4">
-                                            <div class="card">
-                                                <h5 class="card-header position-relative bg-light">
-                                                    <span class="text-uppercase"></span> Kidney FTUs<span
-                                                        class="card-header-icon position-absolute">
-                                                    </span>
-                                                </h5>
-                                                <div class="row no-gutters h-100 position-relative">
-                                                    <div class="container">
-                                                        <div class="row">
-                                                            <div class="col">
-                                                                <h5 class="mt-5">Nephron</h5>
-                                                                <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/2d-ftu/nephron_kidney.html">2D SVG</a></p>
-                                                                <image class="model-viewer-div" alt="The kidney, nefron"
-                                                                    src="https://raw.githubusercontent.com/hubmapconsortium/ccf-releases/v1.2/v1.2/2d-ftu/nephron_kidney.svg" shadow-intensity="1" camera-controls auto-rotate
-                                                                    style="height: 400px;">
-                                                                </image>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col">
-                                                                <h5 class="mt-5">Renal Corpuscle</h5>
-                                                                <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/2d-ftu/renal_corpuscle_kidney.html">2D SVG</a></p>
-                                                                <image class="model-viewer-div" alt="The kidney, renal corpuscle"
-                                                                    src="https://raw.githubusercontent.com/hubmapconsortium/ccf-releases/v1.2/v1.2/2d-ftu/renal_corpuscle_kidney.svg" shadow-intensity="1" camera-controls auto-rotate
-                                                                    style="height: 400px;">
-                                                                </image>
-                                                            </div>
-                                                        </div>
-                                                
-                                                    </div>
-                                                    
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- END: Card 1 -->
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="colon2" role="tabpanel"
-                                    aria-labelledby="colon-tab2">
-                                    <div>
-                                        <!-- START: Card 1 -->
-                                        <div class="mb-4">
-                                            <div class="card">
-                                                <h5 class="card-header position-relative bg-light">
-                                                    <span class="text-uppercase"></span> Large Intestine FTUs<span
-                                                        class="card-header-icon position-absolute">
-                                                    </span>
-                                                </h5>
-                                                <div class="row no-gutters h-100 position-relative">
-                                                    <div class="container">
-                                                        
-                                            
-                                                    <div class="row">
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                
+                                <ul class="nav nav-tabs bg-light" id="myTab" role="tablist" >
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="kidney-tab2" data-toggle="tab" href="#kidney2" role="tab"
+                                        aria-controls="profile" aria-selected="false"><img src= "https://cdn.jsdelivr.net/gh/cns-iu/md-icons@main/other-icons/organs/ico-organs-kidney.svg" width="45.7px" height="45.7px"><br/>Kidney</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="colon-tab2" data-toggle="tab" href="#colon2"
+                                        role="tab" aria-controls="home" aria-selected="true"><img src= "https://cdn.jsdelivr.net/gh/cns-iu/md-icons@main/other-icons/organs/ico-organs-large-intestine.svg" width="45.7px" height="45.7px" ><br/>Large<br/>Intestine</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="liver-tab2" data-toggle="tab" href="#liver2"
+                                        role="tab" aria-controls="home" aria-selected="true"><img src= "https://cdn.jsdelivr.net/gh/cns-iu/md-icons@main/other-icons/organs/ico-organs-liver.svg" width="45.7px" height="45.7px"><br/>Liver</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="lung-tab2" data-toggle="tab" href="#lung2"
+                                        role="tab" aria-controls="home" aria-selected="true"><img src= "https://cdn.jsdelivr.net/gh/cns-iu/md-icons@main/other-icons/organs/ico-organs-lung.svg" width="45.7px" height="45.7px"><br/>Lungs</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="pancreas-tab2" data-toggle="tab" href="#pancreas2"
+                                        role="tab" aria-controls="home" aria-selected="true"><img src= "https://cdn.jsdelivr.net/gh/cns-iu/md-icons@main/other-icons/organs/ico-organs-pancreas.svg" width="45.7px" height="45.7px"><br/>Pancreas</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="prostate-tab2" data-toggle="tab" href="#prostate2"
+                                        role="tab" aria-controls="home" aria-selected="true"><img src= "https://cdn.jsdelivr.net/gh/cns-iu/md-icons@main/other-icons/organs/ico-organs-prostate.svg" width="45.7px" height="45.7px"><br/>Prostate</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="thymus-tab2" data-toggle="tab" href="#thymus2"
+                                        role="tab" aria-controls="home" aria-selected="true"><img src= "https://cdn.jsdelivr.net/gh/cns-iu/md-icons@main/other-icons/organs/ico-organs-thymus.svg" width="45.7px" height="45.7px"><br/>Thymus</a>
+                                    </li>                                        
+                                </ul>
+                            </div>
+                        </nav>
+                        
+                        <div class="tab-content mt-5" id="myTabContent">
+                            <div class="tab-pane fade show active" id="kidney2" role="tabpanel" aria-labelledby="kidney-tab2">
+                                <div>
+                                    <!-- START: Card 1 -->
+                                    <div class="mb-4">
+                                        <div class="card">
+                                            <h5 class="card-header position-relative bg-light">
+                                                <span class="text-uppercase"></span> Kidney FTUs<span
+                                                class="card-header-icon position-absolute">
+                                            </span>
+                                        </h5>
+                                        <div class="row no-gutters h-100 position-relative">
+                                            <div class="container">
+                                                <div class="row">
                                                     <div class="col">
-                                                        <h5 class="mt-5">Crypt of Lieberkuhn</h5>
-                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/2d-ftu/crypt_lieberkuhn_large_intestine.html">2D SVG</a></p>
-                                                        <image class="model-viewer-div" alt="The large intestine, crypt of lieberkuhn"
-                                                            src="https://raw.githubusercontent.com/hubmapconsortium/ccf-releases/v1.2/v1.2/2d-ftu/crypt_lieberkuhn_large_intestine.svg" shadow-intensity="1" camera-controls auto-rotate
-                                                            style="height: 400px;">
-                                                        </image>
-                                                    </div>
-                                                </div>
-                                                
-                                                    </div>
-                                                    
+                                                        <h5 class="mt-5">Nephron</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/2d-ftu/nephron_kidney.html">2D SVG</a></p>
+                                                        <image class="model-viewer-div" alt="The kidney, nefron"
+                                                        src="https://raw.githubusercontent.com/hubmapconsortium/ccf-releases/v1.2/v1.2/2d-ftu/nephron_kidney.svg" shadow-intensity="1" camera-controls auto-rotate
+                                                        style="height: 400px;">
+                                                    </image>
                                                 </div>
                                             </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h5 class="mt-5">Renal Corpuscle</h5>
+                                                    <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/2d-ftu/renal_corpuscle_kidney.html">2D SVG</a></p>
+                                                    <image class="model-viewer-div" alt="The kidney, renal corpuscle"
+                                                    src="https://raw.githubusercontent.com/hubmapconsortium/ccf-releases/v1.2/v1.2/2d-ftu/renal_corpuscle_kidney.svg" shadow-intensity="1" camera-controls auto-rotate
+                                                    style="height: 400px;">
+                                                </image>
+                                            </div>
                                         </div>
-                                        <!-- END: Card 1 -->
                                         
                                     </div>
-                                </div>
-                                <div class="tab-pane fade" id="liver2" role="tabpanel"
-                                    aria-labelledby="liver-tab2">
-                                    <div>
-                                        <!-- START: Card 1 -->
-                                        <div class="mb-4">
-                                            <div class="card">
-                                                <h5 class="card-header position-relative bg-light">
-                                                    <span class="text-uppercase"></span> Liver FTUs<span
-                                                        class="card-header-icon position-absolute">
-                                                    </span>
-                                                </h5>
-                                                <div class="row no-gutters h-100 position-relative">
-                                                    <div class="container">
-                                                        
-                                            
-                                                    <div class="row">
-                                                    <div class="col">
-                                                        <h5 class="mt-5">Liver Lobule</h5>
-                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/2d-ftu/liver_lobule_liver.html">2D SVG</a></p>
-                                                        <image class="model-viewer-div" alt="The liver, liver lobule"
-                                                            src="https://raw.githubusercontent.com/hubmapconsortium/ccf-releases/v1.2/v1.2/2d-ftu/liver_lobule_liver.svg" shadow-intensity="1" camera-controls auto-rotate
-                                                            style="height: 400px;">
-                                                        </image>
-                                                    </div>
-                                                </div>
-                                                
-                                                    </div>
-                                                    
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- END: Card 1 -->
-                                        
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="lung2" role="tabpanel" aria-labelledby="lung-tab2">
-                                    <div>
-                                        <!-- START: Card 1 -->
-                                        <div class="mb-4">
-                                            <div class="card">
-                                                <h5 class="card-header position-relative bg-light">
-                                                    <span class="text-uppercase"></span> Lungs FTUs<span
-                                                        class="card-header-icon position-absolute">
-                                                        
-                                                    </span>
-                                                </h5>
-                                                <div class="row no-gutters h-100 position-relative">
-                                                    <div class="container">
-                                                        
-                                            
-                                                    <div class="row">
-                                                    <div class="col">
-                                                        <h5 class="mt-5">Pulmonary Alveolus</h5>
-                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/2d-ftu/pulmonary_alveolus_lung.html">2D SVG</a></p>
-                                                        <image class="model-viewer-div" alt="The lung, pulmonary alveolus"
-                                                            src="https://raw.githubusercontent.com/hubmapconsortium/ccf-releases/v1.2/v1.2/2d-ftu/pulmonary_alveolus_lung.svg" shadow-intensity="1" camera-controls auto-rotate
-                                                            style="height: 400px;">
-                                                        </image>
-                                                    </div>
-                                                </div>
-                                                
-                                                    </div>
-                                                    
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- END: Card 1 -->
                                     
-                                    </div>
                                 </div>
-                                <div class="tab-pane fade" id="pancreas2" role="tabpanel" aria-labelledby="pancreas-tab2">
-                                    <div>
-                                        <!-- START: Card 1 -->
-                                        <div class="mb-4">
-                                            <div class="card">
-                                                <h5 class="card-header position-relative bg-light">
-                                                    <span class="text-lowercase"></span> Pancreas FTUs<span
-                                                        class="card-header-icon position-absolute"> 
-                                                    </span>
-                                                </h5>
-                                                <div class="row no-gutters h-100 position-relative">
-                                                    <div class="container">
+                            </div>
+                        </div>
+                        <!-- END: Card 1 -->
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="colon2" role="tabpanel"
+                aria-labelledby="colon-tab2">
+                <div>
+                    <!-- START: Card 1 -->
+                    <div class="mb-4">
+                        <div class="card">
+                            <h5 class="card-header position-relative bg-light">
+                                <span class="text-uppercase"></span> Large Intestine FTUs<span
+                                class="card-header-icon position-absolute">
+                            </span>
+                        </h5>
+                        <div class="row no-gutters h-100 position-relative">
+                            <div class="container">
+                                
+                                
+                                <div class="row">
+                                    <div class="col">
+                                        <h5 class="mt-5">Crypt of Lieberkuhn</h5>
+                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/2d-ftu/crypt_lieberkuhn_large_intestine.html">2D SVG</a></p>
+                                        <image class="model-viewer-div" alt="The large intestine, crypt of lieberkuhn"
+                                        src="https://raw.githubusercontent.com/hubmapconsortium/ccf-releases/v1.2/v1.2/2d-ftu/crypt_lieberkuhn_large_intestine.svg" shadow-intensity="1" camera-controls auto-rotate
+                                        style="height: 400px;">
+                                    </image>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- END: Card 1 -->
+            
+        </div>
+    </div>
+    <div class="tab-pane fade" id="liver2" role="tabpanel"
+    aria-labelledby="liver-tab2">
+    <div>
+        <!-- START: Card 1 -->
+        <div class="mb-4">
+            <div class="card">
+                <h5 class="card-header position-relative bg-light">
+                    <span class="text-uppercase"></span> Liver FTUs<span
+                    class="card-header-icon position-absolute">
+                </span>
+            </h5>
+            <div class="row no-gutters h-100 position-relative">
+                <div class="container">
+                    
+                    
+                    <div class="row">
+                        <div class="col">
+                            <h5 class="mt-5">Liver Lobule</h5>
+                            <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/2d-ftu/liver_lobule_liver.html">2D SVG</a></p>
+                            <image class="model-viewer-div" alt="The liver, liver lobule"
+                            src="https://raw.githubusercontent.com/hubmapconsortium/ccf-releases/v1.2/v1.2/2d-ftu/liver_lobule_liver.svg" shadow-intensity="1" camera-controls auto-rotate
+                            style="height: 400px;">
+                        </image>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!-- END: Card 1 -->
+
+</div>
+</div>
+<div class="tab-pane fade" id="lung2" role="tabpanel" aria-labelledby="lung-tab2">
+    <div>
+        <!-- START: Card 1 -->
+        <div class="mb-4">
+            <div class="card">
+                <h5 class="card-header position-relative bg-light">
+                    <span class="text-uppercase"></span> Lungs FTUs<span
+                    class="card-header-icon position-absolute">
+                    
+                </span>
+            </h5>
+            <div class="row no-gutters h-100 position-relative">
+                <div class="container">
+                    
+                    
+                    <div class="row">
+                        <div class="col">
+                            <h5 class="mt-5">Pulmonary Alveolus</h5>
+                            <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/2d-ftu/pulmonary_alveolus_lung.html">2D SVG</a></p>
+                            <image class="model-viewer-div" alt="The lung, pulmonary alveolus"
+                            src="https://raw.githubusercontent.com/hubmapconsortium/ccf-releases/v1.2/v1.2/2d-ftu/pulmonary_alveolus_lung.svg" shadow-intensity="1" camera-controls auto-rotate
+                            style="height: 400px;">
+                        </image>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!-- END: Card 1 -->
+
+</div>
+</div>
+<h4>Standard Operating Procedures (SOP)</h4>
+<ul>
+    <li><a href="https://drive.google.com/file/d/1KoJCEGMTbpX-LOLNoAZhQgSWNYCPTh41/view" title="go to SOP" target="_blank">Style Guide: HuBMAP 2D Functional Tissue Unit (FTU) Illustrations</a></li>
+</ul>
+
+<h4>Term of use</h4>
+<p>
+    HuBMAP data are supplied with no warranties, expressed or implied, including without limitation, any warranty of merchantability or fitness for a particular purpose or non-infringement. No warranty with respect to the HuBMAP infrastructure is provided, including without limitation, any uptime warranty. The Parties make no representations that the use of the data will not infringe any patent or proprietary rights of third parties.
+</p>
+
+<h4>License</h4>
+<p>
+    All CCF 2D functional tissue units files are released under <a href="https://creativecommons.org/licenses/by/4.0/">Attribution 4.0 International (CC BY 4.0)</a>.
+</p>
+
+<h4>Citation</h4>
+<p>
+If you use the data files v1.0 release, please cite this effort as follows: <br>
+Browne, K., Cross, L. E., Herr II, B. W., Record, L, Quardokus, E, Bueckle, A., Börner, K. (2021). HuBMAP CCF 3D Reference Object Library. <a href="https://hubmapconsortium.github.io/ccf/pages/ccf-3d-reference-library.html">https://hubmapconsortium.github.io/ccf/pages/ccf-3d-reference-library.html</a>. Accessed on March 12, 2021.
+</p>
+
+<p>
+If you use the data files v1.1 release, please cite this effort as follows:<br>
+Browne, K., Cross, L. E., Herr II, B. W., Record, L, Quardokus, E, Bueckle, A., Börner, K. (2021). HuBMAP CCF 3D Reference Object Library. <a href="https://hubmapconsortium.github.io/ccf/pages/ccf-3d-reference-library.html">https://hubmapconsortium.github.io/ccf/pages/ccf-3d-reference-library.html</a>. Accessed on December 1, 2021.
+</p>
+
+<h4>Acknowledgements</h4>
+
+<div class="tab-pane fade" id="pancreas2" role="tabpanel" aria-labelledby="pancreas-tab2">
+    <div>
+        <!-- START: Card 1 -->
+        <div class="mb-4">
+            <div class="card">
+                <h5 class="card-header position-relative bg-light">
+                    <span class="text-lowercase"></span> Pancreas FTUs<span
+                    class="card-header-icon position-absolute"> 
+                </span>
+            </h5>
+            <div class="row no-gutters h-100 position-relative">
+                <div class="container">
                                                         
                                             
                                                  <div class="row">
@@ -391,6 +433,8 @@
             </div>
         </main>
     </div>
+
+    
 
     <footer class="footer text-center"><a href="mailto:infoccf@indiana.edu" title="Email the MC-IU Team"><svg
                 xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" class="ico-email align-top">
