@@ -1148,7 +1148,7 @@
                                                     <div class="col">
                                                         <h5 class="mt-5">Female</h5>
                                                         <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/united-female.html">3D model</a></p>
-                                                        <model-viewer class="model-viewer-div" alt="All organs, female"
+                                                        <model-viewer id="united-female2" class="model-viewer-div" alt="All organs, female"
                                                             src="https://ccf-ontology.hubmapconsortium.org/objects/v1.2/VH_F_United.glb" shadow-intensity="1" camera-controls auto-rotate
                                                             style="height: 400px;">
                                                         </model-viewer>
@@ -1156,7 +1156,7 @@
                                                     <div class="col">
                                                         <h5 class="mt-5">Male</h5>
                                                         <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/united-male.html">3D model</a></p>
-                                                        <model-viewer class="model-viewer-div" alt="All organs, male"
+                                                        <model-viewer id="united-male2" class="model-viewer-div" alt="All organs, male"
                                                             src="https://ccf-ontology.hubmapconsortium.org/objects/v1.2/VH_M_United.glb" shadow-intensity="1" camera-controls auto-rotate
                                                             style="height: 400px;">
                                                         </model-viewer>
@@ -3011,6 +3011,22 @@
 		}
         switch_table_view();
 	</script>
+    <script>
+        function setSkinOpacity(modelViewer) {
+            if (modelViewer) {
+                modelViewer.addEventListener('load', () => {
+                    const [material] = modelViewer.model.materials;
+                    material.pbrMetallicRoughness.setBaseColorFactor([ 0.0352, 0.1333, 0.6666, 0.5 ]);
+                    material.setAlphaMode('BLEND');
+                });
+            }
+        }
+        function updateSkinOpacity() {
+            setSkinOpacity(document.getElementById('united-female2'));
+            setSkinOpacity(document.getElementById('united-male2'));
+        }
+        updateSkinOpacity();
+    </script>
 </body>
 
 </html>
