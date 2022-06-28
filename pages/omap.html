@@ -43,6 +43,7 @@
                     <a class="dropdown-item" href="ccf-anatomical-structures.html">CCF Anatomical Structures, Cell Types
                         and Biomarkers (ASCT+B) Tables</a>
                     <a class="dropdown-item" href="ccf-3d-reference-library.html">CCF 3D Reference Object Library</a>
+                    <a class="dropdown-item" href="ccf-2d-reference-library.html">CCF 2D Reference Functional Tissue Unit (FTU) Library</a>
                     <a class="dropdown-item" href="omap.html">Organ Mapping Antibody Panels (OMAPs)</a>
                     <a class="dropdown-item" href="ccf-ontology.html">CCF Ontology</a>
                     <div class="pl-4 pt-3 font-weight-bold">Links</div>
@@ -107,33 +108,109 @@
                         </h1>
                         <h2 class="mt-5">Overview</h2>
                     
-                        <p>Organ Mapping Antibody Panels (OMAP) allow spatial mapping of the anatomical structures and cell types present in diverse organs (Anatomical Structures, Cell Types, plus Biomarkers (ASCT+B) tables) using multiplexed antibody-based imaging [<a href="https://doi.org/10.1038/s41592-021-01316-y">Hickey et al, 2021</a>]. The panels are authored and reviewed by experts in pathology, tissue biology, and multiplexed imaging. Information on antibody lots and recommended concentrations vary across experiments and, in the case of antibody dilutions, must be empirically determined.</p>
-                        <h4>Standard Operating Procedures (SOP)</h4>
+                        <p>
+                            Organ Mapping Antibody Panels (OMAPs) are collections of antibodies that allow spatial mapping of the anatomical structures and cell types present in diverse organs using multiplexed antibody-based imaging (<a href="https://www.nature.com/articles/s41592-021-01316-y">Hickey et al, 2021</a>). The construction of an OMAP is an iterative, resource intensive process that requires domain expertise in tissue biology, spatial proteomics, and multiplexed imaging (<a href="https://doi.org/10.1038/s41596-019-0206-y">Du et al. 2019</a>, <a href="https://doi.org/10.1038/s41596-021-00644-9">Radtke et al. 2022</a>). To overcome these challenges, the Human BioMolecular Atlas Program (HuBMAP) is authoring and publishing OMAPs. These community-validated resources directly parallel efforts in the field of flow cytometry to publish Optimized Multicolor Immunofluorescence Panels (OMIPs) (<a href="https://doi.org/10.1002/cyto.a.20916">Mahnke, Chattopadhyay, and Roederer 2010</a>, <a href="https://doi.org/10.1002/cyto.a.20959">Roederer and Tárnok 2010</a>). In contrast to existing antibody validation resources such as the HuBMAP Antibody Validation Report (<a href="https://avr.hubmapconsortium.org">https://avr.hubmapconsortium.org</a>) and Human Protein Atlas (<a href="https://www.proteinatlas.org/humanproteome/tissue">The human proteome - The Human Protein Atlas</a>), OMAPs additionally provide experimental details relevant for their successful application, e.g., tissue preservation method, imaging method, antigen retrieval conditions, and antibody cycling order. The end result is an assembly of expertly curated antibodies that work together in a single tissue section. 
+                    
+                        </p>
+                        
+                        <p>  
+                             To facilitate tissue mapping efforts within and beyond the HuBMAP community, OMAPs are designed for integration with the ASCT+B Reporter (<a href="https://doi.org/10.1038/s41556-021-00788-6">Börner et al. 2021</a>), a state-of-the-art visualization tool <a href="https://hubmapconsortium.github.io/ccf-asct-reporter/">https://hubmapconsortium.github.io/ccf-asct-reporter</a>. We strongly encourage inclusion of blood endothelial markers to empower construction of a human reference atlas using the vasculature common coordinate framework (VCCF), originally proposed by Dr. Zorina Galis (<a href="https://www.youtube.com/watch?v=ZGYU_dsb0j4">Galis 2019</a>) and expanded upon here (<a href="https://doi.org/10.3389/fcvm.2020.00029">Weber, Ju, and Börner 2020</a>).
+                        </p> 
+                        <h4>Standard Operating Procedures (SOP)
+                        </h4>
                         <ul>
-                            <li><a href="https://doi.org/10.5281/zenodo.5749883" title="go to SOP" target="_blank">SOP:  Construction of Organ Mapping Antibody Panels for Multiplexed Antibody-Based Imaging of Human Tissues</a></li>
+                            <li>SOP: Construction of Organ Mapping Antibody Panels for Multiplexed Antibody-Based Imaging of Human Tissues <a href="https://doi.org/10.5281/zenodo.5749883" title="go to SOP" target="_blank">https://doi.org/10.5281/zenodo.5749883</a></li>
                             
                         </ul>
                         <h2 class="mt-5">Existing OMAPS</h2>
                         
-						<div id="v1_1_table">
-						<table class="table">
-							<thead class="thead-light">
-								<tr scope="row">
-									<th scope="col">Organ</th>
-									<th class="text-left" scope="col">Tissue Preservation Method </th>
-									<th class="text-left" scope="col">Multiplexed antibody-based imaging method </th>
-									
-								</tr>
-							</thead>
-							<tbody>
-								<tr scope="row">
-									<td><a href="https://hubmapconsortium.github.io/ccf-releases/v1.1/docs/omap/omap.html">Lymph node</a></td>
-									<td class="text-left">Fixed Frozen</td>
-									<td class="text-left">IBEX</td>
-								</tr>
-								
-							</tbody>
-						</table>
+                        <div class="dropdown" align="center">
+							Choose CCF-HRA Release <b>version</b>:&nbsp;&nbsp;&nbsp;&nbsp;
+                            <select
+								id="choose_table_version" name="choose_table_version"
+								onchange="switch_table_view()" aria-haspopup="true"
+								aria-expanded="false" id="dropdownMenu2">
+								<option value="v1_2" align="center">3rd Release, June '22</option>
+								<option value="v1_1" align="center">2nd Release, December '21</option>
+							</select>
+						</div>
+
+                        <div id="v1_1_table">
+                            <table class="table">
+                                <thead class="thead-light">
+                                    <tr scope="row">
+                                        <th scope="col">Organ</th>
+                                        <th class="text-left" scope="col">Tissue Preservation Method </th>
+                                        <th class="text-left" scope="col">Multiplexed antibody-based imaging method </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr scope="row">
+                                        <td><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/omap/omap-ln-ibex.html">Lymph node</a></td>
+                                        <td class="text-left">Fixed Frozen</td>
+                                        <td class="text-left">IBEX</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+						<div id="v1_2_table">
+                            <div class="alert alert-warning">
+                                <b>Warning:</b> DOIs are being finalized. All links below should work, but DOI URLs will not work until further notice.
+                            </div>
+                            <table class="table">
+                                <thead class="thead-light">
+                                    <tr scope="row">
+                                        <th scope="col">Organ</th>
+                                        <th class="text-left" scope="col">Tissue Preservation Method </th>
+                                        <th class="text-left" scope="col">Multiplexed antibody-based imaging method </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr scope="row">
+                                        <td><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/omap/omap-intestines-codex.html">Intestines</a></td>
+                                        <td class="text-left">Fresh Frozen</td>
+                                        <td class="text-left">CODEX</td>
+                                    </tr>
+
+                                    <tr scope="row">
+                                        <td><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/omap/omap-kidney-codex.html">Kidney</a></td>
+                                        <td class="text-left">Fresh Frozen</td>
+                                        <td class="text-left">CODEX</td>
+                                    </tr>
+
+                                    <tr scope="row">
+                                        <td><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/omap-liver-sim.html">Liver</a></td>
+                                        <td class="text-left">Fresh Frozen</td>
+                                        <td class="text-left">SIMS</td>
+                                    </tr>
+
+                                    <tr scope="row">
+                                        <td><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/omap/omap-ln-ibex.html">Lymph node</a></td>
+                                        <td class="text-left">Fixed Frozen</td>
+                                        <td class="text-left">IBEX</td>
+                                    </tr>
+
+                                    <tr scope="row">
+                                        <td><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/omap-lung-celldive.html">Lung</a></td>
+                                        <td class="text-left">FFPE</td>
+                                        <td class="text-left">Cell DIVE</td>
+                                    </tr>
+
+                                    <tr scope="row">
+                                        <td><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/omap-pancreas-codex.html">Pancreas</a></td>
+                                        <td class="text-left">FFPE</td>
+                                        <td class="text-left">CODEX</td>
+                                    </tr>
+
+                                    <tr scope="row">
+                                        <td><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/omap-skin-celldive.html">Skin</a></td>
+                                        <td class="text-left">FFPE</td>
+                                        <td class="text-left">Cell DIVE</td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
 						</div>
                         
 							
@@ -141,13 +218,32 @@
 						<h2 class="mt-5">Acknowledgements</h2>
                         <p>We are grateful for engaging and thoughtful discussions from the Affinity Reagent Imaging and Validation and ASCT+B working groups, HuBMAP Consortium. This work was supported, in part, by the Intramural Research Program of the NIH, National Institute of Allergy and Infectious Disease and National Cancer Institute. This work was also supported by NIH Awards UH3 CA246635 and 1OT2OD026671.</p>
                         <h2 class="mt-5">References</h2>
-                        <p>Börner, Katy, Sarah A. Teichmann, Ellen M. Quardokus, James C. Gee, Kristen Browne, David Osumi-Sutherland, Bruce W. Herr, et al. 2021. “Anatomical Structures, Cell Types and Biomarkers of the Human Reference Atlas.” Nature Cell Biology 23 (11): 1117–28. <a href="https://doi.org/10.1038/s41556-021-00788-6">https://doi.org/10.1038/s41556-021-00788-6</a>.</p>
 
-						<p>Du, Z. et al. Qualifying antibodies for image-based immune profiling and multiplexed tissue imaging. Nat. Protoc. 14, 2900–2930 (2019).</p>
-							
-						<p>Hickey, J.W., Neumann, E.K., Radtke, A.J. et al. Spatial mapping of protein composition and tissue organization: a primer for multiplexed antibody-based imaging. Nat Methods(2021). https://doi.org/10.1038/s41592-021-01316-y</p>
-							
-						<p>Radtke, A. J. et al. IBEX: an iterative immunolabeling and chemical bleaching method for high-content imaging of diverse tissues. Nat. Protoc.https://doi.org/10.1038/s41596-021-00644-9 (2021).</p>
+                        <p>
+                            Börner, Katy, Sarah A. Teichmann, Ellen M. Quardokus, James C. Gee, Kristen Browne, David Osumi-Sutherland, Bruce W. Herr, et al. 2021. “Anatomical Structures, Cell Types and Biomarkers of the Human Reference Atlas.” Nature Cell Biology 23 (11): 1117–28. <a href="https://doi.org/10.1038/s41556-021-00788-6" title="View on nature.com" target="_blank">https://doi.org/10.1038/s41556-021-00788-6</a>.      
+                        </p> 
+                        <p>
+                            Du, Ziming, Jia-Ren Lin, Rumana Rashid, Zoltan Maliga, Shu Wang, Jon C. Aster, Benjamin Izar, Peter K. Sorger, and Sandro Santagata. 2019. “Qualifying Antibodies for Image-Based Immune Profiling and Multiplexed Tissue Imaging.” Nature Protocols 14 (10): 2900–2930. <a href="https://doi.org/10.1038/s41596-019-0206-y" title="View on nature.com" target="_blank">https://doi.org/10.1038/s41596-019-0206-y</a>.     
+                        </p>
+                        <p>
+                            Galis, Zorina S. 2019. Common Coordinate Framework (CCF) Workshop Anatomical Mapping: Using the Vasculature for CCF. Indiana University. <a href="https://www.youtube.com/watch?v=ZGYU_dsb0j4" title="View on Youtube" target="_blank">https://www.youtube.com/watch?v=ZGYU_dsb0j4</a>. 
+                        </p>
+                        <p>
+                            Galis, Zorina S. 2020. “Editorial: Where Is Waldo: Contextualizing the Endothelial Cell in the Era of Precision Biology.” Frontiers in Cardiovascular Medicine 7. <a href="https://doi.org/10.3389/fcvm.2020.00127" title="View on frontiersin.org" target="_blank">https://doi.org/10.3389/fcvm.2020.00127</a>. 
+                        </p>
+                        <p>
+                            Mahnke, Yolanda, Pratip Chattopadhyay, and Mario Roederer. 2010. “Publication of Optimized Multicolor Immunofluorescence Panels.” Cytometry. Part A : The Journal of the International Society for Analytical Cytology 77 (9): 814–18. <a href="https://doi.org/10.1002/cyto.a.20916" title="View on onlinelibrary.wiley.com" target="_blank">https://doi.org/10.1002/cyto.a.20916</a>.
+                        </p>
+                        <p>
+                            Radtke Andrea J., Chu Colin J, Yaniv Ziv, Yao Li, Marr James, Beuschel Rebecca T, Ichise Hiroshi, et al. 2021. “Accompanying Dataset for: ‘IBEX: An Iterative Immunolabeling and Chemical Bleaching Method for High-Content Imaging of Diverse Tissues.’” Zenodo. <a href="https://doi.org/10.5281/zenodo.5244551" title="View on zenodo.org" target="_blank">https://doi.org/10.5281/zenodo.5244551</a>.        
+                        </p>
+                        <p>
+                            Roederer, Mario, and Attila Tárnok. 2010. “OMIPs—Orchestrating Multiplexity in Polychromatic Science.” Cytometry Part A 77A (9): 811–12. <a href="https://doi.org/10.1002/cyto.a.20959" title="View on onlinelibrary.wiley.com" target="_blank">https://doi.org/10.1002/cyto.a.20959</a>.         
+                        </p>      
+                        <p>
+                            Weber, Griffin M., Yingnan Ju, and Katy Börner. 2020. “Considerations for Using the Vasculature as a Coordinate System to Map All the Cells in the Human Body.” Frontiers in Cardiovascular Medicine 7: 29. <a href="https://doi.org/10.3389/fcvm.2020.00029" title="View on frontiersin.org" target="_blank">https://doi.org/10.3389/fcvm.2020.00029</a>. 
+                        </p>
+
                         
                         <div class="my-5">
                             <p><small class="small mt-5">December 1, 2021</small></p>
@@ -176,10 +272,17 @@
     <script src="../js/popper.js"></script>
     <script src="../js/bootstrap-material-design.min.js"></script>
 	<script>
-		function switch_table_view(v1_1_table_id, v1_0_table_id, element){
-			document.getElementById(v1_1_table_id).style.display = (element.value=="v1_1") ? 'block' : 'none';
-			document.getElementById(v1_0_table_id).style.display = (element.value=="v1_1") ? 'none' : 'block';
+		function switch_table_view() {
+			const versions = ['v1_0', 'v1_1', 'v1_2'];
+			const selectedVersion = document.getElementById('choose_table_version').value;
+			for (const version of versions) {
+				const div = document.getElementById(`${version}_table`);
+                if (div) {
+                    div.style.display = selectedVersion === version ? 'block' : 'none';
+                }
+			}
 		}
+		switch_table_view();
 	</script>
 </body>
 
