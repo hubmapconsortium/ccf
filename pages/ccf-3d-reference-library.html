@@ -47,6 +47,7 @@
                     <a class="dropdown-item" href="ccf-anatomical-structures.html">CCF Anatomical Structures, Cell Types
                         and Biomarkers (ASCT+B) Tables</a>
                     <a class="dropdown-item" href="ccf-3d-reference-library.html">CCF 3D Reference Object Library</a>
+                    <a class="dropdown-item" href="ccf-2d-reference-library.html">CCF 2D Reference Functional Tissue Unit (FTU) Library</a>
                     <a class="dropdown-item" href="omap.html">Organ Mapping Antibody Panels (OMAPs)</a>
                     <a class="dropdown-item" href="ccf-ontology.html">CCF Ontology</a>
                     <div class="pl-4 pt-3 font-weight-bold">Links</div>
@@ -92,12 +93,1223 @@
                         <p>For selected organs, 3D extraction site objects are provided. Some extraction sites resemble geometric objects (e.g., cuboids for heart) while others take the shape of one or more whole or partial anatomical structures (e.g., in spleen). The 3D extraction sites do not restrict registration to specific regions, instead they provide “expert defined landmarks” to help guide tissue registration. The extraction site objects are also used for automatic semantic annotation of tissue samples via collision detection during registration.</p>
 
                         <div class="dropdown" align="center">
-                            Choose <b>release</b> of 3D Reference Objects:&nbsp;&nbsp;&nbsp;&nbsp;
-                            <select id="choose_table_version" name="choose_table_version" onchange="switch_table_view('v1_1_table', 'v1_0_table', this)" aria-haspopup="true" aria-expanded="false" id="dropdownMenu2">
+                            Choose CCF-HRA Release <b>version</b>:&nbsp;&nbsp;&nbsp;&nbsp;
+                            <select id="choose_table_version" name="choose_table_version" onchange="switch_table_view()" aria-haspopup="true" aria-expanded="false" id="dropdownMenu2">
+                                <option value="v1_2" align="center">3rd Release, June '22</option>
                                 <option value="v1_1" align="center">2nd Release, December '21</option>
                                 <option value="v1_0" align="center">1st Release, March '21</option>
                             </select>
                         </div>
+
+                        <div id="v1_2_table">
+                            <div class="alert alert-warning">
+                                <b>Warning:</b> DOI registration in progress. DOI URLs will not work until further notice.
+                            </div>
+                            <nav class="organ-navbar navbar navbar-expand-lg navbar-tabs navbar-light bg-light mt-3">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+    
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+                                    <ul class="nav nav-tabs bg-light" id="myTab" role="tablist" >
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="brain-tab2" data-toggle="tab" href="#brain2"
+                                                role="tab" aria-controls="home" aria-selected="true"><img src= "https://cdn.jsdelivr.net/gh/cns-iu/md-icons@main/other-icons/organs/ico-organs-brain.svg" width="45.7px" height="45.7px" ><br/>Allen<br/> Brain</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="vasculature-tab2" data-toggle="tab" href="#vasculature2"
+                                                role="tab" aria-controls="home" aria-selected="true"><img src= "https://cdn.jsdelivr.net/gh/cns-iu/md-icons@main/other-icons/organs/ico-organs-vasculature-thick.svg" width="45.7px" height="45.7px" ><br/>Blood<br/>Vasculature</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="bone-tab2" data-toggle="tab" href="#bone2"
+                                                role="tab" aria-controls="home" aria-selected="true"><img src= "https://cdn.jsdelivr.net/gh/cns-iu/md-icons@main/other-icons/organs/ico-organs-pelvis-f.svg" width="45.7px" height="45.7px" ><br/>Bone Marrow &<br/> Blood/Pelvis</a>
+                                        </li>
+                                       
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="eye-tab2" data-toggle="tab" href="#eye2"
+                                                role="tab" aria-controls="home" aria-selected="true"><img src= "https://cdn.jsdelivr.net/gh/cns-iu/md-icons@main/other-icons/organs/ico-organs-eye.svg" width="45.7px" height="45.7px" ><br/>Eye</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="fallopian-tab2" data-toggle="tab" href="#fallopian2"
+                                                role="tab" aria-controls="home" aria-selected="true"><img src= "https://cdn.jsdelivr.net/gh/cns-iu/md-icons@main/other-icons/organs/ico-organs-fallopian-tube-left.svg" width="45.7px" height="45.7px" ><br/>Fallopian<br/>Tube</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="heart-tab2" data-toggle="tab" href="#heart2" role="tab"
+                                                aria-controls="home" aria-selected="true"><img src= "https://cdn.jsdelivr.net/gh/cns-iu/md-icons@main/other-icons/organs/ico-organs-heart.svg" width="45.7px" height="45.7px"><br/>Heart</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="kidney-tab2" data-toggle="tab" href="#kidney2" role="tab"
+                                                aria-controls="profile" aria-selected="false"><img src= "https://cdn.jsdelivr.net/gh/cns-iu/md-icons@main/other-icons/organs/ico-organs-kidney.svg" width="45.7px" height="45.7px"><br/>Kidney</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="knee-tab2" data-toggle="tab" href="#knee2"
+                                                role="tab" aria-controls="home" aria-selected="true"><img src= "https://cdn.jsdelivr.net/gh/cns-iu/md-icons@main/other-icons/organs/ico-organs-knee.svg" width="45.7px" height="45.7px" ><br/>Knee</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="colon-tab2" data-toggle="tab" href="#colon2"
+                                                role="tab" aria-controls="home" aria-selected="true"><img src= "https://cdn.jsdelivr.net/gh/cns-iu/md-icons@main/other-icons/organs/ico-organs-large-intestine.svg" width="45.7px" height="45.7px" ><br/>Large<br/>Intestine</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="liver-tab2" data-toggle="tab" href="#liver2"
+                                                role="tab" aria-controls="home" aria-selected="true"><img src= "https://cdn.jsdelivr.net/gh/cns-iu/md-icons@main/other-icons/organs/ico-organs-liver.svg" width="45.7px" height="45.7px"><br/>Liver</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="lung-tab2" data-toggle="tab" href="#lung2"
+                                                role="tab" aria-controls="home" aria-selected="true"><img src= "https://cdn.jsdelivr.net/gh/cns-iu/md-icons@main/other-icons/organs/ico-organs-lung.svg" width="45.7px" height="45.7px"><br/>Lungs</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="lymphnodes-tab2" data-toggle="tab" href="#lymphnodes2"
+                                                role="tab" aria-controls="home" aria-selected="true"><img src= "https://cdn.jsdelivr.net/gh/cns-iu/md-icons@main/other-icons/organs/ico-organs-lymph-nodes.svg" width="45.7px" height="45.7px"><br/>Lymph<br/>Node</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="ovary-tab2" data-toggle="tab" href="#ovary2"
+                                                role="tab" aria-controls="home" aria-selected="true"><img src= "https://cdn.jsdelivr.net/gh/cns-iu/md-icons@main/other-icons/organs/ico-organs-ovaries.svg" width="45.7px" height="45.7px"><br/>Ovary</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="pancreas-tab2" data-toggle="tab" href="#pancreas2"
+                                                role="tab" aria-controls="home" aria-selected="true"><img src= "https://cdn.jsdelivr.net/gh/cns-iu/md-icons@main/other-icons/organs/ico-organs-pancreas.svg" width="45.7px" height="45.7px"><br/>Pancreas</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="placenta-tab2" data-toggle="tab" href="#placenta2"
+                                                role="tab" aria-controls="home" aria-selected="true"><img src= "https://cdn.jsdelivr.net/gh/cns-iu/md-icons@main/other-icons/organs/ico-organs-placenta.svg" width="45.7px" height="45.7px" ><br/>Placenta</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="prostate-tab2" data-toggle="tab" href="#prostate2"
+                                                role="tab" aria-controls="home" aria-selected="true"><img src= "https://cdn.jsdelivr.net/gh/cns-iu/md-icons@main/other-icons/organs/ico-organs-prostate.svg" width="45.7px" height="45.7px"><br/>Prostate</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="skin-tab2" data-toggle="tab" href="#skin2"
+                                                role="tab" aria-controls="home" aria-selected="true"><img src= "https://cdn.jsdelivr.net/gh/cns-iu/md-icons@main/other-icons/organs/ico-organs-skin.svg" width="45.7px" height="45.7px"><br/>Skin</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="smallintestine-tab2" data-toggle="tab" href="#smallintestine2"
+                                                role="tab" aria-controls="home" aria-selected="true"><img src= "https://cdn.jsdelivr.net/gh/cns-iu/md-icons@main/other-icons/organs/ico-organs-small intestine.svg" width="45.7px" height="45.7px"><br/>Small<br/>Intestine</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="spinalcord-tab2" data-toggle="tab" href="#spinalcord2"
+                                                role="tab" aria-controls="home" aria-selected="true"><img src= "https://cdn.jsdelivr.net/gh/cns-iu/md-icons@main/other-icons/organs/ico-organs-spinal-cord.svg" width="45.7px" height="45.7px" ><br/>Spinal<br/>Cord</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="spleen-tab2" data-toggle="tab" href="#spleen2" role="tab"
+                                                aria-controls="contact" aria-selected="false"><img src= "https://cdn.jsdelivr.net/gh/cns-iu/md-icons@main/other-icons/organs/ico-organs-spleen.svg" width="45.7px" height="45.7px"><br/>Spleen</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="thymus-tab2" data-toggle="tab" href="#thymus2"
+                                                role="tab" aria-controls="home" aria-selected="true"><img src= "https://cdn.jsdelivr.net/gh/cns-iu/md-icons@main/other-icons/organs/ico-organs-thymus.svg" width="45.7px" height="45.7px"><br/>Thymus</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="united-tab2" data-toggle="tab" href="#united2"
+                                                role="tab" aria-controls="home" aria-selected="true"><img src= "https://cdn.jsdelivr.net/gh/cns-iu/md-icons@main/other-icons/ico-cube.svg" width="45.7px" height="45.7px" ><br/>All Organs</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="ureter-tab2" data-toggle="tab" href="#ureter2"
+                                                role="tab" aria-controls="home" aria-selected="true"><img src= "https://cdn.jsdelivr.net/gh/cns-iu/md-icons@main/other-icons/organs/ico-organs-ureter-left.svg" width="45.7px" height="45.7px"><br/>Ureter</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="bladder-tab2" data-toggle="tab" href="#bladder2"
+                                                role="tab" aria-controls="home" aria-selected="true"><img src= "https://cdn.jsdelivr.net/gh/cns-iu/md-icons@main/other-icons/organs/ico-organs-bladder.svg" width="45.7px" height="45.7px"><br/>Urinary<br/>Bladder</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="uterus-tab2" data-toggle="tab" href="#uterus2"
+                                                role="tab" aria-controls="home" aria-selected="true"><img src= "https://cdn.jsdelivr.net/gh/cns-iu/md-icons@main/other-icons/organs/ico-organs-uterus.svg" width="45.7px" height="45.7px"><br/>Uterus</a>
+                                        </li>
+                                        
+                                        
+                                    </ul>
+    
+                                </div>
+                            </nav>
+
+                            <div class="tab-content mt-5" id="myTabContent">
+                                <div class="tab-pane fade show active" id="brain2" role="tabpanel" aria-labelledby="brain-tab2">
+                                    <div>
+                                        <!-- START: Card 1 -->
+                                        <div class="mb-4">
+                                            <div class="card">
+                                                <h5 class="card-header position-relative bg-light">
+                                                    Allen Brain<span
+                                                        class="card-header-icon position-absolute">
+                                                    </span>
+                                                </h5>
+                                                <div class="row no-gutters h-100 position-relative">
+                                                    <div class="container">
+                                                        
+                                            
+                                                    <div class="row">
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Female</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/brain-female.html">3D model</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The Allen brain, female"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/Allen_F_Brain.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Male</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/brain-male.html">3D model</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The Allen brain, male"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/Allen_M_Brain.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                </div>
+                                                
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END: Card 1 -->
+                                        
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="vasculature2" role="tabpanel" aria-labelledby="vasculature-tab2">
+                                    <div>
+                                            <!-- START: Card 1 -->
+                                            <div class="mb-4">
+                                            <div class="card">
+                                                <h5 class="card-header position-relative bg-light">
+                                                    <span class="text-lowercase"></span> Blood Vasculature<span
+                                                        class="card-header-icon position-absolute"> 
+                                                    </span>
+                                                </h5>
+                                                <div class="row no-gutters h-100 position-relative">
+                                                    <div class="container">
+                                                        
+                                            
+                                                    <div class="row">
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Female</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/blood-vasculature-female.html">3D model</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The Vasculature, blood, female"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_F_Blood_Vasculature.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Male</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/blood-vasculature-male.html">3D model</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The Vasculature, blood, male"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_M_Blood_Vasculature.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END: Card 1 -->
+                                        
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="bone2" role="tabpanel"
+                                aria-labelledby="bone-tab2">
+                                <div>
+                                    <!-- START: Card 1 -->
+                                    <div class="mb-4">
+                                        <div class="card">
+                                            <h5 class="card-header position-relative bg-light">
+                                                <span class="text-uppercase"></span> Pelvis<span
+                                                    class="card-header-icon position-absolute">
+                                                </span>
+                                            </h5>
+                                            <div class="row no-gutters h-100 position-relative">
+                                                <div class="container">
+                                                    
+                                        
+                                                <div class="row">
+                                                <div class="col">
+                                                    <h5 class="mt-5">Female</h5>
+                                                    <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/pelvis-female.html">3D model</a></p>
+                                                    <model-viewer class="model-viewer-div" alt="The pelvis, female"
+                                                        src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_F_Pelvis.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                        style="height: 400px;">
+                                                    </model-viewer>
+                                                </div>
+                                                <div class="col">
+                                                    <h5 class="mt-5">Male</h5>
+                                                    <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/pelvis-male.html">3D model</a></p>
+                                                    <model-viewer class="model-viewer-div" alt="The pelvis, male"
+                                                        src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_M_Pelvis.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                        style="height: 400px;">
+                                                    </model-viewer>
+                                                </div>
+                                            </div>
+                                            
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END: Card 1 -->
+                                    
+                                </div>
+                                </div>
+                                <div class="tab-pane fade" id="eye2" role="tabpanel" aria-labelledby="eye-tab2">
+                                    <div>
+                                        <!-- START: Card 1 -->
+                                        <div class="mb-4">
+                                            <div class="card">
+                                                <h5 class="card-header position-relative bg-light">
+                                                    <span class="text-lowercase"></span> Eye<span
+                                                        class="card-header-icon position-absolute"> 
+                                                    </span>
+                                                </h5>
+                                                <div class="row no-gutters h-100 position-relative">
+                                                    <div class="container">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Female, L</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/eye-female-left.html">3D model</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="Eye, female, L"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_F_Eye_L.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Female, R</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/eye-female-right.html">3D model</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="Eye, female, R"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_F_Eye_R.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Male, L</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/eye-male-left.html">3D model</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="Eye, male, L"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_M_Eye_L.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Male, R</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/eye-male-right.html">3D model</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="Eye, male, R"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_M_Eye_R.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END: Card 1 -->
+                                    
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="fallopian2" role="tabpanel" aria-labelledby="fallopian-tab2">
+                                    <div>
+                                        <!-- START: Card 1 -->
+                                        <div class="mb-4">
+                                            <div class="card">
+                                                <h5 class="card-header position-relative bg-light">
+                                                    <span class="text-uppercase"></span> Fallopian Tube<span
+                                                        class="card-header-icon position-absolute">
+                                                        
+                                                    </span>
+                                                </h5>
+                                                <div class="row no-gutters h-100 position-relative">
+                                                    <div class="container">
+                                                        
+                                            
+                                                    <div class="row">
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Female, L</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/fallopian-tube-female-left.html">3D model</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="Fallopian tube, female, left"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_F_Fallopian_Tube_L.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Female, R</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/fallopian-tube-female-right.html">3D model</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="Fallopian tube, female, right"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_F_Fallopian_Tube_R.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                </div>
+                                                
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END: Card 1 -->
+                                        
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="heart2" role="tabpanel" aria-labelledby="heart-tab2">
+                                    <div>
+                                        <!-- START: Card 1 -->
+                                        <div class="mb-4">
+                                            <div class="card">
+                                                <h5 class="card-header position-relative bg-light">
+                                                    <span class="text-uppercase"></span> Heart<span
+                                                        class="card-header-icon position-absolute">
+                                                        
+                                                    </span>
+                                                </h5>
+                                                <div class="row no-gutters h-100 position-relative">
+                                                    <div class="container">
+                                                        
+                                            
+                                                    <div class="row">
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Female</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/heart-female.html">3D model</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The heart, female"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_F_Heart.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Male</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/heart-male.html">3D model</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The heart, male"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_M_Heart.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                </div>
+                                                
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END: Card 1 -->
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="kidney2" role="tabpanel" aria-labelledby="kidney-tab2">
+                                    <div>
+                                        <!-- START: Card 1 -->
+                                        <div class="mb-4">
+                                            <div class="card">
+                                                <h5 class="card-header position-relative bg-light">
+                                                    <span class="text-uppercase"></span> Kidney<span
+                                                        class="card-header-icon position-absolute">
+                                                    </span>
+                                                </h5>
+                                                <div class="row no-gutters h-100 position-relative">
+                                                    <div class="container">
+                                                        
+                                            
+                                                    <div class="row">
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Female, L</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/kidney-female-left.html">3D model, L</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The kidney, left, female"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_F_Kidney_L.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Female, R</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/kidney-female-right.html">3D model, R</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The kidney, right, female"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_F_Kidney_R.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Male, L</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/kidney-male-left.html">3D model, L</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The kidney, left, male"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_M_Kidney_L.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Male, R</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/kidney-male-right.html">3D model, R</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The kidney, right, male"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_M_Kidney_R.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                </div>
+                                                
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END: Card 1 -->
+                                        
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="knee2" role="tabpanel" aria-labelledby="knee-tab2">
+                                    <div>
+                                        <!-- START: Card 1 -->
+                                        <div class="mb-4">
+                                            <div class="card">
+                                                <h5 class="card-header position-relative bg-light">
+                                                    <span class="text-uppercase"></span> Knee<span
+                                                        class="card-header-icon position-absolute">
+                                                    </span>
+                                                </h5>
+                                                <div class="row no-gutters h-100 position-relative">
+                                                    <div class="container">
+                                                        
+                                            
+                                                    <div class="row">
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Female, L</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/knee-female-left.html">3D model, L</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The knee, left, female"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_F_Knee_L.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Female, R</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/knee-female-right.html">3D model, R</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The knee, right, female"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_F_Knee_R.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Male, L</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/knee-male-left.html">3D model, L</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The knee, left, male"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_M_Knee_L.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Male, R</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/knee-male-right.html">3D model, R</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The knee, right, male"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_M_Knee_R.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                </div>
+                                                
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END: Card 1 -->
+                                        
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="colon2" role="tabpanel"
+                                    aria-labelledby="colon-tab2">
+                                    <div>
+                                        <!-- START: Card 1 -->
+                                        <div class="mb-4">
+                                            <div class="card">
+                                                <h5 class="card-header position-relative bg-light">
+                                                    <span class="text-uppercase"></span> Large Intestine<span
+                                                        class="card-header-icon position-absolute">
+                                                    </span>
+                                                </h5>
+                                                <div class="row no-gutters h-100 position-relative">
+                                                    <div class="container">
+                                                        
+                                            
+                                                    <div class="row">
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Female</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/large-intestine-female.html">3D model</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The large intestine, female"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/SBU_F_Intestine_Large.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Male</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/large-intestine-male.html">3D model</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The large intestine, male"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/SBU_M_Intestine_Large.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                </div>
+                                                
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END: Card 1 -->
+                                        
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="liver2" role="tabpanel"
+                                    aria-labelledby="liver-tab2">
+                                    <div>
+                                        <!-- START: Card 1 -->
+                                        <div class="mb-4">
+                                            <div class="card">
+                                                <h5 class="card-header position-relative bg-light">
+                                                    <span class="text-uppercase"></span> Liver<span
+                                                        class="card-header-icon position-absolute">
+                                                    </span>
+                                                </h5>
+                                                <div class="row no-gutters h-100 position-relative">
+                                                    <div class="container">
+                                                        
+                                            
+                                                    <div class="row">
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Female</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/liver-female.html">3D model</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="Liver, female"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_F_Liver.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Male</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/liver-male.html">3D model</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="Liver, male"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_M_Liver.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                </div>
+                                                
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END: Card 1 -->
+                                        
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="lung2" role="tabpanel" aria-labelledby="lung-tab2">
+                                    <div>
+                                        <!-- START: Card 1 -->
+                                        <div class="mb-4">
+                                            <div class="card">
+                                                <h5 class="card-header position-relative bg-light">
+                                                    <span class="text-uppercase"></span> Lungs<span
+                                                        class="card-header-icon position-absolute">
+                                                        
+                                                    </span>
+                                                </h5>
+                                                <div class="row no-gutters h-100 position-relative">
+                                                    <div class="container">
+                                                        
+                                            
+                                                    <div class="row">
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Female</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/lung-female.html">3D model</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The lungs, female"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_F_Lung.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Male</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/lung-male.html">3D model</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The lungs, male"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_M_Lung.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                </div>
+                                                
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END: Card 1 -->
+                                    
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="lymphnodes2" role="tabpanel" aria-labelledby="lymphnodes-tab2">
+                                    <div>
+                                        <!-- START: Card 1 -->
+                                        <div class="mb-4">
+                                            <div class="card">
+                                                <h5 class="card-header position-relative bg-light">
+                                                    <span class="text-lowercase"></span> Lymph nodes<span
+                                                        class="card-header-icon position-absolute">
+                                                        
+                                                    </span>
+                                                </h5>
+                                                <div class="row no-gutters h-100 position-relative">
+                                                    <div class="container">
+                                                        
+                                            
+                                                    <div class="row">
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Female</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/lymph-node-female.html">3D model</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The lymph nodes, female"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/NIH_F_Lymph_Node.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                    
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Male</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/lymph-node-male.html">3D model</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The lymph nodes, male"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/NIH_M_Lymph_Node.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                    
+                                                </div>
+                                                
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END: Card 1 -->
+                                        
+                                </div>
+                                </div>
+                                <div class="tab-pane fade" id="ovary2" role="tabpanel" aria-labelledby="ovary-tab2">
+                                    <div>
+                                        <!-- START: Card 1 -->
+                                        <div class="mb-4">
+                                            <div class="card">
+                                                <h5 class="card-header position-relative bg-light">
+                                                    <span class="text-lowercase"></span> Ovary<span
+                                                        class="card-header-icon position-absolute"> 
+                                                    </span>
+                                                </h5>
+                                                <div class="row no-gutters h-100 position-relative">
+                                                    <div class="container">
+                                                        
+                                            
+                                                 <div class="row">
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Female, L</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/ovary-female-left.html">3D model</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The ovary, female, left"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_F_Ovary_L.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Female, R</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/ovary-female-right.html">3D model</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The ovary, female, right"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_F_Ovary_R.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END: Card 1 -->
+                                       
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pancreas2" role="tabpanel" aria-labelledby="pancreas-tab2">
+                                    <div>
+                                        <!-- START: Card 1 -->
+                                        <div class="mb-4">
+                                            <div class="card">
+                                                <h5 class="card-header position-relative bg-light">
+                                                    <span class="text-lowercase"></span> Pancreas<span
+                                                        class="card-header-icon position-absolute"> 
+                                                    </span>
+                                                </h5>
+                                                <div class="row no-gutters h-100 position-relative">
+                                                    <div class="container">
+                                                        
+                                            
+                                                 <div class="row">
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Female</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/pancreas-female.html">3D model</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The pancreas, female"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_F_Pancreas.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Male</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/pancreas-male.html">3D model</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The pancreas, male"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_M_Pancreas.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END: Card 1 -->
+                                       
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="placenta2" role="tabpanel" aria-labelledby="placenta-tab2">
+                                    <div>
+                                        <!-- START: Card 1 -->
+                                        <div class="mb-4">
+                                            <div class="card">
+                                                <h5 class="card-header position-relative bg-light">
+                                                    <span class="text-uppercase"></span> Placenta<span
+                                                        class="card-header-icon position-absolute">
+                                                        
+                                                    </span>
+                                                </h5>
+                                                <div class="row no-gutters h-100 position-relative">
+                                                    <div class="container">
+                                                        
+                                            
+                                                    <div class="row">
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Female</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/placenta-female.html">3D model</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The placenta, female"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_F_Placenta.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                    
+                                                </div>
+                                                
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END: Card 1 -->
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="prostate2" role="tabpanel" aria-labelledby="prostate-tab2">
+                                    <div>
+                                        <!-- START: Card 1 -->
+                                        <div class="mb-4">
+                                            <div class="card">
+                                                <h5 class="card-header position-relative bg-light">
+                                                    <span class="text-lowercase"></span> Prostate<span
+                                                        class="card-header-icon position-absolute"> 
+                                                    </span>
+                                                </h5>
+                                                <div class="row no-gutters h-100 position-relative">
+                                                    <div class="container">
+                                                        
+                                            
+                                                 <div class="row">
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Male</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/prostate-male.html">3D model</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The prostate, male"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_M_Prostate.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                    
+                                                </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END: Card 1 -->
+                                       
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="skin2" role="tabpanel" aria-labelledby="skin-tab2">
+                                    <div>
+                                        <!-- START: Card 1 -->
+                                        <div class="mb-4">
+                                            <div class="card">
+                                                <h5 class="card-header position-relative bg-light">
+                                                    <span class="text-lowercase"></span> Skin<span
+                                                        class="card-header-icon position-absolute"> 
+                                                    </span>
+                                                </h5>
+                                                <div class="row no-gutters h-100 position-relative">
+                                                    <div class="container">
+                                                        
+                                            
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Female</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/skin-female.html">3D model</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The skin, female"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_F_Skin.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Male</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/skin-male.html">3D model</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The skin, male"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_M_Skin.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END: Card 1 -->
+                                    
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="smallintestine2" role="tabpanel" aria-labelledby="smallintestine-tab2">
+                                    <div>
+                                        <!-- START: Card 1 -->
+                                        <div class="mb-4">
+                                            <div class="card">
+                                                <h5 class="card-header position-relative bg-light">
+                                                    <span class="text-lowercase"></span> Small Intestine<span
+                                                        class="card-header-icon position-absolute"> 
+                                                    </span>
+                                                </h5>
+                                                <div class="row no-gutters h-100 position-relative">
+                                                    <div class="container">
+                                                        
+                                            
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Female</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/small-intestine-female.html">3D model</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The small intestine, female"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_F_Small_Intestine.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Male</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/small-intestine-male.html">3D model</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The small intestine, male"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_M_Small_Intestine.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END: Card 1 -->
+                                    
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="spinalcord2" role="tabpanel" aria-labelledby="spinalcord-tab2">
+                                    <div>
+                                        <!-- START: Card 1 -->
+                                        <div class="mb-4">
+                                            <div class="card">
+                                                <h5 class="card-header position-relative bg-light">
+                                                    <span class="text-uppercase"></span> Spinal Cord<span
+                                                        class="card-header-icon position-absolute">
+                                                        
+                                                    </span>
+                                                </h5>
+                                                <div class="row no-gutters h-100 position-relative">
+                                                    <div class="container">
+                                                        
+                                            
+                                                    <div class="row">
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Female</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/spinalcord-female.html">3D model</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The spinal cord, female"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_F_Spinal_Cord.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Male</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/spinalcord-male.html">3D model</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The spinal cord, male"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_M_Spinal_Cord.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                </div>
+                                                
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END: Card 1 -->
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="spleen2" role="tabpanel" aria-labelledby="spleen-tab2">
+                                    <div>
+                                        <!-- START: Card 1 -->
+                                        <div class="mb-4">
+                                            <div class="card">
+                                                <h5 class="card-header position-relative bg-light">
+                                                    <span class="text-lowercase"></span> Spleen<span
+                                                        class="card-header-icon position-absolute"> 
+                                                    </span>
+                                                </h5>
+                                                <div class="row no-gutters h-100 position-relative">
+                                                    <div class="container">
+                                                        
+                                            
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Female</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/spleen-female.html">3D model</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The spleen, female"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_F_Spleen.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Male</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/spleen-male.html">3D model</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The spleen, male"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_M_Spleen.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END: Card 1 -->
+                                        
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="thymus2" role="tabpanel" aria-labelledby="thymus-tab2">
+                                    <div>
+                                        <!-- START: Card 1 -->
+                                        <div class="mb-4">
+                                            <div class="card">
+                                                <h5 class="card-header position-relative bg-light">
+                                                    <span class="text-lowercase"></span> Thymus<span
+                                                        class="card-header-icon position-absolute"> 
+                                                    </span>
+                                                </h5>
+                                                <div class="row no-gutters h-100 position-relative">
+                                                    <div class="container">
+                                                        
+                                            
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Female</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/thymus-female.html">3D model</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The thymus, female"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_F_Thymus.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Male</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/thymus-male.html">3D model</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The thymus, male"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_M_Thymus.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END: Card 1 -->
+                                    
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="united2" role="tabpanel" aria-labelledby="united-tab2">
+                                    <div>
+                                        <!-- START: Card 1 -->
+                                        <div class="mb-4">
+                                            <div class="card">
+                                                <h5 class="card-header position-relative bg-light">
+                                                    <span class="text-uppercase"></span> All Organs (United)<span
+                                                        class="card-header-icon position-absolute">
+                                                        
+                                                    </span>
+                                                </h5>
+                                                <div class="row no-gutters h-100 position-relative">
+                                                    <div class="container">
+                                                        
+                                            
+                                                    <div class="row">
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Female</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/united-female.html">3D model</a></p>
+                                                        <model-viewer id="united-female2" class="model-viewer-div" alt="All organs, female"
+                                                            src="https://ccf-ontology.hubmapconsortium.org/objects/v1.2/VH_F_United.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Male</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/united-male.html">3D model</a></p>
+                                                        <model-viewer id="united-male2" class="model-viewer-div" alt="All organs, male"
+                                                            src="https://ccf-ontology.hubmapconsortium.org/objects/v1.2/VH_M_United.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                </div>
+                                                
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END: Card 1 -->
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="ureter2" role="tabpanel" aria-labelledby="ureter-tab2">
+                                    <div>
+                                        <!-- START: Card 1 -->
+                                        <div class="mb-4">
+                                            <div class="card">
+                                                <h5 class="card-header position-relative bg-light">
+                                                    <span class="text-uppercase"></span> Ureter<span
+                                                        class="card-header-icon position-absolute">
+                                                    </span>
+                                                </h5>
+                                                <div class="row no-gutters h-100 position-relative">
+                                                    <div class="container">
+                                                    
+                                            
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Female, L</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/ureter-female-left.html">3D model, L</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The ureter, left, female"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_F_Ureter_L.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Female, R</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/ureter-female-right.html">3D model, R</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The ureter, right, female"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_F_Ureter_R.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Male, L</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/ureter-male-left.html">3D model, L</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The ureter, left, male"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_M_Ureter_L.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Male, R</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/ureter-male-right.html">3D model, R</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The ureter, right, male"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_M_Ureter_R.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                </div>
+                                                
+                                                    </div>
+                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END: Card 1 -->
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="bladder2" role="tabpanel" aria-labelledby="bladder-tab2">
+                                    <div>
+                                        <!-- START: Card 1 -->
+                                        <div class="mb-4">
+                                            <div class="card">
+                                                <h5 class="card-header position-relative bg-light">
+                                                    <span class="text-lowercase"></span> Urinary Bladder<span
+                                                        class="card-header-icon position-absolute"> 
+                                                    </span>
+                                                </h5>
+                                                <div class="row no-gutters h-100 position-relative">
+                                                    <div class="container">
+                                                        
+                                            
+                                                 <div class="row">
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Female</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/urinary-bladder-female.html">3D model</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The urinary bladder, female"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_F_Urinary_Bladder.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Male</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/urinary-bladder-male.html">3D model</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The urinary bladder, male"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_M_Urinary_Bladder.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END: Card 1 -->
+                                       
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="uterus2" role="tabpanel" aria-labelledby="uterus-tab2">
+                                    <div>
+                                        <!-- START: Card 1 -->
+                                        <div class="mb-4">
+                                            <div class="card">
+                                                <h5 class="card-header position-relative bg-light">
+                                                    <span class="text-lowercase"></span> Uterus<span
+                                                        class="card-header-icon position-absolute"> 
+                                                    </span>
+                                                </h5>
+                                                <div class="row no-gutters h-100 position-relative">
+                                                    <div class="container">
+                                                        
+                                            
+                                                 <div class="row">
+                                                    <div class="col">
+                                                        <h5 class="mt-5">Female</h5>
+                                                        <p><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/uterus-female.html">3D model</a></p>
+                                                        <model-viewer class="model-viewer-div" alt="The uterus, female"
+                                                            src="https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_F_Uterus.glb" shadow-intensity="1" camera-controls auto-rotate
+                                                            style="height: 400px;">
+                                                        </model-viewer>
+                                                    </div>
+                                                   
+                                                </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END: Card 1 -->
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
 
                         <div id="v1_1_table">
                             <nav class="organ-navbar navbar navbar-expand-lg navbar-tabs navbar-light bg-light mt-3">
@@ -1735,9 +2947,10 @@
 
                         <h4>Standard Operating Procedures (SOP)</h4>
                         <ul>
-                            <li><a href="../dld/2021.06.16.sop-3d-reference-object-approval.pdf" title="Download 3D Reference Object Approval SOP" target="_blank">SOP: 3D Reference Object Approval</a></li>
-                            <li><a href="../dld/2021.04.09.sop-using-3d-reference-objects.pdf" title="Download 3D Reference Object Approval SOP" target="_blank">SOP: Using 3D Reference Objects</a></li>
-                            <li><a href="../dld/2021.06.15.sop-using-the-registration-user-interface.pdf" title="Download Using the Registration User Interface SOP" target="_blank">SOP: Using the Registration User Interface</a></li>
+                           <li><a href="https://doi.org/10.5281/zenodo.5944196" title="go to SOP" target="_blank">SOP: 3D Reference Object Approval</a></li>
+				<li><a href="https://doi.org/10.5281/zenodo.5639651" title="go to SOP" target="_blank">SOP: Using 3D Reference Objects</a></li>
+				<li><a href="https://doi.org/10.5281/zenodo.5575776" title="go to SOP" target="_blank">SOP: Using the CCF Registration User Interface</a></li>
+				<li><a href="https://doi.org/10.5281/zenodo.5746143" title="go to SOP" target="_blank">SOP: Assigning RUI Data to Multiple Tissue Blocks</a></li>
                         </ul>
                         <h4 class="mt-5">Terms of Use</h4>
                         <p>HuBMAP data are supplied with no warranties, expressed or implied, including without limitation, any warranty of merchantability or fitness for a particular purpose or non-infringement. No warranty with respect to the HuBMAP infrastructure is provided, including without limitation, any uptime warranty. The Parties make no representations that the use of the data will not infringe any patent or proprietary rights of third parties.</p>
@@ -1745,18 +2958,24 @@
                         <p>All CCF 3D reference objects are released under <a href="https://creativecommons.org/licenses/by/4.0/" title="Link to external site containing attribution information" target="_blank">Attribution 4.0 International (CC BY 4.0)</a>.</p>
                         <h4 class="mt-5">Citation</h4>
                         <p>If you use the data files v1.0 release, please cite this effort as follows:<br>
-                        <p>Browne, K., Cross, L. E., Herr II, B. W., Record, L, Quardokus, E, Bueckle, A., Börner, K. (2021). <em>HuBMAP CCF 3D Reference Object Library</em>. https://hubmapconsortium.github.io/ccf/pages/ccf-3d-reference-library.html. Accessed on March 12, 2021.                        </p>
+                        <p>Browne, K., Cross, L. E., Herr II, B. W., Record, L, Quardokus, E, Bueckle, A., Börner, K. (2021). <em>HuBMAP CCF 3D Reference Object Library</em>. https://hubmapconsortium.github.io/ccf/pages/ccf-3d-reference-library.html. Accessed on March 12, 2021.                 </p>
 			<p>If you use the data files v1.1 release, please cite this effort as follows:<br>
 			<p>Browne, K., Cross, L. E., Herr II, B. W., Record, L, Quardokus, E, Bueckle, A., Börner, K. (2021). HuBMAP CCF 3D Reference Object Library. https://hubmapconsortium.github.io/ccf/pages/ccf-3d-reference-library.html. Accessed on December 1, 2021.                        </p>
+             		<p>If you use the data files v1.2 release, please cite this effort as follows:<br>
+			<p>Browne,K., Schlehlein, H., Herr II, B. W., Quardokus, E, Bueckle, A., Börner, K. (2022). HuBMAP CCF 3D Reference Object Library. https://hubmapconsortium.github.io/ccf/pages/ccf-3d-reference-library.html. Accessed on May 06, 2022. ce Object Library.                   </p>
                         <h4 class="mt-5">Reference Organs</h4>
-                        <p><a href="https://github.com/hubmapconsortium/ccf-releases/tree/main/v1.1/models" title="HuBMAP 3D Reference Organs download" target="_blank">Download v1.1 organs</a> in GLB and FBX format.<br>
-			<p><a href="https://github.com/hubmapconsortium/ccf-releases/tree/main/v1.0/models" title="HuBMAP 3D Reference Organs download" target="_blank">Download v1.0 organs</a> in GLB and FBX format.</p>
-                        <p><a href="https://github.com/hubmapconsortium/ccf-3d-reference-object-library/tree/master/VH_Female/V1.1/Extraction%20Sites" title="HuBMAP 3D Reference Organs female extraction sites download" target="_blank">Download v1.1 extraction sites for female</a> in GLB and FBX format. <br>
+			<p><a href="https://github.com/hubmapconsortium/ccf-releases/tree/main/v1.2/models" title="HuBMAP 3D Reference Organs download" target="_blank">Download v1.2 organs</a> in GLB format.<br>
+                        <a href="https://github.com/hubmapconsortium/ccf-releases/tree/main/v1.1/models" title="HuBMAP 3D Reference Organs download" target="_blank">Download v1.1 organs</a> in GLB format.<br>
+			<a href="https://github.com/hubmapconsortium/ccf-releases/tree/main/v1.0/models" title="HuBMAP 3D Reference Organs download" target="_blank">Download v1.0 organs</a> in GLB format.</p>
+			<a href="https://github.com/hubmapconsortium/ccf-3d-reference-object-library/tree/master/VH_Female/V1.2/Extraction%20Sites" title="HuBMAP 3D Reference Organs female extraction sites download" target="_blank">Download v1.2 extraction sites for female</a> in GLB and FBX format. <br>   
+                        <a href="https://github.com/hubmapconsortium/ccf-3d-reference-object-library/tree/master/VH_Female/V1.1/Extraction%20Sites" title="HuBMAP 3D Reference Organs female extraction sites download" target="_blank">Download v1.1 extraction sites for female</a> in GLB and FBX format. <br>
 			<a href="https://github.com/hubmapconsortium/ccf-3d-reference-object-library/tree/master/VH_Female/V1.0/Extraction%20Sites" title="HuBMAP 3D Reference Organs female extraction sites download" target="_blank">Download v1.0 extraction sites for female</a> in GLB and FBX format. <br>
+			<a href="https://github.com/hubmapconsortium/ccf-3d-reference-object-library/tree/master/VH_Male/V1.2/Extraction%20Sites" title="HuBMAP 3D Reference Organs male extraction sites download" target="_blank">Download v1.2 extraction sites for male</a> in GLB and FBX format.<br>
 			<a href="https://github.com/hubmapconsortium/ccf-3d-reference-object-library/tree/master/VH_Male/V1.1/Extraction%20Sites" title="HuBMAP 3D Reference Organs male extraction sites download" target="_blank">Download v1.1 extraction sites for male</a> in GLB and FBX format.<br>
-			 <a href="https://github.com/hubmapconsortium/ccf-3d-reference-object-library/tree/master/VH_Male/V1/Extraction%20Sites" title="HuBMAP 3D Reference Organs male extraction sites download" target="_blank">Download v1.0 extraction sites for male</a> in GLB and FBX format.</p>
-                        <p>Download v1.1 crosswalk information<a href="https://doi.org/10.48539/HBM263.FWKR.367" title="Download file"> ASCT-B 3D models mapping</a> in CSV format.<br/>
-			Download v1.0 crosswalk information<a href="https://doi.org/10.48539/HBM527.RCXM.366" title="Download file"> ASCT-B 3D models mapping</a> in CSV format.</p>
+			<a href="https://github.com/hubmapconsortium/ccf-3d-reference-object-library/tree/master/VH_Male/V1/Extraction%20Sites" title="HuBMAP 3D Reference Organs male extraction sites download" target="_blank">Download v1.0 extraction sites for male</a> in GLB and FBX format.</p>
+                        <a Download v1.2 crosswalk information<a href="https://doi.org/10.48539/HBM858.DNFV.736" title="Download file"> ASCT-B 3D models mapping v1.2</a> in CSV format.<br/>
+			<a Download v1.1 crosswalk information<a href="https://doi.org/10.48539/HBM263.FWKR.367" title="Download file"> ASCT-B 3D models mapping v1.1</a> in CSV format.<br/>
+			<a Download v1.0 crosswalk information<a href="https://doi.org/10.48539/HBM527.RCXM.366" title="Download file"> ASCT-B 3D models mapping v1.0</a> in CSV format.</p>
                         <h2 class="mt-5">Acknowledgements</h2>
                         <p>The 3D Models were created by Kristen Browne for the 3D Printing and Biovisualization program operated by OCICB, NIAID. This research has been funded in part by the NIH Common Fund through the Office of Strategic Coordination/Office of the NIH Director under award OT2OD026671, by the NIDDK Kidney Precision Medicine Project grant U2CDK114886, and NIAID under BCBB Support Services Contract HHSN316201300006W/HHSN27200002 to MSC, Inc; U.S.</p>
                         <p>The male colon is from a white 55-year-old and was provided by Arie Kaufman, Stony Brook University.</p>
@@ -1769,7 +2988,7 @@
                             <li class="mb-3">U.S. National Library of Medicine. 2021. <a href="https://www.nlm.nih.gov/databases/download/vhp.html" title="View on NIH National Library of Medicine" target="_blank"><span class="font-italic">Visible Human Project Data</span></a>. </li>
                         </ul>
                         <div class="my-5">
-                            <p><small class="small mt-5">December 3, 2021</small></p>
+                            <p><small class="small mt-5">December 1, 2021</small></p>
                         </div>
                     </div>
                 </div>
@@ -1792,11 +3011,32 @@
     <script src="../js/popper.js"></script>
     <script src="../js/bootstrap-material-design.min.js"></script>
     <script>
-		function switch_table_view(v1_1_table_id, v1_0_table_id, element){
-			document.getElementById(v1_1_table_id).style.display = (element.value=="v1_1") ? 'block' : 'none';
-			document.getElementById(v1_0_table_id).style.display = (element.value=="v1_1") ? 'none' : 'block';
+		function switch_table_view() {
+            const versions = ['v1_0', 'v1_1', 'v1_2'];
+            const selectedVersion = document.getElementById('choose_table_version').value;
+            for (const version of versions) {
+                const div = document.getElementById(`${version}_table`);
+                div.style.display = selectedVersion === version ? 'block' : 'none';
+            }
 		}
+        switch_table_view();
 	</script>
+    <script>
+        function setSkinOpacity(modelViewer) {
+            if (modelViewer) {
+                modelViewer.addEventListener('load', () => {
+                    const [material] = modelViewer.model.materials;
+                    material.pbrMetallicRoughness.setBaseColorFactor([ 0.0352, 0.1333, 0.6666, 0.5 ]);
+                    material.setAlphaMode('BLEND');
+                });
+            }
+        }
+        function updateSkinOpacity() {
+            setSkinOpacity(document.getElementById('united-female2'));
+            setSkinOpacity(document.getElementById('united-male2'));
+        }
+        updateSkinOpacity();
+    </script>
 </body>
 
 </html>
