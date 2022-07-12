@@ -162,10 +162,19 @@ a:hover .card {
     border: 1px solid #4B0082 !important;
 }
 
+<<<<<<< HEAD
 .card-burnt-orange {
     color: rgba(211, 84, 0, 1) !important;
     border: 1px solid rgba(211, 84, 0, 1) !important;
 }
+=======
+.card-teal {
+    color: rgba(68,158,164,1) !important;
+    border: 1px solid rgba(68,158,164,1) !important;
+}
+
+
+>>>>>>> origin/HEAD
 
 .h-card .card-title {
     font-size: 1rem;
@@ -355,6 +364,10 @@ a:hover .card {
 
 .bg-indigo {
     background-color: #4B0082;
+}
+
+.bg-teal {
+    background-color: #449ea4;
 }
 
 /* .fill-secondary {
