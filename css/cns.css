@@ -162,12 +162,10 @@ a:hover .card {
     border: 1px solid #4B0082 !important;
 }
 
-.card-teal {
-    color: rgba(68,158,164,1) !important;
-    border: 1px solid rgba(68,158,164,1) !important;
+.card-burnt-orange {
+    color: rgba(211, 84, 0, 1) !important;
+    border: 1px solid rgba(211, 84, 0, 1) !important;
 }
-
-
 
 .h-card .card-title {
     font-size: 1rem;
@@ -337,6 +335,14 @@ a:hover .card {
 
 .fill-white, .fill-secondary {
     fill: rgba(255, 255, 255, 1);
+}
+
+.fill-burnt-orange {
+    fill: rgba(211, 84, 0, 1) !important;
+}
+
+.bg-burnt-orange {
+    background-color: rgba(211, 84, 0, 1);
 }
 
 .bg-dark-gray {
@@ -569,7 +575,11 @@ td {
     max-width: 6.5rem;
 }
 
-
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 
