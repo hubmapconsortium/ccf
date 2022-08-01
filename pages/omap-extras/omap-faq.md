@@ -3,13 +3,15 @@
 ## General OMAP Questions
 <details open>
 <summary>General OMAP Questions</summary>
-<ul><li>[What is an OMAP?](https://github.com/hubmapconsortium/ccf/new/emquardokus-omap-faq/pages#q1-what-is-an-omap)<br>
-<li>How are OMAPs different from other validated antibody resources?<br>
-<li>Which multiplexed antibody-based imaging techniques are supported?<br>
-<li>Are OMAPs just for healthy human tissues?<br>
-<li>How many antibodies are included in an OMAP?<br>
-<li>How do I cite an existing OMAP?<br>
-<li>How do I cite OMAPs overall?<br></li></ul>
+  <ul>
+    <li><a href="#q1-what-is-an-omap">What is an OMAP?</a></li>
+    <li>How are OMAPs different from other validated antibody resources?</li>
+    <li>Which multiplexed antibody-based imaging techniques are supported?</li>
+    <li>Are OMAPs just for healthy human tissues?</li>
+    <li>How many antibodies are included in an OMAP?</li>
+    <li>How do I cite an existing OMAP?</li>
+    <li>How do I cite OMAPs overall?</li>
+  </ul>
 </details>
 
 ## Authoring OMAPs
