@@ -96,7 +96,7 @@
                         <h2 class="mt-5">Overview</h2>
                     
                         <p>
-                            Organ Mapping Antibody Panels (OMAPs) are collections of antibodies that allow spatial mapping of the anatomical structures and cell types present in diverse organs using multiplexed antibody-based imaging (<a href="https://www.nature.com/articles/s41592-021-01316-y">Hickey et al, 2021</a>). The construction of an OMAP is an iterative, resource intensive process that requires domain expertise in tissue biology, spatial proteomics, and multiplexed imaging (<a href="https://doi.org/10.1038/s41596-019-0206-y">Du et al. 2019</a>, <a href="https://doi.org/10.1038/s41596-021-00644-9">Radtke et al. 2022</a>). To overcome these challenges, the Human BioMolecular Atlas Program (HuBMAP) is authoring and publishing OMAPs. These community-validated resources directly parallel efforts in the field of flow cytometry to publish Optimized Multicolor Immunofluorescence Panels (OMIPs) (<a href="https://doi.org/10.1002/cyto.a.20916">Mahnke, Chattopadhyay, and Roederer 2010</a>, <a href="https://doi.org/10.1002/cyto.a.20959">Roederer and Tárnok 2010</a>). In contrast to existing antibody validation resources such as the HuBMAP Antibody Validation Report (<a href="https://avr.hubmapconsortium.org">https://avr.hubmapconsortium.org</a>) and Human Protein Atlas (<a href="https://www.proteinatlas.org/humanproteome/tissue">The human proteome - The Human Protein Atlas</a>), OMAPs additionally provide experimental details relevant for their successful application, e.g., tissue preservation method, imaging method, antigen retrieval conditions, and antibody cycling order. The end result is an assembly of expertly curated antibodies that work together in a single tissue section. 
+                            Organ Mapping Antibody Panels (OMAPs) are collections of antibodies that allow spatial mapping of the anatomical structures and cell types present in diverse organs using multiplexed antibody-based imaging (<a href="https://www.nature.com/articles/s41592-021-01316-y">Hickey et al, 2021</a>). The construction of an OMAP is an iterative, resource intensive process that requires domain expertise in tissue biology, spatial proteomics, and multiplexed imaging (<a href="https://doi.org/10.1038/s41596-019-0206-y">Du et al. 2019</a>, <a href="https://doi.org/10.1038/s41596-021-00644-9">Radtke et al. 2022</a>). To overcome these challenges, the Human BioMolecular Atlas Program (HuBMAP) is authoring and publishing OMAPs. These community-validated resources directly parallel efforts in the field of flow cytometry to publish Optimized Multicolor Immunofluorescence Panels (OMIPs) (<a href="https://doi.org/10.1002/cyto.a.20916">Mahnke, Chattopadhyay, and Roederer 2010</a>, <a href="https://doi.org/10.1002/cyto.a.20959">Roederer and Tárnok 2010</a>). In contrast to existing antibody validation resources such as the (<a href="https://avr.hubmapconsortium.org">HuBMAP Antibody Validation Report</a>) and (<a href="https://www.proteinatlas.org/humanproteome/tissue"> Human Protein Atlas</a>), OMAPs additionally provide experimental details relevant for their successful application, e.g., tissue preservation method, imaging method, antigen retrieval conditions, and antibody cycling order. The end result is an assembly of expertly curated antibodies that work together in a single tissue section. 
                     
                         </p>
                         
@@ -147,7 +147,10 @@
                                     <tr scope="row">
                                         <th scope="col">Organ</th>
                                         <th class="text-left" scope="col">Tissue Preservation Method </th>
-                                        <th class="text-left" scope="col">Multiplexed antibody-based imaging method </th>
+                                        <th class="text-left" scope="col">Multiplexed antibody-based imaging method <td class="text-left">IBEX</th>
+					<th class="text-left" scope="col">AS</th>
+					<th class="text-left" scope="col">CT</th>
+					<th class="text-left" scope="col">BProtein</td>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -155,42 +158,63 @@
                                         <td><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/omap/omap-intestines-codex.html">Intestines</a></td>
                                         <td class="text-left">Fresh Frozen</td>
                                         <td class="text-left">CODEX</td>
+					    <td class="text-left">42</td>
+					    <td class="text-left">29</td>
+					    <td class="text-left">51</td>
                                     </tr>
 
                                     <tr scope="row">
                                         <td><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/omap/omap-kidney-codex.html">Kidney</a></td>
                                         <td class="text-left">Fresh Frozen</td>
                                         <td class="text-left">CODEX</td>
+					    <td class="text-left">30</td>
+					    <td class="text-left">37</td>
+					    <td class="text-left">26</td>
                                     </tr>
 
                                     <tr scope="row">
                                         <td><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/omap/omap-liver-sim.html">Liver</a></td>
                                         <td class="text-left">Fresh Frozen</td>
                                         <td class="text-left">SIMS</td>
+					    <td class="text-left">17</td>
+					    <td class="text-left">16</td>
+					    <td class="text-left">20</td>
                                     </tr>
 
                                     <tr scope="row">
                                         <td><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/omap/omap-lymph-node-ibex.html">Lymph node</a></td>
                                         <td class="text-left">Fixed Frozen</td>
                                         <td class="text-left">IBEX</td>
+					    <td class="text-left">29</td>
+					    <td class="text-left">31</td>
+					    <td class="text-left">40</td>
                                     </tr>
 
                                     <tr scope="row">
                                         <td><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/omap/omap-lung-celldive.html">Lung</a></td>
                                         <td class="text-left">FFPE</td>
                                         <td class="text-left">Cell DIVE</td>
+					    <td class="text-left">50</td>
+					    <td class="text-left">41</td>
+					    <td class="text-left">30</td>
                                     </tr>
 
                                     <tr scope="row">
                                         <td><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/omap/omap-pancreas-codex.html">Pancreas</a></td>
                                         <td class="text-left">FFPE</td>
                                         <td class="text-left">CODEX</td>
+					    <td class="text-left">3</td>
+					    <td class="text-left">9</td>
+					    <td class="text-left">12</td>
                                     </tr>
 
                                     <tr scope="row">
                                         <td><a href="https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/omap/omap-skin-celldive.html">Skin</a></td>
                                         <td class="text-left">FFPE</td>
                                         <td class="text-left">Cell DIVE</td>
+					    <td class="text-left">16</td>
+					    <td class="text-left">15</td>
+					    <td class="text-left">18</td>
                                     </tr>
                                     
                                 </tbody>
