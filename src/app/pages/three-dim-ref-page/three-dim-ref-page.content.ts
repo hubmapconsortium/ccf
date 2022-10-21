@@ -382,51 +382,212 @@ export const threeDimOrganInfo: VersionOrgans[] = [
             },
             {
                 name: 'Pancreas',
-                image: 'assets/images/pancreas.png'
+                image: 'assets/images/pancreas.png',
+                tissueData: [{
+                    name: 'Female',
+                    image: '',
+                    expandedImage: '',
+                    url: 'https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/pancreas-female.html',
+                    alt: 'The pancreas, female',
+                    threeDimImage: 'https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_F_Pancreas.glb'
+                }, {
+                    name: 'Male',
+                    image: '',
+                    expandedImage: '',
+                    url: 'https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/pancreas-male.html',
+                    alt: 'The pancreas, male',
+                    threeDimImage: 'https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_M_Pancreas.glb'
+                }]
             },
             {
                 name: 'Placenta',
-                image: 'assets/images/placenta.png'
+                image: 'assets/images/placenta.png',
+                tissueData: [{
+                    name: 'Female',
+                    image: '',
+                    expandedImage: '',
+                    url: 'https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/placenta-female.html',
+                    alt: 'The placenta, female',
+                    threeDimImage: 'https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_F_Placenta.glb'
+                }]
             },
             {
                 name: 'Prostate',
-                image: 'assets/images/prostate.png'
+                image: 'assets/images/prostate.png',
+                tissueData: [{
+                    name: 'Male',
+                    image: '',
+                    expandedImage: '',
+                    url: 'https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/prostate-male.html',
+                    alt: 'The prostate, male',
+                    threeDimImage: 'https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_M_Prostate.glb'
+                }]
             },
             {
                 name: 'Skin',
-                image: 'assets/images/skin.png'
+                image: 'assets/images/skin.png',
+                tissueData: [{
+                    name: 'Female',
+                    image: '',
+                    expandedImage: '',
+                    url: 'https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/skin-female.html',
+                    alt: 'The skin, female',
+                    threeDimImage: 'https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_F_Skin.glb'
+                }, {
+                    name: 'Male',
+                    image: '',
+                    expandedImage: '',
+                    url: 'https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/skin-male.html',
+                    alt: 'The skin, male',
+                    threeDimImage: 'https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_M_Skin.glb'
+                }]
             },
             {
                 name: 'Small Intestine',
-                image: 'assets/images/small_intestine.png'
+                image: 'assets/images/small_intestine.png',
+                tissueData: [{
+                    name: 'Female',
+                    image: '',
+                    expandedImage: '',
+                    url: 'https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/skin-female.html',
+                    alt: 'The small intestine, female',
+                    threeDimImage: 'https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_F_Small_Intestine.glb'
+                }, {
+                    name: 'Male',
+                    image: '',
+                    expandedImage: '',
+                    url: 'https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/small-intestine-male.html',
+                    alt: 'The small intestine, male',
+                    threeDimImage: 'https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_M_Small_Intestine.glb'
+                }]
             },
             {
                 name: 'Spinal Cord',
-                image: 'assets/images/spinal_cord.png'
+                image: 'assets/images/spinal_cord.png',
+                tissueData: [{
+                    name: 'Female',
+                    image: '',
+                    expandedImage: '',
+                    url: 'https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/spinal-cord-female.html',
+                    alt: 'The spinal cord, female',
+                    threeDimImage: 'https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_F_Spinal_Cord.glb'
+                }, {
+                    name: 'Male',
+                    image: '',
+                    expandedImage: '',
+                    url: 'https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/spinal-cord-male.html',
+                    alt: 'The spinal cord, male',
+                    threeDimImage: 'https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_M_Spinal_Cord.glb'
+                }]
             },
             {
                 name: 'Spleen',
-                image: 'assets/images/spleen.png'
+                image: 'assets/images/spleen.png',
+                tissueData: [{
+                    name: 'Female',
+                    image: '',
+                    expandedImage: '',
+                    url: 'https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/spleen-female.html',
+                    alt: 'The spleen, female',
+                    threeDimImage: 'https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_F_Spleen.glb'
+                }, {
+                    name: 'Male',
+                    image: '',
+                    expandedImage: '',
+                    url: 'https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/spleen-male.html',
+                    alt: 'The spleen, male',
+                    threeDimImage: 'https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_M_Spleen.glb'
+                }]
             },
             {
                 name: 'Thymus',
-                image: 'assets/images/thymus.jpg'
+                image: 'assets/images/thymus.jpg',
+                tissueData: [{
+                    name: 'Female',
+                    image: '',
+                    expandedImage: '',
+                    url: 'https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/thymus-female.html',
+                    alt: 'The thymus, female',
+                    threeDimImage: 'https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_F_Thymus.glb'
+                }, {
+                    name: 'Male',
+                    image: '',
+                    expandedImage: '',
+                    url: 'https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/thymus-male.html',
+                    alt: 'The thymus, male',
+                    threeDimImage: 'https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_M_Thymus.glb'
+                }]
             },
+            // TO DO THIS.
             {
                 name: 'Ureter',
-                image: 'assets/images/ureter.png'
+                image: 'assets/images/ureter.png',
+                tissueData: [{
+                    name: 'Female',
+                    image: '',
+                    expandedImage: '',
+                    url: 'https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/skin-female.html',
+                    alt: 'The ureter, left, female',
+                    threeDimImage: 'https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_F_Ureter_L.glb'
+                }, {
+                    name: 'Male',
+                    image: '',
+                    expandedImage: '',
+                    url: 'https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/small-intestine-male.html',
+                    alt: 'The ureter, left, female',
+                    threeDimImage: 'https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_F_Ureter_L.glb'
+                }]
             },
+            // TILL HERE.
             {
                 name: 'Urinary Bladder',
-                image: 'assets/images/urinary_bladder.png'
+                image: 'assets/images/urinary_bladder.png',
+                tissueData: [{
+                    name: 'Female',
+                    image: '',
+                    expandedImage: '',
+                    url: 'https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/urinary-bladder-female.html',
+                    alt: 'The urinary bladder, female',
+                    threeDimImage: 'https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_F_Urinary_Bladder.glb'
+                }, {
+                    name: 'Male',
+                    image: '',
+                    expandedImage: '',
+                    url: 'https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/urinary-bladder-male.html',
+                    alt: 'The urinary bladder, male',
+                    threeDimImage: 'https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_M_Urinary_Bladder.glb'
+                }]
             },
             {
                 name: 'Uterus',
-                image: 'assets/images/uterus.png'
+                image: 'assets/images/uterus.png',
+                tissueData: [{
+                    name: 'Female',
+                    image: '',
+                    expandedImage: '',
+                    url: 'https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/uterus-female.html',
+                    alt: 'The uterus, female',
+                    threeDimImage: 'https://hubmapconsortium.github.io/ccf-releases/v1.2/models/VH_F_Uterus.glb'
+                }]
             },
             {
                 name: 'All Organs',
-                image: 'assets/images/all_organs.png'
+                image: 'assets/images/all_organs.png',
+                tissueData: [{
+                    name: 'Female',
+                    image: '',
+                    expandedImage: '',
+                    url: 'https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/vh-female-united.html',
+                    alt: 'All organs, female',
+                    threeDimImage: 'https://ccf-ontology.hubmapconsortium.org/objects/v1.2/VH_F_United.glb'
+                }, {
+                    name: 'Male',
+                    image: '',
+                    expandedImage: '',
+                    url: 'https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/vh-male-united.html',
+                    alt: 'All organs, male',
+                    threeDimImage: 'https://ccf-ontology.hubmapconsortium.org/objects/v1.2/VH_M_United.glb'
+                }]
             }
         ]
     }
