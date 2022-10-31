@@ -52,8 +52,7 @@
                     <a class="dropdown-item" href="https://portal.hubmapconsortium.org/ccf-eui" title="Opens external website" target="_blank">CCF Exploration User Interface (EUI)</a>
                     <a class="dropdown-item" href="https://expand.iu.edu/browse/sice/cns/courses/hubmap-visible-human-mooc" title="Opens external website" target="_blank">Visible Human MOOC</a>
                     <a class="dropdown-item" href="https://portal.hubmapconsortium.org/" title="Opens external website" target="_blank">HuBMAP Data Portal</a>
-                    <a class="dropdown-item" href="kaggle.html" title="Opens external website" target="_blank">Kaggle #1: HuBMAP - Hacking the Kidney</a>
-                    <a class="dropdown-item" href="kaggle2.html" title="Opens external website">Kaggle #2: HuBMAP + HPA - Hacking the Human Body</a>
+                    <a class="dropdown-item" href="kaggle.html" title="Opens external website" target="_blank">Kaggle Competition and Awards</a>
                 </div>
             </div>
         </div>
@@ -102,7 +101,17 @@
                         <p>Table 3 shows the comparison of the CxG matrix in ASCT+B tables vs. CxG matrix in Azimuth for each organ in Jan 2022. An automatically generated, up-to-date comparison is available <a href="https://hubmapconsortium.github.io/asctb-azimuth-data-comparison/Azimuth_vs_ASCTB.summaries.xlsx">here</a>; this xls also contains separate sheets with cell types that are not (yet) covered in the ASCT+B tables. Details on how the comparison is calculated are on <a href="https://github.com/hubmapconsortium/asctb-azimuth-data-comparison">GitHub</a>. Note that not all Azimuth cell types have CL IDs; in these cases, matching is done based on cell type names.</p>
 
                         <p>Data from <a href="https://github.com/satijalab/azimuth_website" title="Satija Labs Azimuth website">https://github.com/satijalab/azimuth_website</a> has been parsed to derive cell type typologies:</p>
+                      <!-- <h2 class="mt-5">Download Data</h2> -->
+                      <!--<ul>
+                        <li><a href="https://darshalshetty.github.io/asctb-azimuth-data-comparison/pbmc.csv" title="Download data">Bone Marrow & Blood/Pelvis</a></li>
+                        <li><a href="https://darshalshetty.github.io/asctb-azimuth-data-comparison/motor_cortex.csv" title="Download data">Brain</a></li>
+                        <li><a href="https://darshalshetty.github.io/asctb-azimuth-data-comparison/fetal_development.csv" title="Download data">Fetal Development</a></li>
+                        <li><a href="https://darshalshetty.github.io/asctb-azimuth-data-comparison/lung.csv" title="Download data">Lung</a></li>
+                        <li><a href="hhttps://darshalshetty.github.io/asctb-azimuth-data-comparison/pancreas.csv" title="Download data">Pancreas</a></li>
+                      </ul>-->
+                        <!-- <wc-markdown src="https://hubmapconsortium.github.io/asctb-azimuth-data-comparison/csv_download_list.md" class="main"></wc-markdown> -->
                         <div>
+                            
                             <table class="table" style="font-size: 0.875rem">
                                 <thead>
                                     <tr>
@@ -128,7 +137,7 @@
                                         <th>Unique Names</th>
                                         <th>Unique IDs</th>
                                         <th>Using IDs</th>
-                                        <th></th>
+                                        <th>Using labels</th>
                                         <th></th>
                                         <th></th>
                                     </tr>
@@ -142,6 +151,7 @@
                                             <td class="text-right">46</td>
                                             <td class="text-right">16</td>
                                             <td class="text-right">5</td>
+                                            <td class="text-right">N/A</td>
                                             <td class="text-right">3</td>
                                             <td class="text-right">35,355</td>
                                             <td class="text-right">352</td>
@@ -156,6 +166,7 @@
                                             <td class="text-right">127</td>
                                             <td class="text-right">N/A</td>
                                             <td class="text-right">123</td>
+                                            <td class="text-right">N/A</td>
                                             <td class="text-right">4</td>
                                             <td class="text-right">24,402</td>
                                             <td class="text-right">864</td>
@@ -163,11 +174,12 @@
                                             <td class="text-right">152</td>
                                         </tr>
                                         <tr>
-                                            <td class="align-top"><a href="https://github.com/hubmapconsortium/asctb-azimuth-data-comparison/blob/gh-pages/Heart.csv" title="Heart csv file">Heart</a></td>
+                                            <td class="align-top"><a href="https://github.com/hubmapconsortium/asctb-azimuth-data-comparison/blob/gh-pages/Heart.csv" title = "Heart csv file">Heart</a></td>
                                             <td class="text-right">24</td>
                                             <td class="text-right">N/A</td>
                                             <td class="text-right">17</td>
                                             <td class="text-right">18</td>
+                                            <td class="text-right">N/A</td>
                                             <td class="text-right">6</td>
                                             <td class="text-right">2</td>
                                             <td class="text-right">656,509</td>
@@ -182,6 +194,7 @@
                                             <td class="text-right">61</td>
                                             <td class="text-right">46</td>
                                             <td class="text-right">23</td>
+                                            <td class="text-right">N/A</td>
                                             <td class="text-right">3</td>
                                             <td class="text-right">58,461</td>
                                             <td class="text-right">432</td>
@@ -195,6 +208,7 @@
                                             <td class="text-right">93</td>
                                             <td class="text-right">74</td>
                                             <td class="text-right">14</td>
+                                            <td class="text-right">N/A</td>
                                             <td class="text-right">2</td>
                                             <td class="text-right">65,662</td>
                                             <td class="text-right">556</td>
@@ -208,11 +222,40 @@
                                             <td class="text-right">0</td>
                                             <td class="text-right">0</td>
                                             <td class="text-right">0</td>
+                                            <td class="text-right">N/A</td>
                                             <td class="text-right">1</td>
                                             <td class="text-right">35,289</td>
                                             <td class="text-right">128</td>
                                             <td class="text-right">0</td>
                                             <td class="text-right">0</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-top"><a href="https://hubmapconsortium.github.io/asctb-azimuth-data-comparison/spleen.csv" title="Spleen csv file">Spleen</a></td>
+                                            <td class="text-right">49</td>
+                                            <td class="text-right">N/A</td>
+                                            <td class="text-right">66</td>
+                                            <td class="text-right">N/A</td>
+                                            <td class="text-right">N/A</td>
+                                            <td class="text-right">4</td>
+                                            <td class="text-right">9</td>
+                                            <td class="text-right">5,104</td>
+                                            <td class="text-right">N/A</td>
+                                            <td class="text-right">N/A</td>
+                                            <td class="text-right">N/A</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-top"><a href="https://github.com/hubmapconsortium/asctb-azimuth-data-comparison/blob/gh-pages/Human%20Lung%20v2.celltype_stats.csv" title="Lung v2 csv file">Lung v2</a></td>
+                                            <td class="text-right">90</td>
+                                            <td class="text-right">N/A</td>
+                                            <td class="text-right">84</td>
+                                            <td class="text-right">82</td>
+                                            <td class="text-right">N/A</td>
+                                            <td class="text-right">8</td>
+                                            <td class="text-right">6</td>
+                                            <td class="text-right">584,884</td>
+                                            <td class="text-right">390</td>
+                                            <td class="text-right">172</td>
+                                            <td class="text-right">54</td>
                                         </tr>
                                 </tbody>
                             </table>
