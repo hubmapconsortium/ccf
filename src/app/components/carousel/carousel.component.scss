@@ -138,3 +138,13 @@
     margin-right: 1rem;
   }
 }
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets
+    .swiper-pagination-bullet {
+    margin-right: 1rem;
+  }
+
+  a:-webkit-any-link{
+    text-decoration: unset !important;
+  }
+}

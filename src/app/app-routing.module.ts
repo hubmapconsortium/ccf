@@ -22,15 +22,16 @@ import { ThreeDimRefPageComponent } from './pages/three-dim-ref-page/three-dim-r
 import { CcfAsctbAzimuthComponent } from './pages/ccf-asctb-azimuth/ccf-asctb-azimuth.component';
 import { HraUsageMetricsComponent } from './pages/hra-usage-metrics/hra-usage-metrics.component';
 import { KaggleTwentyoneComponent } from './pages/kaggle-twentyone/kaggle-twentyone.component';
-import { KaggleTwoModule } from './pages/kaggle-two/kaggle-two.module';
 import { KaggleTwoComponent } from './pages/kaggle-two/kaggle-two.component';
+import { HraEditorialBoardComponent } from './pages/hra-editorial-board/hra-editorial-board.component';
+import { CcfOrganVrGalleryComponent } from './pages/ccf-organ-vr-gallery/ccf-organ-vr-gallery.component';
 
 
 const routes: Routes = [
   { path: 'landing-page', component: LandingPageComponent },
   { path: 'ccf-overview-data', component: OverviewDataComponent },
   { path: 'ccf-anatomical-structures', component: CcfTablePageComponent },
-  { path: 'ccf-2d-reference-library', component: TwoDimRefPageComponent },
+  { path: 'ccf-2d-ftu', component: TwoDimRefPageComponent },
   { path: 'ccf-overview-tools', component: OverviewToolsComponent },
   { path: 'ccf-ontology', component: CcfOntologyComponent },
   { path: 'ccf-asctb-reporter', component: CcfReporterPageComponent },
@@ -53,13 +54,15 @@ const routes: Routes = [
   },
   { path: 'ccf-hra-sop', component: HraSopComponent },
   { path: 'ccf-kaggle-twentyone', component: KaggleTwentyoneComponent },
-  { path: 'ccf-kaggle-two', component: KaggleTwoComponent},
+  { path: 'ccf-kaggle-two', component: KaggleTwoComponent },
+  { path: 'ccf-hra-editorial-board', component: HraEditorialBoardComponent },
+  { path: 'ccf-organ-vr-gallery', component: CcfOrganVrGalleryComponent },
   { path: '', redirectTo: 'landing-page', pathMatch: 'full' },
   { path: '**', pathMatch: 'full', component: LandingPageComponent }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

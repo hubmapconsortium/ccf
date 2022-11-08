@@ -9,7 +9,7 @@ function iCaseEquals(str1: string, str2: string): boolean {
 }
 
 @Component({
-  selector: 'ccf-2d-reference-library',
+  selector: 'ccf-3d-reference-library',
   templateUrl: './three-dim-ref-page.component.html',
   styleUrls: ['./three-dim-ref-page.component.scss']
 })
@@ -64,7 +64,7 @@ export class ThreeDimRefPageComponent implements OnInit {
     this.router.navigate([], {
       relativeTo: this.activatedRoute,
       queryParams: params,
-      queryParamsHandling: 'merge'
+      queryParamsHandling: 'merge',
     });
   }
 

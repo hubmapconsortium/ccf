@@ -18,5 +18,5 @@ export class ChooseVersionComponent {
 
   @Input()
   label: string = 'Choose Version of ASCT+B datasets'
-  
+
 }
