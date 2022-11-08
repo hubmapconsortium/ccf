@@ -19,9 +19,10 @@ export class CarouselComponent {
   @Output() buttonRoute = new EventEmitter<SliderItems>;
 
   config: SwiperOptions = {
+    loop: true,
     autoplay: {
-      delay: 100000000,
-      disableOnInteraction: true
+      delay: 10000,
+      disableOnInteraction: false
     },
     navigation: {
       enabled: true
@@ -29,6 +30,7 @@ export class CarouselComponent {
     pagination: {
       clickable: true
     },
-    effect: 'fade'
+    effect: 'fade',
+    allowTouchMove: false
   };
 }
