@@ -31,6 +31,7 @@ export class CarouselComponent {
       clickable: true
     },
     effect: 'fade',
+    rewind: true,
     allowTouchMove: false
   };
 }
