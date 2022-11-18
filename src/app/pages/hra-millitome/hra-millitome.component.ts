@@ -26,7 +26,6 @@ export class HraMillitomeComponent implements OnInit {
 
   constructor(private readonly dataService: TableDataService, route: ActivatedRoute) { 
     const data = route.snapshot.data['hraMillitome'];
-    console.log(data)
     this.headerCardDetails = [data.headerCardDetails]
     this.overViewData = [data.overViewData]
     this.tableTitle = data.tableTitle

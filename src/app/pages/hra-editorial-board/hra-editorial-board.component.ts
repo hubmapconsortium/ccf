@@ -20,7 +20,6 @@ export class HraEditorialBoardComponent {
 
   constructor(route: ActivatedRoute){
     const data = route.snapshot.data['hraEditorialBoard'];
-    console.log(data)
     this.overviewData=[data.overviewData]
     this.boardHeader = [data.boardHeader]
     this.acknowledgmentsData = [data.acknowledgmentsData]
