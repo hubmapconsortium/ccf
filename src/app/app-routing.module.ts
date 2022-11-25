@@ -29,8 +29,8 @@ import { CcfOrganVrGalleryComponent } from './pages/ccf-organ-vr-gallery/ccf-org
 
 const routes: Routes = [
   { path: 'landing-page', component: LandingPageComponent },
-  { path: 'ccf-overview-data', component: OverviewDataComponent },
-  { path: 'ccf-anatomical-structures', component: CcfTablePageComponent },
+  { path: 'overview-data', component: OverviewDataComponent },
+  { path: 'asctb-tables', component: CcfTablePageComponent },
   { path: 'ccf-2d-ftu', component: TwoDimRefPageComponent },
   { path: 'ccf-overview-tools', component: OverviewToolsComponent },
   { path: 'ccf-ontology', component: CcfOntologyComponent },
@@ -42,7 +42,7 @@ const routes: Routes = [
   { path: 'ccf-hra-api', component: HraApiComponent },
   { path: 'ccf-about', component: AboutComponent },
   { path: 'ccf-overview-training-outreach', component: OverviewTrainingOutreachComponent },
-  { path: 'ccf-omaps', component: OmapsComponent },
+  { path: 'omap', component: OmapsComponent },
   { path: 'ccf-3d-reference-library', component: ThreeDimRefPageComponent },
   { path: 'ccf-asctb-azimuth', component: CcfAsctbAzimuthComponent },
   { path: 'ccf-hra-usage-metrics', component: HraUsageMetricsComponent },

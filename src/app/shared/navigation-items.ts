@@ -7,13 +7,13 @@ export const NAVIGATION_ITEMS: NavItems[] = [
     children: [
       {
         menuName: 'Overview: HRA Data',
-        route: 'ccf-overview-data',
+        route: 'overview-data',
         disabled: false,
         divider: true
       },
       {
-        menuName: 'CCF Anatomical Structures, Cell Types + Biomarkers (ASCT+B) Tables',
-        route: 'ccf-anatomical-structures',
+        menuName: 'Anatomical Structures, Cell Types + Biomarkers (ASCT+B) Tables',
+        route: 'asctb-tables',
         disabled: true
       },
       {
@@ -22,18 +22,18 @@ export const NAVIGATION_ITEMS: NavItems[] = [
         disabled: true
       },
       {
-        menuName: 'CCF 2D Functional Tissue Unit (FTU) Illustrations',
+        menuName: '2D Functional Tissue Unit (FTU) Illustrations',
         route: 'ccf-2d-ftu',
         disabled: true
       },
       {
-        menuName: 'CCF 3D Reference Object Library',
+        menuName: '3D Reference Object Library',
         route: 'ccf-3d-reference-library',
         disabled: true
       },
       {
         menuName: 'Organ Mapping Antibody Panels (OMAPs)',
-        route: 'ccf-omaps',
+        route: 'omap',
         disabled: true,
         divider: true
       },

@@ -1,7 +1,4 @@
 :host {
-  table {
-    width: 100%;
-  }
 
   .table-container {
     padding-bottom: 2rem;
@@ -57,10 +54,8 @@
 
   th,
   td {
-    overflow: hidden;
     width: auto;
     text-overflow: ellipsis;
-    white-space: nowrap;
   }
 
   .mat-column-organ {
@@ -73,6 +68,10 @@
 
   .mat-column-tissuePreservationMethod {
     width: 15rem;
+  }
+
+  .mat-column-Name{
+    width:10rem;
   }
 
   ::ng-deep table > thead > tr > th:nth-child(1) .mat-sort-header-arrow {
@@ -90,6 +89,14 @@
     transform: rotate(180deg) !important;
     color: #ebebeb;
     size: 3rem;
+  }
+
+  .additional-header{
+    padding-left: 1rem;
+  }
+
+  .row-one>th{
+    text-align: center;
   }
 
   ::ng-deep .demo-table a {
@@ -116,6 +123,8 @@
 
   table td:first-child{
     text-align: left;
+    overflow: visible;
+    white-space: break-spaces;
   }
 
   ::ng-deep .mat-sort-header-container:not(th:first-child>.mat-sort-header-container){

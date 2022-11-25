@@ -49,7 +49,7 @@ export const cards: SectionCardItems[] = [
         title: "Data", description: 'Research the data constructing Human Reference Atlas',
         image: 'assets/images/data_svg.svg',
         gif: 'assets/images/data_gif.gif',
-        route: 'ccf-overview-data'
+        route: 'overview-data'
 
     },
     {
