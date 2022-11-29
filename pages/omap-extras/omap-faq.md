@@ -18,8 +18,9 @@
 	3.	**[Authoring OMAPs](Authoring-OMAPs)**
 		1.	[How do I author an OMAP?](How-do-I-author-an-OMAP)
 		2.	[Must I be a member of the Human Biomolecular Atlas Program (HuBMAP) to author an OMAP?](Must-I-be-a-member-of-the-Human-Biomolecular-Atlas-Program-(HuBMAP)-to-author-an-OMAP)
-		3.	[How do I report imaging methods that employ oligo-conjugated antibodies and fluorescent reporters for marker detection?](How-do-I-report-imaging-methods-that-employ-oligo-conjugated-antibodies-and-fluorescent-reporters-for-marker-detection)
-		4.	[Should I include antigen retrieval conditions for OMAPs designed for Formalin Fixed Paraffin Embedded (FFPE) specimens?
+		3.	[Is there a working group I may join to support authoring an OMAP?](Is-there-a-working-group-I-may-join-to-support-authoring-an-OMAP)
+		4.	[How do I report imaging methods that employ oligo-conjugated antibodies and fluorescent reporters for marker detection?](How-do-I-report-imaging-methods-that-employ-oligo-conjugated-antibodies-and-fluorescent-reporters-for-marker-detection)
+		5.	[Should I include antigen retrieval conditions for OMAPs designed for Formalin Fixed Paraffin Embedded (FFPE) specimens?
 ](Should-I-include-antigen-retrieval-conditions-for-OMAPs-designed-for-Formalin-Fixed-Paraffin-Embedded-(FFPE)-specimens)
 		5.	[How do I report the use of unconjugated primaries detected with secondary antibodies?
 ](How-do-I-report-the-use-of-unconjugated-primaries-detected-with-secondary-antibodies)
@@ -81,6 +82,9 @@ Download: [OMAP Description Document Template](https://github.com/hubmapconsorti
 
 ### Must I be a member of the Human Biomolecular Atlas Program (HuBMAP) to author an OMAP?
 No, OMAP authors do not need to be affiliated with HuBMAP. Our initial set of OMAPs were authored by members of several consortia, including the Human Protein Atlas (HPA), Human Cell Atlas (HCA), and LungMap. We additionally welcome contributions from industry leaders and technology developers in the spatial biology field.
+
+### Is there a working group I may join to support authoring an OMAP?
+Yes, please join the Affinity Reagents Working Group by completing this form to indicate your interest:  https://forms.gle/Y2TVAcadSNn8Tdks7.
 
 ### How do I report imaging methods that employ oligo-conjugated antibodies and fluorescent reporters for marker detection?
 Please list ‘Oligonucleotide’ in the conjugate field of the OMAP Table and specify the cycle number and fluorophore, e.g., Cy3, Cy5, etc., in the corresponding fields. For examples, see [CODEX OMAPs for the human intestines, pancreas, and kidney](https://hubmapconsortium.github.io/ccf/pages/omap.html).
