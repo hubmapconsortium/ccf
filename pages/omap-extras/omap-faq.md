@@ -26,7 +26,7 @@
 ](#should-i-include-an-omap-in-my-manuscript-that-uses-multiplexed-antibody-based-imaging)
       9. [As an OMAP author who has published my OMAP with a peer reviewed journal, why should I also publish my OMAP on the HuBMAP HRA Portal?
 ](#as-an-omap-author-who-has-published-my-omap-with-a-peer-reviewed-journal-why-should-i-also-publish-my-omap-on-the-hubmap-hra-portal)
-      10. [Do OMAPs need to accompany published work featuring multiplexed antibody-based imaging?](do-omaps-need-to-accompany-published-work-featuring-multiplexed-antibody-based-imaging)
+      10. [Do OMAPs need to accompany published work featuring multiplexed antibody-based imaging?](#do-omaps-need-to-accompany-published-work-featuring-multiplexed-antibody-based-imaging)
       11. [Can I make changes to an existing OMAP?](#can-i-make-changes-to-an-existing-omap)
       12. [Can I expand upon an existing OMAP?](#can-i-expand-upon-an-existing-omap)
       13. [Are OMAP revisions versioned?](#are-omap-revisions-versioned)
