@@ -40,15 +40,15 @@
       </ng-container>
     </ng-container>
 
-    <ng-container *ngIf="cellHeaders">
-      <tr mat-header-row *matHeaderRowDef="cellHeadersData" class="row-one"></tr>
+    <ng-container *ngIf="cellHeaders?.length">
+      <tr mat-header-row *matHeaderRowDef="cellHeadersData"></tr>
     </ng-container>
 
-    <ng-container *ngIf="additionalHeaders">
+    <ng-container *ngIf="additionalHeaders?.length">
       <tr mat-header-row *matHeaderRowDef="additionalColumnsData"></tr>
     </ng-container>
 
-    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns" class="row-one"></tr>
 
     <div class="first-column">
       <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>

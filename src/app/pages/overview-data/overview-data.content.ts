@@ -13,7 +13,7 @@ export const longButtonItems: LongCard[] = [
         icon: 'assets/images/asctb_azimuth.svg',
         title: 'ASCT+B Cell Types Data from Azimuth Reference Data with Summaries',
         body: 'Crosswalks from Azimuth cell annotation tool to ASCT+B tables will cell population data',
-        route: 'ccf-asctb-azimuth'
+        route: 'asctb-azimuth'
     },
     {
         icon: 'assets/images/two_dim_library.svg',

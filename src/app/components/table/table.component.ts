@@ -34,9 +34,9 @@ export class TableComponent {
 
   @Input() additionalColumnsData?: string[];
 
-  @Input() cellHeaders?: ExtraHeader[] = []
+  @Input() cellHeaders?: ExtraHeader[];
 
-  @Input() cellHeadersData?: string[] = []
+  @Input() cellHeadersData?: string[];
 
   readonly dataSource = new MatTableDataSource<TableData>([]);
 

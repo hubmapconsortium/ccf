@@ -6,7 +6,7 @@ import { TableData } from '../../components/table/table';
 import { ChooseVersion } from 'src/app/components/choose-version/choose-version';
 
 @Component({
-  selector: 'ccf-hra-millitome',
+  selector: 'hra-millitome',
   templateUrl: './hra-millitome.component.html',
   styleUrls: ['./hra-millitome.component.scss']
 })

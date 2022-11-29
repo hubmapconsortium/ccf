@@ -3,7 +3,7 @@ import { TableDataService } from 'src/app/services/table-data/tabledata.service'
 import { additionalHeaders, additionalColumnsData, azimuthHeader, comparisonAsctbVsAzimuth, displayedColumnsData, headerInfo, overviewAzimuthData, TermsOfUseData, cellData, cellHeaders } from './ccf-asctb-azimuth.content';
 
 @Component({
-  selector: 'ccf-asctb-azimuth',
+  selector: 'asctb-azimuth',
   templateUrl: './ccf-asctb-azimuth.component.html',
   styleUrls: ['./ccf-asctb-azimuth.component.scss']
 })

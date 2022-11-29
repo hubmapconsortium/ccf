@@ -28,36 +28,36 @@ import { CcfOrganVrGalleryComponent } from './pages/ccf-organ-vr-gallery/ccf-org
 
 
 const routes: Routes = [
-  { path: 'landing-page', component: LandingPageComponent },
+  { path: '', component: LandingPageComponent },
   { path: 'overview-data', component: OverviewDataComponent },
   { path: 'asctb-tables', component: CcfTablePageComponent },
   { path: 'ccf-2d-ftu', component: TwoDimRefPageComponent },
-  { path: 'ccf-overview-tools', component: OverviewToolsComponent },
+  { path: 'overview-tools', component: OverviewToolsComponent },
   { path: 'ccf-ontology', component: CcfOntologyComponent },
-  { path: 'ccf-asctb-reporter', component: CcfReporterPageComponent },
-  { path: 'ccf-exploration-user-interface', component: CcfExplorationUserInterfaceComponent },
-  { path: 'ccf-hra-millitome', component: HraMillitomeComponent },
-  { path: 'ccf-registration-user-interface', component: RegistrationUserInterfaceComponent },
-  { path: 'ccf-cell-population-graphs', component: CellPopulationGraphsComponent },
+  { path: 'asctb-reporter', component: CcfReporterPageComponent },
+  { path: 'exploration-user-interface', component: CcfExplorationUserInterfaceComponent },
+  { path: 'hra-millitome', component: HraMillitomeComponent },
+  { path: 'registration-user-interface', component: RegistrationUserInterfaceComponent },
+  { path: 'cell-population-graphs', component: CellPopulationGraphsComponent },
   { path: 'ccf-hra-api', component: HraApiComponent },
-  { path: 'ccf-about', component: AboutComponent },
-  { path: 'ccf-overview-training-outreach', component: OverviewTrainingOutreachComponent },
+  { path: 'about-mc-iu', component: AboutComponent },
+  { path: 'overview-training-outreach', component: OverviewTrainingOutreachComponent },
   { path: 'omap', component: OmapsComponent },
   { path: 'ccf-3d-reference-library', component: ThreeDimRefPageComponent },
-  { path: 'ccf-asctb-azimuth', component: CcfAsctbAzimuthComponent },
-  { path: 'ccf-hra-usage-metrics', component: HraUsageMetricsComponent },
+  { path: 'asctb-azimuth', component: CcfAsctbAzimuthComponent },
+  { path: 'usage-metrics', component: HraUsageMetricsComponent },
   {
     path: 'ccf-tissue-info-page/:organ', component: TissueInfoPageComponent,
     resolve: {
       data: TissueInfoResolverService
     }
   },
-  { path: 'ccf-hra-sop', component: HraSopComponent },
-  { path: 'ccf-kaggle-twentyone', component: KaggleTwentyoneComponent },
-  { path: 'ccf-kaggle-two', component: KaggleTwoComponent },
-  { path: 'ccf-hra-editorial-board', component: HraEditorialBoardComponent },
-  { path: 'ccf-organ-vr-gallery', component: CcfOrganVrGalleryComponent },
-  { path: '', redirectTo: 'landing-page', pathMatch: 'full' },
+  { path: 'standard-operating-procedures', component: HraSopComponent },
+  { path: 'kaggle-one', component: KaggleTwentyoneComponent },
+  { path: 'kaggle-two', component: KaggleTwoComponent },
+  { path: 'editorial-board', component: HraEditorialBoardComponent },
+  { path: 'organ-vr-gallery', component: CcfOrganVrGalleryComponent },
+  { path: '', redirectTo: '', pathMatch: 'full' },
   { path: '**', pathMatch: 'full', component: LandingPageComponent }
 ];
 

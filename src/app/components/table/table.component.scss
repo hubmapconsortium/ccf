@@ -56,10 +56,11 @@
   td {
     width: auto;
     text-overflow: ellipsis;
+    white-space: break-spaces;
   }
 
   .mat-column-organ {
-    width: 11.938rem;
+    width: 12.5rem;
   }
 
   .mat-column-imagingMethod {
@@ -73,6 +74,7 @@
   .mat-column-Name{
     width:10rem;
   }
+
 
   ::ng-deep table > thead > tr > th:nth-child(1) .mat-sort-header-arrow {
     color: #212121 !important;
@@ -96,7 +98,7 @@
   }
 
   .row-one>th{
-    text-align: center;
+    text-align: right;
   }
 
   ::ng-deep .demo-table a {
@@ -111,10 +113,10 @@
     display: block;
     width: fit-content;
 
-    &:hover {
-      transform: scale(1.09) !important;
-      text-decoration: underline !important;
-    }
+    // &:hover {
+    //   transform: scale(1.09) !important;
+    //   text-decoration: underline !important;
+    // }
   }
 
   table td{
