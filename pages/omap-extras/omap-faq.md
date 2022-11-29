@@ -12,7 +12,7 @@
       5. [How many antibodies are included in an OMAP?](#How-many-antibodies-are-included-in-an-OMAP)
       6. [How do I cite an existing OMAP?](#How-do-I-cite-an-existing-OMAP)
       7. [How do I cite OMAPs overall?](#How-do-I-cite-OMAPs-overall)
-  3. **[Authoring OMAPs](#Authoring-OMAPs)**
+  3. **[Authoring OMAPs](#authoring-omaps)**
       1. [How do I author an OMAP?](#How-do-I-author-an-OMAP)
       2. [Must I be a member of the Human Biomolecular Atlas Program (HuBMAP) to author an OMAP?](#Must-I-be-a-member-of-the-Human-Biomolecular-Atlas-Program-(HuBMAP)-to-author-an-OMAP)
       3. [Is there a working group I may join to support authoring an OMAP?](#Is-there-a-working-group-I-may-join-to-support-authoring-an-OMAP)
