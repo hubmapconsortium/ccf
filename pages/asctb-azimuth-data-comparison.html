@@ -52,7 +52,8 @@
                     <a class="dropdown-item" href="https://portal.hubmapconsortium.org/ccf-eui" title="Opens external website" target="_blank">CCF Exploration User Interface (EUI)</a>
                     <a class="dropdown-item" href="https://expand.iu.edu/browse/sice/cns/courses/hubmap-visible-human-mooc" title="Opens external website" target="_blank">Visible Human MOOC</a>
                     <a class="dropdown-item" href="https://portal.hubmapconsortium.org/" title="Opens external website" target="_blank">HuBMAP Data Portal</a>
-                    <a class="dropdown-item" href="kaggle.html" title="Opens external website" target="_blank">Kaggle Competition and Awards</a>
+                    <a class="dropdown-item" href="kaggle.html" title="Opens external website" target="_blank">Kaggle #1: HuBMAP - Hacking the Kidney</a>
+                    <a class="dropdown-item" href="kaggle2.html" title="Opens external website">Kaggle #2: HuBMAP + HPA - Hacking the Human Body</a>
                 </div>
             </div>
         </div>
@@ -90,7 +91,7 @@
                             </div><span class="col-sm-10">ASCT+B Cell Types Data from Azimuth Reference Data With Summaries</span>
                         </h1>
                         <h2 class="mt-5">Overview</h2>
-                        <p><a href="https://hubmapconsortium.github.io/ccf/pages/ccf-anatomical-structures.html" title="CCF Anatomical Structures">ASCT+B tables</a> represent cell by gene (CxG) relationships that are also captured in the HuBMAP <a href="https://azimuth.hubmapconsortium.org/" title="Aziumuth">Azimuth references</a>. This site provides the cell type typology for all existing Azimuth annotated reference datasets; the Azimuth cell type typology trees can be visualized in the <a href="https://hubmapconsortium.github.io/ccf-asct-reporter/" title="ASCT Reporter">ASCT+B Reporter</a>. 
+                        <p><a href="https://hubmapconsortium.github.io/ccf/pages/ccf-anatomical-structures.html" title="CCF Anatomical Structures">ASCT+B tables</a> represent cell by gene (CxG) relationships that are also captured in the HuBMAP <a href="https://azimuth.hubmapconsortium.org/" title="Azimuth">Azimuth references</a>. This site provides the cell type typology for all existing Azimuth annotated reference datasets; the Azimuth cell type typology trees can be visualized in the <a href="https://hubmapconsortium.github.io/ccf-asct-reporter/" title="ASCT Reporter">ASCT+B Reporter</a>. 
 <br/><br/>
                             We also provide easy access to results for comparing CxG in ASCT+B vs. CxG in Azimuth. In Jan 2022, Azimuth supports single-cell RNA-seq data exclusively. As more experimental data becomes available and additional types of data are supported (e.g., proteins, lipids, metabolites), data differences will decrease. 
                             </p>
@@ -101,22 +102,13 @@
                         <p>Table 3 shows the comparison of the CxG matrix in ASCT+B tables vs. CxG matrix in Azimuth for each organ in Jan 2022. An automatically generated, up-to-date comparison is available <a href="https://hubmapconsortium.github.io/asctb-azimuth-data-comparison/Azimuth_vs_ASCTB.summaries.xlsx">here</a>; this xls also contains separate sheets with cell types that are not (yet) covered in the ASCT+B tables. Details on how the comparison is calculated are on <a href="https://github.com/hubmapconsortium/asctb-azimuth-data-comparison">GitHub</a>. Note that not all Azimuth cell types have CL IDs; in these cases, matching is done based on cell type names.</p>
 
                         <p>Data from <a href="https://github.com/satijalab/azimuth_website" title="Satija Labs Azimuth website">https://github.com/satijalab/azimuth_website</a> has been parsed to derive cell type typologies:</p>
-                      <!-- <h2 class="mt-5">Download Data</h2> -->
-                      <!--<ul>
-                        <li><a href="https://darshalshetty.github.io/asctb-azimuth-data-comparison/pbmc.csv" title="Download data">Bone Marrow & Blood/Pelvis</a></li>
-                        <li><a href="https://darshalshetty.github.io/asctb-azimuth-data-comparison/motor_cortex.csv" title="Download data">Brain</a></li>
-                        <li><a href="https://darshalshetty.github.io/asctb-azimuth-data-comparison/fetal_development.csv" title="Download data">Fetal Development</a></li>
-                        <li><a href="https://darshalshetty.github.io/asctb-azimuth-data-comparison/lung.csv" title="Download data">Lung</a></li>
-                        <li><a href="hhttps://darshalshetty.github.io/asctb-azimuth-data-comparison/pancreas.csv" title="Download data">Pancreas</a></li>
-                      </ul>-->
-                        <!-- <wc-markdown src="https://hubmapconsortium.github.io/asctb-azimuth-data-comparison/csv_download_list.md" class="main"></wc-markdown> -->
                         <div>
                             
                             <table class="table" style="font-size: 0.875rem">
                                 <thead>
                                     <tr>
                                         <th></th>
-                                        <th colspan="5" class="text-center">Cell Types</th>
+                                        <th colspan="6" class="text-center">Cell Types</th>
                                         <th rowspan="3" class="align-top">Annotation Levels in Azimuth Reference</th>
                                         <th rowspan="3" class="align-top">Total Cell Count in Aziumuth Reference</th>
                                         <th colspan="3" class="text-center">Biomarkers</th>
@@ -125,7 +117,7 @@
                                         <th></th>
                                         <th colspan="2">Azimuth</th>
                                         <th colspan="2">ASCT+B v1.0</th>
-                                        <th>Matches</th>
+                                        <th colspan="2">Matches</th>
                                         <th>Azimuth</th>
                                         <th>ASCT+B</th>
                                         <th>Matches</th>
@@ -137,6 +129,7 @@
                                         <th>Unique Names</th>
                                         <th>Unique IDs</th>
                                         <th>Using IDs</th>
+                                        <th>Using labels</th>
                                         <th></th>
                                         <th></th>
                                         <th></th>
@@ -151,12 +144,14 @@
                                             <td class="text-right">46</td>
                                             <td class="text-right">16</td>
                                             <td class="text-right">5</td>
+                                            <td class="text-right">N/A</td>
                                             <td class="text-right">3</td>
                                             <td class="text-right">35,355</td>
                                             <td class="text-right">352</td>
                                             <td class="text-right">199</td>
                                             <td class="text-right">87</td>
                                         </tr>
+                                        
                                         <tr>
                                             <td class="align-top"><a href="https://hubmapconsortium.github.io/asctb-azimuth-data-comparison/motor_cortex.csv" title="Motor Cortex csv file">Brain</a></td>
                                             <td class="text-right">187</td>
@@ -164,11 +159,26 @@
                                             <td class="text-right">127</td>
                                             <td class="text-right">N/A</td>
                                             <td class="text-right">123</td>
+                                            <td class="text-right">N/A</td>
                                             <td class="text-right">4</td>
                                             <td class="text-right">24,402</td>
                                             <td class="text-right">864</td>
                                             <td class="text-right">254</td>
                                             <td class="text-right">152</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-top"><a href="https://github.com/hubmapconsortium/asctb-azimuth-data-comparison/blob/gh-pages/Heart.csv" title="Heart csv file">Heart</a></td>
+                                            <td class="text-right">24</td>
+                                            <td class="text-right">N/A</td>
+                                            <td class="text-right">17</td>
+                                            <td class="text-right">18</td>
+                                            <td class="text-right">N/A</td>
+                                            <td class="text-right">6</td>
+                                            <td class="text-right">2</td>
+                                            <td class="text-right">656,509</td>
+                                            <td class="text-right">216</td>
+                                            <td class="text-right">48</td>
+                                            <td class="text-right">25</td>
                                         </tr>
                                         <tr>
                                             <td class="align-top"><a href="https://hubmapconsortium.github.io/asctb-azimuth-data-comparison/kidney.csv" title="Kidney csv file">Kidney</a></td>
@@ -177,6 +187,7 @@
                                             <td class="text-right">61</td>
                                             <td class="text-right">46</td>
                                             <td class="text-right">23</td>
+                                            <td class="text-right">N/A</td>
                                             <td class="text-right">3</td>
                                             <td class="text-right">58,461</td>
                                             <td class="text-right">432</td>
@@ -190,6 +201,7 @@
                                             <td class="text-right">93</td>
                                             <td class="text-right">74</td>
                                             <td class="text-right">14</td>
+                                            <td class="text-right">N/A</td>
                                             <td class="text-right">2</td>
                                             <td class="text-right">65,662</td>
                                             <td class="text-right">556</td>
@@ -203,6 +215,7 @@
                                             <td class="text-right">0</td>
                                             <td class="text-right">0</td>
                                             <td class="text-right">0</td>
+                                            <td class="text-right">N/A</td>
                                             <td class="text-right">1</td>
                                             <td class="text-right">35,289</td>
                                             <td class="text-right">128</td>
@@ -215,12 +228,27 @@
                                             <td class="text-right">N/A</td>
                                             <td class="text-right">66</td>
                                             <td class="text-right">N/A</td>
+                                            <td class="text-right">N/A</td>
                                             <td class="text-right">4</td>
                                             <td class="text-right">9</td>
                                             <td class="text-right">5,104</td>
                                             <td class="text-right">N/A</td>
                                             <td class="text-right">N/A</td>
                                             <td class="text-right">N/A</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="align-top"><a href="https://hubmapconsortium.github.io/asctb-azimuth-data-comparison/Human%20Lung%20v2.celltype_stats.csv" title="Lung v2 csv file">Lung v2</a></td>
+                                            <td class="text-right">90</td>
+                                            <td class="text-right">N/A</td>
+                                            <td class="text-right">84</td>
+                                            <td class="text-right">82</td>
+                                            <td class="text-right">N/A</td>
+                                            <td class="text-right">8</td>
+                                            <td class="text-right">6</td>
+                                            <td class="text-right">584,884</td>
+                                            <td class="text-right">390</td>
+                                            <td class="text-right">172</td>
+                                            <td class="text-right">54</td>
                                         </tr>
                                 </tbody>
                             </table>
