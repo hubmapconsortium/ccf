@@ -84,7 +84,9 @@ main {
     cursor: pointer;
 }
 
-
+.row-md h2 {
+    margin-top: 3rem !important;
+}
 
 /* cards */
 
