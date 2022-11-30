@@ -60,21 +60,12 @@
   }
 
   .mat-column-organ {
-    width: 12.5rem;
-  }
-
-  .mat-column-imagingMethod {
-    width: 23rem;
-  }
-
-  .mat-column-tissuePreservationMethod {
-    width: 15rem;
+    width: 12rem;
   }
 
   .mat-column-Name{
     width:10rem;
   }
-
 
   ::ng-deep table > thead > tr > th:nth-child(1) .mat-sort-header-arrow {
     color: #212121 !important;
@@ -94,11 +85,11 @@
   }
 
   .additional-header{
-    padding-left: 1rem;
+    text-align: center;
   }
 
   .row-one>th{
-    text-align: right;
+    text-align: center;
   }
 
   ::ng-deep .demo-table a {
@@ -112,11 +103,6 @@
     letter-spacing: 0.005rem;
     display: block;
     width: fit-content;
-
-    // &:hover {
-    //   transform: scale(1.09) !important;
-    //   text-decoration: underline !important;
-    // }
   }
 
   table td{
@@ -135,5 +121,6 @@
 
   ::ng-deep .mat-sort-header-content{
     white-space: break-spaces;
+    text-align: right;
   }
 }

@@ -154,24 +154,19 @@ export const displayedColumnsData = headerInfo.map((h) => h.columnDef);
 
 export const additionalHeaders: ExtraHeader[] = [
   {
-    header: '',
-    columnDef: 'dummyAzimuth',
-    colspan: 1,
-  },
-  {
     header: 'Azimuth',
     columnDef: 'azimuthCT',
-    colspan: 2,
+    colspan: 3,
   },
   {
     header: 'ASCT+B v1.0',
     columnDef: 'asctbVersionCT',
-    colspan: 2,
+    colspan: 1,
   },
   {
     header: 'Matches',
     columnDef: 'matchesCT',
-    colspan: 2,
+    colspan: 3,
   },
   {
     header: 'Azimuth',
@@ -191,34 +186,24 @@ export const additionalColumnsData = additionalHeaders.map((h) => h.columnDef);
 
 export const cellData: ExtraHeader[] = [
   {
-    columnDef: 'dummyCelltype',
-    header: '',
-    colspan: 3,
-  },
-  {
     columnDef: 'cellTypes',
     header: 'Cell Types',
-    colspan: 4,
+    colspan: 7,
   },
   {
     columnDef: 'annotationLevels',
     header: 'Annotation Levels in Azimuth Reference',
-    rowspan: 2,
+    rowspan: 3,
   },
   {
     columnDef: 'totalCellCount',
     header: 'Total Cell Count in Aziumuth Reference',
-    rowspan: 2,
-  },
-  {
-    columnDef: 'dummyBiomarkers',
-    header: '',
-    colspan: 1,
+    rowspan: 3,
   },
   {
     columnDef: 'biomarkers',
     header: 'Biomarkers',
-    colspan: 2,
+    colspan: 3,
   },
 ];
 
