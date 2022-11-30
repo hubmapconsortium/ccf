@@ -37,7 +37,7 @@
 OMAPs are combinations of antibodies that define cell populations, cell states, and anatomical structures reproducibly in diverse human tissues using multiplexed antibody-based  imaging. Each OMAP is tailored to a tissue and/or organ of interest (e.g., kidney, lymph node), multiplexed imaging method (e.g., IBEX, CODEX), and tissue preservation method (e.g., fixed frozen, FFPE). The OMAP initiative emerged from the Affinity Reagents Working Group within the Human BioMolecular Atlas Program (HuBMAP) Consortium and parallel efforts in the field of cytometry to construct peer reviewed Optimized Multicolor Immunofluorescence Panels (OMIPs).
     
 ### How are OMAPs different from other validated antibody resources?
-OMAPs provide experimental details relevant for their successful application, e.g., tissue preservation method, imaging method, antigen retrieval conditions, and antibody cycling order. The end result is an assembly of expertly curated antibodies that work together in a single tissue section. By analogy, OMAPs are recipes and validated antibody lists are ingredient lists These validated antibody lists are examples:  the [HuBMAP Antibody Validation Report](https://avr.hubmapconsortium.org) and [Human Protein Atlas](https://www.proteinatlas.org/humanproteome/tissue). 
+OMAPs provide experimental details relevant for their successful application, e.g., tissue preservation method, imaging method, antigen retrieval conditions, and antibody cycling order. The end result is an assembly of expertly curated antibodies that work together in a single tissue section. By analogy, OMAPs are recipes and validated antibodies are ingredients. See for validated antibody resources:  the [HuBMAP Antibody Validation Report](https://avr.hubmapconsortium.org) and [Human Protein Atlas](https://www.proteinatlas.org/humanproteome/tissue). 
    
 ### Which multiplexed antibody-based imaging techniques are supported?
 We will consider OMAPs from 2D and 3D tissue imaging techniques that employ antibodies for protein detection.
@@ -46,7 +46,7 @@ We will consider OMAPs from 2D and 3D tissue imaging techniques that employ anti
 HuBMAP is focused on collecting OMAPs for healthy human tissues in support of a Human Reference Atlas (HRA). However, we will support OMAPs designed for diseased human tissues and consider OMAPs designed for use in experimental animal model systems or organoids.
 
 ### How many antibodies are included in an OMAP?
-An ideal panel will be as comprehensive as possible (40-60 markers or more as technology advances). However, we welcome OMAPs that capture most anatomical structures and cell types present in a tissue and, at minimum, allow for the characterization of 10 biomarkers in a single tissue section. 
+An ideal panel will be as comprehensive as possible (40-60 markers or more as technology advances). However, we welcome OMAPs that capture most anatomical structures and cell types present in a tissue and, at a minimum, allow for the characterization of 10 biomarkers in a single tissue section. 
     
 ### How do I cite an existing OMAP?
 Each OMAP has a digital object identifier (DOI) which can be used to cite it found on the [HRA portal](https://hubmapconsortium.github.io/ccf/pages/omap.html). Please cite OMAPs that you used and/or built upon. Thank you!
@@ -69,9 +69,9 @@ All OMAPs require the completion of the following:
 
 (4) a link to dataset(s) employing your OMAP via a public data repository (Zenodo) or the [HuBMAP data portal](https://portal.hubmapconsortium.org/). 
 
-Download: [OMAP Antibody Table Template harmonized with Antibody Validation Reports](https://github.com/hubmapconsortium/ccf/pages/omap-extras/omap-table-template.xlsx)
+Download: [OMAP Table Template harmonized with Antibody Validation Reports](https://hubmapconsortium.github.io/ccf/pages/omap-extras/omap-table-template.xlsx) 
 
-Download: [OMAP Description Document Template](https://github.com/hubmapconsortium/ccf/pages/omap-extras/omap-description-document-template.docx)
+Download: [OMAP Description Document Template](https://hubmapconsortium.github.io/ccf/pages/omap-extras/omap-description-document-template.docx)
 
 ### Must I be a member of the Human Biomolecular Atlas Program (HuBMAP) to author an OMAP?
 No, OMAP authors do not need to be affiliated with HuBMAP. Our initial set of OMAPs were authored by members of several consortia, including the Human Protein Atlas (HPA), Human Cell Atlas (HCA), and LungMap. We additionally welcome contributions from industry leaders and technology developers in the spatial biology field.
@@ -96,7 +96,7 @@ Please include the catalog number for the unconjugated antibody and specify "unc
 Additionally, please create [Research Resource Identifiers (RRIDs) for all custom reagents](https://scicrunch.org/resources).
 
 ### Should I include an OMAP in my manuscript that uses multiplexed antibody-based imaging?
-We strongly recommend that you format your antibody panel using the [OMAP Antibody Table Template](https://github.com/hubmapconsortium/ccf/pages/omap-extras/omap-table-template.xlsx). The metadata captured by our OMAP template conform to journal reporting standards and are recommended for reproducible multiplexed tissue imaging ([Schapiro et al. 2022](https://doi.org/10.1038/s41592-022-01415-4); [Hickey et al. 2021](https://doi.org/10.1038/s41592-021-01316-y)) . This can be included as a supplementary table and/or dataset (CSV) file.
+We strongly recommend that you format your antibody panel using the [OMAP Table Template](https://hubmapconsortium.github.io/ccf/pages/omap-extras/omap-table-template.xlsx). The metadata captured by our OMAP template conform to journal reporting standards and are recommended for reproducible multiplexed tissue imaging ([Schapiro et al. 2022](https://doi.org/10.1038/s41592-022-01415-4); [Hickey et al. 2021](https://doi.org/10.1038/s41592-021-01316-y)) . This can be included as a supplementary table and/or dataset (CSV) file.
 
 ### As an OMAP author who has published my OMAP with a peer reviewed journal, why should I also publish my OMAP on the HuBMAP HRA Portal?
 By publishing OMAPs on the HuBMAP HRA portal, we aim to highlight useful resources that may be missed in the methods and supplementary tables of most manuscripts. We appreciate the time and dedication it takes to construct an OMAP de novo and hope that the HuBMAP HRA Portal will provide greater visibility for your work while helping others with their multiplexed imaging studies.
