@@ -25,7 +25,9 @@ import { KaggleTwentyoneComponent } from './pages/kaggle-twentyone/kaggle-twenty
 import { KaggleTwoComponent } from './pages/kaggle-two/kaggle-two.component';
 import { HraEditorialBoardComponent } from './pages/hra-editorial-board/hra-editorial-board.component';
 import { CcfOrganVrGalleryComponent } from './pages/ccf-organ-vr-gallery/ccf-organ-vr-gallery.component';
-
+import { HraApiResolver } from './pages/hra-api/hra-api-resolver.service';
+import { HraEditorialBoardResolver } from './pages/hra-editorial-board/hra-editorial-board-resolver.service';
+import { HraMillitomeResolver } from './pages/hra-millitome/hra-millitome-resolver.service';
 
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
@@ -36,33 +38,61 @@ const routes: Routes = [
   { path: 'ccf-ontology', component: CcfOntologyComponent },
   { path: 'asctb-reporter', component: CcfReporterPageComponent },
   { path: 'exploration-user-interface', component: CcfExplorationUserInterfaceComponent },
-  { path: 'hra-millitome', component: HraMillitomeComponent },
   { path: 'registration-user-interface', component: RegistrationUserInterfaceComponent },
   { path: 'cell-population-graphs', component: CellPopulationGraphsComponent },
-  { path: 'ccf-hra-api', component: HraApiComponent },
   { path: 'about-mc-iu', component: AboutComponent },
   { path: 'overview-training-outreach', component: OverviewTrainingOutreachComponent },
   { path: 'omap', component: OmapsComponent },
+  {
+    path: 'hra-millitome',
+    component: HraMillitomeComponent,
+    data: {
+      contentFile: 'hra-millitome.content',
+    },
+    resolve: {
+      hraMillitome: HraMillitomeResolver,
+    },
+  },
+  {
+    path: 'ccf-hra-api',
+    component: HraApiComponent,
+    data: {
+      contentFile: 'hra-api.content',
+    },
+    resolve: {
+      hraInfo: HraApiResolver,
+    },
+  },
   { path: 'ccf-3d-reference-library', component: ThreeDimRefPageComponent },
   { path: 'asctb-azimuth', component: CcfAsctbAzimuthComponent },
   { path: 'usage-metrics', component: HraUsageMetricsComponent },
   {
-    path: 'ccf-tissue-info-page/:organ', component: TissueInfoPageComponent,
+    path: 'ccf-tissue-info-page/:organ',
+    component: TissueInfoPageComponent,
     resolve: {
-      data: TissueInfoResolverService
-    }
+      data: TissueInfoResolverService,
+    },
   },
   { path: 'standard-operating-procedures', component: HraSopComponent },
   { path: 'kaggle-one', component: KaggleTwentyoneComponent },
   { path: 'kaggle-two', component: KaggleTwoComponent },
-  { path: 'editorial-board', component: HraEditorialBoardComponent },
   { path: 'organ-vr-gallery', component: CcfOrganVrGalleryComponent },
   { path: '', redirectTo: '', pathMatch: 'full' },
   { path: '**', pathMatch: 'full', component: LandingPageComponent }
+  {
+    path: 'editorial-board',
+    component: HraEditorialBoardComponent,
+    data: {
+      contentFile: 'hra-editorial-board.content',
+    },
+    resolve: {
+      hraEditorialBoard: HraEditorialBoardResolver,
+    },
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
