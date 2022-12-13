@@ -43,17 +43,6 @@ export class TwoDimRefPageComponent implements OnInit {
     this.organInfo = data.organInfo
    }
 
-  constructor(private router: Router, private activatedRoute: ActivatedRoute) {
-    const data = activatedRoute.snapshot.data['twoDimRefPage']
-    this.twoDimHeaderCardDetails = data.twoDimHeaderCardDetails
-    this.overviewData = data.overviewData
-    this.sopData = data.sopData
-    this.termsOfUseData = data.termsOfUseData
-    this.versionData = data.versionData
-    this.placeholderDate = this.versionData[0].release
-    this.organInfo = data.organInfo
-   }
-
   label: string;
 
   ngOnInit(): void {

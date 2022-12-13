@@ -28,7 +28,7 @@ export const NAVIGATION_ITEMS: NavItems[] = [
       },
       {
         menuName: '3D Reference Object Library',
-        route: 'ccf-3d-reference-library',
+        route: '3d-reference-library',
         disabled: true
       },
       {
@@ -89,7 +89,7 @@ export const NAVIGATION_ITEMS: NavItems[] = [
       },
       {
         menuName: 'Application Programming Interfaces',
-        route: 'ccf-hra-api',
+        route: 'hra-api',
         disabled: true
       },
       {
