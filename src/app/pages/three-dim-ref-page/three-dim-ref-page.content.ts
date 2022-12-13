@@ -314,6 +314,7 @@ export const threeDimOrganInfo: VersionOrgans[] = [
             image: '',
             expandedImage: '',
             //fix url
+            //fix url
             url: 'https://hubmapconsortium.github.io/ccf-releases/v1.2/docs/ref-organs/kidney-female-right.html',
             alt: 'The kidney, right, female',
             threeDimImage:
@@ -754,7 +755,7 @@ export const threeDimOrganInfo: VersionOrgans[] = [
             url: 'https://hubmapconsortium.github.io/ccf-releases/v1.3/docs/ref-organs/vh-male-united.html',
             alt: 'All organs, male',
             threeDimImage:
-              'https://ccf-ontology.hubmapconsortium.org/objects/v1.2/VH_M_United.glb',
+              'assets/models/VH_M_United.glb',
           },
         ],
       },

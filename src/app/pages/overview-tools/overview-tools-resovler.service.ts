@@ -7,7 +7,7 @@ import { ContentService } from 'src/app/services/content/content.service';
     providedIn: 'root'
   })
  
-export class HraApiResolver implements Resolve<string> {
+export class OverviewToolsResolver implements Resolve<string> {
 
     constructor(private readonly contentService: ContentService){
     }
