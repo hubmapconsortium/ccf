@@ -6,7 +6,7 @@ import { LongCard } from 'src/app/components/card-button-long/long-card';
 import { TileItems } from 'src/app/components/simple-tile/tile-items';
 
 @Component({
-  selector: 'ccf-overview-data',
+  selector: 'overview-data',
   templateUrl: './overview-data.component.html',
   styleUrls: ['./overview-data.component.scss']
 })

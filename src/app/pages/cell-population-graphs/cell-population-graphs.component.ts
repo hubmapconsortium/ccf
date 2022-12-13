@@ -6,7 +6,7 @@ import { UseButton } from 'src/app/components/use-button/use-button';
 import { acknowledgmentsData, buttonData, headerCardData, overviewData } from './cell.population-graphs.content';
 
 @Component({
-  selector: 'ccf-cell-population-graphs',
+  selector: 'cell-population-graphs',
   templateUrl: './cell-population-graphs.component.html',
   styleUrls: ['./cell-population-graphs.component.scss']
 })

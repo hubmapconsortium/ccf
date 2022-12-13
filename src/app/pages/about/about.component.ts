@@ -5,7 +5,7 @@ import { PageHeaderItems } from 'src/app/components/page-header/page-header-item
 import { pageData, pageHeaderData } from './about.content';
 
 @Component({
-  selector: 'ccf-about',
+  selector: 'about-mc-iu',
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss']
 })

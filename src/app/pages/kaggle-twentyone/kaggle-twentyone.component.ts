@@ -6,7 +6,7 @@ import { PrizeCard } from 'src/app/components/prize-card/prize-card';
 import { accuracyPrizeData, acknowledgmentsData, datasetsData, judgesPrizeData, kaggle2021Header, kudosData, overviewData } from './kaggle-twentyone.content';
 
 @Component({
-  selector: 'ccf-kaggle-twentyone',
+  selector: 'kaggle-one',
   templateUrl: './kaggle-twentyone.component.html',
   styleUrls: ['./kaggle-twentyone.component.scss']
 })

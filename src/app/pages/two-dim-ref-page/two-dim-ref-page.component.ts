@@ -43,8 +43,8 @@ export class TwoDimRefPageComponent implements OnInit {
     this.placeholderDate = this.versionData[0].release
     this.organInfo = data.organInfo
    }
-  label: string;
 
+  label: string;
 
   ngOnInit(): void {
     const [{ version: defaultVersion, organData: [{ name: defaultOrgan }] }] = this.organInfo;
@@ -72,7 +72,7 @@ export class TwoDimRefPageComponent implements OnInit {
       this.setOrgan(organData[0].name);
     } else {
       this.organData = data;
-      this.cardTitle = data[0].name+" Functional Tissue Units";
+      this.cardTitle = data[0].name + " Functional Tissue Units";
       this.updateQueryParams({ version, organ });
     }
   }

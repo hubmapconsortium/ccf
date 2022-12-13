@@ -7,7 +7,7 @@ import { UseButton } from 'src/app/components/use-button/use-button';
 import { headerCardDetails, overviewData, acknowledgeData, interfacedata, useRuiButton, ruiSopData } from './registration-user-interface.content';
 
 @Component({
-  selector: 'ccf-registration-user-interface',
+  selector: 'registration-user-interface',
   templateUrl: './registration-user-interface.component.html',
   styleUrls: ['./registration-user-interface.component.scss']
 })

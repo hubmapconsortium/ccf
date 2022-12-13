@@ -1,8 +1,4 @@
 :host {
-  table {
-    width: 100%;
-  }
-
   .table-container {
     padding-bottom: 2rem;
   }
@@ -57,22 +53,17 @@
 
   th,
   td {
-    overflow: hidden;
     width: auto;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    white-space: break-spaces;
   }
 
   .mat-column-organ {
-    width: 11.938rem;
+    width: 12rem;
   }
 
-  .mat-column-imagingMethod {
-    width: 23rem;
-  }
-
-  .mat-column-tissuePreservationMethod {
-    width: 15rem;
+  .mat-column-Name {
+    width: 10rem;
   }
 
   ::ng-deep table > thead > tr > th:nth-child(1) .mat-sort-header-arrow {
@@ -92,6 +83,18 @@
     size: 3rem;
   }
 
+  .additional-header {
+    text-align: center;
+  }
+
+  .row-one > th {
+    text-align: center;
+  }
+
+  th.mat-header-cell:last-of-type {
+    padding-right: 1rem;
+  }
+
   ::ng-deep .demo-table a {
     text-decoration: none;
     color: #0a6ebd;
@@ -103,26 +106,27 @@
     letter-spacing: 0.005rem;
     display: block;
     width: fit-content;
-
-    &:hover {
-      transform: scale(1.09) !important;
-      text-decoration: underline !important;
-    }
   }
 
-  table td{
+  table td {
     text-align: right;
   }
 
-  table td:first-child{
+  table td:first-child {
     text-align: left;
+    overflow: visible;
+    white-space: break-spaces;
   }
 
-  ::ng-deep .mat-sort-header-container:not(th:first-child>.mat-sort-header-container){
+  ::ng-deep
+    .mat-sort-header-container:not(
+      th:first-child > .mat-sort-header-container
+    ) {
     justify-content: end;
   }
 
-  ::ng-deep .mat-sort-header-content{
+  ::ng-deep .mat-sort-header-content {
     white-space: break-spaces;
+    text-align: right;
   }
 }

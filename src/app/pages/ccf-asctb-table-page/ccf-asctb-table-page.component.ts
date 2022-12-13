@@ -3,14 +3,14 @@ import { TableData } from '../../components/table/table';
 import { ChooseVersion } from '../../components/choose-version/choose-version';
 import { Component, OnInit } from '@angular/core';
 import { headerCardDetails, overviewData, existingTablesData, exploreTablesData, sopLinksData, displayedColumnsData, headerInfo, versionData } from './ccf-asctb-table-page.contents';
-import { EMPTY, Observable } from 'rxjs';
+import { EMPTY, Observable, map } from 'rxjs';
 import { ActivatedRoute } from '@angular/router';
 import { PageHeaderItems } from 'src/app/components/page-header/page-header-items';
 import { PageDataItems } from 'src/app/components/page-data/page-data';
 import { SopLinks } from 'src/app/components/sop-links/sop-links';
 
 @Component({
-  selector: 'ccf-anatomical-structures',
+  selector: 'asctb-tables',
   templateUrl: './ccf-asctb-table-page.component.html',
   styleUrls: ['./ccf-asctb-table-page.component.scss']
 })
@@ -27,6 +27,7 @@ export class CcfTablePageComponent implements OnInit {
   release: ChooseVersion;
 
   tableData: Observable<TableData[]> = EMPTY;
+  columns: Observable<string[]> = EMPTY;
 
   constructor(private readonly dataService: TableDataService, private readonly route: ActivatedRoute) { 
     const data = route.snapshot.data['ccfTablePage']
@@ -39,7 +40,9 @@ export class CcfTablePageComponent implements OnInit {
   }
 
   setData(version: ChooseVersion): void {
-    this.tableData = this.dataService.getData(version.file);
+    const data = this.dataService.getData(version.file, displayedColumnsData);
+    this.tableData = data.pipe(map(result => result.data));
+    this.columns = data.pipe(map(result => result.columns));
   }
 
   ngOnInit(): void {

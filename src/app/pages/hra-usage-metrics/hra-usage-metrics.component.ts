@@ -4,7 +4,7 @@ import { PageDataItems } from 'src/app/components/page-data/page-data';
 import { PageHeaderItems } from 'src/app/components/page-header/page-header-items';
 
 @Component({
-  selector: 'ccf-hra-usage-metrics',
+  selector: 'usage-metrics',
   templateUrl: './hra-usage-metrics.component.html',
   styleUrls: ['./hra-usage-metrics.component.scss']
 })

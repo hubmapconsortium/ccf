@@ -5,7 +5,7 @@ import { PageHeaderItems } from 'src/app/components/page-header/page-header-item
 import { acknowledgmentsData, overviewData, pageHeader } from './hra-sop.content';
 
 @Component({
-  selector: 'ccf-hra-sop',
+  selector: 'standard-operating-procedures',
   templateUrl: './hra-sop.component.html',
   styleUrls: ['./hra-sop.component.scss']
 })

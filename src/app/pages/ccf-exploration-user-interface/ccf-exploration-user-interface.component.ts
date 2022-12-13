@@ -5,7 +5,7 @@ import { PageHeaderItems } from 'src/app/components/page-header/page-header-item
 import { UseButton } from 'src/app/components/use-button/use-button';
 import { headerCardDetails, overviewData, acknowledgeData, tutorialData, interfacedata, useEuiButton } from './ccf-exploration-user-interface.content';
 @Component({
-  selector: 'ccf-exploration-user-interface',
+  selector: 'exploration-user-interface',
   templateUrl: './ccf-exploration-user-interface.component.html',
   styleUrls: ['./ccf-exploration-user-interface.component.scss']
 })

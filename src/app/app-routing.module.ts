@@ -28,6 +28,9 @@ import { CcfOrganVrGalleryComponent } from './pages/ccf-organ-vr-gallery/ccf-org
 import { HraApiResolver } from './pages/hra-api/hra-api-resolver.service';
 import { HraEditorialBoardResolver } from './pages/hra-editorial-board/hra-editorial-board-resolver.service';
 import { HraMillitomeResolver } from './pages/hra-millitome/hra-millitome-resolver.service';
+import { OverviewDataResolver } from './pages/overview-data/overview-data-resolver.service';
+import { OmapFaqComponent } from './pages/omap-faq/omap-faq.component';
+import { TwoDimensionResolver } from './pages/two-dim-ref-page/two-dim-resolver.service';
 import { HraSopResolver } from './pages/hra-sop/hra-sop-resolver.service';
 import { HraUsageMetricsResolver } from './pages/hra-usage-metrics/hra-usage-metrics-resolver.service';
 import { LandingPageResolver } from './pages/landing-page/landing-page-resolver.service';
@@ -50,8 +53,9 @@ import { TwoDimRefPageResolver } from './pages/two-dim-ref-page/two-dim-ref-page
 
 const routes: Routes = [
   {
-    path: 'landing-page',
+    path: '',
     component: LandingPageComponent,
+    pathMatch: 'full',
     data: { contentFile: 'landing-page.content' },
     resolve: { landingPage: LandingPageResolver },
   },
@@ -240,16 +244,6 @@ const routes: Routes = [
     },
   },
   {
-    path: 'ccf-hra-editorial-board',
-    component: HraEditorialBoardComponent,
-    data: {
-      contentFile: 'hra-editorial-board.content',
-    },
-    resolve: {
-      hraEditorialBoard: HraEditorialBoardResolver,
-    },
-  },
-  {
     path: 'ccf-organ-vr-gallery',
     component: CcfOrganVrGalleryComponent,
     data: {
@@ -259,8 +253,25 @@ const routes: Routes = [
       ccfOrganVrGallery: CcfOrganVrGalleryResolver,
     },
   },
-  { path: '', redirectTo: 'landing-page', pathMatch: 'full' },
-  { path: '**', pathMatch: 'full', component: LandingPageComponent },
+  {
+    path: 'editorial-board',
+    component: HraEditorialBoardComponent,
+    data: {
+      contentFile: 'hra-editorial-board.content',
+    },
+    resolve: {
+      hraEditorialBoard: HraEditorialBoardResolver,
+    },
+  },
+  { path: 'omap-faq', component: OmapFaqComponent },
+  { path: '', redirectTo: '', pathMatch: 'full' },
+  {
+    path: '**',
+    pathMatch: 'full',
+    component: LandingPageComponent,
+    data: { contentFile: 'landing-page.content' },
+    resolve: { landingPage: LandingPageResolver },
+  },
 ];
 
 @NgModule({

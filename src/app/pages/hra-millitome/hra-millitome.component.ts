@@ -9,7 +9,7 @@ import { PageHeaderItems } from 'src/app/components/page-header/page-header-item
 import { PageDataItems } from 'src/app/components/page-data/page-data';
 
 @Component({
-  selector: 'ccf-hra-millitome',
+  selector: 'hra-millitome',
   templateUrl: './hra-millitome.component.html',
   styleUrls: ['./hra-millitome.component.scss']
 })
@@ -32,7 +32,7 @@ export class HraMillitomeComponent implements OnInit {
   }
 
   setData(version: ChooseVersion): void {
-    this.tableData = this.dataService.getData(version.release);
+    // this.tableData = this.dataService.getData(version.release);
   }
 
   ngOnInit(): void {
