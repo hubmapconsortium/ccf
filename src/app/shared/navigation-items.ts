@@ -88,12 +88,12 @@ export const NAVIGATION_ITEMS: NavItems[] = [
         disabled: true
       },
       {
-        menuName: 'HRA Application Programming Interfaces',
+        menuName: 'Application Programming Interfaces',
         route: 'ccf-hra-api',
         disabled: true
       },
       {
-        menuName: 'HRA Usage Metrics',
+        menuName: 'Usage Metrics',
         route: 'usage-metrics',
         disabled: true
       }

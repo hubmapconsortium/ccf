@@ -31,6 +31,8 @@ import { HraMillitomeResolver } from './pages/hra-millitome/hra-millitome-resolv
 import { OverviewDataResolver } from './pages/overview-data/overview-data-resolver.service';
 import { OmapFaqComponent } from './pages/omap-faq/omap-faq.component';
 import { TwoDimensionResolver } from './pages/two-dim-ref-page/two-dim-resolver.service';
+import { ThreeDimRefPageResolver } from './pages/three-dim-ref-page/three-dim-ref-page.resolver.service';
+import { FourthReleaseNotesComponent } from './pages/fourth-release-notes/fourth-release-notes.component';
 
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
@@ -46,12 +48,12 @@ const routes: Routes = [
   { path: 'asctb-tables', component: CcfTablePageComponent },
   {
     path: 'ccf-2d-ftu', component: TwoDimRefPageComponent,
-    data: {
-      contentFile: '2d-ftu.content'
-    },
-    resolve: {
-      twoDimFtu: TwoDimensionResolver
-    }
+    // data: {
+    //   contentFile: '2d-ftu.content'
+    // },
+    // resolve: {
+    //   twoDimFtu: TwoDimensionResolver
+    // }
   },
   { path: 'overview-tools', component: OverviewToolsComponent },
   { path: 'ccf-ontology', component: CcfOntologyComponent },
@@ -82,7 +84,15 @@ const routes: Routes = [
       hraInfo: HraApiResolver,
     },
   },
-  { path: 'ccf-3d-reference-library', component: ThreeDimRefPageComponent },
+  {
+    path: 'ccf-3d-reference-library', component: ThreeDimRefPageComponent,
+    // data: {
+    //   contentFile: 'three-dim-ref-page.content'
+    // },
+    // resolve: {
+    //   threeDim: ThreeDimRefPageResolver
+    // }
+  },
   { path: 'asctb-azimuth', component: CcfAsctbAzimuthComponent },
   { path: 'usage-metrics', component: HraUsageMetricsComponent },
   {
@@ -107,7 +117,8 @@ const routes: Routes = [
       hraEditorialBoard: HraEditorialBoardResolver,
     },
   },
-  { path: 'omap-faq', component: OmapFaqComponent },
+  { path: 'faq/omap', component: OmapFaqComponent },
+  { path: 'release-notes/v1.4', component: FourthReleaseNotesComponent },
   { path: '**', pathMatch: 'full', component: LandingPageComponent },
 ];
 
