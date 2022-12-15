@@ -629,5 +629,19 @@ z-index: 1;
 	transition: 200ms;
 }
 
-
 #v1_0_table { display : none }
+
+.alert-lightish {
+    color: black;
+    background-color: #fefefe;
+    border-color: #e0e0e0;
+    border: 1px solid #e0e0e0;
+    border-bottom-width: 2px;
+    font-size: 14px;
+}
+.alert-light hr {
+    border-top-color: #ececf6;
+}
+.alert-light .alert-link {
+    color: #2196f3;
+}
